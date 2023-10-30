@@ -1,0 +1,360 @@
+@font-face {
+  font-family: "Tajawal-Light";
+  src: url(./fonts/Tajawal-Light.ttf);
+}
+@font-face {
+  font-family: "Tajawal-ExtraLight";
+  src: url(./fonts/Tajawal-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Regular";
+  src: url(./fonts/Tajawal-Regular.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Medium";
+  src: url(./fonts/Tajawal-Medium.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Bold";
+  src: url(./fonts/Tajawal-Bold.ttf);
+}
+@font-face {
+  font-family: "Tajawal-ExtraBold";
+  src: url(./fonts/Tajawal-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Black";
+  src: url(./fonts/Tajawal-Black.ttf);
+}
+.extra-light {
+  font-family: "Tajawal-ExtraLight";
+}
+
+.light {
+  font-family: "Tajawal-Light";
+}
+
+.regular {
+  font-family: "Tajawal-Regular";
+}
+
+.medium {
+  font-family: "Tajawal-Medium";
+}
+
+.bold {
+  font-family: "Tajawal-Bold";
+}
+
+.extra-bold {
+  font-family: "Tajawal-ExtraBold";
+}
+
+.black {
+  font-family: "Tajawal-Black";
+}
+
+.bigger-h1 {
+  font-weight: bolder;
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+.box-shadow-nav {
+  box-shadow: 2px 2px 25px #363636;
+}
+
+.props-filter-container {
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  height: 13%;
+  width: 90%;
+  background-color: cadetblue;
+  margin-bottom: 5rem;
+}
+.props-filter-container .props-filter-button {
+  border-right: none !important;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cards-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  margin-top: 0;
+}
+
+.cards-cards {
+  justify-content: flex-start;
+  text-align: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.card {
+  margin: 1rem;
+  margin-top: 0;
+}
+.card h1 {
+  color: black;
+  font-size: 2rem;
+}
+
+.card1 {
+  position: relative;
+}
+
+.card-img {
+  height: 20rem;
+  width: 23rem;
+  background: url(./assets/EMAAR_BLOG_HEADER_RESIZED-440x385.jpg) no-repeat center center/cover;
+}
+
+.cards-title {
+  font-size: 1.5rem;
+  color: rgb(158, 144, 119);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.vertical-divider {
+  height: 2px;
+  width: 10rem;
+  background-color: rgb(158, 144, 119);
+  margin-left: 1rem;
+}
+
+.emaar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+}
+.emaar-container section {
+  margin: 2rem;
+}
+
+.emaar-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.emaar-text-container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.emaar-text-container .latest {
+  font-size: 2.5rem;
+  color: black;
+  margin: 1rem;
+}
+.emaar-text-container p {
+  margin: 1rem;
+}
+.emaar-text-container div {
+  margin: 1rem;
+}
+.emaar-text-container Button {
+  margin: 1rem;
+  width: 100%;
+}
+
+.images-container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images-container .image {
+  margin: 1rem;
+}
+.images-container .image-1 {
+  background: url(./assets/R3A-Day-View.jpg) no-repeat center center/cover;
+  height: 30rem;
+  width: 25rem;
+}
+.images-container .image-2 {
+  height: 15rem;
+  width: 25rem;
+  background: url(./assets/FU-05.jpg) no-repeat center center/cover;
+}
+.images-container .image-3 {
+  background: url(./assets/FU-04.jpg) no-repeat center center/cover;
+  width: 25rem;
+  height: 15rem;
+}
+.images-container .image-4 {
+  width: 25rem;
+  height: 15rem;
+  background: url(./assets/Bayti-10.jpg) no-repeat center center/cover;
+}
+.images-container .image-5 {
+  width: 25rem;
+  height: 15rem;
+  background: url(./assets/LA-01-2.jpg) no-repeat center center/cover;
+}
+
+.main-slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.top-slider {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.slider-container {
+  display: flex;
+  height: 70%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  right: 0;
+  left: 0;
+}
+.slider-container .slide {
+  height: 100%;
+  width: 17rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 2rem 0 2rem;
+}
+.slider-container .slide .slide-img {
+  height: 80%;
+  width: 100%;
+  background: url(./assets/FU-04.jpg) no-repeat center center/cover;
+  transition: all 0.3s ease-in-out;
+}
+.slider-container .slide .slide-img:hover {
+  transform: scale(1.05);
+  margin: 1rem;
+  cursor: pointer;
+}
+.slider-container .slide .slide-title {
+  font-size: 1.2rem;
+}
+.slider-container .slide .slide-parag {
+  font-size: 0.8rem;
+}
+
+.last-page {
+  display: flex;
+}
+
+.last-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  margin: 3rem;
+}
+
+.first-text {
+  width: 80%;
+}
+.first-text h1 {
+  margin: 1rem;
+}
+.first-text .bigger-h1 {
+  font-size: 1.5rem;
+}
+
+.icons-last {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  text-align: left;
+  align-items: left;
+}
+.icons-last .icon {
+  margin: 1rem;
+}
+
+.store-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  text-align: left;
+  width: 80%;
+  margin: 1rem;
+}
+
+.last-section2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.last-section2 .image-last {
+  height: 80%;
+  width: 80%;
+  background: url(./assets/EMAAR_BLOG_HEADER_RESIZED-440x385.jpg) no-repeat center center/cover;
+}
+
+.first-footer {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00243b;
+  color: white;
+}
+.first-footer .first-footer-section {
+  display: flex;
+  align-items: center;
+}
+.first-footer .first-footer-section .horizontal-divider {
+  width: 2px;
+  height: 4rem;
+  margin: 0.5rem;
+  background-color: white;
+}
+.first-footer .first-footer-section .social-media-container {
+  display: flex;
+}
+.first-footer .first-footer-section .social-media-container .social-media {
+  margin-left: 0.5rem;
+}
+.first-footer .second-footer-section {
+  display: flex;
+  align-items: center;
+}
+.first-footer .second-footer-section input {
+  height: 2.25rem;
+}
+
+.second-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}/*# sourceMappingURL=App.css.map */
