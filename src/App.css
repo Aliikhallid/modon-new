@@ -511,4 +511,14 @@ Button:hover {
   height: 25rem;
   width: 35rem;
   background: url(./assets/FU-01.jpg) no-repeat center center/cover;
+}
+
+.explore-ic {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  left: 0.5rem;
+}
+
+.exp-btn {
+  margin: 1rem;
 }/*# sourceMappingURL=App.css.map */

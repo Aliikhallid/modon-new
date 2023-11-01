@@ -1,5 +1,4 @@
 import modonLogo from '../../assets/modonlogo-removebg-preview.png';
-import arrowDown from '../../assets/hot-air-balloon.png'
 import { ArrowDownIcon } from '@radix-ui/react-icons';
 
 const NewsHeader = () => {

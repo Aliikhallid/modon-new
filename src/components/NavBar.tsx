@@ -2,7 +2,6 @@ import modonLogo from '../assets/modonlogo-removebg-preview.png'
 import {Button} from './ui/button'
 import {useTranslation} from 'react-i18next'
 import LangSwitcher from './sections/LangSwitcher';
-import whatsLogo from  '../assets/whatsapp.png';
 import { Link } from 'react-router-dom';
 import { ArrowDownIcon } from '@radix-ui/react-icons';
 
@@ -39,7 +38,7 @@ const NavBar = () => {
           </div>
         </div>
       <div className="list-items-left flex w-3/5 items-center justify-around text-sm">
-        <a className="item cursor-pointer">HOME</a>
+        <a className="item cursor-pointer" href='/'>HOME</a>
         <a className="item cursor-pointer flex justify-center items-center" href='/project'>{t("projects_string")} <ArrowDownIcon /></a>
         <a className="item cursor-pointer">{t("home_string")}</a>
         <a className="item cursor-pointer" href='/news'>{t("news_string")}</a>

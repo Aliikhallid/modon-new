@@ -1,12 +1,12 @@
 // import React from 'react'
 import i18next from 'i18next';
-import {useState} from 'react'
+import {SetStateAction, useState} from 'react'
 // import iraq from '../assets/Flag_of_Iraq.svg'
 
 
 const LangSwitcher = () => {
   const [lang, setLang] = useState('en')
-  const handleChange = (event) => {
+  const handleChange = (event: { target: { value: SetStateAction<string>; }; }) => {
     setLang(event.target.value)
   }
   window.addEventListener('change', ()=> {
