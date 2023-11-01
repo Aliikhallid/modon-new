@@ -1,3 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #06316c;
+  --secondary-color: #B72027;
+}
 @font-face {
   font-family: 'Tajawal-Light';
   src: url(./fonts/Tajawal-Light.ttf);
@@ -31,8 +40,8 @@
   src: url(./fonts/Kanit-ExtraLight.ttf);
 }
 @font-face {
-  font-family: 'DM-Italic';
-  src: url(./fonts/DMSerifDisplay-Italic.ttf);
+  font-family: 'Optima';
+  src: url(./fonts/Optima.ttf);
 }
 .extra-light {
   font-family: 'Tajawal-ExtraLight';
@@ -42,12 +51,12 @@
   font-weight: lighter;
 }
 .regular:lang(en) {
-  font-family: 'DM-Italic';
+  font-family: 'Optima';
 }
 .light:lang(ar) {
   font-family: 'Tajawal-Light';
 }
-.regular {
+.regular:lang(ar) {
   font-family: 'Tajawal-Regular';
 }
 .medium {
@@ -75,11 +84,11 @@
 //   z-index: 2;
 // }
 .box-shadow-nav {
-  box-shadow: 2px 2px 25px  #363636;
+  box-shadow: 2px 2px 25px  #e7e7e7;
 }
 .props-filter-container {
   display: flex;
-  border-radius: 10px;
+  border-radius: 2px;
   justify-content: space-around;
   align-items: center;
   height: 13%;
@@ -143,7 +152,7 @@
   background-color: rgb(158, 144, 119);
   margin-left: 1rem;
 }
-.emaar-container {
+.modon-container {
   display: flex;
   position: relative;
   justify-content: center;
@@ -155,7 +164,7 @@
     z-index: 2;
   }
 }
-.emaar-container::before {
+.modon-container::before {
   content: '';
   position: absolute;
   top: 0;
@@ -163,14 +172,14 @@
   bottom: 0;
   right: 0;
   opacity: 0.7;
-  background: url(./assets/360_F_494412400_DkZhO4DcjWcUGLJaCvOZrrxX61w8vbgw.jpg) no-repeat center center/cover;
+  // background: url(./assets/360_F_494412400_DkZhO4DcjWcUGLJaCvOZrrxX61w8vbgw.jpg) no-repeat center center/cover;
 }
-.emaar-title {
+.modon-title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.emaar-text-container {
+.modon-text-container {
   width: 40%;
   height: 100%;
   display: flex;
@@ -217,16 +226,16 @@
   .image-3 {
     background: url(./assets/FU-04.jpg)no-repeat center center/cover;
     width: 25rem;
-    height: 15rem;
+    height: 14rem;
   }
   .image-4 {
     width: 25rem;
-    height: 15rem;
+    height: 14rem;
     background: url(./assets/Bayti-10.jpg)no-repeat center center/cover;
   }
   .image-5 {
     width: 25rem;
-    height: 15rem;
+    height: 14rem;
     background: url(./assets/LA-01-2.jpg)no-repeat center center/cover;
   }
 }
@@ -245,16 +254,25 @@
 .scooch {
   right: 42rem !important;
 }
+.scooch-ar {
+  right: 0;
+  left: 42rem !important;
+}
+.right {
+  right: 0;
+}
+.left {
+  left: 0;
+}
 .slider-container {
   // background-color: red;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   height: 70%;
   width: 200vw;
   transition: all 0.3s ease-in-out;
   position: relative;
-  right: 0;
   .slide {
     height: 100%;
     width: 17rem;
@@ -297,6 +315,7 @@
 }
 .last-page {
 display: flex;
+height: 120vh;
 }
 .last-section {
   // height: 100%;
@@ -311,9 +330,6 @@ display: flex;
 }
 .first-text {
   width: 80%;
-  h1 {
-    margin: 1rem;
-  }
   .bigger-h1 {
     font-size: 1.5rem;
   }
@@ -324,28 +340,26 @@ display: flex;
   width: 80%;
   text-align: left;
   align-items: left;
-  .icon {
-    margin: 1rem;
-  }
 }
 .store-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: left;
   text-align: left;
   width: 80%;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 .last-section2 {
   height: 100%;
   width: 50%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   .image-last {
-    height: 80%;
+    height: 70%;
     width: 80%;
-    background: url(./assets/EMAAR_BLOG_HEADER_RESIZED-440x385.jpg) no-repeat center center/cover;
+    transition: all 0.3s ease-in-out;
+    background: url(./assets/modonapp.png) no-repeat center center/cover;
   }
   // background-color: white;
 }
@@ -373,16 +387,92 @@ display: flex;
       }
     }
   }
-  .second-footer-section {
-    display: flex;
-    align-items: center;
-      input {
-        height: 2.25rem;
-      }
+  // .second-footer-section {
+  //   display: flex;
+  //   align-items: center;
+  //     input {
+  //       height: 2.25rem;
+  //     }
+  // }
+}
+// .second-footer {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+// }
+.second-page-link {
+  // background-color: black;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  border-radius: 10px;
+  h1 {
+    z-index: 2;
+    font-size: 2rem;
+  }
+  Button {
+    z-index: 2;
+    width: 40%;
+    margin: 1rem;
+    border-radius: 8px;
   }
 }
-.second-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+Button:hover {
+  border: solid teal 2px;
+
+}
+.second-page-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  border-radius: 10px;
+  background: url(./assets/FU-05.jpg)no-repeat center center/cover;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.footer {
+  position: relative;
+  div {
+    z-index: 2;
+  }
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif)no-repeat center center/cover;
+}
+.bg-modon-blue {
+  background-color: #06316c;
+}
+.link-cont {
+  img {
+    width: 22rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+.link-img {
+  height: 20rem;
+  width: 22rem;
+  background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
+}
+.bottom-overlay {
+  background-color: #06316c;
+}
+.transitionn {
+  transition: all 0.3s ease-in-out;
 }

@@ -1,7 +1,7 @@
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
-import Shadcn from './components/Shadcn.tsx'
 import MainPage from './components/MainPage.tsx'
+import ProjectPage from './components/ProjectPage.tsx'
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <>
     <Routes>
       <Route path='/' element={<MainPage />}/>
-      <Route path='/shadcn' element={<Shadcn />}/>
+      <Route path='/project' element={<ProjectPage />}/>
     </Routes>
      {/* <Slideshow /> */}
     </>

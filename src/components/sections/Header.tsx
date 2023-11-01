@@ -1,8 +1,8 @@
 // import React from 'react'
 // import { useTranslation } from 'react-i18next'
-import NavBar from './NavBar';
-import headerVideo from '../assets/The sustainable environment is the goal of MODON real estate development in Iraq.mp4'
-import { Button } from './ui/button';
+import NavBar from '../NavBar';
+import headerVideo from '../../assets/The sustainable environment is the goal of MODON real estate development in Iraq.mp4'
+import { Button } from '../ui/button';
 import {useTranslation} from 'react-i18next'
 
 
@@ -16,7 +16,7 @@ const Header = () => {
       <NavBar />
       <video src={headerVideo} muted autoPlay loop className='video absolute h-screen w-screen top-0 left-0 right-0 bottom-0 -z-10 object-cover opacity-50'></video>
       <div className="overlay absolute h-full w-full top-0 left-0 right-0 bottom-0 object-cover -z-20 bg-black"></div>
-      {/* <div className="props-filter-container">
+      <div className="props-filter-container bg-white text-black light w-11/12">
         <div className="props-filter-one flex border-r border-gray-500 border-solid m-4 text-left w-1/5 relative">
           <section className='mr-10'>
           <h2>{t("property_type")}</h2>
@@ -42,9 +42,9 @@ const Header = () => {
           </section>
         </div>
         <div className="props-filter-button m-4 text-center w-1/5">
-          <Button className='bg-teal-700 rounded w-full' size={'lg'}>{t("search_properties")}</Button>
+          <Button className='bg-modon-blue text-white hover:text-black rounded w-full' size={'lg'}>{t("search_properties")}</Button>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
