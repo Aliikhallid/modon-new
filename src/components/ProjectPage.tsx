@@ -19,7 +19,7 @@ const ProjectPage = ({ projectName }: ProjectProps) => {
         style={{ backgroundImage: `url(${ProjectBG})` }}
       >
         <p className="md:text-[16px] text-[8px]">Overview</p>
-        <p className="md:text-[32px] text-[16px]">{t(projectName)} Boroj</p>
+        <p className="md:text-[32px] text-[16px]">{t(projectName)} Buruj</p>
         <p className="md:text-[24px] md:max-w-[75rem] text-[12px] max-w-[40rem]">
           Buruj signifies the start of a new era – An era where you can experience a vibrant and rich lifestyle in a safe environment and feel the luxury of living and belonging. Located in the heart of Baghdad City and inspiring lifestyle and comfort in every detail.
         </p>
