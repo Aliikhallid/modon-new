@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   padding: 0;
   margin: 0;
@@ -468,7 +471,7 @@ Button:hover {
 }
 
 .bg-modon-blue {
-  background-color: var(--primary-color);
+  background-color: #06316c;
 }
 
 .link-cont img {
@@ -485,9 +488,27 @@ Button:hover {
 }
 
 .bottom-overlay {
-  background-color: var(--primary-color);
+  background-color: #06316c;
 }
 
 .transitionn {
   transition: all 0.3s ease-in-out;
+}
+
+.arrow-icon {
+  animation: myAnime 1s ease-in-out infinite;
+}
+
+@keyframes myAnime {
+  from {
+    top: 0;
+  }
+  to {
+    top: 2rem;
+  }
+}
+.new-img1 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/FU-01.jpg) no-repeat center center/cover;
 }/*# sourceMappingURL=App.css.map */

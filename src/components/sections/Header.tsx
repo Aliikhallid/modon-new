@@ -14,8 +14,9 @@ const Header = () => {
   return (
     <div className='header-container relative h-screen flex flex-col regular'>
       <NavBar />
-      <video src={headerVideo} muted autoPlay loop className='video absolute h-screen w-screen top-0 left-0 right-0 bottom-0 -z-10 object-cover opacity-50'></video>
+      <video src={headerVideo} muted autoPlay loop className='video absolute h-screen w-screen top-0 left-0 right-0 bottom-0 -z-10 object-cover opacity-30'></video>
       <div className="overlay absolute h-full w-full top-0 left-0 right-0 bottom-0 object-cover -z-20 bg-black"></div>
+      <h1 className='regular text-6xl m-1'>Explore Modon Properties</h1>
       <div className="props-filter-container bg-white text-black light w-11/12">
         <div className="props-filter-one flex border-r border-gray-500 border-solid m-4 text-left w-1/5 relative">
           <section className='mr-10'>
