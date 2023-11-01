@@ -26,10 +26,25 @@
   font-family: 'Tajawal-Black';
   src: url(./fonts/Tajawal-Black.ttf);
 }
+@font-face {
+  font-family: 'DM-Regular';
+  src: url(./fonts/Kanit-ExtraLight.ttf);
+}
+@font-face {
+  font-family: 'DM-Italic';
+  src: url(./fonts/DMSerifDisplay-Italic.ttf);
+}
 .extra-light {
   font-family: 'Tajawal-ExtraLight';
 }
-.light {
+.light:lang(en) {
+  font-family: 'DM-Regular';
+  font-weight: lighter;
+}
+.regular:lang(en) {
+  font-family: 'DM-Italic';
+}
+.light:lang(ar) {
   font-family: 'Tajawal-Light';
 }
 .regular {
@@ -130,13 +145,25 @@
 }
 .emaar-container {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 150vh;
   section {
     // width: 50%;
     margin: 2rem;
+    z-index: 2;
   }
+}
+.emaar-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
+  background: url(./assets/360_F_494412400_DkZhO4DcjWcUGLJaCvOZrrxX61w8vbgw.jpg) no-repeat center center/cover;
 }
 .emaar-title {
   display: flex;
@@ -215,15 +242,19 @@
   justify-content: space-between;
   margin: 2rem;
 }
+.scooch {
+  right: 42rem !important;
+}
 .slider-container {
   // background-color: red;
   display: flex;
+  justify-content: start;
+  align-items: center;
   height: 70%;
-  // width: 100%;
+  width: 200vw;
   transition: all 0.3s ease-in-out;
   position: relative;
   right: 0;
-  left: 0;
   .slide {
     height: 100%;
     width: 17rem;
@@ -238,6 +269,18 @@
       width: 100%;
       background: url(./assets/FU-04.jpg)no-repeat center center/cover;
       transition: all 0.3s ease-in-out;
+    }
+    .slide-img2 {
+      background: url(./assets/LA-01-2.jpg) no-repeat center center/cover;
+    }
+    .slide-img3 {
+      background: url(./assets/FU-01.jpg) no-repeat center center/cover;
+    }
+    .slide-img4 {
+      background: url(./assets/Bayti-10.jpg) no-repeat center center/cover;
+    }
+    .slide-img5 {
+      background: url(./assets/LA-05-2.jpg) no-repeat center center/cover;
     }
     .slide-img:hover {
       transform: scale(1.05);

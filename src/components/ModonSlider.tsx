@@ -1,48 +1,57 @@
-// import React from 'react'
 import TitleDivider from './TitleDivider'
-// import 'react-slideshow-image/dist/styles.css'
-
+import arrowRight from '../assets/arrow-right.png'
+import arrowLeft from '../assets/arrow-left.png'
 
 const ModonSlider = () => {
-  
+
+  const next = document.querySelector('.next');
+  const prev = document.querySelector('.prev');
+  const slider = document.querySelector('.slider-container');
+
+    next?.addEventListener('click', () => {
+      slider?.classList.add('scooch')
+    })
+    prev?.addEventListener('click', () => {
+      slider?.classList.remove('scooch')
+    })
 
   return (
     <div className='main-slider-container h-screen w-full text-black bg-white relative overflow-x-hidden'>
       <div className='top-slider'>
-      <TitleDivider name="Modon Props"  />
+      <TitleDivider name="MODON PROPS"  />
       <div className="slider-btns flex">
-        <h1 className='m-1 cursor-pointer next'>prev</h1>
-        <h1 className='m-1 cursor-pointer prev'>next</h1>
+        <img src={arrowLeft} alt="next" className='prev m-1 cursor-pointer h-6' />
+        <img src={arrowRight} alt="prev" className='next m-1 cursor-pointer h-6' />
       </div>
       </div>
-      <div className="slider-container">
+      <div className="slider-container overflow-x-hidden regular">
         <div className="slide z-20 text-white">
           <div className="slide-img"></div>
-          <h1 className="slide-title">Buruj Units</h1>
+          <h1 className="slide-title m-1">Buruj Units</h1>
           <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>
           <p className='slide-parag'>Lorem, ipsum.</p>
         </div>
         <div className="slide z-20 text-white">
-          <div className="slide-img"></div>
-          <h1 className="slide-title">Buruj Units</h1>
+          <div className="slide-img slide-img2"></div>
+          <h1 className="slide-title m-1">Lavida Units</h1>
           <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>
           <p className='slide-parag'>Lorem, ipsum.</p>
         </div>
         <div className="slide z-20 text-white">
-          <div className="slide-img"></div>
-          <h1 className="slide-title">Buruj Units</h1>
+          <div className="slide-img slide-img3"></div>
+          <h1 className="slide-title m-1">Future City Units</h1>
           <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>
           <p className='slide-parag'>Lorem, ipsum.</p>
         </div>
         <div className="slide z-20 text-white">
-          <div className="slide-img"></div>
-          <h1 className="slide-title">Buruj Units</h1>
+          <div className="slide-img slide-img4"></div>
+          <h1 className="slide-title m-1">Madinaty Units</h1>
           <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>
           <p className='slide-parag'>Lorem, ipsum.</p>
         </div>
         <div className="slide z-20 text-white">
-          <div className="slide-img"></div>
-          <h1 className="slide-title">Buruj Units</h1>
+          <div className="slide-img slide-img5"></div>
+          <h1 className="slide-title m-1">Baity Units</h1>
           <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>
           <p className='slide-parag'>Lorem, ipsum.</p>
         </div>

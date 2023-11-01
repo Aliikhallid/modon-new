@@ -8,7 +8,7 @@ const LastPage = () => {
       <section className='last-section w-1/2 flex justify-end'>
         <div className="first-text">
          <TitleDivider name="A DIGITAL EXPERIENCE"/>
-         <h1 className="bigger-h1" style={{fontSize: '3rem'}}>ALL ABOUT <span style={{color: 'steelblue'}}>MODON</span></h1>
+         <h1 className="bigger-h1 regular" style={{fontSize: '3rem'}}>ALL ABOUT <span style={{color: 'steelblue'}}>MODON</span></h1>
          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam fugiat aliquam unde. Facilis, debitis perferendis sint tenetur suscipit praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, suscipit?</h1>
         </div>
          <div className="icons-last">

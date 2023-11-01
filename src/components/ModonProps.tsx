@@ -5,8 +5,8 @@ const ModonProps = () => {
   return (
     <div className='emaar-container w-full bg-white text-black'>
       <section className='emaar-text-container'>
-      <TitleDivider name="Emaar" />
-        <h1 className='latest'>LATEST PROPERTIES</h1>
+      <TitleDivider name="MODON" />
+        <h1 className='latest light-italic'>LATEST PROPERTIES</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae facilis fuga sequi impedit at eum quisquam dignissimos, velit quia?</p>
         <Button className='bg-indigo-950 text-white'>VIEW ALL</Button>
       </section>
