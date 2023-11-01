@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color: #06316c;
+  --primary-color: #06316c; 
   --secondary-color: #B72027;
 }
 
@@ -491,3 +491,4 @@ Button:hover {
 .transitionn {
   transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=App.css.map */
+
