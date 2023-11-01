@@ -1,14 +1,14 @@
-import Header from './Header'
-// import NewPage from './NewPage'
-import ModonProps from './ModonProps'
-import ModonSlider from './ModonSlider'
-import LastPage from './LastPage'
-import Footer from './Footer'
+import Header from './sections/Header'
+import ModonProps from './sections/ModonProps'
+import ModonSlider from './sections/ModonSlider'
+import LastPage from './sections/LastPage'
+import Footer from './sections/Footer'
+import SecondPage from './sections/SecondPage'
 const MainPage = () => {
   return (
     <>
      <Header />
-     {/* <NewPage /> */}
+     <SecondPage />
      <ModonProps />
      <ModonSlider />
      <LastPage />
