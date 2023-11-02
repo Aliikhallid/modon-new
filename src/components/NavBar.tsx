@@ -40,7 +40,7 @@ const NavBar = () => {
       <div className="list-items-left flex w-3/5 items-center justify-around text-sm">
         <a className="item cursor-pointer" href='/'>HOME</a>
         <a className="item cursor-pointer flex justify-center items-center" href='/project'>{t("projects_string")} <ArrowDownIcon /></a>
-        <a className="item cursor-pointer">{t("home_string")}</a>
+        <a className="item cursor-pointer" href='/construction'>{t("home_string")}</a>
         <a className="item cursor-pointer" href='/news'>{t("news_string")}</a>
         <a className="item cursor-pointer" href='/careers'>CAREERS</a>
         <a className="item cursor-pointer" href='/contact'>CONTACT US</a>

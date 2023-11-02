@@ -4,11 +4,12 @@ import { InstagramLogoIcon, MobileIcon, EnvelopeClosedIcon } from "@radix-ui/rea
 
 const Footer = () => {
   return (
-<div className="footer flex h-96 justify-around items-center relative light">
+<div className="footer flex w-full h-96 justify-around items-center relative light">
   <div>
   <h1 className="regular text-2xl m-1">About Modon</h1>
            <p>Modon knows no boundaries for leadership.</p>
            <p>We work today to shape the future.</p>
+           {/* <TitleDivider name="Social" /> */}
            <div className="social-foot flex gap-3 mt-3">
              <InstagramLogoIcon />
              <InstagramLogoIcon />
