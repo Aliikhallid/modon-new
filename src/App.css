@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +8,7 @@
 }
 
 :root {
-  --primary-color: #06316c; 
+  --primary-color: #06316c;
   --secondary-color: #B72027;
 }
 
@@ -380,10 +383,8 @@
   align-items: center;
 }
 .last-section2 .image-last {
-  height: 70%;
-  width: 80%;
   transition: all 0.3s ease-in-out;
-  background: url(./assets/modonapp.png) no-repeat center center/cover;
+  background: url(./assets/LA-12-2.jpg) no-repeat center center/cover;
 }
 
 .first-footer {
@@ -434,7 +435,7 @@
 }
 
 Button:hover {
-  border: solid teal 2px;
+  border: solid #06316c 2px;
 }
 
 .second-page-link::before {
@@ -451,6 +452,7 @@ Button:hover {
 
 .footer {
   position: relative;
+  background-color: black;
 }
 .footer div {
   z-index: 2;
@@ -463,12 +465,12 @@ Button:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0.5;
-  background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
+  opacity: 0.2;
+  background: url(./assets/LA-05-2.jpg) no-repeat center center/cover;
 }
 
 .bg-modon-blue {
-  background-color: var(--primary-color);
+  background-color: #06316c;
 }
 
 .link-cont img {
@@ -485,10 +487,164 @@ Button:hover {
 }
 
 .bottom-overlay {
-  background-color: var(--primary-color);
+  position: relative;
+  background-color: black;
+}
+
+.bottom-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+  background: url(./assets/LA-05-2.jpg) no-repeat center center/cover;
 }
 
 .transitionn {
   transition: all 0.3s ease-in-out;
-}/*# sourceMappingURL=App.css.map */
+}
 
+.arrow-icon {
+  animation: myAnime 1s ease-in-out infinite;
+}
+
+@keyframes myAnime {
+  from {
+    top: 0;
+  }
+  to {
+    top: 2rem;
+  }
+}
+.new-img1 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/FU-01.jpg) no-repeat center center/cover;
+}
+
+.explore-ic {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  left: 0.5rem;
+}
+
+.exp-btn {
+  margin: 1rem;
+}
+
+.contact-page {
+  height: 110vh;
+}
+
+.contact-header {
+  color: #23193e;
+}
+
+.contact1 {
+  background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
+}
+
+.career-cont {
+  position: relative;
+}
+.career-cont .team {
+  z-index: 2;
+}
+.career-cont h1 {
+  z-index: 2;
+}
+.career-cont p {
+  z-index: 2;
+}
+
+.career-cont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+  background: url(./assets/innovative.jpg) no-repeat center center/cover;
+}
+
+.career-main {
+  position: relative;
+  color: white;
+}
+.career-main .search-sec {
+  z-index: 2;
+}
+.career-main .jobs-sec {
+  z-index: 2;
+  color: white;
+}
+
+.career-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  background: url(./assets/LA-05-2.jpg) no-repeat center center/cover;
+}
+
+.buruj-img {
+  background: url(./assets/FU-01.jpg) no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buruj2-img {
+  background: url(./assets/FU-05.jpg) no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buruj3-img {
+  background: url(./assets/FU-04.jpg) no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.construction-updates {
+  height: 180vh;
+  background-color: rgba(6, 49, 108, 0.4196078431);
+}
+.construction-updates Button {
+  background-color: white;
+  color: #06316c;
+}
+.construction-updates Button:hover {
+  color: white;
+}
+
+.buruj-updates {
+  height: 180vh;
+  background-color: rgba(6, 49, 108, 0.4196078431);
+}
+.buruj-updates Button {
+  background-color: white;
+  color: #06316c;
+}
+.buruj-updates Button:hover {
+  color: white;
+}
+
+.gallery1 {
+  transition: all 1s ease-in-out;
+}
+
+.gallery2 {
+  transition: all 1s ease-in-out;
+}/*# sourceMappingURL=App.css.map */
