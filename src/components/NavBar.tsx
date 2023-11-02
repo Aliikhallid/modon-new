@@ -3,7 +3,8 @@ import {Button} from './ui/button'
 import {useTranslation} from 'react-i18next'
 import LangSwitcher from './sections/LangSwitcher';
 import { Link } from 'react-router-dom';
-import { ArrowDownIcon } from '@radix-ui/react-icons';
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@radix-ui/react-navigation-menu';
+import { NavigationMenuContent } from './ui/navigation-menu';
 
 
 const NavBar = () => {
@@ -39,7 +40,43 @@ const NavBar = () => {
         </div>
       <div className="list-items-left flex w-3/5 items-center justify-around text-sm">
         <a className="item cursor-pointer" href='/'>HOME</a>
-        <a className="item cursor-pointer flex justify-center items-center" href='/project'>{t("projects_string")} <ArrowDownIcon /></a>
+        <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>PROJECTS</NavigationMenuTrigger>
+          <NavigationMenuContent>
+          <ul className="flex flex-col item-start gap-2">
+              <li>
+                <NavigationMenuLink asChild>
+                  <a
+                    href="boroj"
+                  >
+                    {t("boroj")}
+                  </a>
+                </NavigationMenuLink>
+              </li>
+              <li>
+                <NavigationMenuLink asChild>
+                  <a
+                    href="boroj"
+                  >
+                    {t("boroj")}
+                  </a>
+                </NavigationMenuLink>
+              </li>              <li>
+                <NavigationMenuLink asChild>
+                  <a
+                    href="boroj"
+                  >
+                    {t("boroj")}
+                  </a>
+                </NavigationMenuLink>
+              </li>
+              </ul>
+          </NavigationMenuContent>
+          </NavigationMenuItem>
+          </NavigationMenuList>
+          </NavigationMenu>
         <a className="item cursor-pointer" href='/construction'>{t("home_string")}</a>
         <a className="item cursor-pointer" href='/news'>{t("news_string")}</a>
         <a className="item cursor-pointer" href='/careers'>CAREERS</a>
