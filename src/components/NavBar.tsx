@@ -5,7 +5,6 @@ import LangSwitcher from './sections/LangSwitcher';
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@radix-ui/react-navigation-menu';
 import { NavigationMenuContent } from './ui/navigation-menu';
-import { ArrowDownIcon } from '@radix-ui/react-icons';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -93,7 +92,7 @@ const NavBar = () => {
         <a className="item cursor-pointer" href='/contact'>CONTACT US</a>
         <LangSwitcher />
         <AlertDialog>
-  <AlertDialogTrigger><Button size={'lg'} className='z-10 bg-modon-blue text-white'>{t("enquire_string")}</Button></AlertDialogTrigger>
+  <AlertDialogTrigger><Button className='z-10 bg-modon-blue text-white'>{t("enquire_string")}</Button></AlertDialogTrigger>
   <AlertDialogContent>
     <AlertDialogHeader>
       <AlertDialogTitle className='regular text-3xl text-center m-5'>Enquire Now</AlertDialogTitle>
