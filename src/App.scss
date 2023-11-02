@@ -80,6 +80,20 @@
 }
 .navbar {
   transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.box-shadow-nav {
+  box-shadow: 2px 2px 25px rgb(167, 167, 167);
+}
+.footer-mobile {
+  height: 2.8rem;
+  width: 9rem;
+   background: url(./assets/IOS.png)no-repeat center center/cover;
+}
+.footer-mobil2 {
+  height: 2.8rem;
+  width: 9rem;
+   background: url(./assets/google.png)no-repeat center center/cover;
 }
 // .iraq-f {
 //   height: 5rem;
@@ -87,9 +101,6 @@
 //   // background: url(./assets/Flag_of_Iraq.svg)no-repeat center center/cover;
 //   z-index: 2;
 // }
-.box-shadow-nav {
-  box-shadow: 2px 2px 25px  #e7e7e7;
-}
 .props-filter-container {
   display: flex;
   border-radius: 2px;

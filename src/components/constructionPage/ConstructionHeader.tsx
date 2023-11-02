@@ -1,11 +1,11 @@
-import modonLogo from '../../assets/modonlogo-removebg-preview.png'
+// import modonLogo from '../../assets/modonlogo-removebg-preview.png'
 import { Button } from '../ui/button'
 import { Link } from 'react-router-dom'
 const ConstructionHeader = () => {
   return (
     <div className="construction-updates w-full flex flex-col justify-center items-center">
-      <img src={modonLogo} alt="MODON" height={200} width={200} />
-      <h1 className='regular text-5xl'>Construction Updates</h1>
+      {/* <img src={modonLogo} alt="MODON" height={200} width={200} /> */}
+      <h1 className='regular text-5xl'>CONSTRUCTION UPDATES</h1>
       <div className="constructs flex">
         <div className="construct1 flex flex-col justify-center items-center m-5">
            <div className="buruj-img"></div>

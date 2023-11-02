@@ -34,7 +34,7 @@ const BaytiUpdates = () => {
     <div className="buruj-updates w-full flex flex-col justify-start items-center relative">
       <NavBar />
     {/* <img src={burujLogo} alt="MODON" height={200} width={200} /> */}
-    <h1 className='regular text-5xl relative mt-40'>Bayti Updates</h1>
+    <h1 className='regular text-5xl relative mt-40'>BAYTI UPDATES</h1>
     <div className="constructs flex">
       <div className="construct1 flex flex-col justify-center items-center m-5">
         <div className="buruj-btns">

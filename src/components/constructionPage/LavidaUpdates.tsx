@@ -34,13 +34,13 @@ const LavidaUpdates = () => {
     <div className="buruj-updates w-full flex flex-col justify-start items-center relative">
       <NavBar />
     {/* <img src={burujLogo} alt="MODON" height={200} width={200} /> */}
-    <h1 className='regular text-5xl relative mt-40'>Lavida Updates</h1>
+    <h1 className='regular text-5xl relative mt-40'>LAVIDA UPDATES</h1>
     <div className="constructs flex">
       <div className="construct1 flex flex-col justify-center items-center m-5">
         <div className="buruj-btns">
-         <Button className='bg-primary-color m-2' onClick={showAugust}>August</Button>
-         <Button className='bg-primary-color m-2' onClick={showJanuary}>January</Button>
-         <Button className='bg-primary-color m-2' onClick={showSep}>Septemper</Button>
+         <Button className='bg-primary-color m-2' onClick={showAugust}>August '23</Button>
+         <Button className='bg-primary-color m-2' onClick={showJanuary}>January '22</Button>
+         <Button className='bg-primary-color m-2' onClick={showSep}>Septemper '22</Button>
         </div>
          <div className="gallery1 flex flex-col gap-10 transition-all absolute bottom-16">
           <div className="gallery-gallery flex gap-10">
