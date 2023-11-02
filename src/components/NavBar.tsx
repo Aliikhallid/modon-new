@@ -42,8 +42,8 @@ const NavBar = () => {
         <a className="item cursor-pointer flex justify-center items-center" href='/project'>{t("projects_string")} <ArrowDownIcon /></a>
         <a className="item cursor-pointer">{t("home_string")}</a>
         <a className="item cursor-pointer" href='/news'>{t("news_string")}</a>
-        <a className="item cursor-pointer">CAREERS</a>
-        <a className="item cursor-pointer">CONTACT US</a>
+        <a className="item cursor-pointer" href='/careers'>CAREERS</a>
+        <a className="item cursor-pointer" href='/contact'>CONTACT US</a>
         <LangSwitcher />
       <Button size={'lg'} className='z-10 bg-modon-blue text-white'>{t("enquire_string")}</Button>
       </div>

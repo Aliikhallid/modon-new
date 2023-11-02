@@ -521,4 +521,40 @@ Button:hover {
 
 .exp-btn {
   margin: 1rem;
+}
+
+.contact-page {
+  height: 200vh;
+}
+
+.contact-header {
+  color: #23193e;
+}
+
+.contact1 {
+  background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
+}
+
+.career-cont {
+  position: relative;
+}
+.career-cont .team {
+  z-index: 2;
+}
+.career-cont h1 {
+  z-index: 2;
+}
+.career-cont p {
+  z-index: 2;
+}
+
+.career-cont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+  background: url(./assets/innovative.jpg) no-repeat center center/cover;
 }/*# sourceMappingURL=App.css.map */
