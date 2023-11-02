@@ -43,8 +43,8 @@ const LastPage = () => {
           <a className="store-link" href="https://play.google.com/store/apps/details?id=com.my_modon"><img src={google} className="h-10" alt="Download Android" /></a>
          </div>
       </section>
-      <section className='last-section2 w-1/2'>
-          <div className="image-last rounded-full m-3"></div>
+      <section className='last-section2 w-1/2 h-full'>
+          <div className="image-last h-full w-full"></div>
       </section>
     </div>
   )
