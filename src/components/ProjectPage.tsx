@@ -9,11 +9,11 @@ const ProjectPage = () => {
   const isRTL = i18n.language === "ar"
 
   return (
-    <div className="flex flex-col min-h-screen bg-white" dir={`${isRTL? "rtl":"ltr"}`}>
+    <div className="project-page flex flex-col min-h-screen t-10 bg-white" dir={`${isRTL? "rtl":"ltr"}`}>
       <NavBar />
 
       <div
-        className="relative flex flex-col regular items-start justify-center  md:h-screen p-10 bg-cover bg-center gap-2 h-auto sm:bg-auto"
+        className="relative flex flex-col regular items-start justify-center h-[120vh] p-10 bg-cover bg-center gap-2 sm:bg-auto"
         style={{ backgroundImage: `url(${ProjectBG})` }}
       >
         <div>
