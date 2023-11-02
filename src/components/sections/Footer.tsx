@@ -35,12 +35,18 @@ const Footer = () => {
        <h1 className="regular text-2xl m-1">Head Office</h1>
        <p className="w-max m-1">Al Mamoon District, Al Nossor Area
                           Near Baghdad Tower, Baghdad, Iraq</p>
+                          <div className="flex flex-col">
         <div className="flex">
            <div className="second-footer-item m-1 flex gap-2"><MobileIcon height={20} width={20}/> <h1>+964 770 0300 005</h1></div>
            <div className="second-footer-item m-1 flex gap-2"><EnvelopeClosedIcon height={20} width={20}/> <h1>Info@modoniq.com</h1>
         </div>
+                          </div>
+        <div className="flex m-2">
+          <div className="footer-mobile"></div>
+          <div className="footer-mobil2"></div>
+        </div>
       </div>
-         <div className="third-footer h-10 w-full bg-teal-700 absolute left-0 bottom-0 light flex justify-around items-center text-white">
+         <div className="third-footer h-10 w-full bg-primary-color absolute left-0 bottom-0 light flex justify-around items-center text-white">
          <h1>Copyright © 2023. All Rights Reserved</h1>
          <h1>Powered by ADZone</h1>
        </div>
