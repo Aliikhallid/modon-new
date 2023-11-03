@@ -1,6 +1,6 @@
 import { Button } from "../ui/button"
 import NavBar from "../NavBar"
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Footer from "../sections/Footer";
 const FutureUpdates = () => {
   const path = "src/assets/ConstructionUpdates/Future/"
@@ -19,10 +19,16 @@ const FutureUpdates = () => {
   const handleButtonClick = (year: string,month:string,lastImage:number) => {
     loadImages(year,month,lastImage);
   };
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
 
   useEffect(()=>{
     handleButtonClick("2022","January",12)
   },[])
+  function goBack() {
+    window.history.back();
+  }
   return (
     <div className="buruj-updates w-full h-fit flex flex-col justify-start items-center relative">
       <NavBar />
@@ -38,6 +44,7 @@ const FutureUpdates = () => {
          <div className="flex flex-wrap justify-center gap-10 mt-5">
           {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" style= {{backgroundImage: `url(${p})`}}></div>))}
          </div>
+        <Button onClick={goBack} className='hover-black w-40 mt-4'>Previous Page</Button>
          </div>
          </div>
          <Footer />

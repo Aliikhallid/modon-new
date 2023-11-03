@@ -455,10 +455,12 @@ Button:hover {
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .footer {
   position: relative;
-  background-color: #a89c8c;
   div {
     z-index: 2;
   }
+}
+.hover-black:hover {
+  color: black !important;
 }
 // .footer::before {
 //   content: '';
@@ -514,13 +516,13 @@ Button:hover {
   margin: 1rem;
 }
 .contact-page {
-  height: 110vh;
+  height: 130vh;
 }
 .contact-header {
   color: #23193e;
 }
 .contact1 {
-  background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
+  background: url(./assets/LA-12-2.jpg) no-repeat center center/cover;
 }
 .career-cont {
   position: relative;
@@ -631,3 +633,105 @@ Button:hover {
 .rtl-dir {
   direction: rtl;
 }
+.bayti-mall-img {
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall1.jpeg)no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.bayti-mall-img1 {
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall2.jpeg)no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.bayti-mall-img2 {
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall3.jpeg)no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.bayti-mall-img3 {
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall4.jpeg)no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.wadeea-img {
+  background: url(./assets/Chairman-1-scaled.jpg)no-repeat center center/cover;
+  height: 17rem;
+  width: 15rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.wadood-img {
+  background: url(./assets/BM-Wadood-2-scaled.jpg)no-repeat center center/cover;
+  height: 17rem;
+  width: 15rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hardan-img {
+  background: url(./assets/Hardan-Noori-Al-Handalinner-new-1-1.jpg)no-repeat center center/cover;
+  height: 17rem;
+  width: 15rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.mohamed-img {
+  background: url(./assets/Mohammed-Noori-Al-Handalinner.jpg)no-repeat center center/cover;
+  height: 17rem;
+  width: 15rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.noor-img {
+  background: url(./assets/BM-Noor-2-scaled.jpg)no-repeat center center/cover;
+  height: 17rem;
+  width: 15rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.news-shadow {
+  box-shadow: -5px 0px 13px 0px #bbbaba;
+}
+.fixed-image {
+  position: relative;
+  background-color: black;
+  h1 {
+    z-index: 2;
+  }
+}
+.fixed-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+  background: url(./assets/LA-05-2.jpg)no-repeat center center/cover;
+}
+.hover-primary-color:hover {
+  color: var(--primary-color) !important;
+}
+.ac {
+  background: transparent !important;
+  color: white !important;
+  border: white solid 1px;
+  &:hover {
+    color: white !important;
+    border: white solid 2px;
+  }
+}
+.menu-trig {
+  background: transparent !important;
+  color: white !important;
+  &:hover {
+    border: none !important;
+  }
+} 

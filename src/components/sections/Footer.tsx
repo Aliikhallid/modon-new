@@ -4,9 +4,9 @@ import { InstagramLogoIcon, MobileIcon, EnvelopeClosedIcon } from "@radix-ui/rea
 
 const Footer = () => {
   return (
-<div className="footer flex w-full h-96 justify-around items-center relative light">
+<div className="footer flex w-full h-96 justify-around items-center relative light bg-white text-primary-color">
   <div>
-  <h1 className="regular text-2xl m-1">About Modon</h1>
+  <h1 className="regular text-2xl">About Modon</h1>
            <p>Modon knows no boundaries for leadership.</p>
            <p>We work today to shape the future.</p>
            {/* <TitleDivider name="Social" /> */}
@@ -18,21 +18,21 @@ const Footer = () => {
            </div>
   </div>
   <div>
-           <h1 className="regular text-2xl m-1">Quick Links</h1>
+           <h1 className="regular text-2xl">Quick Links</h1>
            <div className=" m-1">Home</div>
            <div className=" m-1">About Us</div>
            <div className="m-1">Construction Updates</div>
            <div className="m-1">Contact</div>
          </div>
          <div className="">
-           <h1 className="regular text-2xl m-1">Privacy Links</h1>
+           <h1 className="regular text-2xl">Privacy Links</h1>
            <div className=" m-1">Privacy Policy</div>
            <div className=" m-1">Terms & Conditions</div>
            <div className=" m-1">FAQ</div>
            <div className=" m-1">Enquire Now</div>
          </div>
  <div>
-       <h1 className="regular text-2xl m-1">Head Office</h1>
+       <h1 className="regular text-2xl">Head Office</h1>
        <p className="w-max m-1">Al Mamoon District, Al Nossor Area
                           Near Baghdad Tower, Baghdad, Iraq</p>
                           <div className="flex flex-col">
