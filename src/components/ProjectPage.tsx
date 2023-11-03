@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import ProjectBG from "../assets/ProjectBG.png";
 import { Button } from "./ui/button";
 import ProjectCard from "./projectPage/projectCard";
+import { Castle,Trees,LucideBuilding,Building2,Workflow,Hotel,ShoppingCart, Bike } from "lucide-react";
 
 const ProjectPage = () => {
   const {t,i18n} = useTranslation();
@@ -50,14 +51,14 @@ const ProjectPage = () => {
     <div className="flex flex-col min-h-screen">
       <div className="flex justify-center items-center light md:text-2xl text-md text-[#4D5053]">Highlights</div>
       <div className="p-5 flex flex-wrap gap-5 justify-center">
-      <ProjectCard title="Invest Alongside The Experts" description="We bring our members high quality commercial investment opportunities that are normally hidden away in country clubs or investment firms. Investors through Equity Street Capital get access to a diverse range of retail" />
-      <ProjectCard title="Invest Alongside The Experts" description="We bring our members high quality commercial investment opportunities that are normally hidden away in country clubs or investment firms. Investors through Equity Street Capital get access to a diverse range of retail" />
-      <ProjectCard title="Invest Alongside The Experts" description="We bring our members high quality commercial investment opportunities that are normally hidden away in country clubs or investment firms. Investors through Equity Street Capital get access to a diverse range of retail" />
-      <ProjectCard title="Invest Alongside The Experts" description="We bring our members high quality commercial investment opportunities that are normally hidden away in country clubs or investment firms. Investors through Equity Street Capital get access to a diverse range of retail" />
-      <ProjectCard title="Invest Alongside The Experts" description="We bring our members high quality commercial investment opportunities that are normally hidden away in country clubs or investment firms. Investors through Equity Street Capital get access to a diverse range of retail" />
-      <ProjectCard title="Invest Alongside The Experts" description="We bring our members high quality commercial investment opportunities that are normally hidden away in country clubs or investment firms. Investors through Equity Street Capital get access to a diverse range of retail" />
-      <ProjectCard title="Invest Alongside The Experts" description="We bring our members high quality commercial investment opportunities that are normally hidden away in country clubs or investment firms. Investors through Equity Street Capital get access to a diverse range of retail" />
-      <ProjectCard title="Invest Alongside The Experts" description="We bring our members high quality commercial investment opportunities that are normally hidden away in country clubs or investment firms. Investors through Equity Street Capital get access to a diverse range of retail" />
+      <ProjectCard icon={Building2} title="Approximately 3800" description="Resedential Units" />
+      <ProjectCard icon={LucideBuilding} title="30 Buildings" description="Resedential Apartments" />
+      <ProjectCard icon={Trees} title="Views" description="Green Spaces" />
+      <ProjectCard icon={Workflow} title="Architectural Design" description="Distinctive" />
+      <ProjectCard icon={Castle} title="Attractions" description="Dancing Fountain" />
+      <ProjectCard icon={ShoppingCart} title="Shopping" description="Luxurious Mall" />
+      <ProjectCard icon={Bike} title="Amenities" description="Running and biking trails" />
+      <ProjectCard icon={Hotel} title="Hotel" description="Five Stars" />
       </div>
       </div>
 
