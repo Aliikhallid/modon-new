@@ -55,28 +55,28 @@ const NavBar = () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger><div className='flex items-center'>PROJECTS <ChevronDown/></div></NavigationMenuTrigger>
           <NavigationMenuContent>
-          <ul className="flex flex-col item-start gap-2 justify-start animate-fade-down">
-            <NavLink className='p-2 hover:bg-primary-hover hover:animate-fade' to='/bayti'>
+          <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
+            <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/bayti'>
                 <NavigationMenuLink  asChild>
                   <p>{t("bayti-c")}</p>
                 </NavigationMenuLink>
               </NavLink>
-              <NavLink className='p-2 hover:bg-primary-hover hover:animate-fade' to='/buruj'>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/buruj'>
                 <NavigationMenuLink  asChild>
                   <p>{t("buruj-c")}</p>
                 </NavigationMenuLink>
               </NavLink>
-              <NavLink className='p-2 hover:bg-primary-hover hover:animate-fade' to='/future-city'>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/future-city'>
                 <NavigationMenuLink  asChild>
                   <p>{t("future-c")}</p>
                 </NavigationMenuLink>
               </NavLink>
-              <NavLink className='p-2 hover:bg-primary-hover hover:animate-fade' to='/lavida'>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/lavida'>
                 <NavigationMenuLink  asChild>
                   <p>{t("lavida-c")}</p>
                 </NavigationMenuLink>
               </NavLink>
-              <NavLink className='p-2 hover:bg-primary-hover hover:animate-fade' to='/madinaty'>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/madinaty'>
                 <NavigationMenuLink  asChild>
                   <p>{t("madinaty-c")}</p>
                 </NavigationMenuLink>
