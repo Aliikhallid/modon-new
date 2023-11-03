@@ -2,7 +2,7 @@ import modonLogo from '../assets/Modon-04.png'
 import {Button} from './ui/button'
 import {useTranslation} from 'react-i18next'
 import LangSwitcher from './sections/LangSwitcher';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@radix-ui/react-navigation-menu';
 import { NavigationMenuContent } from './ui/navigation-menu';
 import {
@@ -16,6 +16,9 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from './Enquire'
+import { ChevronDown } from 'lucide-react';
+
+
  
 
 const NavBar = () => {
@@ -50,35 +53,35 @@ const NavBar = () => {
         <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
+          <NavigationMenuTrigger><div className='flex items-center'>PROJECTS <ChevronDown/></div></NavigationMenuTrigger>
           <NavigationMenuTrigger className="menu-trig">PROJECTS</NavigationMenuTrigger>
           <NavigationMenuContent>
-          <ul className="flex flex-col item-start gap-4 justify-center items-center">
-              <li>
-                <NavigationMenuLink asChild>
-                  <a
-                    href="boroj"
-                  >
-                    {t("boroj")}
-                  </a>
+          <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
+            <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/bayti'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("bayti-c")}</p>
                 </NavigationMenuLink>
-              </li>
-              <li>
-                <NavigationMenuLink asChild>
-                  <a
-                    href="boroj"
-                  >
-                    {t("boroj")}
-                  </a>
+              </NavLink>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/buruj'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("buruj-c")}</p>
                 </NavigationMenuLink>
-              </li>              <li>
-                <NavigationMenuLink asChild>
-                  <a
-                    href="boroj"
-                  >
-                    {t("boroj")}
-                  </a>
+              </NavLink>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/future-city'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("future-c")}</p>
                 </NavigationMenuLink>
-              </li>
+              </NavLink>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/lavida'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("lavida-c")}</p>
+                </NavigationMenuLink>
+              </NavLink>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/madinaty'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("madinaty-c")}</p>
+                </NavigationMenuLink>
+              </NavLink>
               </ul>
           </NavigationMenuContent>
           </NavigationMenuItem>
