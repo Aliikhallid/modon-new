@@ -54,7 +54,7 @@ const NavBar = () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger>PROJECTS</NavigationMenuTrigger>
           <NavigationMenuContent>
-          <ul className="flex flex-col item-start gap-2">
+          <ul className="flex flex-col item-start gap-4 justify-center items-center">
               <li>
                 <NavigationMenuLink asChild>
                   <a

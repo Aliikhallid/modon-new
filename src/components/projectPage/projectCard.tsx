@@ -1,20 +1,22 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card'
-import { Home } from 'lucide-react'
+import { LucideProps } from 'lucide-react'
+import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
 interface CardProps{
     title:string;
     description:string;
+    icon?: FC<LucideProps>;
 }
-export default function ProjectCard({title,description}:CardProps) {
+export default function ProjectCard({title,description, icon: Icon}:CardProps) {
     const {t} = useTranslation();
   return (
     <Card>
     <CardHeader>
-      <Home/>
-      <CardTitle>{t(title)}</CardTitle></CardHeader>
+      {Icon && <Icon className='m-3' height={45} width={45}/>}
+      <CardTitle className='regular'>{t(title)}</CardTitle></CardHeader>
     <CardContent>
-      <CardDescription>
+      <CardDescription className='light'>
         {t(description)}
     </CardDescription>
     </CardContent>
