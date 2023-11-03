@@ -1,6 +1,7 @@
 import { Button } from "../ui/button"
 import NavBar from "../NavBar"
 import { useEffect, useState } from "react";
+import Footer from "../sections/Footer";
 
 const BaytiUpdates = () => {
   const path = "src/assets/ConstructionUpdates/Bayti/"
@@ -43,6 +44,7 @@ const BaytiUpdates = () => {
          </div>
          </div>
          </div>
+         <Footer />
          </div> 
   )
 }

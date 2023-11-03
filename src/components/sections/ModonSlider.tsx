@@ -34,31 +34,31 @@ const ModonSlider = () => {
       </div>
       </div>
       <div className="slider-container overflow-x-hidden regular">
-        <div className="slide z-20 text-white">
+        <div className="slide z-20 text-primary-color">
           <div className="slide-img"></div>
           <h1 className="slide-title m-1">Buruj Units</h1>
           <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>
           <p className='slide-parag'>Lorem, ipsum.</p>
         </div>
-        <div className="slide z-20 text-white">
+        <div className="slide z-20 text-primary-color">
           <div className="slide-img slide-img2"></div>
           <h1 className="slide-title m-1">Lavida Units</h1>
           <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>
           <p className='slide-parag'>Lorem, ipsum.</p>
         </div>
-        <div className="slide z-20 text-white">
+        <div className="slide z-20 text-primary-color">
            <div className="slide-img slide-img3"></div>
            <h1 className="slide-title m-1">Future City Units</h1>
            <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>
            <p className='slide-parag'>Lorem, ipsum.</p>
          </div>
-        <div className="slide z-20 text-white">
+        <div className="slide z-20 text-primary-color">
           <div className="slide-img slide-img4"></div>
           <h1 className="slide-title m-1">Madinaty Units</h1>
           <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>
           <p className='slide-parag'>Lorem, ipsum.</p>
         </div>
-        <div className="slide z-20 text-white">
+        <div className="slide z-20 text-primary-color">
           <div className="slide-img slide-img5"></div>
           <h1 className="slide-title m-1">Baity Units</h1>
           <p className='slide-parag'>Lorem ipsum dolor sit amet.</p>

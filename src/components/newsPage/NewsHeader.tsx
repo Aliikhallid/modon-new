@@ -1,5 +1,4 @@
 import modonLogo from '../../assets/modonlogo-removebg-preview.png';
-import { ArrowDownIcon } from '@radix-ui/react-icons';
 
 const NewsHeader = () => {
   let i = 0;
@@ -15,15 +14,14 @@ function typeWriter() {
   }
 }
   return (
-    <div className="flex w-full h-screen justify-center items-center bg-primary-color relative" onLoad={typeWriter}>
+    <div className="flex flex-col w-full h-60 justify-center items-center bg-primary-color relative" onLoad={typeWriter}>
     <div className="news-head-cont flex flex-col justify-center items-center">
-    <img src={modonLogo} alt="MODON" />
-    <h1 className="regular text-6xl">NEWS</h1>
+    {/* <img src={modonLogo} alt="MODON" height={20} width={20}/> */}
+    <h1 className="regular text-6xl m-2">NEWS</h1>
     </div>
     <p className="text-xl light w-1/2" id="type-writer"></p>
-    <div className="arrowdown absolute bottom-20 right-40 p-10 border rounded-full cursor-pointer">
-    <ArrowDownIcon className='arrow-icon relative' height={25} width={25} />
-    </div>
+    {/* <div className="arrowdown absolute bottom-20 right-40 p-10 border rounded-full cursor-pointer">
+    </div> */}
   </div>
   )
 }

@@ -1,6 +1,7 @@
 import { Button } from "../ui/button"
 import NavBar from "../NavBar"
 import { useEffect, useState } from "react";
+import Footer from "../sections/Footer";
 const LavidaUpdates = () => {
   const path = "src/assets/ConstructionUpdates/Lavida/"
   const [imagePaths, setImagePaths] = useState<string[]>([]);
@@ -39,6 +40,7 @@ const LavidaUpdates = () => {
          </div>
          </div>
          </div>
+         <Footer />
          </div> 
         
   )

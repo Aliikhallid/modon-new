@@ -19,7 +19,7 @@ const ProjectPage = () => {
       >
         <div>
         <p className="md:text-[14px] light text-[8px]">{t("overview")}</p>
-        <p className="md:text-[48px] text-[12px]">{t("boroj")}</p>
+        <p className="md:text-[48px] text-[12px]">{t("buruj-c")}</p>
         </div>
         <p className="md:text-[22px] md:max-w-[75rem] light text-[14px] max-w-[40rem]">
           {t("project-placeholder")}

@@ -13,8 +13,8 @@ export default function ProjectCard({title,description, icon: Icon}:CardProps) {
   return (
     <Card>
     <CardHeader>
-      {Icon && <Icon className='m-3' height={45} width={45}/>}
-      <CardTitle className='regular'>{t(title)}</CardTitle></CardHeader>
+      {Icon && <Icon className='m-3 text-primary-color' height={45} width={45}/>}
+      <CardTitle className='regular text-lg'>{t(title)}</CardTitle></CardHeader>
     <CardContent>
       <CardDescription className='light'>
         {t(description)}
