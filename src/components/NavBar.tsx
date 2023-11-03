@@ -26,7 +26,7 @@ const NavBar = () => {
   const navbar = document.querySelector('.navbar')
   // const topnav = document.querySelector('.top-nav');
   window.addEventListener('scroll', ()=> {
-    if(window.scrollY > 350) {
+    if(window.scrollY > 150) {
       navbar?.classList.add('bg-white')
       navbar?.classList.remove('text-white')
       navbar?.classList.remove('h-20')
@@ -92,7 +92,7 @@ const NavBar = () => {
         <a className="item cursor-pointer" href='/contact'>CONTACT US</a>
         <LangSwitcher />
         <AlertDialog>
-  <AlertDialogTrigger><Button className='z-10 bg-modon-blue text-white'>{t("enquire_string")}</Button></AlertDialogTrigger>
+  <AlertDialogTrigger><Button className='z-10 bg-primary-color text-white hover:text-primary-color'>{t("enquire_string")}</Button></AlertDialogTrigger>
   <AlertDialogContent>
     <AlertDialogHeader>
       <AlertDialogTitle className='regular text-3xl text-center m-5'>Enquire Now</AlertDialogTitle>

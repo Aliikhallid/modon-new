@@ -11,6 +11,8 @@ import FutureUpdates from './components/constructionPage/FutureUpdates.tsx'
 import LavidaUpdates from './components/constructionPage/LavidaUpdates.tsx'
 import MadinatyUpdates from './components/constructionPage/MadinatyUpdates.tsx'
 import BaytiUpdates from './components/constructionPage/BaytiUpdates.tsx'
+import CommercialPage from './components/CommercialPage.tsx'
+import BaytiMall from './components/commercialPage/BaytiMall.tsx'
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
       <Route path='/lavida-updates' element={<LavidaUpdates />}/>
       <Route path='/madinaty-updates' element={<MadinatyUpdates />}/>
       <Route path='/bayti-updates' element={<BaytiUpdates />}/>
+      <Route path='/commercial' element={<CommercialPage />}/>
+      <Route path='/bayti-mall' element={<BaytiMall />}/>
     </Routes>
      {/* <Slideshow /> */}
     </>

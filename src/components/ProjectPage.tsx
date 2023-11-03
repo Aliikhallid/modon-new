@@ -4,10 +4,15 @@ import ProjectBG from "../assets/ProjectBG.png";
 import { Button } from "./ui/button";
 import ProjectCard from "./projectPage/projectCard";
 import { Castle,Trees,LucideBuilding,Building2,Workflow,Hotel,ShoppingCart, Bike } from "lucide-react";
+import { useLayoutEffect } from "react";
 
 const ProjectPage = () => {
   const {t,i18n} = useTranslation();
   const isRTL = i18n.language === "ar"
+  
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
 
   return (
     <div className="project-page flex flex-col min-h-screen t-10 bg-white" dir={`${isRTL? "rtl":"ltr"}`}>

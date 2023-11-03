@@ -455,10 +455,12 @@ Button:hover {
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .footer {
   position: relative;
-  background-color: #a89c8c;
   div {
     z-index: 2;
   }
+}
+.hover-black:hover {
+  color: black !important;
 }
 // .footer::before {
 //   content: '';
@@ -520,7 +522,7 @@ Button:hover {
   color: #23193e;
 }
 .contact1 {
-  background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
+  background: url(./assets/LA-12-2.jpg) no-repeat center center/cover;
 }
 .career-cont {
   position: relative;
