@@ -2,7 +2,7 @@ import { Button } from "../ui/button"
 import NavBar from "../NavBar"
 import { useEffect, useState } from "react";
 const LavidaUpdates = () => {
-  const path = "src/assets/ConstructionUpdates/Future/"
+  const path = "src/assets/ConstructionUpdates/Lavida/"
   const [imagePaths, setImagePaths] = useState<string[]>([]);
   const loadImages = (year: string,month:string,lastImage:number) => {
     
