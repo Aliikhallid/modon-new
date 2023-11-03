@@ -27,6 +27,7 @@ module.exports = {
         primary: {
           DEFAULT: "var(--primary-color)",
           foreground: "var(--primary-foreground)",
+          hover: "var(--primary-hover)"
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
