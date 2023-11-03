@@ -22,6 +22,7 @@ import {
 } from "./ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Checkbox } from "./ui/checkbox";
+import { Textarea } from "./ui/textarea";
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -133,13 +134,17 @@ const NavBar = () => {
                     </SelectContent>
                   </Select>
                   <Input
-                    id="fullname"
+                    id="phonenumber"
                     placeholder="Enter Your Phone Number"
                     required
                     className="col-span-2"
                   />
                 </div>
 
+              </div>
+              <div className="flex flex-col justify-start gap-2">
+                <Label htmlFor="msg">YOUR MESSAGE</Label>
+                <Textarea id="msg" placeholder="Enter Your message" />
               </div>
               <div className="flex justify-start gap-2">
                   <Checkbox value=""/>
