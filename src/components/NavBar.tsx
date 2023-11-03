@@ -54,7 +54,6 @@ const NavBar = () => {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger><div className='flex items-center'>PROJECTS <ChevronDown/></div></NavigationMenuTrigger>
-          <NavigationMenuTrigger className="menu-trig">PROJECTS</NavigationMenuTrigger>
           <NavigationMenuContent>
           <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
             <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/bayti'>
