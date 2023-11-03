@@ -1,6 +1,7 @@
 import { Button } from "../ui/button"
 import NavBar from "../NavBar"
 import { useEffect, useState } from "react";
+import Footer from "../sections/Footer";
 const FutureUpdates = () => {
   const path = "src/assets/ConstructionUpdates/Future/"
   const [imagePaths, setImagePaths] = useState<string[]>([]);
@@ -39,6 +40,8 @@ const FutureUpdates = () => {
          </div>
          </div>
          </div>
+         <Footer />
+
          </div> 
         
   )

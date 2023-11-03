@@ -465,21 +465,10 @@ Button:hover {
 
 .footer {
   position: relative;
-  background-color: black;
+  background-color: #a89c8c;
 }
 .footer div {
   z-index: 2;
-}
-
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.2;
-  background: url(./assets/LA-05-2.jpg) no-repeat center center/cover;
 }
 
 .bg-modon-blue {
@@ -501,18 +490,7 @@ Button:hover {
 
 .bottom-overlay {
   position: relative;
-  background-color: black;
-}
-
-.bottom-overlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.2;
-  background: url(./assets/LA-05-2.jpg) no-repeat center center/cover;
+  background-color: #a89c8c;
 }
 
 .transitionn {
@@ -676,4 +654,8 @@ Button:hover {
   width: 20rem;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.rtl-dir {
+  direction: rtl;
 }/*# sourceMappingURL=App.css.map */

@@ -1,6 +1,7 @@
 import { Button } from "../ui/button"
 import NavBar from "../NavBar"
 import { useEffect, useState } from "react";
+import Footer from "../sections/Footer";
 const BurujUpdates = () => {
   const path = "src/assets/ConstructionUpdates/Buruj/"
   const [imagePaths, setImagePaths] = useState<string[]>([]);
@@ -45,6 +46,7 @@ const BurujUpdates = () => {
          </div>
          </div>
          </div>
+         <Footer />
          </div> 
         
   )

@@ -13,7 +13,7 @@ const NewsMain = () => {
           <p className="light mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab blanditiis delectus! Id, temporibus ut enim eos, minima dignissimos dolores eveniet autem alias nihil accusantium aliquid, rerum impedit quas? Sapiente hic incidunt, doloremque ullam consequatur provident quia adipisci suscipit commodi architecto aliquam dolore quod, debitis perferendis nam alias aut non?</p>
         </div>
       </div>
-      <div className="new w-full h-3/4 bg-white flex">
+      <div className="new-2 w-full h-3/4 bg-white flex">
         <div className="new1 bg-primary-color h-full w-1/2 flex justify-center items-center">
           <div className="new-img1 rounded"></div>
         </div>
@@ -23,7 +23,7 @@ const NewsMain = () => {
           <p className="light mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab blanditiis delectus! Id, temporibus ut enim eos, minima dignissimos dolores eveniet autem alias nihil accusantium aliquid, rerum impedit quas? Sapiente hic incidunt, doloremque ullam consequatur provident quia adipisci suscipit commodi architecto aliquam dolore quod, debitis perferendis nam alias aut non?</p>
         </div>
       </div>
-      <div className="new w-full h-3/4 bg-white flex">
+      <div className="new-3 w-full h-3/4 bg-white flex">
         <div className="new1 bg-primary-color h-full w-1/2 flex justify-center items-center">
           <div className="new-img1 rounded"></div>
         </div>
