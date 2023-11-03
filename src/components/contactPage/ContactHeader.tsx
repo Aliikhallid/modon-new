@@ -1,9 +1,12 @@
 import { Button } from "../ui/button"
+import modonLogo from '../../assets/Modon-White.png'
 
 const ContactHeader = () => {
   return (
     <div className="contact-page w-full flex flex-col justify-center items-center">
-       <div className="contact0 h-1/5 w-full bg-primary-color"></div>
+       <div className="contact0 h-60 w-full bg-primary-color flex justify-center items-center">
+    <img src={modonLogo} alt="MODON" height={120} width={120}/>
+       </div>
       <div className="cont-cont h-screen w-full flex">
       <div className="contact1 h-full w-1/2"></div>
       <div className="contact2 h-full w-1/2 bg-primary-color flex flex-col justify-center items-center regular text-white">

@@ -1,7 +1,7 @@
 
 const NewsMain = () => {
   return (
-    <div className="w-full h-screen bg-secondary-color">
+    <div className="w-full h-screen">
 
       <div className="new w-full h-3/4 bg-white flex">
         <div className="new1 bg-primary-color h-full w-1/2 flex justify-center items-center">

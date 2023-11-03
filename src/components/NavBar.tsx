@@ -16,8 +16,6 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from './Enquire'
-
-
  
 
 const NavBar = () => {
@@ -52,7 +50,7 @@ const NavBar = () => {
         <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>PROJECTS</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="menu-trig">PROJECTS</NavigationMenuTrigger>
           <NavigationMenuContent>
           <ul className="flex flex-col item-start gap-4 justify-center items-center">
               <li>
@@ -88,6 +86,7 @@ const NavBar = () => {
           </NavigationMenu>
         <a className="item cursor-pointer" href='/construction'>{t("home_string")}</a>
         <a className="item cursor-pointer" href='/news'>{t("news_string")}</a>
+        <a className="item cursor-pointer" href='/about-us'>ABOUT US</a>
         <a className="item cursor-pointer" href='/careers'>CAREERS</a>
         <a className="item cursor-pointer" href='/contact'>CONTACT US</a>
         <LangSwitcher />

@@ -1,6 +1,6 @@
 import { Button } from "../ui/button"
 import NavBar from "../NavBar"
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Footer from "../sections/Footer";
 const MadinatyUpdates = () => {
   const path = "src/assets/ConstructionUpdates/Madinaty/"
@@ -19,6 +19,12 @@ const MadinatyUpdates = () => {
   const handleButtonClick = (year: string,month:string,lastImage:number) => {
     loadImages(year,month,lastImage);
   };
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+function goBack() {
+  window.history.back();
+}
 
   useEffect(()=>{
     handleButtonClick("2016","July",17)
@@ -45,6 +51,7 @@ const MadinatyUpdates = () => {
          <div className="flex flex-wrap justify-center gap-10 mt-5">
           {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" style= {{backgroundImage: `url(${p})`}}></div>))}
          </div>
+        <Button onClick={goBack} className='hover-black w-40 mt-4'>Previous Page</Button>
          </div>
          </div>
          <Footer />

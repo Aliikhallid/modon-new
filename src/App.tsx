@@ -13,6 +13,7 @@ import MadinatyUpdates from './components/constructionPage/MadinatyUpdates.tsx'
 import BaytiUpdates from './components/constructionPage/BaytiUpdates.tsx'
 import CommercialPage from './components/CommercialPage.tsx'
 import BaytiMall from './components/commercialPage/BaytiMall.tsx'
+import AboutPage from './components/AboutPage.tsx'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Route path='/bayti-updates' element={<BaytiUpdates />}/>
       <Route path='/commercial' element={<CommercialPage />}/>
       <Route path='/bayti-mall' element={<BaytiMall />}/>
+      <Route path='/about-us' element={<AboutPage />}/>
     </Routes>
      {/* <Slideshow /> */}
     </>
