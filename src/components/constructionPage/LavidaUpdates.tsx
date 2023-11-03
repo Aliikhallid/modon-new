@@ -1,101 +1,46 @@
 import { Button } from "../ui/button"
 import NavBar from "../NavBar"
-
+import { useEffect, useState } from "react";
 const LavidaUpdates = () => {
-  const gallery1 = document.querySelector('.gallery1');
-  const gallery2 = document.querySelector('.gallery2');
-  const gallery3 = document.querySelector('.gallery3');
-  const showAugust = () => {
-    gallery2?.classList.remove('opacity-100');
-    gallery3?.classList.remove('opacity-100');
-    gallery2?.classList.add('opacity-0');
-    gallery3?.classList.add('opacity-0');
-   gallery1?.classList.remove('opacity-0');
-   gallery1?.classList.add('opacity-100');
- }
- const showJanuary = () => {
-   gallery3?.classList.remove('opacity-100');
-   gallery1?.classList.remove('opacity-100');
-   gallery1?.classList.add('opacity-0');
-   gallery3?.classList.add('opacity-0');
-   gallery2?.classList.remove('opacity-0');
-   gallery2?.classList.add('opacity-100');
- }
- const showSep = () => {
-   gallery2?.classList.remove('opacity-100');
-   gallery1?.classList.remove('opacity-100');
-   gallery1?.classList.add('opacity-0');
-   gallery2?.classList.add('opacity-0');
-   gallery3?.classList.remove('opacity-0');
-   gallery3?.classList.add('opacity-100');
- }
+  const path = "src/assets/ConstructionUpdates/Lavida/"
+  const [imagePaths, setImagePaths] = useState<string[]>([]);
+  const loadImages = (year: string,month:string,lastImage:number) => {
+    
+      const paths = [];
+      for (let i = 0; i <= lastImage; i++) {
+        paths.push(`${path}/${year}/${month}/${i}.webp`);
+      }
+      setImagePaths(paths);
+    
+    
+  };
 
+  const handleButtonClick = (year: string,month:string,lastImage:number) => {
+    loadImages(year,month,lastImage);
+  };
+
+  useEffect(()=>{
+    handleButtonClick("2022","January",30)
+  },[])
   return (
-    <div className="buruj-updates w-full flex flex-col justify-start items-center relative">
+    <div className="buruj-updates w-full h-fit flex flex-col justify-start items-center relative">
       <NavBar />
     {/* <img src={burujLogo} alt="MODON" height={200} width={200} /> */}
     <h1 className='regular text-5xl relative mt-40'>LAVIDA UPDATES</h1>
     <div className="constructs flex">
       <div className="construct1 flex flex-col justify-center items-center m-5">
         <div className="buruj-btns">
-         <Button className='bg-primary-color m-2' onClick={showAugust}>August '23</Button>
-         <Button className='bg-primary-color m-2' onClick={showJanuary}>January '22</Button>
-         <Button className='bg-primary-color m-2' onClick={showSep}>Septemper '22</Button>
+         <Button className='bg-primary-color m-2' onClick={()=>handleButtonClick("2022","January",30)}>October 2022</Button>
+         <Button className='bg-primary-color m-2' onClick={()=>handleButtonClick("2023","August",11)}>August 2023</Button>
+
         </div>
-         <div className="gallery1 flex flex-col gap-10 transition-all absolute bottom-16">
-          <div className="gallery-gallery flex gap-10">
-          <div className="buruj-img"></div>
-          <div className="buruj-img"></div>
-          <div className="buruj-img"></div>
-          </div>
-          <div className="gallery-gallery flex gap-10">
-          <div className="buruj-img"></div>
-          <div className="buruj-img"></div>
-          <div className="buruj-img"></div>
-          </div>
-          <div className="gallery-gallery flex gap-10">
-          <div className="buruj-img"></div>
-          <div className="buruj-img"></div>
-          <div className="buruj-img"></div>
-          </div>
+         <div className="flex flex-wrap justify-center gap-10 mt-5">
+          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" style= {{backgroundImage: `url(${p})`}}></div>))}
          </div>
-         <div className="gallery2 flex flex-col gap-10 transition-all absolute bottom-16 opacity-0">
-          <div className="gallery-gallery flex gap-10">
-          <div className="buruj2-img"></div>
-          <div className="buruj2-img"></div>
-          <div className="buruj2-img"></div>
-          </div>
-          <div className="gallery-gallery flex gap-10">
-          <div className="buruj2-img"></div>
-          <div className="buruj2-img"></div>
-          <div className="buruj2-img"></div>
-          </div>
-          <div className="gallery-gallery flex gap-10">
-          <div className="buruj2-img"></div>
-          <div className="buruj2-img"></div>
-          <div className="buruj2-img"></div>
-          </div>
          </div>
-         <div className="gallery3 flex flex-col gap-10 transition-all absolute bottom-16 opacity-0">
-          <div className="gallery-gallery flex gap-10">
-          <div className="buruj3-img"></div>
-          <div className="buruj3-img"></div>
-          <div className="buruj3-img"></div>
-          </div>
-          <div className="gallery-gallery flex gap-10">
-          <div className="buruj3-img"></div>
-          <div className="buruj3-img"></div>
-          <div className="buruj3-img"></div>
-          </div>
-          <div className="gallery-gallery flex gap-10">
-          <div className="buruj3-img"></div>
-          <div className="buruj3-img"></div>
-          <div className="buruj3-img"></div>
-          </div>
          </div>
-      </div>
-      </div>
-  </div>
+         </div> 
+        
   )
 }
 

@@ -575,27 +575,6 @@ Button:hover {
   opacity: 0.2;
   background: url(./assets/LA-05-2.jpg)no-repeat center center/cover;
 }
-.buruj-img {
-  background: url(./assets/FU-01.jpg)no-repeat center center/cover;
-  height: 15rem;
-  width: 20rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.buruj2-img {
-  background: url(./assets/FU-05.jpg)no-repeat center center/cover;
-  height: 15rem;
-  width: 20rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.buruj3-img {
-  background: url(./assets/FU-04.jpg)no-repeat center center/cover;
-  height: 15rem;
-  width: 20rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
 .construction-updates {
   height: 180vh;
   background-color: #06316c6b;
@@ -623,4 +602,39 @@ Button:hover {
 }
 .gallery2 {
   transition: all 1s ease-in-out;
+}
+.bayti-img {
+  background: url(./assets/BAI-12.jpg)no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.future-img {
+  background: url(./assets/FU-04.jpg)no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.lavida-img {
+  background: url(./assets/Lavida-out-3.jpg)no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.madinaty-img {
+  background: url(./assets/Madinaty-06.jpg)no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.buruj-img {
+  background: url(./assets/Buruj-01.jpg)no-repeat center center/cover;
+  height: 15rem;
+  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
