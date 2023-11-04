@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import ProjectCard from "./projectPage/projectCard";
 import { Castle,Trees,LucideBuilding,Building2,Workflow,Hotel,ShoppingCart, Bike } from "lucide-react";
 import { useLayoutEffect } from "react";
+import Enquire from "./sections/Enquire";
 
 const ProjectPage = () => {
   const {t,i18n} = useTranslation();
@@ -44,7 +45,7 @@ const ProjectPage = () => {
 </div>
         </div> 
         <div className="flex flex-col gap-7 text-[24px] text-primary">
-        <Button size="lg" >Inquire Now</Button>
+        <Enquire addNow v="default" enqq />
         <Button size="lg">Construction update</Button>
         </div>
         </div>

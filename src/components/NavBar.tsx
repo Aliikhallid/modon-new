@@ -1,5 +1,4 @@
 import modonLogo from "../assets/Modon-04.png";
-import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
 import LangSwitcher from "./sections/LangSwitcher";
 import { Link } from "react-router-dom";
@@ -11,22 +10,13 @@ import {
   NavigationMenuTrigger,
 } from "@radix-ui/react-navigation-menu";
 import { NavigationMenuContent } from "./ui/navigation-menu";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "./ui/dialog";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
-import { Checkbox } from "./ui/checkbox";
-import { Textarea } from "./ui/textarea";
+import Enquire from "./sections/Enquire";
+
 
 const NavBar = () => {
   const { t } = useTranslation();
   const navbar = document.querySelector(".navbar");
+  const menuTrig = document.querySelector(".menu-trig");
   // const topnav = document.querySelector('.top-nav');
   window.addEventListener("scroll", () => {
     if (window.scrollY > 150) {
@@ -36,7 +26,9 @@ const NavBar = () => {
       navbar?.classList.add("h-16");
       navbar?.classList.add("text-black");
       navbar?.classList.add("box-shadow-nav");
+      menuTrig?.classList.add("snd-color-imp");
     } else {
+      menuTrig?.classList.remove("snd-color-imp");
       navbar?.classList.remove("box-shadow-nav");
       navbar?.classList.remove("bg-white");
       navbar?.classList.remove("h-16");
@@ -63,7 +55,7 @@ const NavBar = () => {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="menu-trig">
+              <NavigationMenuTrigger className="menu-trig transition-all duration-700">
                 PROJECTS
               </NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -104,57 +96,7 @@ const NavBar = () => {
           CONTACT US
         </a>
         <LangSwitcher />
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button variant="outline">{t("enquire_string")}</Button>
-          </DialogTrigger>
-          <DialogContent className="sm:max-w-[425px]">
-            <DialogHeader>
-              <DialogTitle>GET IN TOUCH</DialogTitle>
-            </DialogHeader>
-            <form className="flex flex-col justify-start gap-5 py-4 light">
-              <div className="flex flex-col justify-start gap-2">
-                <Label htmlFor="fullname">FULL NAME</Label>
-                <Input id="fullname" placeholder="Enter Full Name" required />
-              </div>
-              <div className="flex flex-col justify-start gap-2">
-                <Label htmlFor="email">EMAIL ADDRESS</Label>
-                <Input id="fullname" placeholder="Enter Your Email" required />
-              </div>
-              <div className="flex flex-col justify-start gap-2">
-                <Label htmlFor="email">PHONE NUMBER</Label>
-                <div className="grid grid-cols-3 gap-4">
-                  <Select required>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select Code" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="+20">+20</SelectItem>
-                      <SelectItem value="+971">+971</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <Input
-                    id="phonenumber"
-                    placeholder="Enter Your Phone Number"
-                    required
-                    className="col-span-2"
-                  />
-                </div>
-
-              </div>
-              <div className="flex flex-col justify-start gap-2">
-                <Label htmlFor="msg">YOUR MESSAGE</Label>
-                <Textarea id="msg" placeholder="Enter Your message" />
-              </div>
-              <div className="flex justify-start gap-2">
-                  <Checkbox value=""/>
-                <Label htmlFor="email">Keep me updated on news and offers.</Label>
-              </div>
-              <Button type="submit" className="w-full">SUBMIT</Button>
-
-            </form>
-          </DialogContent>
-        </Dialog>
+        <Enquire />
       </div>
     </div>
   );
