@@ -12,6 +12,28 @@ import {
 import { NavigationMenuContent } from "./ui/navigation-menu";
 import Enquire from "./sections/Enquire";
 
+import modonLogo from '../assets/Modon-04.png'
+import {Button} from './ui/button'
+import {useTranslation} from 'react-i18next'
+import LangSwitcher from './sections/LangSwitcher';
+import { Link, NavLink } from 'react-router-dom';
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@radix-ui/react-navigation-menu';
+import { NavigationMenuContent } from './ui/navigation-menu';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from './Enquire'
+import { ChevronDown } from 'lucide-react';
+
+
+ 
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -78,6 +100,39 @@ const NavBar = () => {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger><div className='flex items-center'>PROJECTS <ChevronDown/></div></NavigationMenuTrigger>
+          <NavigationMenuContent>
+          <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
+            <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/bayti'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("bayti-c")}</p>
+                </NavigationMenuLink>
+              </NavLink>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/buruj'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("buruj-c")}</p>
+                </NavigationMenuLink>
+              </NavLink>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/future-city'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("future-c")}</p>
+                </NavigationMenuLink>
+              </NavLink>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/lavida'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("lavida-c")}</p>
+                </NavigationMenuLink>
+              </NavLink>
+              <NavLink className='p-1 hover:bg-primary-hover hover:animate-fade' to='/madinaty'>
+                <NavigationMenuLink  asChild>
+                  <p>{t("madinaty-c")}</p>
+                </NavigationMenuLink>
+              </NavLink>
+              </ul>
+          </NavigationMenuContent>
+          </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
         <a className="item cursor-pointer" href="/construction">
