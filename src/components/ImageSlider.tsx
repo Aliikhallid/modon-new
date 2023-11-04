@@ -45,7 +45,7 @@ export default function ImageSlider({imgUrls, className=''}:ImageSliderProps) {
             onClick={() => gotoImage(slideIndex)}
             className='text-2xl cursor-pointer'
           >
-            <Dot />
+            <Dot size={44} color={`${slideIndex == imageIndex? "#06316c":"#FFFFFF" }`} strokeWidth={3} />
           </div>
         ))}
       </div>
