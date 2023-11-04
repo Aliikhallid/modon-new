@@ -1,35 +1,11 @@
-import modonLogo from "../assets/Modon-04.png";
-import { useTranslation } from "react-i18next";
-import LangSwitcher from "./sections/LangSwitcher";
-import { Link } from "react-router-dom";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@radix-ui/react-navigation-menu";
-import { NavigationMenuContent } from "./ui/navigation-menu";
 import Enquire from "./sections/Enquire";
 
 import modonLogo from '../assets/Modon-04.png'
-import {Button} from './ui/button'
 import {useTranslation} from 'react-i18next'
 import LangSwitcher from './sections/LangSwitcher';
 import { Link, NavLink } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@radix-ui/react-navigation-menu';
 import { NavigationMenuContent } from './ui/navigation-menu';
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from './Enquire'
 import { ChevronDown } from 'lucide-react';
 
 
@@ -75,31 +51,6 @@ const NavBar = () => {
           HOME
         </a>
         <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="menu-trig transition-all duration-700">
-                PROJECTS
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="flex flex-col item-start gap-4 justify-center items-center">
-                  <li>
-                    <NavigationMenuLink asChild>
-                      <a href="boroj">{t("boroj")}</a>
-                    </NavigationMenuLink>
-                  </li>
-                  <li>
-                    <NavigationMenuLink asChild>
-                      <a href="boroj">{t("boroj")}</a>
-                    </NavigationMenuLink>
-                  </li>{" "}
-                  <li>
-                    <NavigationMenuLink asChild>
-                      <a href="boroj">{t("boroj")}</a>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger><div className='flex items-center'>PROJECTS <ChevronDown/></div></NavigationMenuTrigger>
