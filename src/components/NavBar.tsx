@@ -1,12 +1,13 @@
 import Enquire from "./sections/Enquire";
-
-import modonLogo from '../assets/Modon-04.png'
 import {useTranslation} from 'react-i18next'
+import modonLogoWhite from '../assets/Modon-04.png'
+import modonLogoBlack from '../assets/cropped-logo-coloured-1-pco5cfz1mxysmj28om452w38747priw3aun41caz28.webp'
 import LangSwitcher from './sections/LangSwitcher';
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@radix-ui/react-navigation-menu';
 import { NavigationMenuContent } from './ui/navigation-menu';
 import { ChevronDown } from 'lucide-react';
+import { useState } from "react";
 
 
  
@@ -15,6 +16,8 @@ const NavBar = () => {
   const { t } = useTranslation();
   const navbar = document.querySelector(".navbar");
   const menuTrig = document.querySelector(".menu-trig");
+  const logo = document.querySelector('.logo');
+  const [modonLogo, setLogo] = useState(modonLogoWhite);
   // const topnav = document.querySelector('.top-nav');
   window.addEventListener("scroll", () => {
     if (window.scrollY > 150) {
@@ -25,7 +28,13 @@ const NavBar = () => {
       navbar?.classList.add("text-black");
       navbar?.classList.add("box-shadow-nav");
       menuTrig?.classList.add("snd-color-imp");
+      logo?.classList.remove('h-14');
+      logo?.classList.add('h-12');
+      setLogo(modonLogoBlack)
     } else {
+      logo?.classList.remove('h-12');
+      logo?.classList.add('h-14');
+      setLogo(modonLogoWhite)
       menuTrig?.classList.remove("snd-color-imp");
       navbar?.classList.remove("box-shadow-nav");
       navbar?.classList.remove("bg-white");
