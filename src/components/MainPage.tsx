@@ -12,11 +12,6 @@ const MainPage = () => {
 });
   return (
     <>
-         <div className=' relative  h-screen flex items-center regular mt-10'>
-    <ImageSlider imgUrls={["src/assets/ConstructionUpdates/Bayti/2018/July/0.webp","src/assets/ConstructionUpdates/Bayti/2018/July/1.webp","src/assets/ConstructionUpdates/Bayti/2018/July/2.webp"]}/>
-
-    </div>
-
      <Header />
      <SecondPage />
      <ModonProps />
