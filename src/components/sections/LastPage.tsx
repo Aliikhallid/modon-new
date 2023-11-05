@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import TitleDivider from "../TitleDivider"
+import TitleDivider from "./TitleDivider"
 import dig from "../../assets/digging.png"
 import credit from "../../assets/credit-card.png"
 import document from "../../assets/document-signed.png"

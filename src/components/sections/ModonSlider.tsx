@@ -1,4 +1,4 @@
-import TitleDivider from '../TitleDivider'
+import TitleDivider from './TitleDivider'
 import arrowRight from '../../assets/arrow-right.png'
 import arrowLeft from '../../assets/arrow-left.png'
 

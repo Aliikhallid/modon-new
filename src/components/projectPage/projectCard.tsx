@@ -7,11 +7,12 @@ interface CardProps{
     title:string;
     description:string;
     icon?: FC<LucideProps>;
+    isWide?: boolean;
 }
 export default function ProjectCard({title,description, icon: Icon}:CardProps) {
     const {t} = useTranslation();
   return (
-    <Card>
+    <Card className="card w-52">
     <CardHeader>
       {Icon && <Icon className='m-3 text-primary-color' height={45} width={45}/>}
       <CardTitle className='regular text-lg'>{t(title)}</CardTitle></CardHeader>
