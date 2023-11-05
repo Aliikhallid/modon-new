@@ -23,8 +23,8 @@ const Enquire = ({addNow = false, v = "outline", enqq = false}) => {
   return (
     <div>
       <Dialog>
-          <DialogTrigger asChild>
-            {addNow ? <Button className={enq} variant={v}>{t("enquire-now")}</Button> : <Button className={enq} variant={v}>{t("enquire_string")}</Button>}
+          <DialogTrigger asChild className="regular">
+            {addNow ? <Button size="lg" className={enq} variant={v}>{t("enquire-now")}</Button> : <Button className={enq} variant={v}>{t("enquire_string")}</Button>}
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
@@ -47,8 +47,8 @@ const Enquire = ({addNow = false, v = "outline", enqq = false}) => {
                       <SelectValue placeholder="Select Code" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="+20">+20</SelectItem>
-                      <SelectItem value="+971">+971</SelectItem>
+                      <SelectItem value="+20" className="phone-code">+20</SelectItem>
+                      <SelectItem value="+971" className="phone-code">+971</SelectItem>
                     </SelectContent>
                   </Select>
                   <Input
@@ -68,7 +68,7 @@ const Enquire = ({addNow = false, v = "outline", enqq = false}) => {
                   <Checkbox value=""/>
                 <Label htmlFor="email">Keep me updated on news and offers.</Label>
               </div>
-              <Button type="submit" className="w-full">SUBMIT</Button>
+              <Button type="submit" className="w-full bg-white text-primary-color hover:bg-white/80">SUBMIT</Button>
 
             </form>
           </DialogContent>

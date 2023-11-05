@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import NavBar from "./NavBar";
+import CountUp from 'react-countup';
 // import modonWhite from '../assets/Modon-White.png'
 import { useLayoutEffect,useState } from "react";
 import charimanImg from '../assets/Hardan-Noori-Al-Handalinner-new-1-1.jpg'
@@ -146,19 +147,19 @@ const AboutPage = () => {
   }
   
   return (
-    <div className="buruj-updates w-full h-fit flex flex-col justify-start items-center relative">
+    <div className="bg-primary-multiply-color w-full h-fit flex flex-col justify-start items-center relative">
       <NavBar />
     <h1 className='regular text-xl relative mt-40'>ABOUT US</h1>
     {/* <img src={modonWhite} alt="MODON" height={150} width={150} /> */}
     <div className="constructs flex w-full">
       <div className="construct1 flex flex-col justify-center items-center">
-        <div className="buruj-btns">
-         <Button className='bg-primary-color m-2 hover-primary-color' onClick={setOver}>Overview</Button>
-         <Button className='bg-primary-color m-2 hover-primary-color' onClick={setOver2}>Chairman's Message</Button>
-         <Button className='bg-primary-color m-2 hover-primary-color' onClick={setOver3}>Mission & Vision</Button>
-         <Button className='bg-primary-color m-2 hover-primary-color' onClick={setOver4}>Values & Distinction</Button>
-         <Button className='bg-primary-color m-2 hover-primary-color' onClick={setOver5}>Commitment & Focus</Button>
-         <Button className='bg-primary-color m-2 hover-primary-color' onClick={setOver6}>Board of Directors</Button>
+        <div className="buruj-btns flex flex-wrap justify-center items-center">
+         <Button className='m-2 hover-primary-color upBtn' onClick={setOver}>Overview</Button>
+         <Button className='m-2 hover-primary-color upBtn' onClick={setOver2}>Chairman's Message</Button>
+         <Button className='m-2 hover-primary-color upBtn' onClick={setOver3}>Mission & Vision</Button>
+         <Button className='m-2 hover-primary-color upBtn' onClick={setOver4}>Values & Distinction</Button>
+         <Button className='m-2 hover-primary-color upBtn' onClick={setOver5}>Commitment & Focus</Button>
+         <Button className='m-2 hover-primary-color upBtn' onClick={setOver6}>Board of Directors</Button>
         </div>
          <div className="flex flex-wrap justify-center gap-5 my-20 animate-fade-down animate-duration-1000 animate-delay-500">
           <div className="flex flex-col gap-5 mb-10 justify-center items-center">
@@ -257,10 +258,10 @@ const AboutPage = () => {
           <AboutCard icon={LeafyGreen} title="Building The Future" description="The future is not ours to await; it’s ours to create. Those who plan for future transformations are best placed to design and control the path ahead of us all" />
           </div> : ''}
           {showw ? <div className="fixed-image h-72  w-full flex justify-around items-center">
-            <h1 className="text-center light"><span className="regular text-8xl">5</span> <br/> TOTAL PROJECTS</h1>
-            <h1 className="text-center light"><span className="regular text-8xl">2300</span> <br/> HOUSES BUILT</h1>
-            <h1 className="text-center light"><span className="regular text-8xl">235</span> <br/> QUALIFIED WORKERS</h1>
-            <h1 className="text-center light"><span className="regular text-8xl">2</span> <br/> AWARDS</h1>
+            <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={5} delay={2} duration={3}/></span> <br/> TOTAL PROJECTS</h1>
+            <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={2300} delay={2} duration={3}/></span> <br/> HOUSES BUILT</h1>
+            <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={235} delay={2} duration={3}/></span> <br/> QUALIFIED WORKERS</h1>
+            <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={2} delay={2} duration={3}/></span> <br/> AWARDS</h1>
           </div> : ''}
          </div>
          </div>

@@ -9,6 +9,7 @@
 }
 :root {
   --primary-color: #06316c;
+  --primary-multiply-color: #06316c6b;
   --secondary-color: #B72027;
 }
 @font-face {
@@ -518,8 +519,10 @@ Button:hover {
 .contact-page {
   height: 130vh;
 }
-.contact-header {
-  color: #23193e;
+.phone-code {
+  cursor: pointer;
+  background-color: white;
+  color: var(--primary-color);
 }
 .contact1 {
   background: url(./assets/LA-12-2.jpg) no-repeat center center/cover;
@@ -578,16 +581,12 @@ Button:hover {
     }
   }
 }
-.buruj-updates {
-  height: 180vh;
-  background-color: #06316c6b;
-  Button {
+.upBtn {
     background-color: white;
     color: #06316c;
-    &:hover {
-      color: white;
-    }
-  }
+  &:hover {
+    color: white;
+}
 }
 .gallery1 {
   transition: all 1s ease-in-out;
@@ -735,6 +734,114 @@ Button:hover {
     border: none !important;
   }
 } 
-.snd-color-imp {
-  color: black !important;
+.project-bg {
+  position: relative;
+  div {
+    z-index: 2;
+  }
+  p {
+    z-index: 5;
+  }
+}
+.project-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: url(./assets/ProjectBG.png)no-repeat center center/cover;  
+}
+.project1-img {
+  width: 85%;
+  height: 30rem;
+  position: relative;
+  // background-color: black;
+}
+.project1-title {
+  z-index: 2;
+}
+.project1-des {
+  z-index: 2;
+}
+.project2-title {
+  z-index: 2;
+}
+.project2-des {
+  z-index: 2;
+}
+.project1-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  background: url(./assets/Buruj-Sorouh.webp)no-repeat center center/cover; 
+}
+.btnpr {
+  z-index: 2;
+}
+.project2-img {
+  width: 85%;
+  height: 30rem;
+  position: relative;
+  // background-color: black;
+}
+.project2-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  background: url(./assets/Buruj-Hadeer.webp)no-repeat center center/cover; 
+}
+.bayti-1 {
+  height: 10rem;
+  width: 10rem;
+}
+.bayti-img1 {
+  height: 15rem;
+  width: 15rem;
+  background:url(./assets/jory-min.webp)no-repeat center center/cover;
+}
+.bayti-img2 {
+  height: 15rem;
+  width: 15rem;
+  background:url(./assets/Lotus-01-min.webp)no-repeat center center/cover;
+}
+.bayti-img3 {
+  height: 15rem;
+  width: 15rem;
+  background:url(./assets/narjis-min.webp)no-repeat center center/cover;
+}
+.bayti-img4 {
+  height: 15rem;
+  width: 15rem;
+  background:url(./assets/viola-min.webp)no-repeat center center/cover;
+}
+.bayti-img5 {
+  height: 15rem;
+  width: 15rem;
+  background:url(./assets/yasmin-min.webp)no-repeat center center/cover;
+}
+.bayti-2 {
+  height: 10rem;
+  width: 10rem;
+}
+.bayti-3 {
+  height: 10rem;
+  width: 10rem;
+}
+.bayti-4 {
+  height: 10rem;
+  width: 10rem;
+}
+.bayti-5 {
+  height: 10rem;
+  width: 10rem;
 }
