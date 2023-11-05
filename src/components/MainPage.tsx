@@ -5,6 +5,7 @@ import LastPage from './sections/LastPage'
 import Footer from './sections/Footer'
 import SecondPage from './sections/SecondPage'
 import { useLayoutEffect } from 'react'
+import ImageSlider from './ImageSlider'
 const MainPage = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
