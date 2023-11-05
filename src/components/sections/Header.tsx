@@ -5,11 +5,14 @@ import headerVideo from '../../assets/The sustainable environment is the goal of
 import { Button } from '../ui/button';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import FilterComp from '../FilterComp';
+import { useTranslation } from 'react-i18next';
 
 
 
 
 const Header = () => {
+
+  const {t} = useTranslation()
   return (
     <div className='header-container relative h-screen flex flex-col regular'>
       <NavBar />
