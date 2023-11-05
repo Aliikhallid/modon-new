@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
-import NavBar from "./NavBar";
-import { Button } from "./ui/button";
-import ProjectCard from "./projectPage/projectCard";
+import NavBar from "../NavBar";
+import { Button } from "../ui/button";
+import ProjectCard from "./projectCard";
 import { Castle,Trees,LucideBuilding,Building2,Workflow,ShoppingCart, School2, School, CarFront, Car, Building, TrainFront, Store } from "lucide-react";
 // import { useLayoutEffect } from "react";
-import Enquire from "./sections/Enquire";
+import Enquire from "../sections/Enquire";
 import { SewingPinFilledIcon } from "@radix-ui/react-icons";
-import Footer from "./sections/Footer";
+import Footer from "../sections/Footer";
 import { useLayoutEffect } from "react";
 
 const BaytiProject = () => {

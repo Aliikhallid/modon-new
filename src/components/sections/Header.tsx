@@ -20,7 +20,7 @@ const Header = () => {
       <h1>Modon, <span className=''>IRAQ</span></h1>
       <h1 className='regular text-6xl m-1'>Explore Modon Properties</h1>
       <p className='text-gray-400 w-1/2 text-center m-3 light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro temporibus, debitis earum optio veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa animi aut iste dicta sapiente! A!</p>
-      <Button className='exp-btn text-md text-primary-color'>Explore Now <ArrowRightIcon className='explore-ic' /></Button>
+      <Button className='exp-btn text-md bg-slate-100 text-primary-color'>Explore Now <ArrowRightIcon className='explore-ic' /></Button>
       <div className="props-filter-container bg-white text-black light w-11/12">
         <div className="props-filter-one flex border-r border-gray-500 border-solid m-4 text-left w-1/5 relative">
           <section className='mr-10'>

@@ -1,7 +1,7 @@
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
 import MainPage from './components/MainPage.tsx'
-import BurujProject from './components/BurujProject.tsx'
+import BurujProject from './components/projectPage/BurujProject.tsx'
 import NewsPage from './components/NewsPage.tsx'
 import ContactPage from './components/ContactPage.tsx'
 import CareersPage from './components/CareersPage.tsx'
@@ -14,10 +14,12 @@ import BaytiUpdates from './components/constructionPage/BaytiUpdates.tsx'
 import CommercialPage from './components/CommercialPage.tsx'
 import BaytiMall from './components/commercialPage/BaytiMall.tsx'
 import AboutPage from './components/AboutPage.tsx'
-import LavidaProject from './components/LavidaProject.tsx'
-import BaytiProject from './components/BaytiProject.tsx'
-import MadinatyProject from './components/MadinatyProject.tsx'
-import FutureProject from './components/FutureProject.tsx'
+import LavidaProject from './components/projectPage/LavidaProject.tsx'
+import BaytiProject from './components/projectPage/BaytiProject.tsx'
+import MadinatyProject from './components/projectPage/MadinatyProject.tsx'
+import FutureProject from './components/projectPage/FutureProject.tsx'
+import HadeerTowers from './components/projectPage/HadeerTowers.tsx'
+import SorouhTowers from './components/projectPage/SorouhTowers.tsx'
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
       <Route path='/bayti' element={<BaytiProject />}/>
       <Route path='/madinaty' element={<MadinatyProject />}/>
       <Route path='/future-city' element={<FutureProject />}/>
+      <Route path='/hadeer-towers' element={<HadeerTowers />}/>
+      <Route path='/sorouh-towers' element={<SorouhTowers />}/>
       <Route path='/news' element={<NewsPage />}/>
       <Route path='/contact' element={<ContactPage />}/>
       <Route path='/careers' element={<CareersPage />}/>

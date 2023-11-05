@@ -1,5 +1,5 @@
 import { Button } from '../ui/button'
-import TitleDivider from '../TitleDivider'
+import TitleDivider from './TitleDivider'
 
 const ModonProps = () => {
   return (
