@@ -43,7 +43,6 @@ function goBack() {
          <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2022","January",11)}>January 2022</Button>
          <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2022","February",17)}>February 2022</Button>
          <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2023","August",11)}>August 2023</Button>
-
         </div>
          <div className="flex flex-wrap justify-center gap-10 mt-5">
           {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" style= {{backgroundImage: `url(${p})`}}></div>))}
