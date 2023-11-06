@@ -109,7 +109,7 @@ const setOver8 = () => {
 }
 
 const setOver9 = () => {
-  setTitle('Common Quetions');
+  setTitle('Frequently Asked Questions');
   setOverview('Modon is one of the most prominent and successful companies in modern real estate development in Iraq and operates under the umbrella of Al Handal International Group.')
   setShow(9);
   setShoww(false);

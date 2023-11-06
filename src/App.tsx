@@ -21,6 +21,7 @@ import FutureProject from './components/projectPage/FutureProject.tsx'
 import HadeerTowers from './components/projectPage/HadeerTowers.tsx'
 import SorouhTowers from './components/projectPage/SorouhTowers.tsx'
 import ImageGallery from './components/ImageGallery.tsx'
+import VideoGallery from './components/VideoGallery.tsx'
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <Route path='/bayti-mall' element={<BaytiMall />}/>
       <Route path='/about-us' element={<AboutPage />}/>
       <Route path='/image-gallery' element={<ImageGallery />}/>
+      <Route path='/video-gallery' element={<VideoGallery />}/>
 
     </Routes>
      {/* <Slideshow /> */}

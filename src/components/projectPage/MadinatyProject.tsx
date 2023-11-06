@@ -8,6 +8,7 @@ import Enquire from "../sections/Enquire";
 import { SewingPinFilledIcon } from "@radix-ui/react-icons";
 import Footer from "../sections/Footer";
 import { useLayoutEffect } from "react";
+import { Link } from "react-router-dom";
 
 const MadinatyProject = () => {
   const {t,i18n} = useTranslation();
@@ -67,8 +68,7 @@ const MadinatyProject = () => {
        <ProjectCard icon={School2} title="Security" description="Police Station & Fire Station" />
       </div>
     </div>
-    <div className="flex flex-wrap gap-10 h-fit w-full py-10 bg-white justify-center items-center relative">
-      <div className="w-full flex flex-wrap justify-around items-center text-primary-color">
+    <div className="flex flex-wrap gap-10 h-fit w-full py-10 bg-white text-primary-color justify-center items-center relative">
       <div className="bayti-1 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img1"></div>
         <div className="bayti-title1 regular text-3xl">Cadi</div>
@@ -99,7 +99,6 @@ const MadinatyProject = () => {
         <div className="bayti-des5 light">Kirkuk, Iraq</div>
         <Button variant="secondary" className="m-2">Explore More</Button>
       </div>
-      </div>
     </div>
     <div className="flex flex-col justify-center items-center">
       <h1 className="regular flex justify-center items-center text-4xl text-primary-color m-3">Madinaty Location <SewingPinFilledIcon className="text-primary-color" height={35} width={35} /></h1>
@@ -118,6 +117,11 @@ const MadinatyProject = () => {
     <div className="right-left-divider my-10 flex justify-center w-full items-center">
       <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
       <Enquire addNow v="default" enqq />
+      <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
+    </div>
+    <div className="right-left-divider flex justify-center w-full items-center">
+      <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
+     <Link to="/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
       <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
     </div>
     </div>

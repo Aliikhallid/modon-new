@@ -84,8 +84,8 @@ const BurujProject = () => {
         <div className="project2-img flex justify-center items-center">
         <div className="flex justify-between items-center w-full">
           <div className="flex flex-col justify-center items-end text-center w-full gap-2 m-5">
-        <div className="project2-title text-5xl regular text-white">Al Hadeer Towers</div>
-        <div className="project2-des text-white text-xl light">Baghdad, IRAQ</div>
+        <div className="project2-title text-5xl regular">Al Hadeer Towers</div>
+        <div className="project2-des text-xl light">Baghdad, IRAQ</div>
            <Link to='/hadeer-towers' className="z-10"><Button className="text-sm regular" variant='default'>Explore Now</Button></Link>
           </div>
         </div>
@@ -108,9 +108,14 @@ const BurujProject = () => {
        <ProjectCard icon={Bike} title="Tahrir Square" description="21 Minutes" />
       </div>
     </div>
-    <div className="right-left-divider flex justify-center w-full items-center">
+    <div className="right-left-divider my-10 flex justify-center w-full items-center">
       <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
       <Enquire addNow v="default" enqq />
+      <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
+    </div>
+    <div className="right-left-divider flex justify-center w-full items-center mt-3">
+      <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
+     <Link to="/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
       <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
     </div>
     </div>

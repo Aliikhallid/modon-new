@@ -2,7 +2,8 @@ import { useTranslation } from "react-i18next";
 import NavBar from "../NavBar";
 import { Button } from "../ui/button";
 import ProjectCard from "./projectCard";
-import { Castle,Trees,LucideBuilding,Building2,Workflow,ShoppingCart, School2, School, CarFront, Car, Building, TrainFront, Store } from "lucide-react";
+import { Castle,Trees,LucideBuilding,Building2,Workflow,ShoppingCart, School2, School, CarFront, Car, Building, TrainFront, Store, } from "lucide-react";
+import { Link } from "react-router-dom";
 // import { useLayoutEffect } from "react";
 import Enquire from "../sections/Enquire";
 import { SewingPinFilledIcon } from "@radix-ui/react-icons";
@@ -67,13 +68,12 @@ const BaytiProject = () => {
        <ProjectCard icon={School2} title="Schools" description="Nursery to High Schools" />
       </div>
     </div>
-    <div className="flex flex-wrap gap-10 h-fit w-full py-10 bg-white justify-center items-center relative">
-      <div className="w-full flex flex-wrap justify-around items-center text-primary-color">
+    <div className="flex flex-wrap gap-5 h-fit w-full py-10 bg-white text-primary-color justify-center items-center relative">
       <div className="bayti-1 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img1"></div>
         <div className="bayti-title1 regular text-3xl">Jory</div>
         <div className="bayti-des1 light">Tikrit, Iraq</div>
-        <Button variant="secondary" className="m-2">Explore More</Button>
+        <Button variant="secondary" className="m-2 flex justify-center items-center gap-2">Explore More</Button>
       </div>
       <div className="bayti-2 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img2"></div>
@@ -99,7 +99,6 @@ const BaytiProject = () => {
         <div className="bayti-des5 light">Tikrit, Iraq</div>
         <Button variant="secondary" className="m-2">Explore More</Button>
       </div>
-      </div>
     </div>
     <div className="flex flex-col justify-center items-center">
       <h1 className="regular flex justify-center items-center text-4xl text-primary-color m-3">Bayti Location <SewingPinFilledIcon className="text-primary-color" height={35} width={35} /></h1>
@@ -119,6 +118,11 @@ const BaytiProject = () => {
     <div className="right-left-divider my-10 flex justify-center w-full items-center">
       <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
       <Enquire addNow v="default" enqq />
+      <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
+    </div>
+    <div className="right-left-divider flex justify-center w-full items-center">
+      <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
+     <Link to="/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
       <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
     </div>
     </div>

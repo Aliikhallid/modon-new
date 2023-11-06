@@ -856,55 +856,55 @@ Button:hover {
 
 .bayti-1 {
   height: 10rem;
-  width: 10rem;
 }
 
 .bayti-img1 {
-  height: 15rem;
-  width: 15rem;
+  border-radius: 5px;
+  height: 20rem;
+  width: 20rem;
   background: url(./assets/jory-min.webp) no-repeat center center/cover;
 }
 
 .bayti-img2 {
-  height: 15rem;
-  width: 15rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 5px;
   background: url(./assets/Lotus-01-min.webp) no-repeat center center/cover;
 }
 
 .bayti-img3 {
-  height: 15rem;
-  width: 15rem;
+  height: 20rem;
+  border-radius: 5px;
+  width: 20rem;
   background: url(./assets/narjis-min.webp) no-repeat center center/cover;
 }
 
 .bayti-img4 {
-  height: 15rem;
-  width: 15rem;
+  height: 20rem;
+  border-radius: 5px;
+  width: 20rem;
   background: url(./assets/viola-min.webp) no-repeat center center/cover;
 }
 
 .bayti-img5 {
-  height: 15rem;
-  width: 15rem;
+  height: 20rem;
+  border-radius: 5px;
+  width: 20rem;
   background: url(./assets/yasmin-min.webp) no-repeat center center/cover;
 }
 
 .bayti-2 {
   height: 10rem;
-  width: 10rem;
 }
 
 .bayti-3 {
   height: 10rem;
-  width: 10rem;
 }
 
 .bayti-4 {
   height: 10rem;
-  width: 10rem;
 }
 
 .bayti-5 {
   height: 10rem;
-  width: 10rem;
 }/*# sourceMappingURL=App.css.map */
