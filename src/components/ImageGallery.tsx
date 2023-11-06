@@ -33,7 +33,7 @@ function goBack() {
   return (
     <div className="bg-primary-multiply-color w-full h-fit flex flex-col justify-center items-center relative">
       <NavBar />
-    <h1 className='regular text-5xl relative mt-40'>BAYTI UPDATES</h1>
+    <h1 className='regular text-5xl relative mt-40'>IMAGE GALLERY</h1>
     <div className="constructs flex">
       <div className="construct1 flex flex-col justify-center items-center m-5">
         <div className="buruj-btns">
