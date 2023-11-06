@@ -9,32 +9,59 @@ export default function FilterComp() {
     const {t} = useTranslation();
 
     // Add state for each checkbox for easier filtering 
-    const [showStatusBar, setShowStatusBar] = useState<Checked>(true)
-    const [showPanel, setShowPanel] = useState<Checked>(false)
+    const [showRes, setShowRes] = useState<Checked>(false)
+    const [showCom, setShowCom] = useState<Checked>(false)
+    const [showSingle, setShowSingle] = useState<Checked>(false)
+    const [showDouble, setShowDouble] = useState<Checked>(false)
+    const [showTriple, setShowTriple] = useState<Checked>(false)
+    const [showQuad, setShowQuad] = useState<Checked>(false)
+    const [showResVilla, setShowResVilla] = useState<Checked>(false)
+    const [showComVilla, setShowComVilla] = useState<Checked>(false)
+    const [showBuruj, setShowBuruj] = useState<Checked>(false)
+    const [showLavida, setShowLavida] = useState<Checked>(false)
+    const [showBayti, setShowBayti] = useState<Checked>(false)
+    const [showFutureCity, setShowFutureCity] = useState<Checked>(false)
+    const [showMadinaty, setShowMadinaty] = useState<Checked>(false)
 
   return (
-    <div className="props-filter-container bg-white text-black light w-11/12">
-    <div className="props-filter-one flex border-r border-gray-500 border-solid m-4 text-left w-1/5 relative">
+    <div className="props-filter-container bg-white text-primary-color light w-11/12 h-24 rounded-[3px] relative mt-5 border shadow-xl">
+    <div className="props-filter-one flex border-r border-primary-multiply-color border-solid m-4 text-left w-1/5 relative">
       <section className='mr-10 w-full'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className='w-full regular text-md'>Open Filter</Button>
+        <Button variant="outline" className='w-full regular text-md rounded'>Property Type</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+        <DropdownMenuLabel>Apartments</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
-          checked={showStatusBar}
-          onCheckedChange={setShowStatusBar}
+          checked={showRes}
+          onCheckedChange={setShowRes}
         >
-          Status Bar
+          Residential Apartments
         </DropdownMenuCheckboxItem>
 
         <DropdownMenuCheckboxItem
-          checked={showPanel}
-          onCheckedChange={setShowPanel}
+          checked={showCom}
+          onCheckedChange={setShowCom}
         >
-          Panel
+          Commercial Apartments
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuLabel>Villas</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuCheckboxItem
+          checked={showResVilla}
+          onCheckedChange={setShowResVilla}
+        >
+          Double Floors
+        </DropdownMenuCheckboxItem>
+
+        <DropdownMenuCheckboxItem
+          checked={showComVilla}
+          onCheckedChange={setShowComVilla}
+        >
+          Triple Floors
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
@@ -44,23 +71,35 @@ export default function FilterComp() {
      <section className='mr-10 w-full'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className='w-full regular text-md'>Open Filter</Button>
+        <Button variant="outline" className='w-full regular text-md rounded'>Bedrooms</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+        <DropdownMenuLabel>Number of Bedrooms</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
-          checked={showStatusBar}
-          onCheckedChange={setShowStatusBar}
+          checked={showSingle}
+          onCheckedChange={setShowSingle}
         >
-          Status Bar
+          1 Bedroom
         </DropdownMenuCheckboxItem>
 
         <DropdownMenuCheckboxItem
-          checked={showPanel}
-          onCheckedChange={setShowPanel}
+          checked={showDouble}
+          onCheckedChange={setShowDouble}
         >
-          Panel
+          2 Bedrooms
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={showTriple}
+          onCheckedChange={setShowTriple}
+        >
+          3 Bedrooms
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={showQuad}
+          onCheckedChange={setShowQuad}
+        >
+          +4 Bedrooms
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
@@ -70,23 +109,23 @@ export default function FilterComp() {
       <section className='mr-10 w-full'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className='w-full regular text-md'>Open Filter</Button>
+        <Button variant="outline" className='w-full regular text-md rounded'>Type of Unit</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+        <DropdownMenuLabel>Unit Type</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
-          checked={showStatusBar}
-          onCheckedChange={setShowStatusBar}
+          checked={showRes}
+          onCheckedChange={setShowRes}
         >
-          Status Bar
+          Residential Units
         </DropdownMenuCheckboxItem>
 
         <DropdownMenuCheckboxItem
-          checked={showPanel}
-          onCheckedChange={setShowPanel}
+          checked={showCom}
+          onCheckedChange={setShowCom}
         >
-          Panel
+          Commercial Units
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
@@ -96,30 +135,48 @@ export default function FilterComp() {
       <section className='mr-10 w-full'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className='w-full regular text-md'>Open Filter</Button>
+        <Button variant="outline" className='w-full regular text-md rounded'>Project</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+        <DropdownMenuLabel>Residential Projects</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
-          checked={showStatusBar}
-          onCheckedChange={setShowStatusBar}
+          checked={showBuruj}
+          onCheckedChange={setShowBuruj}
         >
-          Status Bar
+          Buruj
         </DropdownMenuCheckboxItem>
 
         <DropdownMenuCheckboxItem
-          checked={showPanel}
-          onCheckedChange={setShowPanel}
+          checked={showLavida}
+          onCheckedChange={setShowLavida}
         >
-          Panel
+          Lavida
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={showBayti}
+          onCheckedChange={setShowBayti}
+        >
+          Bayti
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={showFutureCity}
+          onCheckedChange={setShowFutureCity}
+        >
+          Future City
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={showMadinaty}
+          onCheckedChange={setShowMadinaty}
+        >
+          Madinaty
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
       </section>
     </div>
     <div className="props-filter-button m-4 text-center w-1/5">
-      <Button className='bg-modon-blue text-white hover:text-black rounded w-full'>{t("search_properties")}</Button>
+      <Button className='bg-primary-color text-white hover:text-black rounded w-max'>{t("search_properties")}</Button>
     </div>
   </div>
   )
