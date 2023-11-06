@@ -23,6 +23,9 @@ import focusImg from '../assets/future-city-min-1.jpg'
 import Footer from "./sections/Footer";
 import AboutCard from "./aboutPage/AboutCard";
 import { Building, Castle, Layers3Icon, LeafyGreen } from "lucide-react";
+import InfoStructure from "./aboutPage/InfoStructure";
+import TermsAndConditions from "./aboutPage/TermsAndConditions";
+import FAQ from "./aboutPage/FAQ";
 const AboutPage = () => {
   const [overviewP, setOverview] = useState('Modon is one of the most prominent and successful companies in modern real estate development in Iraq and operates under the umbrella of Al Handal International Group.') 
   const [title, setTitle] = useState('OVERVIEW')
@@ -89,6 +92,28 @@ const AboutPage = () => {
     setShow(6);
     setShoww(false);
   }
+
+
+const setOver7 = () => {
+  setTitle('PRIVACY POLICY');
+  setOverview('This Privacy Policy applies to www.modoniq.com and other company websites and mobile applications “Mobile Apps”, which are owned and operated by Modon for Real Esatat Development CO “MODON ” “Us,” or We”). This Privacy Policy describes how MODON collects and uses the personal information you provide (directly or through third parties), which is automatically generated when you interact with our websites and our mobile applications. By accessing or using MODON Website and MODON Mobile Applications, you agree to this privacy policy with the understanding of your information being collected and how we will treat it. If you do not agree with our policies and practices, you may not use MODON Website or Mobile Application. If you have additional questions regarding the privacy and security of your personal information, please contact us at info@modoniq.com')
+  setShow(7);
+  setShoww(false);
+}
+
+const setOver8 = () => {
+  setTitle('TERMS & CONDITION');
+  setOverview('By accessing this web site (www.modoniq.com) (\'Website\'), you are agreeing to be bound by these terms and conditions and all applicable laws and regulations, which you hereby represent and warrant to have read, understood and to agree with in full. Additional terms of use apply in accessing/using certain select features of the Website e.g. initiating webchat, making payments etc. You will be required to read understand and agree in full to such additional terms of use before proceeding that module/section.\n\nIf you do not agree with any of these terms, you are prohibited from using or accessing any further this Website and you must immediately exit from the Website.')
+  setShow(8);
+  setShoww(false);
+}
+
+const setOver9 = () => {
+  setTitle('Common Quetions');
+  setOverview('Modon is one of the most prominent and successful companies in modern real estate development in Iraq and operates under the umbrella of Al Handal International Group.')
+  setShow(9);
+  setShoww(false);
+}
   const [image, setImage] = useState(charimanImg);
   const setOverHardan = () => {
     setTitle("Hardan Noori Al Handal")
@@ -145,6 +170,30 @@ const AboutPage = () => {
     setOverview3('')
     setDes2('')
   }
+
+  const PrivacyPolicyText = [
+    {title:"whatAreCookies",description:"cookiesDesc"},
+    {title:"cookiesUseQ",description:"cookiesUseA"},
+    {title:"cookiesTypesQ",description:"cookiesTypesA"},
+    {title:"cookiesThirdpartyQ",description:"cookiesThirdpartyA"},
+    {title:"cookiesDeleteQ",description:"cookiesDeleteA"},
+    {title:"cookiesDelQ",description:"cookiesDelA"},
+    {title:"cookiesPrivQ",description:"cookiesPrivA"},
+    {title:"cookiesInfoQ",description:"cookiesInfoA"},
+    {title:"cookiesInfoUseQ",description:"cookiesInfoUseA"},
+    {title:"cookiesSecurityQ",description:"cookiesSecurityA"},
+    {title:"cookiesLinksQ",description:"cookiesLinksA"},
+    {title:"cookiesInfoUpdateQ",description:"cookiesInfoUpdateA"},
+    {title:"cookiesChoiceQ",description:"cookiesChoiceA"},
+    {title:"cookiesNotiChangeQ",description:"cookiesNotiChangeA"},
+  ]
+
+  const handleComponent: { [key: number]: JSX.Element } = {
+    7: <InfoStructure titleAndDescription={PrivacyPolicyText} />,
+    8: <TermsAndConditions />,
+    9: <FAQ/>
+  };
+  
   
   return (
     <div className="bg-primary-multiply-color w-full h-fit flex flex-col justify-start items-center relative">
@@ -160,13 +209,17 @@ const AboutPage = () => {
          <Button className='m-2 hover-primary-color upBtn' onClick={setOver4}>Values & Distinction</Button>
          <Button className='m-2 hover-primary-color upBtn' onClick={setOver5}>Commitment & Focus</Button>
          <Button className='m-2 hover-primary-color upBtn' onClick={setOver6}>Board of Directors</Button>
+         <Button className='m-2 hover-primary-color upBtn' onClick={setOver7}>Privacy Policy</Button>
+         <Button className='m-2 hover-primary-color upBtn' onClick={setOver8}>Terms & Conditions</Button>
+         <Button className='m-2 hover-primary-color upBtn' onClick={setOver9}>FAQ</Button>
+
         </div>
          <div className="flex flex-wrap justify-center gap-5 my-20 animate-fade-down animate-duration-1000 animate-delay-500">
           <div className="flex flex-col gap-5 mb-10 justify-center items-center">
           <h1 className="text-5xl regular">{title}</h1>
           <div className="overview-p text-lg w-3/4 text-center light">{overviewP}</div>
           </div>
-         {show===6 ? <div className="construction-updates w-full h-fit py-5 flex flex-col justify-center items-center">
+         {show > 6? handleComponent[show]: show===6 ? <div className="construction-updates w-full h-fit py-5 flex flex-col justify-center items-center">
       <div className="constructs flex flex-wrap justify-center items-center">
         <div className="construct1 flex flex-col justify-center items-center m-5 regular cursor-pointer" onClick={setOverHardan}>
            <div className="hardan-img"></div>
