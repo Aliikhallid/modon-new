@@ -20,6 +20,7 @@ import MadinatyProject from './components/projectPage/MadinatyProject.tsx'
 import FutureProject from './components/projectPage/FutureProject.tsx'
 import HadeerTowers from './components/projectPage/HadeerTowers.tsx'
 import SorouhTowers from './components/projectPage/SorouhTowers.tsx'
+import ImageGallery from './components/ImageGallery.tsx'
 
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
       <Route path='/commercial' element={<CommercialPage />}/>
       <Route path='/bayti-mall' element={<BaytiMall />}/>
       <Route path='/about-us' element={<AboutPage />}/>
+      <Route path='/image-gallery' element={<ImageGallery />}/>
+
     </Routes>
      {/* <Slideshow /> */}
     </>
