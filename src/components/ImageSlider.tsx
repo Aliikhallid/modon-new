@@ -3,10 +3,12 @@ import { ArrowBigLeft, ArrowBigRight, Dot } from 'lucide-react';
 
 interface ImageSliderProps{
     imgUrls: string[];
+    imgOverText?: string[];
     className?:string;
 }
-export default function ImageSlider({imgUrls, className=''}:ImageSliderProps) {
+export default function ImageSlider({imgUrls,imgOverText=[""], className=''}:ImageSliderProps) {
     const [imageIndex,setImageIndex] = useState(0);
+
 
     function prevImg(){
        setImageIndex(i =>{
@@ -31,7 +33,14 @@ export default function ImageSlider({imgUrls, className=''}:ImageSliderProps) {
       <div
         style={{ backgroundImage: `url(${imgUrls[imageIndex]})` }}
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-      ></div>
+      >
+        <div className='flex flex-col items-start justify-end rounded-md z-20 regular text-primary h-full'>
+          <div className='bg-white p-5 w-fit m-4'>
+          {imgOverText[imageIndex]}
+
+          </div>
+          </div>
+      </div>
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <ArrowBigLeft onClick={prevImg} size={30} />
       </div>
@@ -45,7 +54,7 @@ export default function ImageSlider({imgUrls, className=''}:ImageSliderProps) {
             onClick={() => gotoImage(slideIndex)}
             className='text-2xl cursor-pointer'
           >
-            <Dot size={44} color={`${slideIndex == imageIndex? "#06316c":"#FFFFFF" }`} strokeWidth={3} />
+            <Dot size={44} color={`${slideIndex == imageIndex? "#06316c":"#d3d3d3" }`} strokeWidth={3} />
           </div>
         ))}
       </div>

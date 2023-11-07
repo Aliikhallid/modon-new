@@ -17,6 +17,7 @@ import apartmentC2 from '../../assets/C2.webp'
 import apartmentC3 from '../../assets/C3.webp'
 import apartmentC4 from '../../assets/C4.webp'
 import { useLayoutEffect } from "react";
+import ImageSlider from "../ImageSlider";
 
 const HadeerTowers = () => {
   const {t,i18n} = useTranslation();
@@ -260,6 +261,17 @@ setD8('');
 setD9('');
 }
 
+const loadImages = (project: string,lastImage:number) => {
+  const path = "/src/assets/ProjectsBuldingCat/"
+  
+    const paths = [];
+    for (let i = 0; i <= lastImage; i++) {
+      paths.push(`${path}/${project}/${i}.webp`);
+    }
+    return paths;
+  
+};
+
 
   return (
     <div className="project-page flex flex-col h-fit t-10 bg-white" dir={`${isRTL? "rtl":"ltr"}`}>
@@ -298,7 +310,10 @@ setD9('');
     </div>
       <div className="flex justify-center items-center w-full text-center light md:text-2xl text-md text-[#4D5053]">Highlights</div>
     <div className="flex flex-col h-fit w-full py-5 justify-center items-center text-center">
-      <h1 className="text-3xl text-primary-color">Image Slider ~ Wael</h1>
+      <h1 className="text-3xl text-primary-color w-full">
+      <ImageSlider imgUrls={loadImages("HadeerTowers",8)} imgOverText={["Master Bedroom 1","Bedroom 2","Bedroom 3","Master Bathroom","Kitchen","Living Room","Apartment A Living Room & Kitchen","Apartment A Living Room","Apartment A Kitchen"]} />
+        
+      </h1>
       {/* Implement Slider Here */}
     </div>
     <div className="bg-white text-primary-color w-full h-fit flex flex-col justify-start items-center relative">

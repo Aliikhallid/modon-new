@@ -22,6 +22,13 @@ import HadeerTowers from './components/projectPage/HadeerTowers.tsx'
 import SorouhTowers from './components/projectPage/SorouhTowers.tsx'
 import ImageGallery from './components/ImageGallery.tsx'
 import VideoGallery from './components/VideoGallery.tsx'
+import Jory from './components/projectPage/Jory.tsx'
+import Lotus from './components/projectPage/Lotus.tsx'
+import Narjis from './components/projectPage/Narjis.tsx'
+import Viola from './components/projectPage/Viola.tsx'
+import Yasmin from './components/projectPage/Yasmin.tsx'
+import Cadi from './components/projectPage/Cadi.tsx'
+import Gardenia from './components/projectPage/Gardenia.tsx'
 
 
 function App() {
@@ -32,12 +39,19 @@ function App() {
     <Routes>
       <Route path='/' element={<MainPage />}/>
       <Route path='/buruj' element={<BurujProject />}/>
+      <Route path='/buruj/hadeer-towers' element={<HadeerTowers />}/>
+      <Route path='/buruj/sorouh-towers' element={<SorouhTowers />}/>
       <Route path='/lavida' element={<LavidaProject />}/>
       <Route path='/bayti' element={<BaytiProject />}/>
+      <Route path='/bayti/jory' element={<Jory />}/>
+      <Route path='/bayti/lotus' element={<Lotus />}/>
+      <Route path='/bayti/narjis' element={<Narjis />}/>
+      <Route path='/bayti/viola' element={<Viola />}/>
+      <Route path='/bayti/yasmin' element={<Yasmin />}/>
       <Route path='/madinaty' element={<MadinatyProject />}/>
+      <Route path='/madinaty/cadi' element={<Cadi />}/>
+      <Route path='/madinaty/gardenia' element={<Gardenia />}/>
       <Route path='/future-city' element={<FutureProject />}/>
-      <Route path='/hadeer-towers' element={<HadeerTowers />}/>
-      <Route path='/sorouh-towers' element={<SorouhTowers />}/>
       <Route path='/news' element={<NewsPage />}/>
       <Route path='/contact' element={<ContactPage />}/>
       <Route path='/careers' element={<CareersPage />}/>
