@@ -9,7 +9,7 @@ const ImageGallery = () => {
     const path = "/src/assets/ImageGallery/"
     
       const paths = [];
-      for (let i = 1; i <= lastImage; i++) {
+      for (let i = 0; i <= lastImage; i++) {
         paths.push(`${path}/${project}/${i}.webp`);
       }
       setImagePaths(paths);
