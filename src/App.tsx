@@ -1,5 +1,5 @@
 import './App.css'
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, HashRouter} from 'react-router-dom'
 import MainPage from './components/MainPage.tsx'
 import BurujProject from './components/projectPage/BurujProject.tsx'
 import NewsPage from './components/NewsPage.tsx'
@@ -38,7 +38,7 @@ function App() {
  
   return (
     <>
-    {/* <HashRouter> */}
+    <HashRouter>
     <Routes>
       <Route path='#/home' element={<MainPage />}/>
       <Route path='#/buruj' element={<BurujProject />}/>
@@ -74,7 +74,7 @@ function App() {
       <Route path='/video-gallery' element={<VideoGallery />}/>
 
     </Routes>
-    {/* </HashRouter> */}
+    </HashRouter>
     </>
   )
 }
