@@ -48,7 +48,7 @@ export default function ImageSlider({imgUrls,imgOverText=[""], className=''}:Ima
         <ArrowBigRight onClick={nextImg} size={30} />
       </div>
       <div className='flex top-4 justify-center py-2'>
-        {imgUrls.map((slide, slideIndex) => (
+        {imgUrls.map((slide,slideIndex) => (
           <div
             key={slideIndex}
             onClick={() => gotoImage(slideIndex)}

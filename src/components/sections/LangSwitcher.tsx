@@ -13,8 +13,7 @@ const LangSwitcher = () => {
     i18next.changeLanguage(lang)
   })
   const nav = document.querySelector('.navbar');
-  const listitemsleft = document.querySelector('.list-items-left');
-  const listitemsright = document.querySelector('.list-items-right');
+  const navList = document.querySelector('.nav-list');
   const modonPropsPage = document.querySelector('.modon-container');
   const sliderCont = document.querySelector('.slider-container');
   const topSlider = document.querySelector('.top-slider');
@@ -25,8 +24,7 @@ const LangSwitcher = () => {
   if(lang === 'ar') {
     document.getElementsByTagName("html")[0].setAttribute("lang","ar");
     nav?.classList.add('flex-row-reverse');
-    listitemsleft?.classList.add('flex-row-reverse');
-    listitemsright?.classList.add('flex-row-reverse');
+    navList?.classList.add('flex-row-reverse');
     modonPropsPage?.classList.add('flex-row-reverse');
     sliderCont?.classList.add('transition-all');
     sliderCont?.classList.add('flex-row-reverse');
@@ -39,13 +37,12 @@ const LangSwitcher = () => {
   }
   else {
     document.getElementsByTagName("html")[0].setAttribute("lang","en");
+    navList?.classList.remove('flex-row-reverse');
     newPage?.classList.remove('rtl-dir');
     newPage2?.classList.remove('rtl-dir');
     newPage3?.classList.remove('rtl-dir');
     sliderCont?.classList.add('transition-all');
     nav?.classList.remove('flex-row-reverse');
-    listitemsleft?.classList.remove('flex-row-reverse');
-    listitemsright?.classList.remove('flex-row-reverse');
     modonPropsPage?.classList.remove('flex-row-reverse');
     topSlider?.classList.remove('flex-row-reverse');
     sliderCont?.classList.remove('flex-row-reverse');

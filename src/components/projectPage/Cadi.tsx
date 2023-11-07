@@ -205,12 +205,14 @@ const loadImages = (project: string,lastImage:number) => {
           </div>
           </div> : ''}
       </div>
-          {showw ? <div className="fixed-image h-72 w-full flex justify-around items-center text-white">
+          {showw ? 
+          <div className="fixed-image h-72 w-full flex justify-around items-center text-white">
             <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={5} delay={2} duration={3}/></span> <br/> TOTAL PROJECTS</h1>
             <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={2300} delay={2} duration={3}/></span> <br/> HOUSES BUILT</h1>
             <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={235} delay={2} duration={3}/></span> <br/> QUALIFIED WORKERS</h1>
             <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={2} delay={2} duration={3}/></span> <br/> AWARDS</h1>
-          </div> : ''}
+          </div> 
+          : ''}
          </div>
          </div>
          </div>
@@ -222,7 +224,7 @@ const loadImages = (project: string,lastImage:number) => {
     <div className="flex flex-col h-fit w-fit">
       <div className="flex justify-center items-center regular text-xl text-primary-color mt-10">Hadeer Towers</div>
       <div className="p-5 my-5 h-fit w-fit flex flex-wrap gap-5 justify-center">
-       <ProjectCard icon={Plane} title="Mosque" description="" />
+       <ProjectCard icon={Plane} title="Mosque" description="0 Minutes" />
        <ProjectCard icon={School2} title="Parking" description="1 Minute" />
        <ProjectCard icon={Building} title="Green Yard" description="25 Minutes" />
        <ProjectCard icon={Castle} title="Balcony" description="2 Minutes" />
