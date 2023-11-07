@@ -120,7 +120,7 @@ const LavidaProject = () => {
     </div>
     <div className="right-left-divider flex justify-center w-full items-center">
       <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
-     <Link to="/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
+     <Link to="#/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
       <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
     </div>
     </div>
