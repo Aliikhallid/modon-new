@@ -40,8 +40,8 @@ function App() {
     <>
     <HashRouter>
     <Routes>
-      <Route path='#/home' element={<MainPage />}/>
-      <Route path='#/buruj' element={<BurujProject />}/>
+      <Route path='/home' element={<MainPage />}/>
+      <Route path='/buruj' element={<BurujProject />}/>
       <Route path='/buruj/hadeer-towers' element={<HadeerTowers />}/>
       <Route path='/buruj/sorouh-towers' element={<SorouhTowers />}/>
       <Route path='/avida' element={<LavidaProject />}/>
