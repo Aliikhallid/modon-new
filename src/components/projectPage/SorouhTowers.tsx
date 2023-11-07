@@ -6,7 +6,7 @@ import { Castle, School2, Car, Building, Plane } from "lucide-react";
 // import { useLayoutEffect } from "react";
 import Enquire from "../sections/Enquire";
 import Footer from "../sections/Footer";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import CountUp from "react-countup";
 import apartmentA from '../../assets/AS.webp'
 import apartmentB1 from '../../assets/B1S.webp'
@@ -23,9 +23,9 @@ const SorouhTowers = () => {
   const {t,i18n} = useTranslation();
   const isRTL = i18n.language === "ar"
   
-//   useLayoutEffect(() => {
-//     window.scrollTo(0, 0)
-// });
+useLayoutEffect(() => {
+     window.scrollTo(0, 0)
+ },[]);
 const [overviewP, setOverview] = useState('From floor 13 to 15') 
 const [title, setTitle] = useState('Residential Apartment Type A 4 Bedrooms (218.2)M2')
 const [overviewP2, setOverview2] = useState('Rooms')

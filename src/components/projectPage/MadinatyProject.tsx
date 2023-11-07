@@ -83,21 +83,21 @@ const MadinatyProject = () => {
       </div>
       <div className="bayti-3 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img3"></div>
-        <div className="bayti-title3 regular text-3xl">Narjis</div>
+        <div className="bayti-title3 regular text-3xl">Nargis</div>
         <div className="bayti-des3 light">Kirkuk, Iraq</div>
-        <Button variant="secondary" className="m-2">Explore More</Button>
+        <Link to="nargis"><Button variant="secondary" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-4 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img4"></div>
         <div className="bayti-title4 regular text-3xl">Viola</div>
         <div className="bayti-des4 light">Kirkuk, Iraq</div>
-        <Button variant="secondary" className="m-2">Explore More</Button>
+        <Link to="viola"><Button variant="secondary" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-5 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img5"></div>
         <div className="bayti-title5 regular text-3xl">Apartments</div>
         <div className="bayti-des5 light">Kirkuk, Iraq</div>
-        <Button variant="secondary" className="m-2">Explore More</Button>
+        <Link to="apartments"><Button variant="secondary" className="m-2">Explore More</Button> </Link>
       </div>
     </div>
     <div className="flex flex-col justify-center items-center">

@@ -25,7 +25,7 @@ const HadeerTowers = () => {
   
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
-});
+},[]);
 const [overviewP, setOverview] = useState('From floor 13 to 15') 
 const [title, setTitle] = useState('Residential Apartment Type A 4 Bedrooms (218.2)M2')
 const [overviewP2, setOverview2] = useState('Rooms')
