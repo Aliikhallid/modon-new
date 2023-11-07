@@ -60,7 +60,7 @@ const FutureProject = () => {
 
     </div>
     <div className="flex flex-col h-fit w-fit">
-      <div className="flex justify-center items-center light md:text-2xl text-md text-[#4D5053]">Highlights</div>
+      <div className="flex justify-center items-center light md:text-2xl text-md text-[4D5053]">Highlights</div>
       <div className="p-5 my-10 h-fit w-fit flex flex-wrap gap-5 justify-center">
        <ProjectCard icon={Building2} title="Approximately 3800" description="Resedential Units" />
        <ProjectCard icon={LucideBuilding} title="30 Buildings" description="Resedential Apartments" />
@@ -123,7 +123,7 @@ const FutureProject = () => {
     </div>
     <div className="right-left-divider flex justify-center w-full items-center">
       <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
-     <Link to="#/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
+     <Link to="/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
       <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
     </div>
     </div>
