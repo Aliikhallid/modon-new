@@ -13,28 +13,28 @@ const ConstructionHeader = () => {
         <div className="construct1 flex flex-col justify-center items-center m-5 regular">
            <div className="buruj-img shadow-2xl"></div>
            <h1 className='regular text-3xl m-2'>{t("buruj-c")}</h1>
-           <Link to='/buruj-updates'><Button variant="default" className='hover:text-white'>{t("see-updates")}</Button></Link>
+           <Link to='/modon-new/buruj-updates'><Button variant="default" className='hover:text-white'>{t("see-updates")}</Button></Link>
         </div>
         <div className="construct2 flex flex-col justify-center items-center m-5 regular">
            <div className="future-img"></div>
            <h1 className='regular text-3xl m-2'>{t("future-c")}</h1>
-           <Link to='/future-updates'><Button className='hover-primary-color'>{t("see-updates")}</Button></Link>
+           <Link to='/modon-new/future-updates'><Button className='hover-primary-color'>{t("see-updates")}</Button></Link>
 
         </div>
         <div className="construct3 flex flex-col justify-center items-center m-5 regular">
            <div className="lavida-img"></div>
            <h1 className='regular text-3xl m-2'>{t("lavida-c")}</h1>
-           <Link to='/lavida-updates'><Button className='hover-primary-color'>{t("see-updates")}</Button></Link>
+           <Link to='/modon-new/lavida-updates'><Button className='hover-primary-color'>{t("see-updates")}</Button></Link>
         </div>
         <div className="construct4 flex flex-col justify-center items-center m-5 regular">
            <div className="madinaty-img"></div>
            <h1 className='regular text-3xl m-2'>{t("madinaty-c")}</h1>
-           <Link to='/madinaty-updates'><Button className='hover-primary-color'>{t("see-updates")}</Button></Link>
+           <Link to='/modon-new/madinaty-updates'><Button className='hover-primary-color'>{t("see-updates")}</Button></Link>
         </div>
         <div className="construct5 flex flex-col justify-center items-center m-5 regular">
            <div className="bayti-img"></div>
            <h1 className='regular text-3xl m-2'>{t("bayti-c")}</h1>
-           <Link to='/bayti-updates'><Button className='hover-primary-color'>{t("see-updates")}</Button></Link>
+           <Link to='/modon-new/bayti-updates'><Button className='hover-primary-color'>{t("see-updates")}</Button></Link>
         </div>
         </div>
     </div>
