@@ -8,7 +8,7 @@ export default defineConfig({
   base: "/modon-new/",
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./dist"),
     },
   },
 })
