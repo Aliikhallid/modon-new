@@ -27,6 +27,8 @@ import Lotus from './components/projectPage/Lotus.tsx'
 import Narjis from './components/projectPage/Narjis.tsx'
 import Viola from './components/projectPage/Viola.tsx'
 import Yasmin from './components/projectPage/Yasmin.tsx'
+import Cadi from './components/projectPage/Cadi.tsx'
+import Gardenia from './components/projectPage/Gardenia.tsx'
 
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
       <Route path='/bayti/viola' element={<Viola />}/>
       <Route path='/bayti/yasmin' element={<Yasmin />}/>
       <Route path='/madinaty' element={<MadinatyProject />}/>
+      <Route path='/madinaty/cadi' element={<Cadi />}/>
+      <Route path='/madinaty/gardenia' element={<Gardenia />}/>
       <Route path='/future-city' element={<FutureProject />}/>
       <Route path='/news' element={<NewsPage />}/>
       <Route path='/contact' element={<ContactPage />}/>
