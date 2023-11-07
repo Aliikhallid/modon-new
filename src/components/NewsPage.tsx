@@ -1,6 +1,6 @@
 import { useLayoutEffect } from "react";
 import NavBar from "./NavBar"
-import NewsHeader from "./newsPage/NewsHeader"
+import { NewsHeader } from "./newsPage/NewsHeader.1";
 import NewsMain from "./newsPage/NewsMain"
 
 const NewsPage = () => {

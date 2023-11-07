@@ -12,7 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { Checkbox } from "../ui/checkbox";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
-const Enquire = ({addNow = false, v = "outline", enqq = false}) => {
+const Enquire = ({addNow = false, v="outline", enqq = false}) => {
   let enq = '';
   if(enqq) {
     enq = 'w-full'
