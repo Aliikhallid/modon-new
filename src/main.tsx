@@ -24,7 +24,7 @@ function RootComponent() {
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename='/home'>
       <Suspense fallback={<SplashScreen />}>
         <RootComponent />
       </Suspense>
