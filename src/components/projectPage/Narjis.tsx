@@ -19,7 +19,7 @@ const Narjis = () => {
   
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
-});
+},[]);
 const [overviewP, setOverview] = useState('') 
 const [title, setTitle] = useState('Ground Floor (106)M2')
 const [overviewP2, setOverview2] = useState('Rooms')
@@ -220,7 +220,7 @@ const loadImages = (project: string,lastImage:number) => {
       <h1 className="regular flex justify-center items-center text-4xl text-primary-color m-3">Amenities</h1>
       <h1 className="light text-md text-black m-1">GET TO KNOW</h1>
     <div className="flex flex-col h-fit w-fit">
-      <div className="flex justify-center items-center regular text-xl text-primary-color mt-10">Hadeer Towers</div>
+      <div className="flex justify-center items-center regular text-xl text-primary-color mt-10">Narjis</div>
       <div className="p-5 my-5 h-fit w-fit flex flex-wrap gap-5 justify-center">
        <ProjectCard icon={Plane} title="Mosque" description="" />
        <ProjectCard icon={School2} title="Parking" description="1 Minute" />
