@@ -1,5 +1,5 @@
 
-const TitleDivider = ({name}: never) => {
+const TitleDivider = ({name = "TITLE"}) => {
   return (
     <>
         <div className="modon-title light">
