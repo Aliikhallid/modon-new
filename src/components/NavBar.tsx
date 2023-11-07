@@ -79,22 +79,22 @@ const NavBar = () => {
                   <p>{t("bayti-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/buruj'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/home/buruj'>
                 <NavigationMenuLink  asChild>
                   <p>{t("buruj-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/future-city'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/home/future-city'>
                 <NavigationMenuLink  asChild>
                   <p>{t("future-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/lavida'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/home/lavida'>
                 <NavigationMenuLink  asChild>
                   <p>{t("lavida-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/madinaty'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/home/madinaty'>
                 <NavigationMenuLink  asChild>
                   <p>{t("madinaty-c")}</p>
                 </NavigationMenuLink>
@@ -104,19 +104,19 @@ const NavBar = () => {
           </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <a className="item cursor-pointer" href="/modon-new/construction">
+        <a className="item cursor-pointer" href="/modon-new/home/construction">
           {t("home_string")}
         </a>
-        <a className="item cursor-pointer" href="/modon-new/news">
+        <a className="item cursor-pointer" href="/modon-new/home/news">
           {t("news_string")}
         </a>
-        <a className="item cursor-pointer" href="/modon-new/about-us">
+        <a className="item cursor-pointer" href="/modon-new/home/about-us">
           {t("about-us-nav")}
         </a>
-        <a className="item cursor-pointer" href="/modon-new/careers">
+        <a className="item cursor-pointer" href="/modon-new/home/careers">
           {t("careers-nav")}
         </a>
-        <a className="item cursor-pointer" href="/modon-new/contact">
+        <a className="item cursor-pointer" href="/modon-new/home/contact">
           {t("contact-nav")}
         </a>
         <LangSwitcher />
