@@ -40,7 +40,7 @@ export default function ImageSlider({
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       >
         <div className="flex flex-col items-start justify-end rounded-md z-20 regular text-primary h-full">
-          <div className="bg-white p-5 w-fit m-4">
+          <div className="bg-white p-5 w-fit m-4 rounded">
             {imgOverText[imageIndex]}
           </div>
         </div>
