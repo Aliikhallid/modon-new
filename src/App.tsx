@@ -36,25 +36,9 @@ import NotFound from './components/NotFound.tsx'
 
 
 function App() {
-  // const router = createHashRouter([
-  //   {
-  //     path: "/modon-new/",
-  //     element: <MainPage />
-  //   },
-  //   {
-  //     path: "/",
-  //     element: <MainPage />
-  //   },
-  //   {
-  //     path: "/",
-  //     element: <MainPage />
-  //   },
-  // ])
- 
+
   return (
     <>
-    {/* <HashRouter> */}
-    {/* <RouterProvider /> */}
     <Routes>
       <Route path='/modon-new/' element={<MainPage />}/>
       <Route path='/modon-new/buruj' element={<BurujProject />}/>
@@ -78,11 +62,11 @@ function App() {
       <Route path='/modon-new/contact' element={<ContactPage />}/>
       <Route path='/modon-new/careers' element={<CareersPage />}/>
       <Route path='/modon-new/construction' element={<ConstructionUpdates />}/>
-      <Route path='/modon-new/construction/buruj-updates' element={<BurujUpdates />}/>
-      <Route path='/modon-new/construction/future-updates' element={<FutureUpdates />}/>
-      <Route path='/modon-new/construction/lavida-updates' element={<LavidaUpdates />}/>
-      <Route path='/modon-new/construction/madinaty-updates' element={<MadinatyUpdates />}/>
-      <Route path='/modon-new/construction/bayti-updates' element={<BaytiUpdates />}/>
+      <Route path='/modon-new/buruj-updates' element={<BurujUpdates />}/>
+      <Route path='/modon-new/future-updates' element={<FutureUpdates />}/>
+      <Route path='/modon-new/lavida-updates' element={<LavidaUpdates />}/>
+      <Route path='/modon-new/madinaty-updates' element={<MadinatyUpdates />}/>
+      <Route path='/modon-new/bayti-updates' element={<BaytiUpdates />}/>
       <Route path='/modon-new/commercial' element={<CommercialPage />}/>
       <Route path='/modon-new/commercial/bayti-mall' element={<BaytiMall />}/>
       <Route path='/modon-new/about-us' element={<AboutPage />}/>

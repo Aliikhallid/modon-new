@@ -15,15 +15,17 @@ const ModonProps = () => {
           <div>
            <div className="image image-1"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
-            <h1>LAVIDA</h1>
+            <h1 className='text-lg'>CADI - MADINATY</h1>
             <div className="vertical-divider"></div>
+            <h1 className='text-xs m-2 light'>type: Villas</h1>
            </div>
           </div>
           <div>
            <div className="image image-2"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
-            <h1>MADINATY</h1>
+            <h1 className='text-lg'>NARJIS - MADINATY</h1>
             <div className="vertical-divider"></div>
+            <h1 className='text-xs m-2 light'>type: Villas</h1>
            </div>
           </div>
         </div>
@@ -31,22 +33,25 @@ const ModonProps = () => {
         <div>
            <div className="image image-3"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
-            <h1>FUTURE CITY</h1>
+            <h1 className='text-lg'>APARTMENTS</h1>
             <div className="vertical-divider"></div>
+            <h1 className='text-xs m-2 light'>type: Apartments</h1>
            </div>
           </div>
           <div>
            <div className="image image-4"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
-            <h1>BAYTI</h1>
+            <h1 className='text-lg'>LOTUS - BAYTI</h1>
             <div className="vertical-divider"></div>
+            <h1 className='text-xs m-2 light'>type: Villas</h1>
            </div>
           </div>
           <div>
            <div className="image image-5"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
-            <h1>BURUJ</h1>
+            <h1 className='text-lg'>JORY - BAYTI</h1>
             <div className="vertical-divider"></div>
+            <h1 className='text-xs m-2 light'>type: Villas</h1>
            </div>
           </div>
         </div>
