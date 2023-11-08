@@ -56,12 +56,12 @@ function App() {
     {/* <HashRouter> */}
     {/* <RouterProvider /> */}
     <Routes>
-      <Route path='/home' element={<MainPage />}/>
-      <Route path='/buruj' element={<BurujProject />}/>
-      <Route path='/buruj/hadeer-towers' element={<HadeerTowers />}/>
-      <Route path='/buruj/sorouh-towers' element={<SorouhTowers />}/>
-      <Route path='/avida' element={<LavidaProject />}/>
-      <Route path='/bayti' element={<BaytiProject />}/>
+      <Route path='/modon-new/' element={<MainPage />}/>
+      <Route path='/modon-new//buruj' element={<BurujProject />}/>
+      <Route path='/modon-new//buruj/hadeer-towers' element={<HadeerTowers />}/>
+      <Route path='/modon-new//buruj/sorouh-towers' element={<SorouhTowers />}/>
+      <Route path='/modon-new//avida' element={<LavidaProject />}/>
+      <Route path='/modon-new//bayti' element={<BaytiProject />}/>
       <Route path='/modon-new/bayti/jory' element={<Jory />}/>
       <Route path='/modon-new/bayti/lotus' element={<Lotus />}/>
       <Route path='/modon-new/bayti/narjis' element={<Narjis />}/>
