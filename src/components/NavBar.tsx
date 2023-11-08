@@ -56,7 +56,7 @@ const NavBar = () => {
   return (
     <div className="navbar justify-between items-center text-white h-20 pr-6 pl-6 fixed top-0 w-full flex light z-30">
       <div className="logo-cont flex justify-center items-center">
-        <Link to="/modon-new/">
+        <Link to="/">
           <img
             src={modonLogo}
             className="logo h-14 m-1 cursor-pointer"
@@ -65,7 +65,7 @@ const NavBar = () => {
         </Link>
       </div>
       <div className="nav-list flex w-3/5 items-center justify-around text-sm">
-        <a className="item cursor-pointer" href="/modon-new/">
+        <a className="item cursor-pointer" href="/">
           {t("home-nav")}
         </a>
         <NavigationMenu>
@@ -79,22 +79,22 @@ const NavBar = () => {
                   <p>{t("bayti-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/home/buruj'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/buruj'>
                 <NavigationMenuLink  asChild>
                   <p>{t("buruj-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/home/future-city'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/future-city'>
                 <NavigationMenuLink  asChild>
                   <p>{t("future-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/home/lavida'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/lavida'>
                 <NavigationMenuLink  asChild>
                   <p>{t("lavida-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/home/madinaty'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/madinaty'>
                 <NavigationMenuLink  asChild>
                   <p>{t("madinaty-c")}</p>
                 </NavigationMenuLink>
@@ -104,19 +104,19 @@ const NavBar = () => {
           </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <a className="item cursor-pointer" href="/modon-new/home/construction">
+        <a className="item cursor-pointer" href="/modon-new/construction">
           {t("home_string")}
         </a>
-        <a className="item cursor-pointer" href="/modon-new/home/news">
+        <a className="item cursor-pointer" href="/modon-new/news">
           {t("news_string")}
         </a>
-        <a className="item cursor-pointer" href="/modon-new/home/about-us">
+        <a className="item cursor-pointer" href="/modon-new/about-us">
           {t("about-us-nav")}
         </a>
-        <a className="item cursor-pointer" href="/modon-new/home/careers">
+        <a className="item cursor-pointer" href="/modon-new/careers">
           {t("careers-nav")}
         </a>
-        <a className="item cursor-pointer" href="/modon-new/home/contact">
+        <a className="item cursor-pointer" href="/modon-new/contact">
           {t("contact-nav")}
         </a>
         <LangSwitcher />
