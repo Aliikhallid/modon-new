@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App.tsx';
 import './index.css';
 import './i18n.tsx';
-import { BrowserRouter } from 'react-router-dom';
+import {  HashRouter } from 'react-router-dom';
 import SplashScreen from './components/SplashScreen.tsx';
 
 function RootComponent() {
@@ -24,11 +24,11 @@ function RootComponent() {
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename="/modon-new">
+    <HashRouter>
       <Suspense fallback={<SplashScreen />}>
         <RootComponent />
       </Suspense>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
