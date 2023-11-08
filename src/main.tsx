@@ -24,7 +24,7 @@ function RootComponent() {
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/modon-new">
       <Suspense fallback={<SplashScreen />}>
         <RootComponent />
       </Suspense>
