@@ -40,8 +40,8 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path='/modon-new/' element={<MainPage />}/>
-      <Route path='/modon-new/buruj' element={<BurujProject />}/>
+      <Route path='#/home' element={<MainPage />}/>
+      <Route path='#/buruj' element={<BurujProject />}/>
       <Route path='/modon-new/buruj/hadeer-towers' element={<HadeerTowers />}/>
       <Route path='/modon-new/buruj/sorouh-towers' element={<SorouhTowers />}/>
       <Route path='/modon-new/lavida' element={<LavidaProject />}/>
