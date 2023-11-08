@@ -73,31 +73,31 @@ const MadinatyProject = () => {
         <div className="bayti-img1"></div>
         <div className="bayti-title1 regular text-3xl">Cadi</div>
         <div className="bayti-des1 light">Kirkuk, Iraq</div>
-        <Link to="/modon-new/madinaty/cadi"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/madinaty/cadi"><Button variant="secondary" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-2 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img2"></div>
         <div className="bayti-title2 regular text-3xl">Gardenia</div>
         <div className="bayti-des2 light">Kirkuk, Iraq</div>
-        <Link to="/modon-new/madinaty/gardenia"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/madinaty/gardenia"><Button variant="secondary" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-3 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img3"></div>
         <div className="bayti-title3 regular text-3xl">Nargis</div>
         <div className="bayti-des3 light">Kirkuk, Iraq</div>
-        <Link to="/modon-new/madinaty/nargis"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/madinaty/nargis"><Button variant="secondary" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-4 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img4"></div>
         <div className="bayti-title4 regular text-3xl">Viola</div>
         <div className="bayti-des4 light">Kirkuk, Iraq</div>
-        <Link to="/modon-new/madinaty/viola"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/madinaty/viola"><Button variant="secondary" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-5 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img5"></div>
         <div className="bayti-title5 regular text-3xl">Apartments</div>
         <div className="bayti-des5 light">Kirkuk, Iraq</div>
-        <Link to="/modon-new/madinaty/apartments"><Button variant="secondary" className="m-2">Explore More</Button> </Link>
+        <Link to="/madinaty/apartments"><Button variant="secondary" className="m-2">Explore More</Button> </Link>
       </div>
     </div>
     <div className="flex flex-col justify-center items-center">
@@ -121,7 +121,7 @@ const MadinatyProject = () => {
     </div>
     <div className="right-left-divider flex justify-center w-full items-center">
       <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
-     <Link to="/modon-new/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
+     <Link to="/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
       <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
     </div>
     </div>

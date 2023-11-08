@@ -73,31 +73,31 @@ const BaytiProject = () => {
         <div className="bayti-img1"></div>
         <div className="bayti-title1 regular text-3xl">Jory</div>
         <div className="bayti-des1 light">Tikrit, Iraq</div>
-        <Link to="/modon-new/bayti/jory"><Button variant="secondary" className="m-2 flex justify-center items-center gap-2">Explore More</Button></Link>
+        <Link to="/bayti/jory"><Button variant="secondary" className="m-2 flex justify-center items-center gap-2">Explore More</Button></Link>
       </div>
       <div className="bayti-2 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img2"></div>
         <div className="bayti-title2 regular text-3xl">Lotus</div>
         <div className="bayti-des2 light">Tikrit, Iraq</div>
-        <Link to="/modon-new/bayti/lotus"><Button variant="secondary" className="m-2">Explore More</Button> </Link>
+        <Link to="/bayti/lotus"><Button variant="secondary" className="m-2">Explore More</Button> </Link>
       </div>
       <div className="bayti-3 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img3"></div>
         <div className="bayti-title3 regular text-3xl">Narjis</div>
         <div className="bayti-des3 light">Tikrit, Iraq</div>
-        <Link to="/modon-new/bayti/narjis"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/bayti/narjis"><Button variant="secondary" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-4 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img4"></div>
         <div className="bayti-title4 regular text-3xl">Viola</div>
         <div className="bayti-des4 light">Tikrit, Iraq</div>
-        <Link to="/modon-new/bayti/viola"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/bayti/viola"><Button variant="secondary" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-5 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img5"></div>
         <div className="bayti-title5 regular text-3xl">Yasmin</div>
         <div className="bayti-des5 light">Tikrit, Iraq</div>
-        <Link to="/modon-new/bayti/yasmin"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/bayti/yasmin"><Button variant="secondary" className="m-2">Explore More</Button></Link>
       </div>
     </div>
     <div className="flex flex-col justify-center items-center">
@@ -122,7 +122,7 @@ const BaytiProject = () => {
     </div>
     <div className="right-left-divider flex justify-center w-full items-center">
       <div className="left-divider h-0.5 w-1/3 bg-primary-color"></div>
-     <Link to="/modon-new/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
+     <Link to="/image-gallery"><Button size="lg" className="regular">Image Gallery</Button></Link>
       <div className="right-divider h-0.5 w-1/3 bg-primary-color"></div>
     </div>
     </div>
