@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App.tsx';
 import './index.css';
 import './i18n.tsx';
-import {  HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import SplashScreen from './components/SplashScreen.tsx';
 
 function RootComponent() {
@@ -24,11 +24,11 @@ function RootComponent() {
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <Suspense fallback={<SplashScreen />}>
         <RootComponent />
       </Suspense>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

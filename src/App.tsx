@@ -1,5 +1,5 @@
 import './App.css'
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, HashRouter} from 'react-router-dom'
 import MainPage from './components/MainPage.tsx'
 import BurujProject from './components/projectPage/BurujProject.tsx'
 import NewsPage from './components/NewsPage.tsx'
@@ -32,50 +32,49 @@ import Gardenia from './components/projectPage/Gardenia.tsx'
 import Nargis from './components/projectPage/Nargis.tsx'
 import ViolaM from './components/projectPage/ViolaM.tsx'
 import MadinatyApartments from './components/projectPage/MadinatyApartments.tsx'
-import NotFound from './components/NotFound.tsx'
 
 
 function App() {
-
+ 
   return (
     <>
+    <HashRouter>
     <Routes>
       <Route path='/home' element={<MainPage />}/>
-      <Route path='#/buruj' element={<BurujProject />}/>
-      <Route path='/modon-new/buruj/hadeer-towers' element={<HadeerTowers />}/>
-      <Route path='/modon-new/buruj/sorouh-towers' element={<SorouhTowers />}/>
-      <Route path='https://aliikhallid.github.io/modon-new/#/lavida' element={<LavidaProject />}/>
+      <Route path='/buruj' element={<BurujProject />}/>
+      <Route path='/buruj/hadeer-towers' element={<HadeerTowers />}/>
+      <Route path='/buruj/sorouh-towers' element={<SorouhTowers />}/>
+      <Route path='/avida' element={<LavidaProject />}/>
       <Route path='/bayti' element={<BaytiProject />}/>
-      <Route path='/modon-new/bayti/jory' element={<Jory />}/>
-      <Route path='/modon-new/bayti/lotus' element={<Lotus />}/>
-      <Route path='/modon-new/bayti/narjis' element={<Narjis />}/>
-      <Route path='/modon-new/bayti/viola' element={<Viola />}/>
-      <Route path='/modon-new/bayti/yasmin' element={<Yasmin />}/>
-      <Route path='/modon-new/madinaty' element={<MadinatyProject />}/>
-      <Route path='/modon-new/madinaty/cadi' element={<Cadi />}/>
-      <Route path='/modon-new/madinaty/gardenia' element={<Gardenia />}/>
-      <Route path='/modon-new/madinaty/nargis' element={<Nargis />}/>
-      <Route path='/modon-new/madinaty/viola' element={<ViolaM />}/>
-      <Route path='/modon-new/madinaty/apartments' element={<MadinatyApartments />}/>
-      <Route path='/modon-new/future-city' element={<FutureProject />}/>
-      <Route path='/modon-new/news' element={<NewsPage />}/>
-      <Route path='/modon-new/contact' element={<ContactPage />}/>
-      <Route path='/modon-new/careers' element={<CareersPage />}/>
-      <Route path='/modon-new/construction' element={<ConstructionUpdates />}/>
-      <Route path='/modon-new/buruj-updates' element={<BurujUpdates />}/>
-      <Route path='/modon-new/future-updates' element={<FutureUpdates />}/>
-      <Route path='/modon-new/lavida-updates' element={<LavidaUpdates />}/>
-      <Route path='/modon-new/madinaty-updates' element={<MadinatyUpdates />}/>
-      <Route path='/modon-new/bayti-updates' element={<BaytiUpdates />}/>
-      <Route path='/modon-new/commercial' element={<CommercialPage />}/>
-      <Route path='/modon-new/commercial/bayti-mall' element={<BaytiMall />}/>
-      <Route path='/modon-new/about-us' element={<AboutPage />}/>
-      <Route path='/modon-new/image-gallery' element={<ImageGallery />}/>
-      <Route path='/modon-new/video-gallery' element={<VideoGallery />}/>
-      <Route path='*' element={<NotFound />}/>
+      <Route path='/bayti/jory' element={<Jory />}/>
+      <Route path='/bayti/lotus' element={<Lotus />}/>
+      <Route path='/bayti/narjis' element={<Narjis />}/>
+      <Route path='/bayti/viola' element={<Viola />}/>
+      <Route path='/bayti/yasmin' element={<Yasmin />}/>
+      <Route path='/madinaty' element={<MadinatyProject />}/>
+      <Route path='/madinaty/cadi' element={<Cadi />}/>
+      <Route path='/madinaty/gardenia' element={<Gardenia />}/>
+      <Route path='/madinaty/nargis' element={<Nargis />}/>
+      <Route path='/madinaty/viola' element={<ViolaM />}/>
+      <Route path='/madinaty/apartments' element={<MadinatyApartments />}/>
+      <Route path='/future-city' element={<FutureProject />}/>
+      <Route path='/news' element={<NewsPage />}/>
+      <Route path='/contact' element={<ContactPage />}/>
+      <Route path='/careers' element={<CareersPage />}/>
+      <Route path='/construction' element={<ConstructionUpdates />}/>
+      <Route path='/construction/buruj-updates' element={<BurujUpdates />}/>
+      <Route path='/construction/future-updates' element={<FutureUpdates />}/>
+      <Route path='/construction/lavida-updates' element={<LavidaUpdates />}/>
+      <Route path='/construction/madinaty-updates' element={<MadinatyUpdates />}/>
+      <Route path='/construction/bayti-updates' element={<BaytiUpdates />}/>
+      <Route path='/commercial' element={<CommercialPage />}/>
+      <Route path='/commercial/bayti-mall' element={<BaytiMall />}/>
+      <Route path='/about-us' element={<AboutPage />}/>
+      <Route path='/image-gallery' element={<ImageGallery />}/>
+      <Route path='/video-gallery' element={<VideoGallery />}/>
 
     </Routes>
-    {/* </HashRouter> */}
+    </HashRouter>
     </>
   )
 }
