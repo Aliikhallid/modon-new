@@ -96,7 +96,7 @@ setD8('');
 
 
 const loadImages = (project: string,lastImage:number) => {
-  const path = "ProjectsBuldingCat/"
+  const path = "../ProjectsBuldingCat/"
   
     const paths = [];
     for (let i = 0; i <= lastImage; i++) {
