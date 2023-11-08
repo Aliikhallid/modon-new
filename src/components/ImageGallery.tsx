@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 const ImageGallery = () => {
   const [imagePaths, setImagePaths] = useState<string[]>([]);
   const loadImages = (project: string,lastImage:number) => {
-    const path = "../public/ImageGallery/"
+    const path = "ImageGallery/"
     
       const paths = [];
       for (let i = 0; i <= lastImage; i++) {

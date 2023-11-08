@@ -3,7 +3,7 @@ import NavBar from "../NavBar"
 import { useEffect, useLayoutEffect, useState } from "react";
 import Footer from "../sections/Footer";
 const FutureUpdates = () => {
-  const path = "../public/ConstructionUpdates/Future/"
+  const path = "ConstructionUpdates/Future/"
   const [imagePaths, setImagePaths] = useState<string[]>([]);
   const loadImages = (year: string,month:string,lastImage:number) => {
     

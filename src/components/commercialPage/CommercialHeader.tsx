@@ -18,7 +18,7 @@ const CommercialHeader = () => {
            <div className="bayti-mall-img"></div>
            <h1 className='regular text-3xl m-2'>BAYTI MALL</h1>
            <p className='light mb-2'>Buruj</p>
-           <Link to='/bayti-mall'><Button className='bg-primary-color hover:text-black'>See Project</Button></Link>
+           <Link to='bayti-mall'><Button className='bg-primary-color hover:text-black'>See Project</Button></Link>
         </div>
       </div>
     </div>

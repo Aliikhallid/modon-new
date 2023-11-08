@@ -4,7 +4,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import Footer from "../sections/Footer";
 
 const BaytiUpdates = () => {
-  const path = "../public/ConstructionUpdates/Bayti/"
+  const path = "ConstructionUpdates/Bayti/"
   const [imagePaths, setImagePaths] = useState<string[]>([]);
   const loadImages = (year: string,month:string,lastImage:number) => {
     

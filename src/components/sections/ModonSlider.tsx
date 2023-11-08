@@ -4,7 +4,7 @@ import ImageSlider from '../ImageSlider';
 const ModonSlider = () => {
 
 
-  const path = "../public/ProjectsBuldingCat/"
+  const path = "ProjectsBuldingCat/"
     const loadImages = (project: string,lastImage:number) => {
       
       const paths = [];
