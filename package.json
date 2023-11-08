@@ -5,8 +5,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "npm run dev",
     "dev": "vite",
-    "start": "npm start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d src",
     "build": "tsc && vite build",
