@@ -19,9 +19,18 @@ const NavBar = () => {
   const logo = document.querySelector('.logo');
   const [modonLogo, setLogo] = useState(modonLogoWhite);
   // const ham = document.querySelector('.ham');
+  const line1 = document.querySelector('.line1')
+  const line2 = document.querySelector('.line2')
+  const line3 = document.querySelector('.line3')
   // const navList = document.querySelector('.nav-list');
   window.addEventListener("scroll", () => {
     if (window.scrollY > 150) {
+      line1?.classList.remove("bg-white");
+      line2?.classList.remove("bg-white");
+      line3?.classList.remove("bg-white");
+      line1?.classList.add("bg-black");
+      line2?.classList.add("bg-black");
+      line3?.classList.add("bg-black");
       navbar?.classList.add("bg-white");
       navbar?.classList.remove("text-white");
       navbar?.classList.remove("h-20");
@@ -33,6 +42,12 @@ const NavBar = () => {
       logo?.classList.add('h-12');
       setLogo(modonLogoBlack)
     } else {
+      line1?.classList.remove("bg-black");
+      line2?.classList.remove("bg-black");
+      line3?.classList.remove("bg-black");
+      line1?.classList.add("bg-white");
+      line2?.classList.add("bg-white");
+      line3?.classList.add("bg-white");
       logo?.classList.remove('h-12');
       logo?.classList.add('h-14');
       setLogo(modonLogoWhite)
@@ -71,7 +86,7 @@ const NavBar = () => {
           <NavigationMenuTrigger><div className='flex items-center'>{t("projects-nav")} <ChevronDown/></div></NavigationMenuTrigger>
           <NavigationMenuContent className="text-white mt-4">
           <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
-            <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='#/bayti'>
+            <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/bayti'>
                 <NavigationMenuLink  asChild>
                   <p>{t("bayti-c")}</p>
                 </NavigationMenuLink>

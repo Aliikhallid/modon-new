@@ -5,7 +5,7 @@ import { InstagramLogoIcon, MobileIcon, EnvelopeClosedIcon } from "@radix-ui/rea
 const Footer = () => {
   return (
 <div className="footer flex w-full h-96 justify-around items-center relative light bg-white text-primary-color">
-  <div>
+  <div className="social-foot">
   <h1 className="regular text-2xl">About Modon</h1>
            <p>Modon knows no boundaries for leadership.</p>
            <p>We work today to shape the future.</p>
@@ -31,7 +31,7 @@ const Footer = () => {
            <div className=" m-1">FAQ</div>
            <div className=" m-1">Enquire Now</div>
          </div>
- <div>
+ <div className="head-off">
        <h1 className="regular text-2xl">Head Office</h1>
        <p className="w-max m-1">Al Mamoon District, Al Nossor Area
                           Near Baghdad Tower, Baghdad, Iraq</p>
@@ -46,10 +46,10 @@ const Footer = () => {
           <div className="footer-mobil2"></div>
         </div>
       </div>
+       </div>
          <div className="third-footer h-10 w-full bg-primary-color absolute left-0 bottom-0 light flex justify-around items-center text-white">
          <h1>Copyright © 2023. All Rights Reserved</h1>
          <h1>Powered by ADZone</h1>
-       </div>
        </div>
 </div>
   )

@@ -14,13 +14,13 @@ import apple from "../../assets/apple.png"
 
 const LastPage = () => {
   return (
-    <div className='last-page w-full bg-white text-black'>
-      <section className='last-section w-1/2 flex justify-end'>
-        <div className="first-text">
+    <div className='last-page w-full h-fit bg-white text-black'>
+      <section className='last-section flex justify-end'>
+       <div className="first-text">
          <TitleDivider name="A DIGITAL EXPERIENCE"/>
          <h1 className="bigger-h1 regular" style={{fontSize: '3rem'}}>ONE APP FOR ALL <span style={{color: '#06316c'}}>MODON PROPERTIES</span></h1>
          <p className="mb-10 mt-3 light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam fugiat aliquam unde. Facilis, debitis perferendis sint tenetur suscipit praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, suscipit?</p>
-        </div>
+        </div> 
          <div className="icons-last light">
           <div className="ab flex flex-col gap-4">
            <div className="icon flex gap-2 "><img src={dig} className="h-8 p-1" alt="dig" /> <h1>Construction Updates</h1></div>
@@ -43,7 +43,7 @@ const LastPage = () => {
           <a className="store-link" href="https://play.google.com/store/apps/details?id=com.my_modon"><img src={google} className="h-10" alt="Download Android" /></a>
          </div>
       </section>
-      <section className='last-section2 w-1/2 h-full'>
+      <section className='last-section2 h-screen'>
           <div className="image-last h-full w-full"></div>
       </section>
     </div>

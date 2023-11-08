@@ -5,13 +5,13 @@ import headerVideo from '../../assets/The sustainable environment is the goal of
 import { Button } from '../ui/button';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import FilterComp from '../FilterComp';
+// import FilterMob from '../FilterMob';
 // import { useTranslation } from 'react-i18next';
 
 
 
 
 const Header = () => {
-  console.log(window.innerWidth);
   // const { t } = useTranslation();
   return (
     <div className='header-container relative h-screen flex flex-col regular'>
@@ -22,9 +22,15 @@ const Header = () => {
       <h2>Modon, <span className=''>IRAQ</span></h2>
       <h1 className='regular text-6xl m-1'>Explore Modon Properties</h1>
       <p className='text-gray-400 w-1/2 text-center light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro temporibus, debitis earum optio veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa animi aut iste dicta sapiente! A!</p>
-      <Button size="default" className='text-md bg-slate-200 rounded text-primary-color m-5'>Explore Now <ArrowRightIcon className='explore-ic' /></Button>
+      <Button className='text-md bg-slate-200 rounded text-primary-color m-5'>Explore Now <ArrowRightIcon className='explore-ic' /></Button>
       </div>
-          <FilterComp />
+      <div className="filter-web flex justify-center items-center w-full">
+       <FilterComp />
+      </div>
+      {/* <div className="filter-mob flex justify-center items-center w-full">
+       <FilterMob />
+      </div> */}
+      {/* TODO */}
     </div>
   )
 }
