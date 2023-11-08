@@ -74,7 +74,7 @@ const NavBar = () => {
           <NavigationMenuTrigger><div className='flex items-center'>{t("projects-nav")} <ChevronDown/></div></NavigationMenuTrigger>
           <NavigationMenuContent className="text-white mt-4">
           <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
-            <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/modon-new/bayti'>
+            <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='#/bayti'>
                 <NavigationMenuLink  asChild>
                   <p>{t("bayti-c")}</p>
                 </NavigationMenuLink>
