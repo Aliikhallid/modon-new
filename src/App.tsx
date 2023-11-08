@@ -61,7 +61,7 @@ function App() {
       <Route path='/modon-new/buruj/hadeer-towers' element={<HadeerTowers />}/>
       <Route path='/modon-new/buruj/sorouh-towers' element={<SorouhTowers />}/>
       <Route path='/modon-new/lavida' element={<LavidaProject />}/>
-      <Route path='#/bayti' element={<BaytiProject />}/>
+      <Route path='/bayti' element={<BaytiProject />}/>
       <Route path='/modon-new/bayti/jory' element={<Jory />}/>
       <Route path='/modon-new/bayti/lotus' element={<Lotus />}/>
       <Route path='/modon-new/bayti/narjis' element={<Narjis />}/>
