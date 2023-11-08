@@ -75,7 +75,7 @@ const BurujProject = () => {
           <div className="flex flex-col justify-center items-start gap-2 m-5 w-full">
         <div className="project1-title text-5xl regular">Al Sorouh Towers</div>
         <div className="project1-des text-xl light">Baghdad, IRAQ</div>
-          <Link to='/sorouh-towers' className="z-10"> <Button className="text-sm regular" variant='default'>Explore Now</Button></Link>
+          <Link to='sorouh-towers' className="z-10"> <Button className="text-sm regular" variant='default'>Explore Now</Button></Link>
           </div>
         </div>
         </div>
@@ -86,7 +86,7 @@ const BurujProject = () => {
           <div className="flex flex-col justify-center items-end text-center w-full gap-2 m-5">
         <div className="project2-title text-5xl regular">Al Hadeer Towers</div>
         <div className="project2-des text-xl light">Baghdad, IRAQ</div>
-           <Link to='/hadeer-towers' className="z-10"><Button className="text-sm regular" variant='default'>Explore Now</Button></Link>
+           <Link to='hadeer-towers' className="z-10"><Button className="text-sm regular" variant='default'>Explore Now</Button></Link>
           </div>
         </div>
         </div>
