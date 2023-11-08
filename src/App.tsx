@@ -35,10 +35,32 @@ import MadinatyApartments from './components/projectPage/MadinatyApartments.tsx'
 
 
 function App() {
+<<<<<<< HEAD
  
   return (
     <>
     <HashRouter>
+=======
+  // const router = createHashRouter([
+  //   {
+  //     path: "/modon-new/",
+  //     element: <MainPage />
+  //   },
+  //   {
+  //     path: "/",
+  //     element: <MainPage />
+  //   },
+  //   {
+  //     path: "/",
+  //     element: <MainPage />
+  //   },
+  // ])
+ 
+  return (
+    <>
+    {/* <HashRouter> */}
+    {/* <RouterProvider /> */}
+>>>>>>> parent of 224cab6 (commited)
     <Routes>
       <Route path='/home' element={<MainPage />}/>
       <Route path='/buruj' element={<BurujProject />}/>
@@ -46,6 +68,7 @@ function App() {
       <Route path='/buruj/sorouh-towers' element={<SorouhTowers />}/>
       <Route path='/avida' element={<LavidaProject />}/>
       <Route path='/bayti' element={<BaytiProject />}/>
+<<<<<<< HEAD
       <Route path='/bayti/jory' element={<Jory />}/>
       <Route path='/bayti/lotus' element={<Lotus />}/>
       <Route path='/bayti/narjis' element={<Narjis />}/>
@@ -72,6 +95,35 @@ function App() {
       <Route path='/about-us' element={<AboutPage />}/>
       <Route path='/image-gallery' element={<ImageGallery />}/>
       <Route path='/video-gallery' element={<VideoGallery />}/>
+=======
+      <Route path='/modon-new/bayti/jory' element={<Jory />}/>
+      <Route path='/modon-new/bayti/lotus' element={<Lotus />}/>
+      <Route path='/modon-new/bayti/narjis' element={<Narjis />}/>
+      <Route path='/modon-new/bayti/viola' element={<Viola />}/>
+      <Route path='/modon-new/bayti/yasmin' element={<Yasmin />}/>
+      <Route path='/modon-new/madinaty' element={<MadinatyProject />}/>
+      <Route path='/modon-new/madinaty/cadi' element={<Cadi />}/>
+      <Route path='/modon-new/madinaty/gardenia' element={<Gardenia />}/>
+      <Route path='/modon-new/madinaty/nargis' element={<Nargis />}/>
+      <Route path='/modon-new/madinaty/viola' element={<ViolaM />}/>
+      <Route path='/modon-new/madinaty/apartments' element={<MadinatyApartments />}/>
+      <Route path='/modon-new/future-city' element={<FutureProject />}/>
+      <Route path='/modon-new/news' element={<NewsPage />}/>
+      <Route path='/modon-new/contact' element={<ContactPage />}/>
+      <Route path='/modon-new/careers' element={<CareersPage />}/>
+      <Route path='/modon-new/construction' element={<ConstructionUpdates />}/>
+      <Route path='/modon-new/construction/buruj-updates' element={<BurujUpdates />}/>
+      <Route path='/modon-new/construction/future-updates' element={<FutureUpdates />}/>
+      <Route path='/modon-new/construction/lavida-updates' element={<LavidaUpdates />}/>
+      <Route path='/modon-new/construction/madinaty-updates' element={<MadinatyUpdates />}/>
+      <Route path='/modon-new/construction/bayti-updates' element={<BaytiUpdates />}/>
+      <Route path='/modon-new/commercial' element={<CommercialPage />}/>
+      <Route path='/modon-new/commercial/bayti-mall' element={<BaytiMall />}/>
+      <Route path='/modon-new/about-us' element={<AboutPage />}/>
+      <Route path='/modon-new/image-gallery' element={<ImageGallery />}/>
+      <Route path='/modon-new/video-gallery' element={<VideoGallery />}/>
+      <Route path='*' element={<NotFound />}/>
+>>>>>>> parent of 224cab6 (commited)
 
     </Routes>
     </HashRouter>
