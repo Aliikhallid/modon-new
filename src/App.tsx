@@ -32,6 +32,7 @@ import Gardenia from './components/projectPage/Gardenia.tsx'
 import Nargis from './components/projectPage/Nargis.tsx'
 import ViolaM from './components/projectPage/ViolaM.tsx'
 import MadinatyApartments from './components/projectPage/MadinatyApartments.tsx'
+import NotFound from './components/NotFound.tsx'
 
 
 function App() {
