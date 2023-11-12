@@ -13,7 +13,8 @@ const NewsMain = () => {
           <div className="new-img11 rounded rounded-tr-[80px] shadow-2xl shadow-black/60"></div>
         </div>
         <div className="new2 h-full m-5 flex flex-col justify-center items-start text-black">
-          <h1 className="regular m-3 text-3xl text-primary-color mx-5">{t("new11")}</h1>
+          <div className="gradient-divider"></div>
+          <h1 className="bold m-3 text-3xl text-primary-color mx-5">{t("new11")}</h1>
           <h3 className="light mx-5 my-3">{t("dubai-modon")}</h3>
           <p className="light mx-5">{t("new11des")}</p>
         </div>

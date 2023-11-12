@@ -14,7 +14,7 @@ export const NewsHeader = () => {
     }
   }
   return (
-    <div className="flex flex-col w-full h-96 justify-center items-center bg-primary-color relative" onLoad={typeWriter}>
+    <div className="flex flex-col w-full h-96 justify-center items-center bg-white text-primary-color relative" onLoad={typeWriter}>
       <div className="news-head-cont flex flex-col justify-center items-center">
         <img src={modonLogo} alt="MODON" height={120} width={120} />
         <h1 className="regular text-6xl m-2">NEWS</h1>
