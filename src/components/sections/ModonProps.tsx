@@ -7,7 +7,7 @@ const ModonProps = () => {
     <div className='modon-container w-full h-fit bg-white text-black'>
       <section className='modon-text-container'>
       <TitleDivider name="MODON" />
-        <h1 className='latest regular'>LATEST PROPERTIES</h1>
+        <h1 className='latest italic'>LATEST PROPERTIES</h1>
         <p className='light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae facilis fuga sequi impedit at eum quisquam dignissimos, velit quia?</p>
         <Button className='bg-indigo-950 text-white hover:text-black'>VIEW ALL</Button>
       </section>

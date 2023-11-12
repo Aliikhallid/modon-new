@@ -11,6 +11,8 @@ const LangSwitcher = () => {
     // Set the initial language and direction
     i18n.changeLanguage(userLanguage);
     document.documentElement.dir = userLanguage === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = userLanguage;
+
   }, [i18n]);
 
   const changeLanguage = (language: string) => {
@@ -20,6 +22,8 @@ const LangSwitcher = () => {
     // Change the language and direction
     i18n.changeLanguage(language);
     document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = language;
+
   };
 
   return (
