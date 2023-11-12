@@ -26,6 +26,7 @@ import { Building, Castle, Layers3Icon, LeafyGreen } from "lucide-react";
 import InfoStructure from "./aboutPage/InfoStructure";
 import TermsAndConditions from "./aboutPage/TermsAndConditions";
 import FAQ from "./aboutPage/FAQ";
+import { useTranslation } from "react-i18next";
 const AboutPage = () => {
   const [overviewP, setOverview] = useState('Modon is one of the most prominent and successful companies in modern real estate development in Iraq and operates under the umbrella of Al Handal International Group.') 
   const [title, setTitle] = useState('OVERVIEW')
@@ -95,22 +96,22 @@ const AboutPage = () => {
 
 
 const setOver7 = () => {
-  setTitle('PRIVACY POLICY');
-  setOverview('This Privacy Policy applies to www.modoniq.com and other company websites and mobile applications “Mobile Apps”, which are owned and operated by Modon for Real Esatat Development CO “MODON ” “Us,” or We”). This Privacy Policy describes how MODON collects and uses the personal information you provide (directly or through third parties), which is automatically generated when you interact with our websites and our mobile applications. By accessing or using MODON Website and MODON Mobile Applications, you agree to this privacy policy with the understanding of your information being collected and how we will treat it. If you do not agree with our policies and practices, you may not use MODON Website or Mobile Application. If you have additional questions regarding the privacy and security of your personal information, please contact us at info@modoniq.com')
+  setTitle('privacy-policy');
+  setOverview('privacy-policy-overview')
   setShow(7);
   setShoww(false);
 }
 
 const setOver8 = () => {
-  setTitle('TERMS & CONDITION');
-  setOverview('By accessing this web site (www.modoniq.com) (\'Website\'), you are agreeing to be bound by these terms and conditions and all applicable laws and regulations, which you hereby represent and warrant to have read, understood and to agree with in full. Additional terms of use apply in accessing/using certain select features of the Website e.g. initiating webchat, making payments etc. You will be required to read understand and agree in full to such additional terms of use before proceeding that module/section.\n\nIf you do not agree with any of these terms, you are prohibited from using or accessing any further this Website and you must immediately exit from the Website.')
+  setTitle('terms-conditions');
+  setOverview('terms-conditions-overview')
   setShow(8);
   setShoww(false);
 }
 
 const setOver9 = () => {
-  setTitle('Frequently Asked Questions');
-  setOverview('Modon is one of the most prominent and successful companies in modern real estate development in Iraq and operates under the umbrella of Al Handal International Group.')
+  setTitle('faq');
+  setOverview('faq-overview')
   setShow(9);
   setShoww(false);
 }
@@ -171,6 +172,8 @@ const setOver9 = () => {
     setDes2('')
   }
 
+  const {t} = useTranslation();
+
   const PrivacyPolicyText = [
     {title:"whatAreCookies",description:"cookiesDesc"},
     {title:"cookiesUseQ",description:"cookiesUseA"},
@@ -216,8 +219,8 @@ const setOver9 = () => {
         </div>
          <div className="flex flex-wrap justify-center gap-5 my-20 animate-fade-down animate-duration-1000 animate-delay-500">
           <div className="flex flex-col gap-5 mb-10 justify-center items-center">
-          <h1 className="text-5xl regular">{title}</h1>
-          <div className="overview-p text-lg w-3/4 text-center light">{overviewP}</div>
+          <h1 className="text-5xl regular">{t(title)}</h1>
+          <div className="overview-p text-lg w-3/4 text-center light">{t(overviewP)}</div>
           </div>
          {show > 6? handleComponent[show]: show===6 ? <div className="construction-updates w-full h-fit py-5 flex flex-col justify-center items-center">
       <div className="constructs flex flex-wrap justify-center items-center">
@@ -263,11 +266,11 @@ const setOver9 = () => {
      </div> : ''}
             </div>
           {show<2 ? <div className="flex flex-col w-1/2 justify-center items-start light">
-          <div className="overview-p2 m-3 regular text-3xl text-white">{overviewP2}</div>
+          <div className="overview-p2 m-3 regular text-3xl text-white">{t(overviewP2)}</div>
           <div className="overview-d m-3 text-md">{des}</div> 
           </div> : show===5 ? <div className="flex flex-col w-1/2 h-full justify-around items-start light">
             <div className="flex flex-col">
-          <div className="overview-p2 m-3 regular text-3xl text-white">{overviewP2}</div>
+          <div className="overview-p2 m-3 regular text-3xl text-white">{t(overviewP2)}</div>
           <Accordion type="multiple"className="w-96">
              <AccordionItem value="item-1">
                <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -281,7 +284,7 @@ const setOver9 = () => {
           </Accordion>
             </div>
             <div className="flex flex-col">
-          <div className="overview-p3 m-3 regular text-3xl text-white">{overviewP3}</div>
+          <div className="overview-p3 m-3 regular text-3xl text-white">{t(overviewP3)}</div>
           <Accordion type="multiple" className="w-96">
              <AccordionItem value="item-1">
                <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -295,12 +298,12 @@ const setOver9 = () => {
             </div>
           </div> : <div className="flex flex-col w-1/2 h-full justify-around items-start light">
             <div className="flex flex-col">
-          <div className="overview-p2 m-3 regular text-3xl text-white">{overviewP2}</div>
-          <div className="overview-d m-3 text-md mb-10">{des}</div> 
+          <div className="overview-p2 m-3 regular text-3xl text-white">{t(overviewP2)}</div>
+          <div className="overview-d m-3 text-md mb-10">{t(des)}</div> 
             </div>
             <div className="flex flex-col">
-          <div className="overview-p2 m-3 regular text-3xl text-white">{overviewP3}</div>
-          <div className="overview-d m-3 text-md">{des2}</div> 
+          <div className="overview-p2 m-3 regular text-3xl text-white">{t(overviewP3)}</div>
+          <div className="overview-d m-3 text-md">{t(des2)}</div> 
             </div>
           </div>}
           </div>}
