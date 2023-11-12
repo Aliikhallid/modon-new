@@ -279,10 +279,10 @@ const loadImages = (project: string,lastImage:number) => {
       <div
         className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] p-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
-        <p className="md:text-[14px] light text-[8px]">{t("overview")}</p>
-        <p className="md:text-[48px] text-[12px]">Al Sorouh Towers</p>
+        <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
+        <p className="md:text-[64px] text-[12px]">Al Sorouh Towers</p>
         </div>
-        <p className="md:max-w-[75rem] light text-md max-w-[40rem]">The four towers of Sorouh are located at the entrance of Buruj project, and they are distributed in semi-circular shape to ensure the privacy, and to provide wonderful view of the Baghdad International Airport Street, of the green gardens and the landscapes as well, from all the units.</p>
+        <p className="md:max-w-[75rem] text-[22px]  light text-md max-w-[40rem]">The four towers of Sorouh are located at the entrance of Buruj project, and they are distributed in semi-circular shape to ensure the privacy, and to provide wonderful view of the Baghdad International Airport Street, of the green gardens and the landscapes as well, from all the units.</p>
         <div className="flex w-full flex-col items-center justify-between md:flex-row">
           <div>
         <div className="w-1/4 h-[55px] bg-white rounded-t-[15px] text-primary text-[20px] mt-10  uppercase flex justify-center items-center">{t("info")}</div>

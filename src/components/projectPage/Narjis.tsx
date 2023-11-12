@@ -113,10 +113,10 @@ const loadImages = (project: string,lastImage:number) => {
       <div
         className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] p-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
-        <p className="md:text-[14px] light text-[8px]">{t("overview")}</p>
-        <p className="md:text-[48px] text-[12px]">Narjis</p>
+        <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
+        <p className="md:text-[64px] text-[12px]">Narjis</p>
         </div>
-        <p className="md:max-w-[75rem] light text-md max-w-[40rem]">Narjis Villa is the best economic choice. It has three bedrooms, a comfortable living room, a parking space for one car, a green yard and a beautiful balcony on the first floor.</p>
+        <p className="md:max-w-[75rem] text-[22px]  light text-md max-w-[40rem]">Narjis Villa is the best economic choice. It has three bedrooms, a comfortable living room, a parking space for one car, a green yard and a beautiful balcony on the first floor.</p>
         <div className="flex w-full flex-col items-center justify-between md:flex-row">
           <div>
         <div className="w-1/4 h-[55px] bg-white rounded-t-[15px] text-primary text-[20px] mt-10  uppercase flex justify-center items-center">{t("info")}</div>
