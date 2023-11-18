@@ -19,9 +19,9 @@ const LastPage = () => {
        <div className="first-text">
          <TitleDivider name="A DIGITAL EXPERIENCE"/>
          <h1 className="bigger-h1 regular" style={{fontSize: '3rem'}}>ONE APP FOR ALL <span style={{color: '#06316c'}}>MODON PROPERTIES</span></h1>
-         <p className="mb-10 mt-3 light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam fugiat aliquam unde. Facilis, debitis perferendis sint tenetur suscipit praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, suscipit?</p>
+         <p className="mb-10 mt-3 regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam fugiat aliquam unde. Facilis, debitis perferendis sint tenetur suscipit praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, suscipit?</p>
         </div> 
-         <div className="icons-last light">
+         <div className="icons-last regular">
           <div className="ab flex flex-col gap-4">
            <div className="icon flex gap-2 "><img src={dig} className="h-8 p-1" alt="dig" /> <h1>Construction Updates</h1></div>
            <div className="icon flex gap-2"><img src={document} className="h-8  p-1" alt="dig" /> <h1>Ownership Updates</h1></div>

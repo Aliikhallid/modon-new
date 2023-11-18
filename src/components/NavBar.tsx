@@ -33,7 +33,7 @@ const NavBar = () => {
       line3?.classList.add("bg-black");
       navbar?.classList.add("bg-white");
       navbar?.classList.remove("text-white");
-      navbar?.classList.remove("h-20");
+      navbar?.classList.remove("h-24");
       navbar?.classList.add("h-16");
       navbar?.classList.add("text-black");
       navbar?.classList.add("box-shadow-nav");
@@ -55,13 +55,13 @@ const NavBar = () => {
       navbar?.classList.remove("box-shadow-nav");
       navbar?.classList.remove("bg-white");
       navbar?.classList.remove("h-16");
-      navbar?.classList.add("h-20");
+      navbar?.classList.add("h-24");
       navbar?.classList.remove("text-black");
       navbar?.classList.add("text-white");
     }
   });
   return (
-    <div className="navbar justify-between items-center text-white h-20 pr-6 pl-6 fixed top-0 w-full flex light z-30">
+    <div className="navbar justify-between items-center text-white h-24 pr-6 pl-6 fixed top-0 w-full flex light z-30">
       <div className="logo-cont flex justify-center items-center">
         <Link to="/">
           <img

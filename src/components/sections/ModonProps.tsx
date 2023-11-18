@@ -14,7 +14,7 @@ const ModonProps = () => {
       <section className='images-container regular'>
           <div className="images-container-one">
           <div>
-       <Link to="/cadi" className='cursor-pointer'> 
+       <Link to="/madinaty/cadi" className='cursor-pointer'> 
            <div className="image image-1"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
             <h1 className='text-lg'>CADI - MADINATY</h1>
@@ -24,7 +24,7 @@ const ModonProps = () => {
         </Link>
           </div>
           <div>
-       <Link to="/narjis" className='cursor-pointer'> 
+       <Link to="/bayti/narjis" className='cursor-pointer'> 
            <div className="image image-2"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
             <h1 className='text-lg'>NARJIS - MADINATY</h1>
@@ -36,7 +36,7 @@ const ModonProps = () => {
         </div>
         <div className="images-container-two">
         <div>
-       <Link to="/apartments" className='cursor-pointer'> 
+       <Link to="/madinaty/apartments" className='cursor-pointer'> 
            <div className="image image-3"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
             <h1 className='text-lg'>APARTMENTS</h1>

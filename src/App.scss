@@ -512,6 +512,16 @@ Button:hover {
   width: 22rem;
   background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
 }
+.footer-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  background: url(./assets/ProjectBG.png)no-repeat center center/cover;
+}
 .bottom-overlay {
   position: relative;
   background-color: #a89c8c;
