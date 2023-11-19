@@ -9,15 +9,10 @@ export default function TermsAndConditions() {
       </div>
       <div className="overview-d m-3 text-md flex flex-col gap-4">
         <div>
-          Permission is granted to temporarily access and download one copy of
-          the materials (information or software) as available on the Website
-          for personal, non-commercial transitory viewing only. The materials
-          contained in this Website are protected by applicable copyright and
-          trade-mark law.
+          {t("terms-overview1")}
         </div>
         <div>
-          This is the grant of a license, not a transfer of title, and under
-          this license you may not:
+          {t("terms1")}:
         </div>
         <ul className="flex flex-col gap-2 list-disc p-5 mx-2">
           <li>modify or copy any materials;</li>
