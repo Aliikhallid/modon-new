@@ -29,7 +29,7 @@ const Header = () => {
         <Button variant="secondary" className='rounded'>Rent</Button>
       </div>
       </div>
-      <div className="filter-web flex justify-center items-center absolute bottom-0 w-full">
+      <div className="filter-web flex justify-center items-center absolute bottom-0 w-full mb-[5rem]">
        <FilterComp />
       </div>
       {/* <div className="filter-mob flex justify-center items-center w-full">

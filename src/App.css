@@ -150,7 +150,6 @@
   height: 13%;
   width: 90%;
   background-color: cadetblue;
-  margin-bottom: 5rem;
 }
 .props-filter-container .props-filter-button {
   border-right: none !important;
@@ -706,6 +705,17 @@ Button:hover {
   cursor: pointer;
   background-color: white;
   color: var(--primary-color);
+}
+
+.job-sort {
+  cursor: pointer;
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.job-sort:hover{
+  background-color: var(--primary-color);
+  background-color: white;
 }
 
 .contact1 {
