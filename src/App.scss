@@ -9,7 +9,7 @@
 }
 :root {
   --primary-color: #06316c;
-  --primary-multiply-color: #06316c6b;
+  --primary-multiply-color: #06305399;
   --secondary-color: #B72027;
 }
 @font-face {
@@ -97,7 +97,7 @@
   font-weight: bolder;
 }
 .navbar {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
   position: relative;
 }
 .box-shadow-nav {
@@ -119,6 +119,16 @@
 //   // background: url(./assets/Flag_of_Iraq.svg)no-repeat center center/cover;
 //   z-index: 2;
 // }
+.contact0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background: url(./assets/contact.webp)no-repeat center center/cover;
+}
 .props-filter-container {
   display: flex;
   border-radius: 2px;

@@ -6,8 +6,9 @@ import LangSwitcher from './sections/LangSwitcher';
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@radix-ui/react-navigation-menu';
 import { NavigationMenuContent } from './ui/navigation-menu';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Instagram } from 'lucide-react';
 import { useState } from "react";
+import { MobileIcon } from "@radix-ui/react-icons";
 
 
  
@@ -22,9 +23,15 @@ const NavBar = () => {
   const line1 = document.querySelector('.line1')
   const line2 = document.querySelector('.line2')
   const line3 = document.querySelector('.line3')
+  const navInner = document.querySelector('.navbarInner');
   // const navList = document.querySelector('.nav-list');
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 150) {
+    if (window.scrollY > 1) {
+      navInner?.classList.add('hidden');
+      navInner?.classList.remove('h-16');
+      navInner?.classList.add('h-0');
+      navbar?.classList.remove('h-36');
+      navbar?.classList.add('h-16')
       line1?.classList.remove("bg-white");
       line2?.classList.remove("bg-white");
       line3?.classList.remove("bg-white");
@@ -33,8 +40,6 @@ const NavBar = () => {
       line3?.classList.add("bg-black");
       navbar?.classList.add("bg-white");
       navbar?.classList.remove("text-white");
-      navbar?.classList.remove("h-24");
-      navbar?.classList.add("h-16");
       navbar?.classList.add("text-black");
       navbar?.classList.add("box-shadow-nav");
       menuTrig?.classList.add("snd-color-imp");
@@ -44,6 +49,11 @@ const NavBar = () => {
     } else {
       line1?.classList.remove("bg-black");
       line2?.classList.remove("bg-black");
+      navInner?.classList.remove('hidden');
+      navInner?.classList.remove('h-0');
+      navInner?.classList.add('h-16')
+      navbar?.classList.remove('h-16')
+      navbar?.classList.add('h-36');
       line3?.classList.remove("bg-black");
       line1?.classList.add("bg-white");
       line2?.classList.add("bg-white");
@@ -54,14 +64,25 @@ const NavBar = () => {
       menuTrig?.classList.remove("snd-color-imp");
       navbar?.classList.remove("box-shadow-nav");
       navbar?.classList.remove("bg-white");
-      navbar?.classList.remove("h-16");
-      navbar?.classList.add("h-24");
       navbar?.classList.remove("text-black");
       navbar?.classList.add("text-white");
     }
   });
+  
   return (
-    <div className="navbar justify-between items-center text-white h-24 pr-6 pl-6 fixed top-0 w-full flex light z-30">
+    <div className="navbar flex flex-col justify-center text-white h-36 pr-6 pl-6 fixed top-0 w-full light z-30">
+      <div className="navbarInner flex w-full justify-between items-center h-16 border-b-[0.1px]">
+        <h1 className="mx-3"><span className="bold">Email us at:</span> Info@modoniq.com</h1>
+        <div className="social-items flex justify-around items-center cursor-pointer w-[20%]">
+          <h1><Instagram height={17} /></h1>
+          <h1><Instagram height={17} /></h1>
+          <h1><Instagram height={17} /></h1>
+          <h1><Instagram height={17} /></h1>
+          <div className="h-8 w-0.5 m-3 bg-gray-400"></div>
+          <h1 className="flex justify-center items-center regular text-xl"><MobileIcon className="mx-1" height={25} width={25} /> 6001</h1>
+        </div>
+      </div>
+      <div className="navMain flex w-full justify-between items-center h-20">
       <div className="logo-cont flex justify-center items-center">
         <Link to="/">
           <img
@@ -133,6 +154,7 @@ const NavBar = () => {
         </a>
         <LangSwitcher />
         <Enquire />
+      </div>
       </div>
     </div>
   );

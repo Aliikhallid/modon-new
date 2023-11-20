@@ -21,8 +21,8 @@ const Header = () => {
       <div className="overlay absolute h-full w-full top-0 left-0 right-0 bottom-0 object-cover -z-30 bg-white"></div>
       <div className="paralax relative transitionnn flex w-full flex-col h-1/2 justify-center items-center">
       <h2>Modon, <span className=''>IRAQ</span></h2>
-      <h1 className='bold text-6xl m-3'>Buruj Towers</h1>
-      <p className='text-gray-400 w-1/2 text-center m-2 light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro temporibus, debitis earum optio veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <h1 className='bold text-6xl m-3'>Modon Real Estate</h1>
+      <p className='text-white w-1/2 text-center m-2 light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro temporibus, debitis earum optio veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <Button variant='ghost' className='text-xl rounded m-2'>Explore Now <ArrowRightIcon className='explore-ic h-5 w-5' /></Button>
       <div className="btns relative m-3 flex gap-3 justify-center items-center">
         <Button variant="default" className='rounded'>Sale</Button>

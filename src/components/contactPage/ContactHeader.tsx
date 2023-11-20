@@ -5,25 +5,30 @@ import { Input } from "../ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@radix-ui/react-select"
 import { Textarea } from "../ui/textarea"
 import { Checkbox } from "@radix-ui/react-checkbox"
+import { SewingPinFilledIcon } from "@radix-ui/react-icons"
 
 const ContactHeader = () => {
   return (
-    <div className="contact-page w-full flex flex-col justify-center items-center">
-       <div className="contact0 h-60 w-full bg-primary-multiply-color flex justify-center items-center">
-    <img src={modonLogo} alt="MODON" height={120} width={120}/>
+    <div className="contact-page w-full h-fit flex flex-col justify-center items-center">
+       <div className="contact0 relative h-[90vh] bg-primary-multiply-color w-full flex flex-col justify-center items-center">
+    {/* <img src={modonLogo} alt="MODON" height={120} width={120}/> */}
+    <h1 className="regular text-2xl">Get in Touch</h1>
+    <h1 className="bold text-5xl m-3">Contact Us</h1>
+    <p className="light text-center">Please feel free to get in touch with our Customer support<br /> team for any request or inquiry.</p>
        </div>
-      <div className="cont-cont h-screen w-full flex">
-      <div className="contact1 h-full w-1/2"></div>
-      <div className="contact2 h-full w-1/2 bg-primary-multiply-color flex flex-col justify-center items-center regular text-white">
-        <h1 className="regular text-6xl flex contact-header text-white mb-3">GET IN TOUCH</h1>
-        <form className="flex flex-col justify-start gap-5 py-4 light w-3/4">
+      <div className="cont-cont h-fit w-full flex bg-white text-primary-color">
+      <div className="contact2 h-[140vh] w-full flex flex-col justify-center items-center regular">
+        <h1 className="regular text-3xl flex contact-header text-primary-color mb-3 z-10">WE'D LOVE TO HEAR FROM YOU</h1>
+          <form className="flex flex-col justify-start gap-5 py-4 light w-3/4">
+            <div className="flex justify-start gap-5 py-4 light">
+             <div className="flex flex-col justify-start gap-5 w-1/2">
               <div className="flex flex-col justify-start gap-2">
                 <Label htmlFor="fullname" className="regular">FULL NAME</Label>
                 <Input id="fullname" className="h-14" placeholder="Enter Full Name" required />
               </div>
               <div className="flex flex-col justify-start gap-2">
-                <Label htmlFor="email" className="regular">EMAIL ADDRESS</Label>
-                <Input id="fullname" className="h-14" placeholder="Enter Your Email" required />
+                <Label htmlFor="email" className="regular">E-MAIL</Label>
+                <Input id="email" className="h-14" placeholder="Enter E-Mail" required />
               </div>
               <div className="flex flex-col justify-start gap-2 relative">
                 <Label htmlFor="email" className="regular">PHONE NUMBER</Label>
@@ -44,19 +49,28 @@ const ContactHeader = () => {
                     className="col-span-2 h-14"
                   />
                 </div>
-
+                </div>
+          </div>
+          <div className="flex flex-col justify-start gap-5 w-1/2">
+          <div className="flex flex-col justify-start gap-2 h-full">
+                <Label htmlFor="message" className="regular">Message</Label>
+                <Textarea id="message" className="h-full" placeholder="Enter Your Message..." required />
               </div>
-              <div className="flex flex-col justify-start gap-2">
-                <Label htmlFor="msg" className="regular">YOUR MESSAGE</Label>
-                <Textarea id="msg" className="h-32" placeholder="Enter Your message" />
-              </div>
-              <div className="flex justify-start gap-2">
-                  <Checkbox value=""/>
-                <Label htmlFor="email">Keep me updated on news and offers.</Label>
-              </div>
-              <Button type="submit" className="w-full regular">SUBMIT</Button>
-
+          </div>
+            </div>
+            <h1 className="flex justify-center items-center gap-2">
+            <Checkbox className="bg-primary-color h-4 w-4" />
+            Accept Receiving Emails about Modon News & Offers
+            </h1>
+              <Button type="submit" className="w-1/2 m-auto regular my-5">SUBMIT</Button>
             </form>
+            <h1 className="bold text-2xl">Come Visit Us</h1>
+            <SewingPinFilledIcon color="#06316c" className="m-3" height={20} width={20} />
+            <p className="light">Al-Maamoun. Al Nisour Square, Near to Baghdad Tower, Iraq</p>
+            <p className="light">07700300004</p>
+            <div className="h-0.5 w-10 m-5 bg-primary-color"></div>
+            <p className="light">info@modoniq.com</p>
+            <p className="light">agents@modoniq.com</p>
       </div>
       </div>
     </div>

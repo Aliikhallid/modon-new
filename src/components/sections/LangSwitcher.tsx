@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
+import en from '../../assets/en.png'
+import ar from '../../assets/iraq.webp'
 
 const LangSwitcher = () => {
   const { i18n } = useTranslation();
@@ -33,8 +35,8 @@ const LangSwitcher = () => {
         value={i18n.language}
         className="bg-transparent cursor-pointer"
       >
-        <option className="bg-transparent text-black" value="en">en</option>
-        <option className="bg-transparent text-black" value="ar">ar</option>
+        <option className="bg-transparent text-black" value="en"><img src={en} alt=""/></option>
+        <option className="bg-transparent text-black" value="ar"><img src={ar} alt="" /></option>
       </select>
     </div>
   );

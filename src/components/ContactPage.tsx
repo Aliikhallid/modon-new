@@ -12,7 +12,7 @@ const ContactPage = () => {
     <div>
       <NavBar />
       <ContactHeader />
-      <ContactMain />
+      {/* <ContactMain /> */}
       <Footer />
     </div>
   )

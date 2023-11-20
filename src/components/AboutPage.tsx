@@ -193,8 +193,6 @@ const setOver9 = () => {
     8: <TermsAndConditions />,
     9: <FAQ/>
   };
-  
-  
   return (
     <div className="bg-primary-multiply-color w-full h-fit flex flex-col justify-start items-center relative">
       <NavBar />
