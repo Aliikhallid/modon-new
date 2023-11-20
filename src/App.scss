@@ -129,6 +129,16 @@
   opacity: 0.2;
   background: url(./assets/contact.webp)no-repeat center center/cover;
 }
+.futureImage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: url(./assets/future-city-min-1.jpg)no-repeat center center/cover;
+}
 .props-filter-container {
   display: flex;
   border-radius: 2px;
