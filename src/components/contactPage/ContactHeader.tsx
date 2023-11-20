@@ -1,5 +1,4 @@
 import { Button } from "../ui/button"
-import modonLogo from '../../assets/Modon-White.png'
 import { Label } from "@radix-ui/react-label"
 import { Input } from "../ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@radix-ui/react-select"
