@@ -154,7 +154,18 @@
 .props-filter-container .props-filter-button {
   border-right: none !important;
 }
-
+.props-filterjob-container {
+  display: flex;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  height: 13%;
+  width: 90%;
+  background-color: cadetblue;
+}
+.props-filterjob-container .props-filter-button {
+  border-right: none !important;
+}
 .header-container {
   display: flex;
   justify-content: flex-end;

@@ -5,12 +5,38 @@ interface JobCardProps{
     month:string;
     nday:number;
     day:string;
-    postDate: string;
+    postDate: Date;
     position: string;
     jobDesc: string;
     jobLoc: string;
 
 }
+function timeAgo(date: Date): string {
+    const now = new Date();
+    const seconds = Math.floor((now.getTime() - date.getTime()) / 1000);
+  
+    // Define time intervals in seconds
+    const intervals = {
+      year: 31536000,
+      month: 2592000,
+      day: 86400,
+      hour: 3600,
+      minute: 60,
+      second: 1,
+    };
+  
+    // Calculate the difference and format accordingly
+    for (const [unit, secondsInUnit] of Object.entries(intervals)) {
+      const difference = Math.floor(seconds / secondsInUnit);
+      if (difference >= 1) {
+        return `${difference} ${unit}${difference === 1 ? '' : 's'} ago`;
+      }
+    }
+  
+    return 'just now';
+  }
+  
+  
 const JobCard = ({month,nday,day,postDate,position,jobDesc,jobLoc}: JobCardProps) => {
     
     return(
@@ -19,7 +45,7 @@ const JobCard = ({month,nday,day,postDate,position,jobDesc,jobLoc}: JobCardProps
                 <p>{month}</p>
                 <p>{nday}</p>
                 <p>{day}</p>
-                <p className="text-sm light text-gray-400">{postDate}</p>
+                <p className="text-sm light text-gray-400">{timeAgo(postDate)}</p>
             </div>
             <div className="w-2 h-4/5 bg-[#FA9D1C]"></div>
             <div className="flex flex-col items-start w-full p-5 justify-evenly regular gap-3">
