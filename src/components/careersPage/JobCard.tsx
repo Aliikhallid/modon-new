@@ -1,5 +1,6 @@
 import { MapPin } from "lucide-react";
 import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 interface JobCardProps{
     month:string;
@@ -59,7 +60,7 @@ const JobCard = ({month,nday,day,postDate,position,jobDesc,jobLoc}: JobCardProps
                     <p>{jobLoc}</p>
                 </div>
                 <div className="flex justify-end w-full">
-                        <Button variant="default" size="lg">Apply Now</Button>
+                        <Link to={position.toLocaleLowerCase().replace(/ /g, "-")}><Button variant="default" size="lg">Apply Now</Button></Link>
                     </div>
             </div>
 
