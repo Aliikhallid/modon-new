@@ -1,62 +1,50 @@
-// import React from 'react'
-import i18next from 'i18next';
-import {SetStateAction, useState} from 'react'
-// import iraq from '../assets/Flag_of_Iraq.svg'
-
-
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import Flag from 'react-flagkit';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 const LangSwitcher = () => {
-  const [lang, setLang] = useState('en')
-  const handleChange = (event: { target: { value: SetStateAction<string>; }; }) => {
-    setLang(event.target.value)
-  }
-  window.addEventListener('change', ()=> {
-    i18next.changeLanguage(lang)
-  })
-  const nav = document.querySelector('.navbar');
-  const navList = document.querySelector('.nav-list');
-  const modonPropsPage = document.querySelector('.modon-container');
-  const sliderCont = document.querySelector('.slider-container');
-  const topSlider = document.querySelector('.top-slider');
-  const propsFilter = document.querySelector('.props-filter-container');
-  const newPage = document.querySelector('.new');
-  const newPage2 = document.querySelector('.new-2');
-  const newPage3 = document.querySelector('.new-3');
-  if(lang === 'ar') {
-    document.getElementsByTagName("html")[0].setAttribute("lang","ar");
-    nav?.classList.add('flex-row-reverse');
-    navList?.classList.add('flex-row-reverse');
-    modonPropsPage?.classList.add('flex-row-reverse');
-    sliderCont?.classList.add('transition-all');
-    sliderCont?.classList.add('flex-row-reverse');
-    sliderCont?.classList.add('justify-end')
-    topSlider?.classList.add('flex-row-reverse');
-    propsFilter?.classList.add('flex-row-reverse');
-    newPage?.classList.add('rtl-dir');
-    newPage2?.classList.add('rtl-dir');
-    newPage3?.classList.add('rtl-dir');
-  }
-  else {
-    document.getElementsByTagName("html")[0].setAttribute("lang","en");
-    navList?.classList.remove('flex-row-reverse');
-    newPage?.classList.remove('rtl-dir');
-    newPage2?.classList.remove('rtl-dir');
-    newPage3?.classList.remove('rtl-dir');
-    sliderCont?.classList.add('transition-all');
-    nav?.classList.remove('flex-row-reverse');
-    modonPropsPage?.classList.remove('flex-row-reverse');
-    topSlider?.classList.remove('flex-row-reverse');
-    sliderCont?.classList.remove('flex-row-reverse');
-    sliderCont?.classList.remove('justify-end')
-    propsFilter?.classList.remove('flex-row-reverse');
-  }
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    // Get the user's preferred language or use a default language
+    const userLanguage = localStorage.getItem('userLanguage') || 'en';
+
+    // Set the initial language and direction
+    i18n.changeLanguage(userLanguage);
+    document.documentElement.dir = userLanguage === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = userLanguage;
+
+  }, [i18n]);
+
+  const changeLanguage = (language: string) => {
+    // Update the user's language preference
+    localStorage.setItem('userLanguage', language);
+
+    // Change the language and direction
+    i18n.changeLanguage(language);
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = language;
+
+  };
+
   return (
     <div>
-          <select value={lang} onChange={handleChange} className='bg-transparent cursor-pointer'>
-            <option className='bg-transparent text-black'>en</option>
-            <option className='bg-transparent text-black'>ar</option>
-          </select>
+      <Select
+        onValueChange={(e) => changeLanguage(e)}
+        value={i18n.language}
+      >
+        <SelectTrigger className='border-none hover:border-none'>
+        <SelectValue >{i18n.language == 'en'? <Flag country='GB'/>:<Flag country='IQ'/>}</SelectValue>
+        </SelectTrigger>
+        <SelectContent className='bg-white/60 min-w-[fit]'>
+        <SelectGroup>
+          <SelectItem value="ar">{<Flag country='IQ'/>}</SelectItem>
+          <SelectItem value="en"><Flag country='GB'/></SelectItem>
+        </SelectGroup>
+      </SelectContent>
+      </Select>
     </div>
-  )
-}
+  );
+};
 
-export default LangSwitcher
+export default LangSwitcher;

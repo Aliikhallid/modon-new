@@ -1,7 +1,7 @@
 import NavBar from "./NavBar"
 import Footer from "./sections/Footer"
 import ContactHeader from "./contactPage/ContactHeader"
-import ContactMain from "./contactPage/ContactMain"
+// import ContactMain from "./contactPage/ContactMain"
 import { useLayoutEffect } from "react"
 
 const ContactPage = () => {
@@ -12,7 +12,7 @@ const ContactPage = () => {
     <div>
       <NavBar />
       <ContactHeader />
-      <ContactMain />
+      {/* <ContactMain /> */}
       <Footer />
     </div>
   )

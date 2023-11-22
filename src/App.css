@@ -9,7 +9,7 @@
 
 :root {
   --primary-color: #06316c;
-  --primary-multiply-color: #06316c6b;
+  --primary-multiply-color: #06305399;
   --secondary-color: #B72027;
 }
 
@@ -49,6 +49,14 @@
   font-family: "Optima";
   src: url(./fonts/Optima.ttf);
 }
+@font-face {
+  font-family: "Optima-Italic";
+  src: url(./fonts/Optima_Italic.woff);
+}
+@font-face {
+  font-family: "Optima-Bold";
+  src: url(./fonts/OPTIMA_B.woff);
+}
 .extra-light {
   font-family: "Tajawal-ExtraLight";
 }
@@ -70,12 +78,24 @@
   font-family: "Tajawal-Regular";
 }
 
+.italic:lang(ar) {
+  font-family: "Tajawal-Regular";
+}
+
+.italic:lang(en) {
+  font-family: "Optima-Italic";
+}
+
 .medium {
   font-family: "Tajawal-Medium";
 }
 
-.bold {
+.bold:lang(ar) {
   font-family: "Tajawal-Bold";
+}
+
+.bold:lang(en) {
+  font-family: "Optima-Bold";
 }
 
 .extra-bold {
@@ -91,7 +111,7 @@
 }
 
 .navbar {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
   position: relative;
 }
 
@@ -111,6 +131,28 @@
   background: url(./assets/google.png) no-repeat center center/cover;
 }
 
+.contact0::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background: url(./assets/contact.webp) no-repeat center center/cover;
+}
+
+.futureImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: url(./assets/future-city-min-1.jpg) no-repeat center center/cover;
+}
+
 .props-filter-container {
   display: flex;
   border-radius: 2px;
@@ -119,12 +161,22 @@
   height: 13%;
   width: 90%;
   background-color: cadetblue;
-  margin-bottom: 5rem;
 }
 .props-filter-container .props-filter-button {
   border-right: none !important;
 }
-
+.props-filterjob-container {
+  display: flex;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  height: 13%;
+  width: 90%;
+  background-color: cadetblue;
+}
+.props-filterjob-container .props-filter-button {
+  border-right: none !important;
+}
 .header-container {
   display: flex;
   justify-content: flex-end;
@@ -246,7 +298,7 @@
   margin: 1rem;
 }
 .images-container .image-1 {
-  background: url(assets/cadimain.webp) no-repeat center center/cover;
+  background: url(./assets/cadimain.webp) no-repeat center center/cover;
   border-radius: 5px;
   height: 30rem;
   width: 25rem;
@@ -496,6 +548,17 @@ Button:hover {
   background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
 }
 
+.footer-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  background: url(./assets/ProjectBG.png) no-repeat center center/cover;
+}
+
 .bottom-overlay {
   position: relative;
   background-color: #a89c8c;
@@ -517,10 +580,133 @@ Button:hover {
     top: 2rem;
   }
 }
+#type-writer {
+  z-index: 2;
+}
+
+.news-head-cont {
+  z-index: 2;
+}
+
+.news-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+  background: url(./assets/porshe.jpg) no-repeat center center/cover;
+}
+
 .new-img1 {
   height: 25rem;
   width: 35rem;
-  background: url(./assets/FU-01.jpg) no-repeat center center/cover;
+  background: url(./assets/News/1.webp) no-repeat center center/cover;
+}
+.new-img1:lang(ar) {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 80px !important;
+}
+
+.new-img11 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/11.webp) no-repeat center center/cover;
+}
+.new-img11:lang(ar) {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 80px !important;
+}
+
+.new-img10 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/10.webp) no-repeat center center/cover;
+}
+.new-img10:lang(ar) {
+  border-top-right-radius: 80px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.new-img9 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/9.webp) no-repeat center center/cover;
+}
+.new-img9:lang(ar) {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 80px !important;
+}
+
+.new-img8 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/8.webp) no-repeat center center/cover;
+}
+.new-img8:lang(ar) {
+  border-top-right-radius: 80px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.new-img7 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/7.webp) no-repeat center center/cover;
+}
+.new-img7:lang(ar) {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 80px !important;
+}
+
+.new-img6 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/6.webp) no-repeat center center/cover;
+}
+.new-img6:lang(ar) {
+  border-top-right-radius: 80px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.new-img5 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/5.webp) no-repeat center center/cover;
+}
+.new-img5:lang(ar) {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 80px !important;
+}
+
+.new-img4 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/4.webp) no-repeat center center/cover;
+}
+.new-img4:lang(ar) {
+  border-top-right-radius: 80px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.new-img3 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/3.webp) no-repeat center center/cover;
+}
+.new-img3:lang(ar) {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 80px !important;
+}
+
+.new-img2 {
+  height: 25rem;
+  width: 35rem;
+  background: url(./assets/News/2.webp) no-repeat center center/cover;
+}
+.new-img2:lang(ar) {
+  border-top-right-radius: 80px !important;
+  border-top-left-radius: 0px !important;
 }
 
 .explore-ic {
@@ -541,6 +727,17 @@ Button:hover {
   cursor: pointer;
   background-color: white;
   color: var(--primary-color);
+}
+
+.job-sort {
+  cursor: pointer;
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.job-sort:hover{
+  background-color: var(--primary-color);
+  background-color: white;
 }
 
 .contact1 {
@@ -667,7 +864,7 @@ Button:hover {
 }
 
 .bayti-mall-img {
-  background: url(../public/CommercialProjects/BaytiMall/baytimall1.jpeg) no-repeat center center/cover;
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall1.jpeg) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -675,7 +872,7 @@ Button:hover {
 }
 
 .bayti-mall-img1 {
-  background: url(../public/CommercialProjects/BaytiMall/baytimall2.jpeg) no-repeat center center/cover;
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall2.jpeg) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -683,7 +880,7 @@ Button:hover {
 }
 
 .bayti-mall-img2 {
-  background: url(../public/CommercialProjects/BaytiMall/baytimall3.jpeg) no-repeat center center/cover;
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall3.jpeg) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -691,7 +888,7 @@ Button:hover {
 }
 
 .bayti-mall-img3 {
-  background: url(../public/CommercialProjects/BaytiMall/baytimall4.jpeg) no-repeat center center/cover;
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall4.jpeg) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -699,7 +896,7 @@ Button:hover {
 }
 
 .wadeea-img {
-  background: url(assets/Chairman-1-scaled.jpg) no-repeat center center/cover;
+  background: url(./assets/Chairman-1-scaled.jpg) no-repeat center center/cover;
   height: 17rem;
   width: 15rem;
   cursor: pointer;
@@ -994,4 +1191,12 @@ Button:hover {
   .top-slider {
     flex-direction: column !important;
   }
+}
+.gradient-divider {
+  height: 4px;
+  border-radius: 999px;
+  width: 50%;
+  margin: 0.8rem;
+  margin-left: 1.3rem;
+  background: linear-gradient(90deg, black, #3989f8);
 }/*# sourceMappingURL=App.css.map */

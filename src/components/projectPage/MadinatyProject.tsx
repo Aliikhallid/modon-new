@@ -25,10 +25,10 @@ const MadinatyProject = () => {
       <div
         className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] p-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
-        <p className="md:text-[14px] light text-[8px]">{t("overview")}</p>
-        <p className="md:text-[48px] text-[12px]">{t("madinaty-c")}</p>
+        <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
+        <p className="md:text-[64px] text-[12px]">{t("madinaty-c")}</p>
         </div>
-        <p className="md:max-w-[75rem] light text-md max-w-[40rem]">
+        <p className="md:max-w-[75rem] text-[22px]  light text-md max-w-[40rem]">
           {t("madinaty-description")}
         </p>
         <div className="flex w-full flex-col items-center justify-between md:flex-row">

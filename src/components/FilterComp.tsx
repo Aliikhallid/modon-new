@@ -24,14 +24,14 @@ export default function FilterComp() {
     const [showMadinaty, setShowMadinaty] = useState<Checked>(false)
 
   return (
-    <div className="props-filter-container bg-white text-primary-color light w-11/12 h-24 rounded-[3px] relative mt-5 border shadow-xl">
+    <div className="props-filter-container bg-white text-primary-color light w-11/12 h-24 rounded-[5px] relative mt-5 border shadow-xl">
     <div className="props-filter-one flex border-r border-primary-multiply-color border-solid m-4 text-left w-1/5 relative">
       <section className='mr-10 w-full'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className='w-full regular text-md rounded'>Property Type</Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 bg-white">
         <DropdownMenuLabel>Apartments</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
@@ -65,15 +65,15 @@ export default function FilterComp() {
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
-      </section>
-    </div>
+      </section> 
+    </div> 
     <div className="props-filter-two flex border-r border-gray-500 border-solid m-4 text-left w-1/5">
      <section className='mr-10 w-full'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className='w-full regular text-md rounded'>Bedrooms</Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 bg-white">
         <DropdownMenuLabel>Number of Bedrooms</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
@@ -104,14 +104,14 @@ export default function FilterComp() {
       </DropdownMenuContent>
     </DropdownMenu>
      </section> 
-    </div>
+    </div> 
     <div className="props-filter-three flex border-r border-gray-500 border-solid m-4 text-left w-1/5">
       <section className='mr-10 w-full'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className='w-full regular text-md rounded'>Type of Unit</Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 bg-white">
         <DropdownMenuLabel>Unit Type</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
@@ -137,7 +137,7 @@ export default function FilterComp() {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className='w-full regular text-md rounded'>Project</Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 bg-white">
         <DropdownMenuLabel>Residential Projects</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem

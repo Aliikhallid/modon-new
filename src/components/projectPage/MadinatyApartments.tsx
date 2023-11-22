@@ -114,10 +114,10 @@ const loadImages = (project: string,lastImage:number) => {
       <div
         className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] p-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
-        <p className="md:text-[14px] light text-[8px]">{t("overview")}</p>
-        <p className="md:text-[48px] text-[12px]">Madinaty Apartments</p>
+        <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
+        <p className="md:text-[64px] text-[12px]">Madinaty Apartments</p>
         </div>
-        <p className="md:max-w-[75rem] light text-md max-w-[40rem]">Experience the magic of life that is in harmony with nature in the modern apartments of MADINATY project, that has a strategic location in the heart of Kirkuk. The project offers a compound with a modern design that includes distinct apartments overlooking the wavy grasslands, and the green spaces.</p>
+        <p className="md:max-w-[75rem] text-[22px]  light text-md max-w-[40rem]">Experience the magic of life that is in harmony with nature in the modern apartments of MADINATY project, that has a strategic location in the heart of Kirkuk. The project offers a compound with a modern design that includes distinct apartments overlooking the wavy grasslands, and the green spaces.</p>
         <div className="flex w-full flex-col items-center justify-between md:flex-row">
           <div>
         <div className="w-1/4 h-[55px] bg-white rounded-t-[15px] text-primary text-[20px] mt-10  uppercase flex justify-center items-center">{t("info")}</div>
