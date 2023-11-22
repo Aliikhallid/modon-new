@@ -14,7 +14,7 @@ interface JobCardProps{
 const JobCard = ({month,nday,day,postDate,position,jobDesc,jobLoc}: JobCardProps) => {
     
     return(
-        <div className="bg-white w-[90vw] h-[300px] border-primary border shadow-md rounded flex items-center">
+        <div className="bg-white w-[78vw] h-[290px] border-primary border shadow-md rounded flex items-center">
             <div className="flex flex-col items-end w-[10%] p-5 gap-9 justify-evenly text-xl regular">
                 <p>{month}</p>
                 <p>{nday}</p>

@@ -34,7 +34,6 @@ import ViolaM from './components/projectPage/ViolaM.tsx'
 import MadinatyApartments from './components/projectPage/MadinatyApartments.tsx'
 import NotFound from './components/NotFound.tsx'
 
-
 function App() {
 
   return (

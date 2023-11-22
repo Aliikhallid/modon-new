@@ -46,10 +46,10 @@ const CareersHeader = () => {
 
         </div>
         </div>
-        <div className="flex flex-col gap-5">
-       <JobCard month={"SEP"} nday={21} day={"WED"} postDate={"1 month ago"} position={"Deputy Contract Manager"} jobDesc={"Modon Real estate development company located Iraq – Baghdad is currently looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian..."} jobLoc={"Baghdad , Iraq"} />
-       <JobCard month={"SEP"} nday={21} day={"WED"} postDate={"1 month ago"} position={"Deputy Contract Manager"} jobDesc={"Modon Real estate development company located Iraq – Baghdad is currently looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian..."} jobLoc={"Baghdad , Iraq"} />
-       <JobCard month={"SEP"} nday={21} day={"WED"} postDate={"1 month ago"} position={"Deputy Contract Manager"} jobDesc={"Modon Real estate development company located Iraq – Baghdad is currently looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian..."} jobLoc={"Baghdad , Iraq"} />
+        <div className="flex flex-col gap-10 my-10">
+       <JobCard month={"SEP"} nday={21} day={"Mon"} postDate={"1 month ago"} position={"Deputy Contract Manager"} jobDesc={"Modon Real estate development company located Iraq – Baghdad is currently looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian..."} jobLoc={"Baghdad , Iraq"} />
+       <JobCard month={"MAY"} nday={5} day={"Wed"} postDate={"1 month ago"} position={"Architect Engineer"} jobDesc={"An architecture engineer is required with experience in working as an engineer in real estate designs, decorations or advertising. Job Responsibilities Executing innovative and professional designs ac..."} jobLoc={"Baghdad , Iraq"} />
+       <JobCard month={"SEP"} nday={21} day={"WED"} postDate={"1 month ago"} position={"Deputy Contract Manntly looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian...ager"} jobDesc={"Modon Real estate development company located Iraq – Baghdad is currently looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian..."} jobLoc={"Baghdad , Iraq"} />
 
         </div>
 
