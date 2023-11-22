@@ -4,12 +4,16 @@ import Footer from "../sections/Footer";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import { useLayoutEffect } from "react";
 
 const JobApply = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   return (
     <>
       <NavBar />
-      <div className="relative h-[200vh] bg-primary-multiply-color w-full flex flex-col justify-center items-start text-white regular gap-5">
+      <div className="relative h-fit py-40 bg-primary-multiply-color w-full flex flex-col justify-center items-start text-white regular gap-5">
         <div className="w-full flex justify-start p-6">
         <p className="text-5xl">Deputy Contract Manager</p>
         </div>

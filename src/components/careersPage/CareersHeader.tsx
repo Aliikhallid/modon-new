@@ -3,7 +3,7 @@ import { ListBulletIcon, TokensIcon } from "@radix-ui/react-icons"
 import { Label } from "../ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select"
 import {Jobs} from "./jobData"
-import { useState } from "react"
+import { useLayoutEffect, useState } from "react"
 import FilterJobs from "./FilterJobs"
 
 
@@ -38,6 +38,9 @@ const CareersHeader = () => {
   const sortByDateDesc = (jobs: JobCardProps[]) => {
     return jobs.sort((a, b) => new Date(b.postDate).getTime() - new Date(a.postDate).getTime());
   };
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
   return (
     <div className="contact-page w-full h-fit flex flex-col justify-center items-center">
        <div className="career-cont relative h-[90vh] bg-primary-multiply-color w-full flex flex-col justify-center items-center">

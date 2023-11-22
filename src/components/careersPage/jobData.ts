@@ -23,7 +23,7 @@ const Jobs = [
         nday:21,
         day:"WEB",
         postDate:new Date("2023-10-01T12:00:00Z"),
-        position:"Deputy Contract ",
+        position:"Deputy Contract",
         jobDesc:"Modon Real estate development company located Iraq – Baghdad is currently looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian...",
         jobLoc:"Baghdad Iraq"
     },
@@ -32,7 +32,7 @@ const Jobs = [
         nday:21,
         day:"WEB",
         postDate:new Date("2023-09-01T12:00:00Z"),
-        position:"Deputy  Manager",
+        position:"Deputy Manager",
         jobDesc:"Modon Real estate development company located Iraq – Baghdad is currently looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian...",
         jobLoc:"Bagdad , Iraq"
     }
