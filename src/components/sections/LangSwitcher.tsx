@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import Flag from 'react-flagkit';
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '../ui/select';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 const LangSwitcher = () => {
   const { i18n } = useTranslation();
 
@@ -36,7 +36,7 @@ const LangSwitcher = () => {
         <SelectTrigger>
         <SelectValue >{i18n.language == 'en'? <Flag country='GB'/>:<Flag country='IQ'/>}</SelectValue>
         </SelectTrigger>
-        <SelectContent className='bg-white min-w-[fit] '>
+        <SelectContent className='bg-white/60 min-w-[fit]'>
         <SelectGroup>
           <SelectItem value="ar">{<Flag country='IQ'/>}</SelectItem>
           <SelectItem value="en"><Flag country='GB'/></SelectItem>

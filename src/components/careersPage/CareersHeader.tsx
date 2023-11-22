@@ -6,6 +6,7 @@ import {Jobs} from "./jobData"
 import { useState } from "react"
 import FilterJobs from "./FilterJobs"
 
+
 interface JobCardProps{
   month:string;
   nday:number;
@@ -44,7 +45,7 @@ const CareersHeader = () => {
     <h1 className="bold text-5xl m-3">Careers</h1>
     <p className="light text-center">Modon is one of the most prominent and most successful companies in modern<br/> real estate development in Iraq and operates under the umbrella of Al-Handal<br/> International Group.</p>
     <div className="filter-web flex justify-center items-center absolute bottom-0 w-full mb-[-4rem]">
-      <FilterJobs setJobList={setJobList} sortingOption={sortingOption}/>
+    <FilterJobs setJobList={setJobList} sortingOption={sortingOption}/>
       </div>
        </div>
       <div className="cont-cont h-fit w-full flex bg-white text-primary-color">
@@ -62,7 +63,7 @@ const CareersHeader = () => {
                       <SelectValue placeholder="Newest to Oldest" />
                     </SelectTrigger>
                     <SelectContent className="bg-white">
-                      <SelectItem value="newest"> Newest to Oldest</SelectItem>
+                      <SelectItem value="newest" className="job-sort">Newest to Oldest</SelectItem>
                       <SelectItem value="oldest" >Oldest to Newest</SelectItem>
                     </SelectContent>
                   </Select>
@@ -70,10 +71,8 @@ const CareersHeader = () => {
         </div>
         </div>
         </div>
-        <div className="flex flex-col gap-10 my-10">
-       <JobCard month={"SEP"} nday={21} day={"Mon"} postDate={"1 month ago"} position={"Deputy Contract Manager"} jobDesc={"Modon Real estate development company located Iraq – Baghdad is currently looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian..."} jobLoc={"Baghdad , Iraq"} />
-       <JobCard month={"MAY"} nday={5} day={"Wed"} postDate={"1 month ago"} position={"Architect Engineer"} jobDesc={"An architecture engineer is required with experience in working as an engineer in real estate designs, decorations or advertising. Job Responsibilities Executing innovative and professional designs ac..."} jobLoc={"Baghdad , Iraq"} />
-       <JobCard month={"SEP"} nday={21} day={"WED"} postDate={"1 month ago"} position={"Deputy Contract Manntly looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian...ager"} jobDesc={"Modon Real estate development company located Iraq – Baghdad is currently looking for a Contracts Manager to manage our company contracts. Ensure Contractor’s complian..."} jobLoc={"Baghdad , Iraq"} />
+        <div className="flex flex-col gap-5">
+        {jobList.map((job,index) =>(<JobCard key={index} month={job.month} nday={job.nday} day={job.day} postDate={job.postDate} position={job.position} jobDesc={job.jobDesc} jobLoc={job.jobLoc}/>))}
 
         </div>
 
