@@ -1,8 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
-import en from '../../assets/en.png'
-import ar from '../../assets/iraq.webp'
-
+import Flag from 'react-flagkit';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 const LangSwitcher = () => {
   const { i18n } = useTranslation();
 
@@ -30,14 +29,20 @@ const LangSwitcher = () => {
 
   return (
     <div>
-      <select
-        onChange={(e) => changeLanguage(e.target.value)}
+      <Select
+        onValueChange={(e) => changeLanguage(e)}
         value={i18n.language}
-        className="bg-transparent cursor-pointer"
       >
-        <option className="bg-transparent text-black" value="en"><img src={en} alt=""/></option>
-        <option className="bg-transparent text-black" value="ar"><img src={ar} alt="" /></option>
-      </select>
+        <SelectTrigger>
+        <SelectValue >{i18n.language == 'en'? <Flag country='GB'/>:<Flag country='IQ'/>}</SelectValue>
+        </SelectTrigger>
+        <SelectContent className='bg-white/60 min-w-[fit]'>
+        <SelectGroup>
+          <SelectItem value="ar">{<Flag country='IQ'/>}</SelectItem>
+          <SelectItem value="en"><Flag country='GB'/></SelectItem>
+        </SelectGroup>
+      </SelectContent>
+      </Select>
     </div>
   );
 };

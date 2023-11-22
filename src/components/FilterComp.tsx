@@ -65,8 +65,8 @@ export default function FilterComp() {
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
-      </section>
-    </div>
+      </section> 
+    </div> 
     <div className="props-filter-two flex border-r border-gray-500 border-solid m-4 text-left w-1/5">
      <section className='mr-10 w-full'>
       <DropdownMenu>
@@ -104,7 +104,7 @@ export default function FilterComp() {
       </DropdownMenuContent>
     </DropdownMenu>
      </section> 
-    </div>
+    </div> 
     <div className="props-filter-three flex border-r border-gray-500 border-solid m-4 text-left w-1/5">
       <section className='mr-10 w-full'>
       <DropdownMenu>
