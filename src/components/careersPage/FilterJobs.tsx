@@ -31,8 +31,12 @@ interface FilterJobsProps {
 export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) {
   const { t } = useTranslation();
 
-  const [checkedPositions, setCheckedPositions] = useState<Record<string, Checked>>({});
-  const [checkedLocations, setCheckedLocations] = useState<Record<string, Checked>>({});
+  const [checkedPositions, setCheckedPositions] = useState<Record<string, Checked>>(
+    positions.reduce((acc, position) => ({ ...acc, [position]: true }), {})
+  );
+  const [checkedLocations, setCheckedLocations] =  useState<Record<string, Checked>>(
+    jobLocations.reduce((acc, location) => ({ ...acc, [location]: true }), {})
+  );
 
   const handlePositionChange = (position: string, checked: Checked) => {
     setCheckedPositions((prev) => ({ ...prev, [position]: checked }));
@@ -50,23 +54,24 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
   };
 
   
-  function handleOnClick(){
+  function handleOnClick() {
     let filteredJobs = Jobs.filter((job) => {
-        const isSelectedPosition = Object.keys(checkedPositions).some(
-          (position) => checkedPositions[position] && position === job.position
-        );
-    
-        const isSelectedLocation = Object.keys(checkedLocations).some(
-          (location) => checkedLocations[location] && location === job.jobLoc
-        );
-    
-        return isSelectedPosition || isSelectedLocation;
-      });
-      filteredJobs = sortingOption === 'newest' ? sortByDateDesc(filteredJobs) : sortByDate(filteredJobs);
-    
-      setJobList(filteredJobs);
-
+      const isSelectedPosition = Object.keys(checkedPositions).some(
+        (position) => checkedPositions[position] && position === job.position
+      );
+  
+      const isSelectedLocation = Object.keys(checkedLocations).some(
+        (location) => checkedLocations[location] && location === job.jobLoc
+      );
+  
+      return isSelectedPosition && isSelectedLocation;
+    });
+  
+    filteredJobs = sortingOption === 'newest' ? sortByDateDesc(filteredJobs) : sortByDate(filteredJobs);
+  
+    setJobList(filteredJobs);
   }
+  
 
   return (
     <div className="props-filterjob-container bg-white text-primary-color light w-11/12 h-24 rounded-[5px] relative mt-5 border shadow-xl">

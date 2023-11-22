@@ -34,6 +34,7 @@ import ViolaM from './components/projectPage/ViolaM.tsx'
 import MadinatyApartments from './components/projectPage/MadinatyApartments.tsx'
 import NotFound from './components/NotFound.tsx'
 import JobApply from './components/careersPage/JobApply.tsx'
+import { JobDesc } from './components/careersPage/jobData.ts'
 
 function App() {
 
@@ -61,7 +62,8 @@ function App() {
       <Route path='/news' element={<NewsPage />}/>
       <Route path='/contact' element={<ContactPage />}/>
       <Route path='/careers' element={<CareersPage />}/>
-      <Route path='/careers/deputy-contract-manager' element={<JobApply />}/>
+      <Route path='/careers/deputy-contract-manager' element={<JobApply jobDesc={JobDesc["Deputy Contract Manager"]} />}/>
+      <Route path='/careers/architect-engineer' element={<JobApply jobDesc={JobDesc["Architect Engineer"]} />}/>
       <Route path='/construction' element={<ConstructionUpdates />}/>
       <Route path='/buruj-updates' element={<BurujUpdates />}/>
       <Route path='/future-updates' element={<FutureUpdates />}/>
