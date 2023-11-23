@@ -1138,7 +1138,18 @@ Button:hover {
   }
   .modon-desc .desc1 {
     width: 100% !important;
-    height: 60vh !important;
+    height: 70vh !important;
+  }
+  .modon-desc .desc1 .desc-t {
+    font-size: large !important;
+  }
+  .modon-desc .desc1 .desc-tt {
+    font-size: medium;
+  }
+  .modon-desc .desc1 .desc-p {
+    font-size: smaller;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
   }
   .modon-desc .desc2 {
     width: 100% !important;
