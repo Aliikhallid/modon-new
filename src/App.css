@@ -504,6 +504,23 @@ Button:hover {
   border: solid #06316c 2px;
 }
 
+.sld-image {
+  background-color: var(--primary-color);
+}
+
+.sld-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  border-top-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  background: url(./assets/LA-05-2.jpg) no-repeat center center/cover;
+}
+
 .second-page-link::before {
   content: "";
   position: absolute;
@@ -1115,6 +1132,16 @@ Button:hover {
 @media screen and (max-width: 1200px) {
   .nav-list {
     display: none !important;
+  }
+  .modon-desc {
+    flex-direction: column !important;
+  }
+  .modon-desc .desc1 {
+    width: 100% !important;
+    height: 60vh !important;
+  }
+  .modon-desc .desc2 {
+    width: 100% !important;
   }
   .navbarInner {
     display: none !important;

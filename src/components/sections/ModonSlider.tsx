@@ -25,7 +25,7 @@ const ModonSlider = () => {
       <h1 className="text-3xl text-primary-color w-full slider-btn">
       <ImageSlider imgUrls={loadImages("ProjectsDisplay",4)} imgOverText={["Bayti","Buruj","Future City","Madinaty","Lavida"]} />
       </h1>
-    </div>
+      </div>
     </div>
     </div>
   )
