@@ -104,8 +104,8 @@ const NavBar = () => {
         <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger><div className='flex items-center'>{t("projects-nav")} <ChevronDown/></div></NavigationMenuTrigger>
-          <NavigationMenuContent className="text-white mt-2">
+          <NavigationMenuTrigger className="hover:border-none"><div className='flex items-center'>{t("projects-nav")} <ChevronDown/></div></NavigationMenuTrigger>
+          <NavigationMenuContent className="text-white mt-4">
           <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
             <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/bayti'>
                 <NavigationMenuLink  asChild>
