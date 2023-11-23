@@ -82,7 +82,7 @@ const NavBar = () => {
           <h1 className="flex justify-center items-center regular text-xl"><MobileIcon className="mx-1" height={25} width={25} /> 6001</h1>
         </div>
       </div>
-      <div className="navMain flex w-full justify-between items-center h-20">
+      <div className="navMain flex w-full justify-between items-center  h-20">
       <div className="logo-cont flex justify-center items-center">
         <Link to="/">
           <img
@@ -97,7 +97,7 @@ const NavBar = () => {
         <div className="line2 h-0.5 w-7 bg-white"></div>
         <div className="line3 h-0.5 w-5 bg-white"></div>
       </div>
-      <div className="nav-list flex w-3/5 items-center justify-around text-sm">
+      <div className="nav-list gap-4 flex w-3/5 items-center justify-around text-sm">
         <a className="item cursor-pointer" href="/">
           {t("home-nav")}
         </a>

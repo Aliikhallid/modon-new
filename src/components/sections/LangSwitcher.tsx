@@ -33,7 +33,7 @@ const LangSwitcher = () => {
         onValueChange={(e) => changeLanguage(e)}
         value={i18n.language}
       >
-        <SelectTrigger>
+        <SelectTrigger className='border-none hover:border-none'>
         <SelectValue >{i18n.language == 'en'? <Flag country='GB'/>:<Flag country='IQ'/>}</SelectValue>
         </SelectTrigger>
         <SelectContent className='bg-white/60 min-w-[fit]'>
