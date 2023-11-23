@@ -63,7 +63,13 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
       const isSelectedLocation = Object.keys(checkedLocations).some(
         (location) => checkedLocations[location] && location === job.jobLoc
       );
-  
+      const allPositionsUnchecked = Object.values(checkedPositions).every(value => !value);
+      const allLocationsUnchecked = Object.values(checkedPositions).every(value => !value);
+      console.log(allLocationsUnchecked)
+      if (!allLocationsUnchecked)
+        {return isSelectedPosition;}
+      else if (!allPositionsUnchecked)
+        {return isSelectedLocation}
       return isSelectedPosition && isSelectedLocation;
     });
   
@@ -74,9 +80,9 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
   
 
   return (
-    <div className="props-filterjob-container bg-white text-primary-color light w-11/12 h-24 rounded-[5px] relative mt-5 border shadow-xl">
+    <div className="props-filterjob-container bg-white text-primary-color light w-11/12 h-24 rounded-[5px] relative mt-5 border shadow-xl flex justify-center items-center">
       <div className="props-filter-one flex border-r border-primary-multiply-color border-solid m-4 text-left w-1/5 relative">
-        <section className="mr-10 w-full">
+        <section className="mr-10 w-full flex">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button

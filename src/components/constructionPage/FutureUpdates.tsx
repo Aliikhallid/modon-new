@@ -30,10 +30,11 @@ const FutureUpdates = () => {
     window.history.back();
   }
   return (
-    <div className="bg-primary-multiply-color w-full h-fit flex flex-col justify-start items-center relative">
+    <div className="bg-white w-full h-fit flex flex-col justify-start items-center relative">
       <NavBar />
+      <div className="ob h-40 w-full bg-primary-color"></div>
     {/* <img src={burujLogo} alt="MODON" height={200} width={200} /> */}
-    <h1 className='regular text-5xl relative mt-40'>FUTURE CITY UPDATES</h1>
+    <h1 className='regular text-5xl relative mt-20 text-primary-color'>FUTURE CITY UPDATES</h1>
     <div className="constructs flex">
       <div className="construct1 flex flex-col justify-center items-center m-5">
         <div className="buruj-btns">

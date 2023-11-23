@@ -2,6 +2,7 @@ import { useLayoutEffect } from "react";
 import NavBar from "./NavBar"
 import ConstructionHeader from "./constructionPage/ConstructionHeader"
 import Footer from "./sections/Footer"
+import ConstructionTitle from "./constructionPage/ConstructionTitle";
 
 const ConstructionUpdates = () => {
   useLayoutEffect(() => {
@@ -10,6 +11,7 @@ const ConstructionUpdates = () => {
   return (
     <div>
       <NavBar />
+      <ConstructionTitle />
       <ConstructionHeader />
       <Footer />
     </div>

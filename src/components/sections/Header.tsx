@@ -16,8 +16,8 @@ const Header = () => {
   return (
     <div className='header-container relative h-screen flex justify-center pb-6 items-center flex-col regular'>
       <NavBar />
-      <video src={headerVideo} muted autoPlay loop className='video absolute h-[82%] w-screen top-0 left-0 right-0 bottom-0 -z-10 object-cover opacity-50'></video>
-      <div className="overlay absolute h-[82%] w-full top-0 left-0 right-0 bottom-0 object-cover -z-20 bg-black"></div>
+      <video src={headerVideo} muted autoPlay loop className='video absolute h-[82%] w-screen top-0 left-0 right-0 bottom-0 -z-10 object-cover opacity-50 rounded-b-3xl'></video>
+      <div className="overlay absolute h-[82%] w-full top-0 left-0 right-0 bottom-0 object-cover -z-20 bg-black rounded-b-3xl"></div>
       <div className="overlay absolute h-full w-full top-0 left-0 right-0 bottom-0 object-cover -z-30 bg-white"></div>
       <div className="paralax relative transitionnn flex w-full flex-col h-1/2 justify-center items-center">
       <h2>Modon, <span className=''>IRAQ</span></h2>
@@ -29,7 +29,7 @@ const Header = () => {
         <Button variant="secondary" className='rounded'>Rent</Button>
       </div>
       </div>
-      <div className="filter-web flex justify-center items-center absolute bottom-0 w-full mb-[5rem]">
+      <div className="filter-web flex justify-center items-center absolute bottom-0 w-full">
        <FilterComp />
       </div>
       {/* <div className="filter-mob flex justify-center items-center w-full">
