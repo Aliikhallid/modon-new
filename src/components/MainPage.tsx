@@ -5,6 +5,7 @@ import LastPage from './sections/LastPage'
 import Footer from './sections/Footer'
 import SecondPage from './sections/SecondPage'
 import { useLayoutEffect } from 'react'
+import ModonDesc from './sections/ModonDesc'
 const MainPage = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
@@ -14,6 +15,7 @@ const MainPage = () => {
     {/* Last Push */}
      <Header />
      <SecondPage />
+     <ModonDesc />
      <ModonProps />
      <ModonSlider />
      <LastPage />

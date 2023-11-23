@@ -35,6 +35,7 @@ import MadinatyApartments from './components/projectPage/MadinatyApartments.tsx'
 import NotFound from './components/NotFound.tsx'
 import JobApply from './components/careersPage/JobApply.tsx'
 import { JobDesc } from './components/careersPage/jobData.ts'
+// import AnimatedCursor from 'react-animated-cursor'
 
 function App() {
 
@@ -78,6 +79,7 @@ function App() {
       <Route path='*' element={<NotFound />}/>
 
     </Routes>
+    {/* <AnimatedCursor /> */}
     {/* </HashRouter> */}
     </>
   )

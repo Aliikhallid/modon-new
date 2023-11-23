@@ -36,6 +36,7 @@
     "lucide-react": "^0.291.0",
     "radix-ui": "^1.0.1",
     "react": "^18.2.0",
+    "react-animated-cursor": "^2.11.2",
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-flagkit": "^2.0.4",
