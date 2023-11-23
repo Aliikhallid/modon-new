@@ -806,7 +806,7 @@ Button:hover {
 
 .bayti-img {
   background: url(./assets/BAI-12.jpg) no-repeat center center/cover;
-  height: 15rem;
+  height: 18rem;
   width: 20rem;
   cursor: pointer;
   border-radius: 5px;
@@ -814,7 +814,7 @@ Button:hover {
 
 .future-img {
   background: url(./assets/FU-04.jpg) no-repeat center center/cover;
-  height: 15rem;
+  height: 18rem;
   width: 20rem;
   cursor: pointer;
   border-radius: 5px;
@@ -822,7 +822,7 @@ Button:hover {
 
 .lavida-img {
   background: url(./assets/Lavida-out-3.jpg) no-repeat center center/cover;
-  height: 15rem;
+  height: 18rem;
   width: 20rem;
   cursor: pointer;
   border-radius: 5px;
@@ -830,7 +830,7 @@ Button:hover {
 
 .madinaty-img {
   background: url(./assets/Madinaty-06.jpg) no-repeat center center/cover;
-  height: 15rem;
+  height: 18rem;
   width: 20rem;
   cursor: pointer;
   border-radius: 5px;
@@ -838,7 +838,7 @@ Button:hover {
 
 .buruj-img {
   background: url(./assets/Buruj-01.jpg) no-repeat center center/cover;
-  height: 15rem;
+  height: 18rem;
   width: 20rem;
   cursor: pointer;
   border-radius: 5px;
@@ -849,7 +849,7 @@ Button:hover {
 }
 
 .bayti-mall-img {
-  background: url(../public/CommercialProjects/BaytiMall/baytimall1.jpeg) no-repeat center center/cover;
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall1.jpeg) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -857,7 +857,7 @@ Button:hover {
 }
 
 .bayti-mall-img1 {
-  background: url(../public/CommercialProjects/BaytiMall/baytimall2.jpeg) no-repeat center center/cover;
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall2.jpeg) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -865,7 +865,7 @@ Button:hover {
 }
 
 .bayti-mall-img2 {
-  background: url(../public/CommercialProjects/BaytiMall/baytimall3.jpeg) no-repeat center center/cover;
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall3.jpeg) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -873,7 +873,7 @@ Button:hover {
 }
 
 .bayti-mall-img3 {
-  background: url(../public/CommercialProjects/BaytiMall/baytimall4.jpeg) no-repeat center center/cover;
+  background: url(./assets/CommercialProjects/BaytiMall/baytimall4.jpeg) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -1095,6 +1095,17 @@ Button:hover {
   height: 10rem;
 }
 
+.title-co::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background: url(./assets/LA-05-2.jpg) no-repeat center center/cover;
+}
+
 @media screen and (max-width: 1350px) {
   .modon-container {
     display: flex;
@@ -1104,6 +1115,10 @@ Button:hover {
 @media screen and (max-width: 1200px) {
   .nav-list {
     display: none !important;
+  }
+  .navbarInner {
+    display: none !important;
+    height: 0px !important;
   }
   .const-head {
     font-size: 2rem !important;
@@ -1140,8 +1155,16 @@ Button:hover {
   .header-container p {
     font-size: 0.8rem;
   }
+  .icon {
+    margin: 2rem !important;
+    color: #06316c !important;
+  }
   .last-page {
     flex-direction: column !important;
+  }
+  .image-last {
+    height: 100% !important;
+    width: 100% !important;
   }
   .last-section {
     width: 100% !important;
@@ -1167,8 +1190,9 @@ Button:hover {
   .images-container {
     flex-direction: column !important;
   }
-  .image-1 {
+  .image {
     height: 15rem !important;
+    width: 22rem !important;
   }
   .modon-text-container {
     width: 55%;
