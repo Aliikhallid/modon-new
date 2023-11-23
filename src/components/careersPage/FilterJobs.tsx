@@ -63,7 +63,13 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
       const isSelectedLocation = Object.keys(checkedLocations).some(
         (location) => checkedLocations[location] && location === job.jobLoc
       );
-  
+      const allPositionsUnchecked = Object.values(checkedPositions).every(value => !value);
+      const allLocationsUnchecked = Object.values(checkedPositions).every(value => !value);
+      console.log(allLocationsUnchecked)
+      if (!allLocationsUnchecked)
+        {return isSelectedPosition;}
+      else if (!allPositionsUnchecked)
+        {return isSelectedLocation}
       return isSelectedPosition && isSelectedLocation;
     });
   
