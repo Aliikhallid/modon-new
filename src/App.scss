@@ -1042,7 +1042,18 @@ Button:hover {
     flex-direction: column !important;
     .desc1 {
       width: 100% !important;
-      height: 60vh !important;
+      height: 70vh !important;
+      .desc-t {
+        font-size: large !important;
+      }
+      .desc-tt {
+        font-size: medium;
+      }
+      .desc-p {
+        font-size: smaller;
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+      }
     }
     .desc2 {
       width: 100% !important;
