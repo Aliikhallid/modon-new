@@ -107,11 +107,11 @@ const loadImages = (project: string,lastImage:number) => {
 
 
   return (
-    <div className="project-page flex flex-col h-fit t-10 bg-white" dir={`${isRTL? "rtl":"ltr"}`}>
+    <div className="project-page flex flex-col h-fit bg-white" dir={`${isRTL? "rtl":"ltr"}`}>
       <NavBar />
 
       <div
-        className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] p-10 bg-cover bg-center gap-2 sm:bg-auto">
+        className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] px-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
         <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
         <p className="md:text-[64px] text-[12px]">Lotus</p>

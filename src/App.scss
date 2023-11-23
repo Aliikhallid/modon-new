@@ -909,12 +909,17 @@ Button:hover {
 } 
 .project-bg {
   position: relative;
+  padding-top: 9rem;
+  padding-bottom: 6rem;
   div {
     z-index: 2;
   }
   p {
     z-index: 5;
   }
+}
+.right-left-divider {
+  margin-bottom: 3rem;
 }
 .project-bg::before {
   content: '';
