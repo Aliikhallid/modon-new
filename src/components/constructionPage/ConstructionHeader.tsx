@@ -6,14 +6,14 @@ import { useTranslation } from "react-i18next";
 const ConstructionHeader = () => {
   const {t} = useTranslation();
   return (
-    <div className="construction-updates w-full h-fit p-32 flex flex-col justify-center items-center bg-primary-multiply-color text-white">
+    <div className="construction-updates w-full h-fit py-48 flex flex-col justify-center items-center bg-white text-black">
       {/* <img src={modonLogo} alt="MODON" height={200} width={200} /> */}
       <h1 className='const-head regular text-5xl mb-5'>{t("construction-updates")}</h1>
       <div className="constructs flex flex-wrap gap-7 justify-center items-center">
         <div className="construct1 flex flex-col justify-center items-center m-5 regular">
            <div className="buruj-img shadow-2xl"></div>
            <h1 className='regular text-3xl m-2'>{t("buruj-c")}</h1>
-           <Link to='/buruj-updates'><Button variant="default" className='hover:text-white'>{t("see-updates")}</Button></Link>
+           <Link to='/buruj-updates'><Button variant="default" className='construction-btn'>{t("see-updates")}</Button></Link>
         </div>
         <div className="construct2 flex flex-col justify-center items-center m-5 regular">
            <div className="future-img"></div>
