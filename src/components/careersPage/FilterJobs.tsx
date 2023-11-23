@@ -74,9 +74,9 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
   
 
   return (
-    <div className="props-filterjob-container bg-white text-primary-color light w-11/12 h-24 rounded-[5px] relative mt-5 border shadow-xl">
+    <div className="props-filterjob-container bg-white text-primary-color light w-11/12 h-24 rounded-[5px] relative mt-5 border shadow-xl flex justify-center items-center">
       <div className="props-filter-one flex border-r border-primary-multiply-color border-solid m-4 text-left w-1/5 relative">
-        <section className="mr-10 w-full">
+        <section className="mr-10 w-full flex">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
