@@ -19,11 +19,11 @@ const BaytiProject = () => {
 });
 
   return (
-    <div className="project-page flex flex-col h-fit t-10 bg-white" dir={`${isRTL? "rtl":"ltr"}`}>
+    <div className="project-page flex flex-col h-fit bg-white" dir={`${isRTL? "rtl":"ltr"}`}>
       <NavBar />
 
       <div
-        className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] p-10 bg-cover bg-center gap-2 sm:bg-auto">
+        className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] px-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
         <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
         <p className="md:text-[64px] text-[12px]">{t("bayti-c")}</p>
@@ -47,7 +47,7 @@ const BaytiProject = () => {
         </div> 
         <div className="flex flex-col gap-7 text-[24px] text-primary">
         <Enquire addNow v="default" enqq />
-        <Button size="lg" variant="secondary">{t("construction-updates")}</Button>
+        <Button size="lg" variant="secondary">Construction Updates</Button>
         </div>
         </div>
         <div className="absolute flex justify-center uppercase items-center bg-white bottom-0 md:w-1/4 w-1/2 md:h-[10%] h-5 mt-5 rounded-t-[37px] left-1/2 transform -translate-x-1/2">
@@ -71,33 +71,33 @@ const BaytiProject = () => {
     <div className="flex flex-wrap gap-5 h-fit w-full py-10 bg-white text-primary-color justify-center items-center relative">
       <div className="bayti-1 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img1"></div>
-        <div className="bayti-title1 regular text-3xl">{t("jury")}</div>
+        <div className="bayti-title1 regular text-3xl m-2">Jury</div>
         <div className="bayti-des1 light">{t("bayti-location")}</div>
-        <Link to="/bayti/jory"><Button variant="secondary" className="m-2 flex justify-center items-center gap-2">{t("exploreMore")}</Button></Link>
+        <Link to="/bayti/jory"><Button variant="default" className="m-2 flex justify-center items-center gap-2">{t("exploreMore")}</Button></Link>
       </div>
       <div className="bayti-2 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img2"></div>
-        <div className="bayti-title2 regular text-3xl">{t("lotus")}</div>
+        <div className="bayti-title2 regular text-3xl m-2">{t("lotus")}</div>
         <div className="bayti-des2 light">{t("bayti-location")}</div>
-        <Link to="/bayti/lotus"><Button variant="secondary" className="m-2">{t("exploreMore")}</Button> </Link>
+        <Link to="/bayti/lotus"><Button variant="default" className="m-2">{t("exploreMore")}</Button> </Link>
       </div>
       <div className="bayti-3 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img3"></div>
-        <div className="bayti-title3 regular text-3xl">{t("narjis")}</div>
+        <div className="bayti-title3 regular text-3xl m-2">{t("narjis")}</div>
         <div className="bayti-des3 light">{t("bayti-location")}</div>
-        <Link to="/bayti/narjis"><Button variant="secondary" className="m-2">{t("exploreMore")}</Button></Link>
+        <Link to="/bayti/narjis"><Button variant="default" className="m-2">{t("exploreMore")}</Button></Link>
       </div>
       <div className="bayti-4 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img4"></div>
-        <div className="bayti-title4 regular text-3xl">{t("viola")}</div>
+        <div className="bayti-title4 regular text-3xl m-2">{t("viola")}</div>
         <div className="bayti-des4 light">{t("bayti-location")}</div>
-        <Link to="/bayti/viola"><Button variant="secondary" className="m-2">{t("exploreMore")}</Button></Link>
+        <Link to="/bayti/viola"><Button variant="default" className="m-2">{t("exploreMore")}</Button></Link>
       </div>
       <div className="bayti-5 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img5"></div>
-        <div className="bayti-title5 regular text-3xl">{t("yasmin")}</div>
+        <div className="bayti-title5 regular text-3xl m-2">{t("yasmin")}</div>
         <div className="bayti-des5 light">{t("bayti-location")}</div>
-        <Link to="/bayti/yasmin"><Button variant="secondary" className="m-2">{t("exploreMore")}</Button></Link>
+        <Link to="/bayti/yasmin"><Button variant="default" className="m-2">{t("exploreMore")}</Button></Link>
       </div>
     </div>
     <div className="flex flex-col justify-center items-center">
