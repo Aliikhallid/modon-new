@@ -8,8 +8,8 @@ const ModonProps = () => {
       <section className='modon-text-container'>
       <TitleDivider name="MODON" />
         <h1 className='latest italic'>LATEST PROPERTIES</h1>
-        <p className='light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae facilis fuga sequi impedit at eum quisquam dignissimos, velit quia?</p>
-        <Button className='bg-indigo-950 text-white hover:text-black'>VIEW ALL</Button>
+        <p className='light my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque beatae facilis fuga sequi impedit at eum quisquam dignissimos, velit quia?</p>
+        <Button className='bg-indigo-950 text-white rounded hover:text-black'>VIEW ALL</Button>
       </section>
       <section className='images-container regular'>
           <div className="images-container-one">

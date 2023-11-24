@@ -29,10 +29,10 @@ const LavidaProject = () => {
       <div
         className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] px-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
-        <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
-        <p className="md:text-[64px] text-[12px]">{t("lavida-c")}</p>
+        <p className="md:text-[24px] light text-[18px]">{t("overview")}</p>
+        <p className="md:text-[64px] text-[42px]">{t("lavida-c")}</p>
         </div>
-        <p className="md:max-w-[75rem] text-[22px]  light text-md max-w-[40rem]">
+        <p className="md:max-w-[75rem] text-[18px] leading-7 light text-md max-w-[40rem]">
           {t("lavida-description")}
         </p>
         <div className="flex w-full flex-col items-center justify-between md:flex-row">
@@ -49,7 +49,7 @@ const LavidaProject = () => {
 
 </div>
         </div> 
-        <div className="flex flex-col gap-7 text-[24px] text-primary">
+        <div className="flex flex-col gap-7 text-[24px] text-primary mt-5">
         <Enquire addNow v="default" enqq />
         <Button size="lg" variant="secondary">Construction update</Button>
         </div>
@@ -100,7 +100,7 @@ const LavidaProject = () => {
     <div className="flex flex-col justify-center items-center">
       <h1 className="regular flex justify-center items-center text-4xl text-primary-color m-3">Lavida Location <SewingPinFilledIcon className="text-primary-color" height={35} width={35} /></h1>
       <h1 className="light text-md text-black m-1">NEAR BAGHDAD INTERNATIONAL AIRPORT</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26672.79144203642!2d44.31710799865374!3d33.316229007396814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15577e507f7182cf%3A0xecef0f69c81dfb48!2sMansour%2C%20Baghdad%2C%20Iraq!5e0!3m2!1sen!2sus!4v1699130984015!5m2!1sen!2sus" width="1000" height="400" className="border-0" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26672.79144203642!2d44.31710799865374!3d33.316229007396814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15577e507f7182cf%3A0xecef0f69c81dfb48!2sMansour%2C%20Baghdad%2C%20Iraq!5e0!3m2!1sen!2sus!4v1699130984015!5m2!1sen!2sus" height="400" className="border-0 w-full" loading="lazy"></iframe>
     {/* <div className="flex flex-col h-fit w-fit">
       <div className="flex justify-center items-center regular text-xl text-primary-color mt-10">NEAR BURUJ</div>
       <div className="p-5 my-5 h-fit w-fit flex flex-wrap gap-5 justify-center">

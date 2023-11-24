@@ -16,7 +16,6 @@ const BurujProject = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
 });
-
   return (
     <div className="project-page flex flex-col h-fit bg-white" dir={`${isRTL? "rtl":"ltr"}`}>
       <NavBar />
@@ -24,10 +23,10 @@ const BurujProject = () => {
       <div
         className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] px-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
-        <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
-        <p className="md:text-[64px] text-[12px]">{t("buruj-c")}</p>
+        <p className="md:text-[24px] light text-[18px]">{t("overview")}</p>
+        <p className="md:text-[64px] text-[42px]">{t("buruj-c")}</p>
         </div>
-        <p className="text-[22px] md:max-w-[75rem] light max-w-[40rem]">
+        <p className="text-[18px] leading-7 md:max-w-[75rem] light max-w-[40rem]">
           {t("project-placeholder")}
         </p>
         <div className="flex w-full flex-col items-center justify-between md:flex-row">
@@ -44,12 +43,12 @@ const BurujProject = () => {
 
 </div>
         </div> 
-        <div className="flex flex-col gap-7 text-[24px] text-primary">
+        <div className="flex flex-col gap-7 text-[24px] text-primary mt-5">
         <Enquire addNow v="default" enqq />
         <Button size="lg" variant="secondary">Construction update</Button>
         </div>
         </div>
-        <div className="absolute flex justify-center uppercase items-center bg-white bottom-0 md:w-1/4 w-1/2 md:h-[10%] h-5 mt-5 rounded-t-[37px] left-1/2 transform -translate-x-1/2">
+        <div className="absolute flex justify-center uppercase items-center bg-white bottom-0 md:w-1/4 w-1/2 md:h-[10%] h-[5%] mt-5 rounded-t-[37px] left-1/2 transform -translate-x-1/2">
           <p className="md:text-4xl tex-2xl text-primary regular">Features</p>
         </div>
 
@@ -67,9 +66,9 @@ const BurujProject = () => {
        <ProjectCard icon={Hotel} title="Hotel" description="Five Stars" />
       </div>
     </div>
-    <div className="flex flex-wrap h-[110vh] w-full justify-center items-center relative bg-black">
-    <div className="overlay bg-primary-multiply-color h-full w-full"></div>
-      <div className="project-1 w-1/2 h-fit flex flex-col text-center justify-center items-center absolute top-7 left-32">
+    <div className="flex flex-wrap h-fit py-16 gap-5 w-full justify-center items-center relative bg-black">
+    <div className="overlay absolute bg-primary-multiply-color h-full w-full"></div>
+      <div className="project-1 h-fit flex flex-col text-center justify-center items-center">
         <div className="project1-img flex justify-center items-center">
         <div className="flex justify-between items-center w-full">
           <div className="flex flex-col justify-center items-start gap-2 m-5 w-full">
@@ -80,7 +79,7 @@ const BurujProject = () => {
         </div>
         </div>
       </div>
-      <div className="project-2 w-1/2 h-fit flex flex-col text-center justify-center items-center absolute bottom-7 right-32">
+      <div className="project-h-fit flex flex-col text-center justify-center items-center">
         <div className="project2-img flex justify-center items-center">
         <div className="flex justify-between items-center w-full">
           <div className="flex flex-col justify-center items-end text-center w-full gap-2 m-5">
@@ -95,7 +94,7 @@ const BurujProject = () => {
     <div className="flex flex-col justify-center items-center">
       <h1 className="regular flex justify-center items-center text-4xl text-primary-color m-3">Buruj Location <SewingPinFilledIcon className="text-primary-color" height={35} width={35} /></h1>
       <h1 className="light text-md text-black m-1">NEAR BAGHDAD INTERNATIONAL AIRPORT</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22738.800608238977!2d44.25978260745961!3d33.26440190239908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1559d764b9df63e3%3A0x42b43a07bb92d281!2sBuruj%20Residential%20Project!5e0!3m2!1sen!2seg!4v1698885424232!5m2!1sen!2seg" width="1000" height="400" className="border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22738.800608238977!2d44.25978260745961!3d33.26440190239908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1559d764b9df63e3%3A0x42b43a07bb92d281!2sBuruj%20Residential%20Project!5e0!3m2!1sen!2seg!4v1698885424232!5m2!1sen!2seg" height="400" className="border-0 w-[95%]" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     <div className="flex flex-col h-fit w-fit">
       <div className="flex justify-center items-center regular text-xl text-primary-color mt-10">NEAR BURUJ</div>
       <div className="p-5 my-5 h-fit w-fit flex flex-wrap gap-5 justify-center">

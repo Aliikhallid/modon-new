@@ -194,9 +194,10 @@ const setOver9 = () => {
     9: <FAQ/>
   };
   return (
-    <div className="bg-primary-multiply-color w-full h-fit flex flex-col justify-start items-center relative">
+    <div className="bg-white w-full h-fit flex flex-col justify-start items-center relative text-black">
       <NavBar />
-    <h1 className='regular text-xl relative mt-40'>ABOUT US</h1>
+      <div className="ob h-40 w-full bg-primary-color"></div>
+    <h1 className='regular text-4xl m-3 text-primary-color relative mt-20'>ABOUT US</h1>
     {/* <img src={modonWhite} alt="MODON" height={150} width={150} /> */}
     <div className="constructs flex w-full">
       <div className="construct1 flex flex-col justify-center items-center">
@@ -214,11 +215,11 @@ const setOver9 = () => {
         </div>
          <div className="flex flex-wrap justify-center gap-5 my-20 animate-fade-down animate-duration-1000 animate-delay-500">
           <div className="flex flex-col gap-5 mb-10 justify-center items-center">
-          <h1 className="text-5xl regular">{title}</h1>
-          <div className="overview-p text-lg w-3/4 text-center light">{overviewP}</div>
+          <h1 className="text-5xl regular text-primary-color">{title}</h1>
+          <div className="overview-p text-lg w-3/4 text-center light text-black">{overviewP}</div>
           </div>
          {show > 6? handleComponent[show]: show===6 ? <div className="construction-updates w-full h-fit py-5 flex flex-col justify-center items-center">
-      <div className="constructs flex flex-wrap justify-center items-center">
+      <div className="constructs flex flex-wrap justify-center items-center text-white">
         <div className="construct1 flex flex-col justify-center items-center m-5 regular cursor-pointer" onClick={setOverHardan}>
            <div className="hardan-img"></div>
            <h1 className='regular text-xl m-2'>Hardan Noori Al Handal</h1>
@@ -260,13 +261,13 @@ const setOver9 = () => {
        <img src={focusImg} height={415} width={620}></img>
      </div> : ''}
             </div>
-          {show<2 ? <div className="flex flex-col w-1/2 justify-center items-start light">
-          <div className="overview-p2 m-3 regular text-3xl text-white">{overviewP2}</div>
+          {show<2 ? <div className="flex flex-col w-1/2 justify-center items-start light text-primary-color">
+          <div className="overview-p2 m-3 regular text-3xl">{overviewP2}</div>
           <div className="overview-d m-3 text-md">{des}</div> 
-          </div> : show===5 ? <div className="flex flex-col w-1/2 h-full justify-around items-start light">
+          </div> : show===5 ? <div className="flex flex-col w-1/2 h-full justify-around items-start light text-black">
             <div className="flex flex-col">
-          <div className="overview-p2 m-3 regular text-3xl text-white">{overviewP2}</div>
-          <Accordion type="multiple"className="w-96">
+          <div className="overview-p2 m-3 regular text-3xl">{overviewP2}</div>
+          <Accordion type="multiple"className="w-96 text-primary-color">
              <AccordionItem value="item-1">
                <AccordionTrigger>Is it accessible?</AccordionTrigger>
                 <AccordionContent className="leading-7">
@@ -279,7 +280,7 @@ const setOver9 = () => {
           </Accordion>
             </div>
             <div className="flex flex-col">
-          <div className="overview-p3 m-3 regular text-3xl text-white">{overviewP3}</div>
+          <div className="overview-p3 m-3 regular text-3xl text-black">{overviewP3}</div>
           <Accordion type="multiple" className="w-96">
              <AccordionItem value="item-1">
                <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -293,16 +294,16 @@ const setOver9 = () => {
             </div>
           </div> : <div className="flex flex-col w-1/2 h-full justify-around items-start light">
             <div className="flex flex-col">
-          <div className="overview-p2 m-3 regular text-3xl text-white">{overviewP2}</div>
-          <div className="overview-d m-3 text-md mb-10">{des}</div> 
+          <div className="overview-p2 m-3 regular text-3xl text-primary-color">{overviewP2}</div>
+          <div className="overview-d m-3 text-md mb-10 text-black">{des}</div> 
             </div>
             <div className="flex flex-col">
-          <div className="overview-p2 m-3 regular text-3xl text-white">{overviewP3}</div>
-          <div className="overview-d m-3 text-md">{des2}</div> 
+          <div className="overview-p2 m-3 regular text-3xl text-primary-color">{overviewP3}</div>
+          <div className="overview-d m-3 text-md text-black">{des2}</div> 
             </div>
           </div>}
           </div>}
-          {showw ? <div className="about-cards flex gap-10 justify-center items-center h-70 my-10 w-full m-5">
+          {showw ? <div className="about-cards flex gap-10 justify-center items-center h-70 my-10 w-full m-5 text-black">
           <AboutCard icon={Building} title="Legacy Of Craft" description="Quality is at the core of Modon Real Estate Development. Every element of each project is, therefore, designed and developed in-house." />
           <AboutCard icon={Castle} title="We Build Homes" description="We don’t just build apartments and villas. We ensure in every aspect that it is indeed a home for you and your family. We build Homes." />
           <AboutCard icon={Layers3Icon} title="Passion For Perfection" description="Crafting a product that stands out entails attention to the finest of details. Ensuring exceptional quality, every time. You can see that perfection in every inch." />

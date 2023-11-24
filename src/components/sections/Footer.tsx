@@ -15,9 +15,9 @@ const Footer = () => {
   return (
     <div className="w-full">
       <div className="footer-img relative h-96 w-full flex flex-col justify-center items-center bg-primary-multiply-color">
-       <h1 className="bold text-3xl z-10">Find the Best Place for Living.</h1>
-       <p className="regular text-center m-5 z-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero! <br /> Lorem ipsum dolor sit amet.</p>
-      <Link to="/contact" className="z-10"><Button variant="outline" className="rounded z-10">Contact Us</Button></Link>
+       <h1 className="bold text-3xl z-10 best-place text-white">Find the Best Place for Living.</h1>
+       <p className="regular text-center m-5 z-10 bp text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero! <br /> Lorem ipsum dolor sit amet.</p>
+      <Link to="/contact" className="z-10"><Button variant="outline" className="rounded z-10 text-white hover:text-primary-color">Contact Us</Button></Link>
       </div>
 <div className="footer flex flex-col w-full h-fit py-10 justify-around items-center relative light bg-white text-primary-color">
        {/* <img src={modonLogo} height={130} width={130} alt="modon-logo" /> */}
@@ -48,7 +48,9 @@ const Footer = () => {
           <Link to="/about-us"><p className="regular text-[18px]">🔵 Privacy Policy</p></Link>
           <Link to="/about-us"><p className="regular text-[18px]">🔵 FAQ</p></Link>
           <Link to="/about-us"><p className="regular text-[18px]">🔵 Terms & Conditions</p></Link>
-          <Link to="/about-us" className="flex items-center m-3 gap-2 regular text-[18px]"><Enquire /></Link>
+          <div className="w-full flex justify-start mx-2 my-2">
+            <Enquire />
+            </div> 
         </div>
         <div className="ft1 p-7 flex flex-col gap-1">
           <h1 className="bold text-[24px]">Head Office</h1>
@@ -62,7 +64,7 @@ const Footer = () => {
         </div>
        </div>
          <div className="third-footer h-10 w-full bg-primary-color absolute bottom-0 light flex justify-around items-center text-white">
-         <h1>Copyright © 2023. All Rights Reserved</h1>
+         <h1>Copyright © 2023 MODON. All Rights Reserved</h1>
          <h1>Powered by ADZone</h1>
        </div>
 </div>

@@ -25,10 +25,10 @@ const MadinatyProject = () => {
       <div
         className="relative bg-black project-bg flex flex-col regular items-start justify-center h-fit px-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
-        <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
-        <p className="md:text-[64px] text-[12px]">{t("madinaty-c")}</p>
+        <p className="md:text-[24px] light text-[18px]">{t("overview")}</p>
+        <p className="md:text-[64px] text-[42px]">{t("madinaty-c")}</p>
         </div>
-        <p className="md:max-w-[75rem] text-[22px]  light text-md max-w-[40rem]">
+        <p className="md:max-w-[75rem] text-[22px] leading-7 light text-md max-w-[40rem]">
           {t("madinaty-description")}
         </p>
         <div className="flex w-full flex-col items-center justify-between md:flex-row">
@@ -45,7 +45,7 @@ const MadinatyProject = () => {
 
 </div>
         </div> 
-        <div className="flex flex-col gap-7 text-[24px] text-primary">
+        <div className="flex flex-col gap-7 text-[24px] text-primary mt-5">
         <Enquire addNow v="default" enqq />
         <Button size="lg" variant="secondary">Construction update</Button>
         </div>
@@ -71,39 +71,39 @@ const MadinatyProject = () => {
     <div className="flex flex-wrap gap-10 h-fit w-full py-10 bg-white text-primary-color justify-center items-center relative">
       <div className="bayti-1 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img1"></div>
-        <div className="bayti-title1 regular text-3xl">Cadi</div>
+        <div className="bayti-title1 regular text-3xl m-3">Cadi</div>
         <div className="bayti-des1 light">Kirkuk, Iraq</div>
-        <Link to="/madinaty/cadi"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/madinaty/cadi"><Button variant="default" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-2 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img2"></div>
-        <div className="bayti-title2 regular text-3xl">Gardenia</div>
+        <div className="bayti-title2 regular text-3xl m-3">Gardenia</div>
         <div className="bayti-des2 light">Kirkuk, Iraq</div>
-        <Link to="/madinaty/gardenia"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/madinaty/gardenia"><Button variant="default" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-3 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img3"></div>
-        <div className="bayti-title3 regular text-3xl">Nargis</div>
+        <div className="bayti-title3 regular text-3xl m-3">Nargis</div>
         <div className="bayti-des3 light">Kirkuk, Iraq</div>
-        <Link to="/madinaty/nargis"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/madinaty/nargis"><Button variant="default" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-4 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img4"></div>
-        <div className="bayti-title4 regular text-3xl">Viola</div>
+        <div className="bayti-title4 regular text-3xl m-3">Viola</div>
         <div className="bayti-des4 light">Kirkuk, Iraq</div>
-        <Link to="/madinaty/viola"><Button variant="secondary" className="m-2">Explore More</Button></Link>
+        <Link to="/madinaty/viola"><Button variant="default" className="m-2">Explore More</Button></Link>
       </div>
       <div className="bayti-5 flex flex-col justify-center items-center h-full m-3">
         <div className="bayti-img5"></div>
-        <div className="bayti-title5 regular text-3xl">Apartments</div>
+        <div className="bayti-title5 regular text-3xl m-3">Apartments</div>
         <div className="bayti-des5 light">Kirkuk, Iraq</div>
-        <Link to="/madinaty/apartments"><Button variant="secondary" className="m-2">Explore More</Button> </Link>
+        <Link to="/madinaty/apartments"><Button variant="default" className="m-2">Explore More</Button> </Link>
       </div>
     </div>
     <div className="flex flex-col justify-center items-center">
       <h1 className="regular flex justify-center items-center text-4xl text-primary-color m-3">Madinaty Location <SewingPinFilledIcon className="text-primary-color" height={35} width={35} /></h1>
       <h1 className="light text-md text-black m-1">NEAR KIRKUK UNIVERSITY</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416290.0142668459!2d43.75714887343749!3d35.398663200000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1554d92101e41eb9%3A0xec256bb947a4d997!2sMadinaty!5e0!3m2!1sen!2sus!4v1699146281990!5m2!1sen!2sus" width="1000" height="400" className="border-0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416290.0142668459!2d43.75714887343749!3d35.398663200000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1554d92101e41eb9%3A0xec256bb947a4d997!2sMadinaty!5e0!3m2!1sen!2sus!4v1699146281990!5m2!1sen!2sus" height="400" className="border-0 w-full"></iframe>
     <div className="flex flex-col h-fit w-fit">
       <div className="flex justify-center items-center regular text-xl text-primary-color mt-10">NEAR MADINATY</div>
       <div className="p-5 my-5 h-fit w-fit flex flex-wrap gap-5 justify-center">
