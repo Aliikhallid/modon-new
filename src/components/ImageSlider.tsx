@@ -5,13 +5,15 @@ interface ImageSliderProps {
   imgUrls: string[];
   imgOverText?: string[];
   className?: string;
+  selectedImage?:number
 }
 export default function ImageSlider({
   imgUrls,
   imgOverText = [""],
   className = "",
+  selectedImage = 0
 }: ImageSliderProps) {
-  const [imageIndex, setImageIndex] = useState(0);
+  const [imageIndex, setImageIndex] = useState(selectedImage);
 
   function prevImg() {
     setImageIndex((i) => {
@@ -40,9 +42,9 @@ export default function ImageSlider({
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       >
         <div className="flex flex-col items-start justify-end rounded-md z-20 regular text-primary h-full">
-          <div className="bg-white p-5 w-fit m-4 rounded">
+{        imgOverText[0]!=="" &&  <div className="bg-white p-5 w-fit m-4 rounded">
             {imgOverText[imageIndex]}
-          </div>
+          </div>}
         </div>
       </div>
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
