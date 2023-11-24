@@ -38,7 +38,6 @@ import { JobDesc } from './components/careersPage/jobData.ts'
 // import AnimatedCursor from 'react-animated-cursor'
 
 function App() {
-
   return (
     <>
     <Routes>
@@ -79,7 +78,6 @@ function App() {
       <Route path='*' element={<NotFound />}/>
 
     </Routes>
-    {/* <AnimatedCursor /> */}
     {/* </HashRouter> */}
     </>
   )

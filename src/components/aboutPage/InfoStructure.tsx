@@ -12,7 +12,7 @@ export default function InfoStructure({titleAndDescription}:PrivacyPolicyProps) 
 
         {titleAndDescription.map((pair, index) => (
         <div key={index} className='flex flex-col justify-start'>
-            <div className='overview-p2 m-3 regular text-3xl text-white'>
+            <div className='overview-p2 m-3 regular text-3xl text-primary-color'>
             {t(pair.title)} 
             </div>
             <div className="overview-d m-3 text-md">

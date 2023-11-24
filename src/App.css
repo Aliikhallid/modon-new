@@ -270,16 +270,8 @@
 .modon-text-container .latest {
   font-size: 2.5rem;
   color: black;
-  margin: 1rem;
-}
-.modon-text-container p {
-  margin: 1rem;
-}
-.modon-text-container div {
-  margin: 1rem;
 }
 .modon-text-container Button {
-  margin: 1rem;
   width: 100%;
 }
 
@@ -795,7 +787,7 @@ Button:hover {
 
 .construction-updates {
   height: 180vh;
-  background-color: rgba(6, 49, 108, 0.4196078431);
+  background-color: var(--primary-color);
 }
 .construction-updates Button {
   background-color: white;
@@ -964,16 +956,6 @@ Button:hover {
   color: var(--primary-color) !important;
 }
 
-.ac {
-  background: transparent !important;
-  color: white !important;
-  border: white solid 1px;
-}
-.ac:hover {
-  color: white !important;
-  border: white solid 2px;
-}
-
 .menu-trig {
   background: transparent !important;
   color: white !important;
@@ -1010,8 +992,8 @@ Button:hover {
 }
 
 .project1-img {
-  width: 85%;
-  height: 30rem;
+  height: 25rem;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -1038,7 +1020,8 @@ Button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.4;
+  opacity: 0.6;
+  border-radius: 10px;
   background: url(./assets/Buruj-Sorouh.webp) no-repeat center center/cover;
 }
 
@@ -1047,8 +1030,8 @@ Button:hover {
 }
 
 .project2-img {
-  width: 85%;
-  height: 30rem;
+  height: 25rem;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -1059,7 +1042,8 @@ Button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.4;
+  border-radius: 10px;
+  opacity: 0.5;
   background: url(./assets/Buruj-Hadeer.webp) no-repeat center center/cover;
 }
 
@@ -1158,6 +1142,7 @@ Button:hover {
     margin-right: 1rem !important;
   }
   .modon-desc .desc2 {
+    height: 70vh !important;
     width: 100% !important;
   }
   .navbarInner {
@@ -1229,6 +1214,16 @@ Button:hover {
     padding: 0.7rem;
     height: 2rem;
   }
+  .third-footer {
+    font-size: 0.7rem;
+  }
+  .best-place {
+    font-size: 1.3rem !important;
+  }
+  .bp {
+    font-size: 0.8rem;
+    width: 75% !important;
+  }
 }
 @media screen and (max-width: 950px) {
   .images-container {
@@ -1238,8 +1233,16 @@ Button:hover {
     height: 15rem !important;
     width: 22rem !important;
   }
+  .project1-img {
+    width: 20rem !important;
+  }
+  .project2-img {
+    width: 20rem !important;
+  }
   .modon-text-container {
-    width: 55%;
+    width: 85%;
+    justify-content: flex-start !important;
+    gap: 1rem;
   }
   .top-slider {
     flex-direction: column !important;

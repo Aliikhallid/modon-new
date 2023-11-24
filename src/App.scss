@@ -12,6 +12,32 @@
   --primary-multiply-color: #06305399;
   --secondary-color: #B72027;
 }
+// body {
+//   cursor: none;
+// }
+// * {
+//   cursor: none;
+// }
+// .cursor-dot {
+//   height: 10px;
+//   width: 10px;
+//   background-color: #5e87bd;
+// }
+// .cursor-outline {
+//   width: 77px;
+//   height: 77px;
+//   border: 2px solid var(--primary-color);
+// }
+// .cursor-dot,
+// .cursor-outline {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   transform: translate(-50%, -50%);
+//   border-radius: 50%;
+//   z-index: 1;
+//   pointer-events: none;
+// }
 @font-face {
   font-family: 'Tajawal-Light';
   src: url(./fonts/Tajawal-Light.ttf);
@@ -247,16 +273,10 @@
   .latest {
     font-size: 2.5rem;
     color: black;
-    margin: 1rem;
-  }
-  p {
-    margin: 1rem;
-  }
-  div {
-    margin: 1rem;
+    // margin: 1rem;
   }
   Button {
-    margin: 1rem;
+    // margin: 1rem;
     width: 100%;
   }
 }
@@ -745,7 +765,7 @@ Button:hover {
 }
 .construction-updates {
   height: 180vh;
-  background-color: #06316c6b;
+  background-color: var(--primary-color);
   Button {
     background-color: white;
     color: #06316c;
@@ -891,15 +911,15 @@ Button:hover {
 .hover-primary-color:hover {
   color: var(--primary-color) !important;
 }
-.ac {
-  background: transparent !important;
-  color: white !important;
-  border: white solid 1px;
-  &:hover {
-    color: white !important;
-    border: white solid 2px;
-  }
-}
+// .ac {
+//   background: transparent !important;
+//   color: white !important;
+//   border: white solid 1px;
+//   &:hover {
+//     color: white !important;
+//     border: white solid 2px;
+//   }
+// }
 .menu-trig {
   background: transparent !important;
   color: white !important;
@@ -932,8 +952,8 @@ Button:hover {
   background: url(./assets/ProjectBG.png)no-repeat center center/cover;  
 }
 .project1-img {
-  width: 85%;
-  height: 30rem;
+  height: 25rem;
+  border-radius: 10px;
   position: relative;
   // background-color: black;
 }
@@ -956,15 +976,16 @@ Button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.4;
+  opacity: 0.6;
+  border-radius: 10px;
   background: url(./assets/Buruj-Sorouh.webp)no-repeat center center/cover; 
 }
 .btnpr {
   z-index: 2;
 }
 .project2-img {
-  width: 85%;
-  height: 30rem;
+  height: 25rem;
+  border-radius: 10px;
   position: relative;
   // background-color: black;
 }
@@ -975,7 +996,8 @@ Button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.4;
+  border-radius: 10px;
+  opacity: 0.5;
   background: url(./assets/Buruj-Hadeer.webp)no-repeat center center/cover; 
 }
 .bayti-1 {
@@ -1061,6 +1083,7 @@ Button:hover {
       }
     }
     .desc2 {
+      height: 70vh !important;
       width: 100% !important;
     }
   }
@@ -1134,6 +1157,16 @@ Button:hover {
       height: 2rem;
     }
   }
+  .third-footer {
+    font-size: 0.7rem;
+  }
+  .best-place {
+    font-size: 1.3rem !important;
+  }
+  .bp {
+    font-size: 0.8rem;
+    width: 75% !important;
+  }
 }
 @media screen and (max-width: 950px) {
   .images-container {
@@ -1143,8 +1176,16 @@ Button:hover {
     height: 15rem !important;
     width: 22rem !important;
   }
+  .project1-img {
+    width: 20rem !important;
+  }
+  .project2-img {
+    width: 20rem !important;
+  }
   .modon-text-container {
-    width:55%;
+    width:85%;
+    justify-content: flex-start !important;
+    gap: 1rem;
   }
   .top-slider {
     flex-direction:  column !important;

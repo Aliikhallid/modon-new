@@ -98,36 +98,36 @@ const NavBar = () => {
         <div className="line3 h-0.5 w-5 bg-white"></div>
       </div>
       <div className="nav-list gap-4 flex w-3/4 items-center justify-around text-sm">
-        <a className="item cursor-pointer" href="/">
+        <a className="item cursor-" href="/">
           {t("home-nav")}
         </a>
         <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="hover:border-none"><div className='flex items-center'>{t("projects-nav")} <ChevronDown/></div></NavigationMenuTrigger>
-          <NavigationMenuContent className="text-white mt-4">
+          <NavigationMenuTrigger className="hover:border-none"><div className='flex items-center cursor-'>{t("projects-nav")} <ChevronDown/></div></NavigationMenuTrigger>
+          <NavigationMenuContent className="text-white mt-2 rounded-b-xl py-1">
           <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
-            <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/bayti'>
+            <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/bayti'>
                 <NavigationMenuLink  asChild>
                   <p>{t("bayti-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/buruj'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/buruj'>
                 <NavigationMenuLink  asChild>
                   <p>{t("buruj-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/future-city'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/future-city'>
                 <NavigationMenuLink  asChild>
                   <p>{t("future-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/lavida'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/lavida'>
                 <NavigationMenuLink  asChild>
                   <p>{t("lavida-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade' href='/madinaty'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/madinaty'>
                 <NavigationMenuLink  asChild>
                   <p>{t("madinaty-c")}</p>
                 </NavigationMenuLink>

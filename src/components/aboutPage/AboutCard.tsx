@@ -13,10 +13,10 @@ export default function AboutCard({title,description, icon: Icon}:CardProps) {
   return (
     <Card className='h-70'>
     <CardHeader>
-      {Icon && <Icon className='m-1 text-white' height={45} width={45}/>}
-      <CardTitle className='regular text-lg text-white'>{t(title)}</CardTitle></CardHeader>
+      {Icon && <Icon className='m-1 text-primary-color' height={45} width={45}/>}
+      <CardTitle className='regular text-lg text-primary-color'>{t(title)}</CardTitle></CardHeader>
     <CardContent>
-      <CardDescription className='light text-white'>
+      <CardDescription className='light text-black'>
         {t(description)}
     </CardDescription>
     </CardContent>

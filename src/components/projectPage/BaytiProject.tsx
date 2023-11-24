@@ -25,10 +25,10 @@ const BaytiProject = () => {
       <div
         className="relative bg-black project-bg flex flex-col regular items-start justify-center h-[125vh] px-10 bg-cover bg-center gap-2 sm:bg-auto">
         <div>
-        <p className="md:text-[24px] light text-[8px]">{t("overview")}</p>
-        <p className="md:text-[64px] text-[12px]">{t("bayti-c")}</p>
+        <p className="md:text-[24px] light text-[18px]">{t("overview")}</p>
+        <p className="md:text-[64px] text-[42px]">{t("bayti-c")}</p>
         </div>
-        <p className="md:max-w-[75rem] text-[22px]  light max-w-[40rem]">
+        <p className="md:max-w-[75rem] leading-7 text-[18px] light max-w-[40rem]">
           {t("bayti-description")}
         </p>
         <div className="flex w-full flex-col items-center justify-between md:flex-row">
@@ -45,12 +45,12 @@ const BaytiProject = () => {
 
 </div>
         </div> 
-        <div className="flex flex-col gap-7 text-[24px] text-primary">
+        <div className="flex flex-col gap-7 text-[24px] text-primary mt-5">
         <Enquire addNow v="default" enqq />
         <Button size="lg" variant="secondary">Construction Updates</Button>
         </div>
         </div>
-        <div className="absolute flex justify-center uppercase items-center bg-white bottom-0 md:w-1/4 w-1/2 md:h-[10%] h-5 mt-5 rounded-t-[37px] left-1/2 transform -translate-x-1/2">
+        <div className="absolute flex justify-center uppercase items-center bg-white bottom-0 md:w-1/4 w-1/2 md:h-[10%] h-[5%] mt-5 rounded-t-[37px] left-1/2 transform -translate-x-1/2">
           <p className="md:text-4xl tex-2xl text-primary regular">{t("features")}</p>
         </div>
 
@@ -103,7 +103,7 @@ const BaytiProject = () => {
     <div className="flex flex-col justify-center items-center">
       <h1 className="regular flex justify-center items-center text-4xl text-primary-color m-3 capitalize">{t("bayti-loc")}<SewingPinFilledIcon className="text-primary-color" height={35} width={35} /></h1>
       <h1 className="light text-md text-black m-1">{t("near-airport")}</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d420185.11757992225!2d43.0773573734375!3d34.637116000000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15515183c394860b%3A0x7f2997ff05f27d20!2z2YXYtNix2YjYuSDYqNmK2KrZiiDYp9mE2LPZg9mG2YogQmF5dGkgUHJvamVjdA!5e0!3m2!1sen!2sus!4v1699145366850!5m2!1sen!2sus" width="1000" height="400" className="border-0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d420185.11757992225!2d43.0773573734375!3d34.637116000000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15515183c394860b%3A0x7f2997ff05f27d20!2z2YXYtNix2YjYuSDYqNmK2KrZiiDYp9mE2LPZg9mG2YogQmF5dGkgUHJvamVjdA!5e0!3m2!1sen!2sus!4v1699145366850!5m2!1sen!2sus" height="400" className="border-0 w-[95%]"></iframe>
     <div className="flex flex-col h-fit w-fit">
       <div className="flex justify-center items-center regular text-xl text-primary-color mt-10">{t("near-bayti")}</div>
       <div className="p-5 my-5 h-fit w-fit flex flex-wrap gap-5 justify-center">
