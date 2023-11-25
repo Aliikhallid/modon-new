@@ -1,73 +1,76 @@
 import Enquire from "./sections/Enquire";
 import {useTranslation} from 'react-i18next'
-import modonLogoWhite from '../assets/Modon-04.png'
-import modonLogoBlack from '../assets/cropped-logo-coloured-1-pco5cfz1mxysmj28om452w38747priw3aun41caz28.webp'
+import modonLogo from '../assets/Modon-04.png'
+// import modonLogoBlack from '../assets/cropped-logo-coloured-1-pco5cfz1mxysmj28om452w38747priw3aun41caz28.webp'
 import LangSwitcher from './sections/LangSwitcher';
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@radix-ui/react-navigation-menu';
 import { NavigationMenuContent } from './ui/navigation-menu';
 import { ChevronDown, Instagram } from 'lucide-react';
-import { useState } from "react";
+// import { useState } from "react";
 import { MobileIcon } from "@radix-ui/react-icons";
+import { useEffect } from "react";
 
 
  
 
 const NavBar = () => {
   const { t } = useTranslation();
-  const navbar = document.querySelector(".navbar");
-  const menuTrig = document.querySelector(".menu-trig");
-  const logo = document.querySelector('.logo');
-  const [modonLogo, setLogo] = useState(modonLogoWhite);
-  // const ham = document.querySelector('.ham');
-  const line1 = document.querySelector('.line1')
-  const line2 = document.querySelector('.line2')
-  const line3 = document.querySelector('.line3')
-  const navInner = document.querySelector('.navbarInner');
-  // const navList = document.querySelector('.nav-list');
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 1) {
-      navInner?.classList.add('hidden');
-      navInner?.classList.remove('h-16');
-      navInner?.classList.add('h-0');
-      navbar?.classList.remove('h-36');
-      navbar?.classList.add('h-16')
-      line1?.classList.remove("bg-white");
-      line2?.classList.remove("bg-white");
-      line3?.classList.remove("bg-white");
-      line1?.classList.add("bg-black");
-      line2?.classList.add("bg-black");
-      line3?.classList.add("bg-black");
-      navbar?.classList.add("bg-white");
-      navbar?.classList.remove("text-white");
-      navbar?.classList.add("text-black");
-      navbar?.classList.add("box-shadow-nav");
-      menuTrig?.classList.add("snd-color-imp");
-      logo?.classList.remove('h-14');
-      logo?.classList.add('h-12');
-      setLogo(modonLogoBlack)
-    } else {
-      line1?.classList.remove("bg-black");
-      line2?.classList.remove("bg-black");
-      navInner?.classList.remove('hidden');
-      navInner?.classList.remove('h-0');
-      navInner?.classList.add('h-16')
-      navbar?.classList.remove('h-16')
-      navbar?.classList.add('h-36');
-      line3?.classList.remove("bg-black");
-      line1?.classList.add("bg-white");
-      line2?.classList.add("bg-white");
-      line3?.classList.add("bg-white");
-      logo?.classList.remove('h-12');
-      logo?.classList.add('h-14');
-      setLogo(modonLogoWhite)
-      menuTrig?.classList.remove("snd-color-imp");
-      navbar?.classList.remove("box-shadow-nav");
-      navbar?.classList.remove("bg-white");
-      navbar?.classList.remove("text-black");
-      navbar?.classList.add("text-white");
-    }
-  });
+  useEffect(() => {
+    const navbar = document.querySelector(".navbar");
+    const menuTrig = document.querySelector(".menu-trig");
+    const logo = document.querySelector('.logo');
+    // const [modonLogo, setLogo] = useState(modonLogoWhite);
+    // const ham = document.querySelector('.ham');
+    const line1 = document.querySelector('.line1')
+    const line2 = document.querySelector('.line2')
+    const line3 = document.querySelector('.line3')
+    const navInner = document.querySelector('.navbarInner');
+    // const navList = document.querySelector('.nav-list');
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 1) {
+        navInner?.classList.add('hidden');
+        navInner?.classList.remove('h-16');
+        navInner?.classList.add('h-0');
+        navbar?.classList.remove('h-36');
+        navbar?.classList.add('h-16')
+        line1?.classList.remove("bg-white");
+        line2?.classList.remove("bg-white");
+        line3?.classList.remove("bg-white");
+        line1?.classList.add("bg-black");
+        line2?.classList.add("bg-black");
+        line3?.classList.add("bg-black");
+        navbar?.classList.add("bg-primary-multiply-color");
+        // navbar?.classList.remove("text-white");
+        // navbar?.classList.add("text-black");
+        navbar?.classList.add("box-shadow-nav");
+        menuTrig?.classList.add("snd-color-imp");
+        logo?.classList.remove('h-14');
+        logo?.classList.add('h-12');
+        // setLogo(modonLogoBlack)
+      } else {
+        line1?.classList.remove("bg-black");
+        line2?.classList.remove("bg-black");
+        navInner?.classList.remove('hidden');
+        navInner?.classList.remove('h-0');
+        navInner?.classList.add('h-16')
+        navbar?.classList.remove('h-16')
+        navbar?.classList.add('h-36');
+        line3?.classList.remove("bg-black");
+        line1?.classList.add("bg-white");
+        line2?.classList.add("bg-white");
+        line3?.classList.add("bg-white");
+        logo?.classList.remove('h-12');
+        logo?.classList.add('h-14');
+        // setLogo(modonLogoWhite)
+        menuTrig?.classList.remove("snd-color-imp");
+        navbar?.classList.remove("box-shadow-nav");
+        navbar?.classList.remove("bg-primary-multiply-color");
+        // navbar?.classList.remove("text-black");
+        // navbar?.classList.add("text-white");
+      }
+    });
+  })
   
   return (
     <div className="navbar flex flex-col justify-center text-white h-36 pr-6 pl-6 fixed top-0 w-full light z-30">
