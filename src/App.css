@@ -15,11 +15,11 @@
 }
 
 body {
-  cursor: none;
+  cursor: none !important;
 }
 
 * {
-  cursor: none;
+  cursor: none !important;
 }
 
 .cursor-dot {
@@ -27,7 +27,8 @@ body {
   width: 8px;
   background-color: #5e87bd;
   border-radius: 0px !important;
-  transform: rotate(45deg) scale(var(--ggs, 1)) !important;
+  transform: translate(-50%, -50%) rotate(45deg) !important;
+  transform-origin: center center;
 }
 
 .cursor-outline {
