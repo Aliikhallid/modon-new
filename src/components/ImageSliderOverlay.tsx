@@ -7,12 +7,14 @@ interface ImageSliderOverlayProps {
   imgUrls: string[];
   className?: string;
   selectedImage?: number;
+  imgText?: string[];
   setSelectedImageIndex: React.Dispatch<React.SetStateAction<number | null>>;
 }
 export default function ImageSliderOverlay({
   imgUrls,
   selectedImage = 0,
   setSelectedImageIndex,
+  imgText=[""]
 }: ImageSliderOverlayProps) {
   const nav = document.getElementById("nav");
 
@@ -49,7 +51,7 @@ export default function ImageSliderOverlay({
       onClick={handleClick}
       className="absolute top-0 left-0 w-screen h-screen flex bg-black bg-opacity-80 justify-center items-center"
     >
-      <ImageSlider imgUrls={imgUrls} selectedImage={selectedImage} />
+      <ImageSlider imgUrls={imgUrls} imgOverText={imgText} selectedImage={selectedImage} />
       <Button
       variant="ghost"
       size="icon"

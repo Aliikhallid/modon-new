@@ -5,12 +5,56 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  cursor: none !important;
 }
 
 :root {
   --primary-color: #06316c;
-  --primary-multiply-color: #06305399;
-  --secondary-color: #B72027;
+  --primary-multiply-color: #063053cb;
+  --secondary-color: #B72027; 
+}
+
+body {
+  cursor: none !important;
+}
+
+* {
+  cursor: none !important;
+}
+
+.cursor-outline {
+  width: 77px;
+  height: 77px;
+  border: 2px solid var(--secondary-color);
+  z-index: 999999999px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.cursor-hover {
+  height: 40px;
+  width: 40px;
+}
+
+.cursor-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #ca3336;
+  border-radius: 0px !important;
+  transform: translate(-50%, -50%) rotate(45deg) !important;
+  transform-origin: center center;
+  z-index: 99999999px;
+}
+
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
 }
 
 @font-face {
@@ -116,7 +160,7 @@
 }
 
 .box-shadow-nav {
-  box-shadow: 2px 2px 25px rgb(167, 167, 167);
+  box-shadow: 2px 2px 25px rgba(6, 48, 83, 0.7960784314);
 }
 
 .footer-mobile {
@@ -1166,7 +1210,8 @@ Button:hover {
     height: 70vh !important;
   }
   .filter-web {
-    display: none !important;
+    width: 50% !important;
+    flex-direction: column !important;
   }
   .head-off {
     display: none !important;
@@ -1256,4 +1301,3 @@ Button:hover {
   margin-left: 1.3rem;
   background: linear-gradient(90deg, black, #3989f8);
 }/*# sourceMappingURL=App.css.map */
-

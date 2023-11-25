@@ -336,13 +336,13 @@ const loadImages = (project: string,lastImage:number) => {
           <h1 className="md:text-5xl text-4xl regular text-center">{title}</h1>
           <div className="overview-p text-lg w-3/4 text-center light">{overviewP}</div>
           </div>
-         <div className="videos h-fit relative flex md:flex-row flex-col justify-center items-center">
+         <div className="videos h-fit relative flex md:flex-row flex-col justify-center items-center z-10">
             <div className="flex md:w-3/4 w-full justify-center items-center">
           {imgg===1 ? <img src={apartmentA} height={1000} width={1000}></img> :imgg===2 ? <img src={apartmentB1} height={1000} width={1000}></img> : imgg===3 ? 
         <img src={apartmentB2} height={1000} width={1000}></img>  
        : imgg===4 ? <img src={apartmentB3} height={1000} width={1000}></img> : imgg===5 ?  <img src={apartmentC1} height={1000} width={1000}></img> : imgg===6 ? <img src={apartmentC2} height={1000} width={1000}></img> : imgg===7 ? <img src={apartmentC3} height={1000} width={1000}></img> : imgg===8 ? <img src={apartmentC4} height={1000} width={1000}></img> : ''}
             </div>
-          {show===1 ? <div className="flex flex-col md:w-1/2 w-full justify-center md:items-start items-center light">
+          {show===1 ? <div className="flex flex-col md:w-1/2 w-full justify-center md:items-start items-center light z-10">
           <div className="overview-p2 m-3 regular text-3xl text-white">{overviewP2}</div>
           <div className="flex w-3/4 justify-between items-center mx-5">
             <div className="regular text-2xl">{t1}</div>
