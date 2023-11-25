@@ -7,6 +7,8 @@ import ImageSliderOverlay from "../ImageSliderOverlay";
 const BaytiUpdates = () => {
   const path = "../public/ConstructionUpdates/Bayti/"
   const [imagePaths, setImagePaths] = useState<string[]>([]);
+  const [month, setMonth] = useState('July - 2018');
+
   const loadImages = (year: string,month:string,lastImage:number) => {
     
       const paths = [];
@@ -14,7 +16,7 @@ const BaytiUpdates = () => {
         paths.push(`${path}/${year}/${month}/${i}.webp`);
       }
       setImagePaths(paths);
-    
+    setMonth(`${month} - ${year}`)
     
   };
 
@@ -52,14 +54,14 @@ const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null
          <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2023","August",11)}>August 2023</Button>
         </div>
          <div className="flex flex-wrap justify-center gap-10 mt-5" >
-          {imagePaths.map((p,index) =>(<div key={index}  className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" onClick={()=>handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
+          {imagePaths.map((p,index) =>(<div key={index}  className="buruj-img clickable animate-fade-down animate-duration-1000 animate-delay-500" onClick={()=>handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
          </div>
         <Button onClick={goBack} className='hover-black w-40 mt-4 upBtn'>Previous Page</Button>
          </div>
          </div>
          <Footer />
          {selectedImageIndex !== null && (
-        <ImageSliderOverlay imgUrls={imagePaths} selectedImage={selectedImageIndex} setSelectedImageIndex={setSelectedImageIndex}  />
+        <ImageSliderOverlay imgUrls={imagePaths} selectedImage={selectedImageIndex} setSelectedImageIndex={setSelectedImageIndex} imgText={Array(imagePaths.length).fill(`Bayti ${month}`)}  />
       )}
          </div> 
   )

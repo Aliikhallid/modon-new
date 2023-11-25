@@ -20,12 +20,17 @@ function RootComponent() {
     window.addEventListener('mousemove', function(e) {
      const posX = e.clientX;
      const posY = e.clientY;
-     
+     const targetElement = e.target as Element;
+     const isHover = targetElement!.tagName.toLowerCase() === 'a' ||targetElement!.tagName.toLowerCase() === 'button' || targetElement!.tagName.toLowerCase().includes('select')|| targetElement!.tagName.toLowerCase().includes('link') || targetElement!.tagName.toLowerCase().includes('nav')||targetElement!.tagName.toLowerCase().includes('input')||targetElement!.tagName.toLowerCase().includes('menu') ||targetElement!.tagName.toLowerCase().includes('checkbox')|| targetElement!.classList.contains("clickable");
+     if (isHover) {
+      cursorOutline!.classList.add("cursor-hover")
+    } else {
+      cursorOutline!.classList.remove("cursor-hover")
+
+    }
      cursorDot.style.left = `${posX}px`;
      cursorDot.style.top = `${posY}px`;
     
-    //  cursorOutline.style.left = `${posX}px`;
-    //  cursorOutline.style.top = `${posY}px`;
     cursorOutline?.animate({
       left: `${posX}px`,
       top: `${posY}px`

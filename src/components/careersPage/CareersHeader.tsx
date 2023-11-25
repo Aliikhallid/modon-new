@@ -40,7 +40,7 @@ const CareersHeader = () => {
   };
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
-});
+},[]);
   return (
     <div className="contact-page w-full h-fit flex flex-col justify-center items-center">
        <div className="career-cont relative h-[90vh] bg-primary-multiply-color w-full flex flex-col justify-center items-center">
@@ -66,7 +66,7 @@ const CareersHeader = () => {
                       <SelectValue placeholder="Newest to Oldest" />
                     </SelectTrigger>
                     <SelectContent className="bg-white">
-                      <SelectItem value="newest" className="job-sort">Newest to Oldest</SelectItem>
+                      <SelectItem value="newest" className="job-sort clickable">Newest to Oldest</SelectItem>
                       <SelectItem value="oldest" >Oldest to Newest</SelectItem>
                     </SelectContent>
                   </Select>

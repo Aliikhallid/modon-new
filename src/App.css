@@ -11,7 +11,7 @@
 :root {
   --primary-color: #06316c;
   --primary-multiply-color: #063053cb;
-  --secondary-color: #B72027;
+  --secondary-color: #B72027; 
 }
 
 body {
@@ -22,27 +22,29 @@ body {
   cursor: none !important;
 }
 
-a:hover .cursor-outline {
-  height: 50px !important;
-  width: 50px !important;
+.cursor-outline {
+  width: 77px;
+  height: 77px;
+  border: 2px solid var(--secondary-color);
+  z-index: 999999999px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.cursor-hover {
+  height: 40px;
+  width: 40px;
 }
 
 .cursor-dot {
   height: 8px;
   width: 8px;
-  background-color: #5e87bd;
+  background-color: #ca3336;
   border-radius: 0px !important;
   transform: translate(-50%, -50%) rotate(45deg) !important;
   transform-origin: center center;
   z-index: 99999999px;
 }
 
-.cursor-outline {
-  width: 77px;
-  height: 77px;
-  border: 2px solid var(--primary-color);
-  z-index: 999999999px;
-}
 
 .cursor-dot,
 .cursor-outline {

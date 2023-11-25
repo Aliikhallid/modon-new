@@ -7,6 +7,8 @@ const MadinatyUpdates = () => {
   const path = "../public/ConstructionUpdates/Madinaty/"
   const [imagePaths, setImagePaths] = useState<string[]>([]);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const [month, setMonth] = useState('July - 2016');
+
 
   const loadImages = (year: string,month:string,lastImage:number) => {
     
@@ -15,8 +17,8 @@ const MadinatyUpdates = () => {
         paths.push(`${path}/${year}/${month}/${i}.webp`);
       }
       setImagePaths(paths);
-    
-    
+      setMonth(`${month} - ${year}`)
+
   };
 
   const handleImageClick = (index: number) => {
@@ -57,14 +59,14 @@ function goBack() {
 
         </div>
          <div className="flex flex-wrap justify-center gap-10 mt-5">
-          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" onClick={()=>handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
+          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 clickable animate-delay-500" onClick={()=>handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
          </div>
         <Button onClick={goBack} className='hover-black w-40 mt-4 upBtn'>Previous Page</Button>
          </div>
          </div>
          <Footer />
          {selectedImageIndex !== null && (
-        <ImageSliderOverlay imgUrls={imagePaths} selectedImage={selectedImageIndex} setSelectedImageIndex={setSelectedImageIndex}  />
+        <ImageSliderOverlay imgUrls={imagePaths} selectedImage={selectedImageIndex} setSelectedImageIndex={setSelectedImageIndex} imgText={Array(imagePaths.length).fill(`Madinaty ${month}`)}  />
       )}
          </div> 
         
