@@ -21,7 +21,7 @@ function RootComponent() {
      const posX = e.clientX;
      const posY = e.clientY;
      const targetElement = e.target as Element;
-     const isHover = targetElement!.tagName.toLowerCase() === 'a' ||targetElement!.tagName.toLowerCase() === 'button' || targetElement!.tagName.toLowerCase().includes('select')|| targetElement!.tagName.toLowerCase().includes('link') || targetElement!.tagName.toLowerCase().includes('nav')||targetElement!.tagName.toLowerCase().includes('input')||targetElement!.tagName.toLowerCase().includes('menu') ||targetElement!.tagName.toLowerCase().includes('checkbox')|| targetElement!.classList.contains("clickable");
+     const isHover = targetElement!.tagName.toLowerCase() === 'a' ||targetElement!.tagName.toLowerCase() === 'button' || targetElement!.tagName.toLowerCase().includes('select')|| targetElement!.tagName.toLowerCase().includes('link') || targetElement!.tagName.toLowerCase().includes('nav')||targetElement!.tagName.toLowerCase().includes('input')||targetElement!.tagName.toLowerCase().includes('menu') ||targetElement!.tagName.toLowerCase().includes('checkbox')|| targetElement!.classList.contains("clickable")|| targetElement!.classList.contains("cursor-pointer");
      if (isHover) {
       cursorOutline!.classList.add("cursor-hover")
     } else {
