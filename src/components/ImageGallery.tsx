@@ -2,9 +2,11 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import Footer from "./sections/Footer";
 import { Button } from "./ui/button";
 import NavBar from "./NavBar";
+import ImageSliderOverlay from "./ImageSliderOverlay";
 
 const ImageGallery = () => {
   const [imagePaths, setImagePaths] = useState<string[]>([]);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
   const loadImages = (project: string,lastImage:number) => {
     const path = "../public/ImageGallery/"
     
@@ -20,6 +22,9 @@ const ImageGallery = () => {
   const handleButtonClick = (year: string,lastImage:number) => {
     loadImages(year,lastImage);
   };
+  const handleImageClick = (index: number) => {
+    setSelectedImageIndex(index);
+  };
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
 });
@@ -28,7 +33,7 @@ function goBack() {
 }
 
   useEffect(()=>{
-    handleButtonClick("BA",20)
+    handleButtonClick("BA",12)
   },[])
   return (
     <div className="bg-primary-multiply-color w-full h-fit flex flex-col justify-center items-center relative">
@@ -39,17 +44,20 @@ function goBack() {
         <div className="buruj-btns">
          <Button className='m-2 upBtn' onClick={()=>handleButtonClick("BA",12)}>BAYTI</Button>
          <Button className='m-2 upBtn' onClick={()=>handleButtonClick("BU",12)}>BURUJ</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("FU",17)}>FUTURE CITY</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("LA",11)}>LAVIDA</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("MA",11)}>MADINATY</Button>
+         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("FU",8)}>FUTURE CITY</Button>
+         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("LA",12)}>LAVIDA</Button>
+         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("MA",12)}>MADINATY</Button>
         </div>
          <div className="flex flex-wrap justify-center gap-10 mt-5">
-          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" style= {{backgroundImage: `url(${p})`}}></div>))}
+          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" onClick={() => handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
          </div>
         <Button onClick={goBack} className='hover-black w-40 mt-4 upBtn'>Previous Page</Button>
          </div>
          </div>
          <Footer />
+         {selectedImageIndex !== null && (
+        <ImageSliderOverlay imgUrls={imagePaths} selectedImage={selectedImageIndex} setSelectedImageIndex={setSelectedImageIndex}  />
+      )}
          </div> 
   )
 }

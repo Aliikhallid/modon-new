@@ -73,7 +73,7 @@ const NavBar = () => {
   })
   
   return (
-    <div className="navbar flex flex-col justify-center text-white h-36 pr-6 pl-6 fixed top-0 w-full light z-30">
+    <div id="nav" className="navbar flex flex-col justify-center text-white h-36 pr-6 pl-6 fixed top-0 w-full light z-30">
       <div className="navbarInner flex w-full justify-between items-center h-16 border-b-[0.1px]">
         <h1 className="mx-3"><span className="bold">Email us at:</span> Info@modoniq.com</h1>
         <div className="social-items flex justify-around items-center cursor-pointer w-[20%]">

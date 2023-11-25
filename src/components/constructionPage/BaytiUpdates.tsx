@@ -2,6 +2,7 @@ import { Button } from "../ui/button"
 import NavBar from "../NavBar"
 import { useEffect, useLayoutEffect, useState } from "react";
 import Footer from "../sections/Footer";
+import ImageSliderOverlay from "../ImageSliderOverlay";
 
 const BaytiUpdates = () => {
   const path = "../public/ConstructionUpdates/Bayti/"
@@ -26,10 +27,15 @@ const BaytiUpdates = () => {
 function goBack() {
   window.history.back();
 }
+const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   useEffect(()=>{
     handleButtonClick("2018","July",20)
   },[])
+
+  const handleImageClick = (index: number) => {
+    setSelectedImageIndex(index);
+  };
   return (
     <div className="bg-white w-full h-fit flex flex-col justify-center items-center relative">
       <NavBar />
@@ -45,13 +51,16 @@ function goBack() {
          <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2022","February",17)}>February 2022</Button>
          <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2023","August",11)}>August 2023</Button>
         </div>
-         <div className="flex flex-wrap justify-center gap-10 mt-5">
-          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" style= {{backgroundImage: `url(${p})`}}></div>))}
+         <div className="flex flex-wrap justify-center gap-10 mt-5" >
+          {imagePaths.map((p,index) =>(<div key={index}  className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" onClick={()=>handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
          </div>
         <Button onClick={goBack} className='hover-black w-40 mt-4 upBtn'>Previous Page</Button>
          </div>
          </div>
          <Footer />
+         {selectedImageIndex !== null && (
+        <ImageSliderOverlay imgUrls={imagePaths} selectedImage={selectedImageIndex} setSelectedImageIndex={setSelectedImageIndex}  />
+      )}
          </div> 
   )
 }

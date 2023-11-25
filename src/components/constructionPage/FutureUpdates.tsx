@@ -2,9 +2,12 @@ import { Button } from "../ui/button"
 import NavBar from "../NavBar"
 import { useEffect, useLayoutEffect, useState } from "react";
 import Footer from "../sections/Footer";
+import ImageSliderOverlay from "../ImageSliderOverlay";
 const FutureUpdates = () => {
   const path = "../public/ConstructionUpdates/Future/"
   const [imagePaths, setImagePaths] = useState<string[]>([]);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+
   const loadImages = (year: string,month:string,lastImage:number) => {
     
       const paths = [];
@@ -16,6 +19,9 @@ const FutureUpdates = () => {
     
   };
 
+  const handleImageClick = (index: number) => {
+    setSelectedImageIndex(index);
+  };
   const handleButtonClick = (year: string,month:string,lastImage:number) => {
     loadImages(year,month,lastImage);
   };
@@ -43,12 +49,15 @@ const FutureUpdates = () => {
 
         </div>
          <div className="flex flex-wrap justify-center gap-10 mt-5">
-          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" style= {{backgroundImage: `url(${p})`}}></div>))}
+          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" onClick={()=>handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
          </div>
         <Button onClick={goBack} className='hover-black w-40 mt-4 upBtn'>Previous Page</Button>
          </div>
          </div>
          <Footer />
+         {selectedImageIndex !== null && (
+        <ImageSliderOverlay imgUrls={imagePaths} selectedImage={selectedImageIndex} setSelectedImageIndex={setSelectedImageIndex}  />
+      )}
 
          </div> 
         
