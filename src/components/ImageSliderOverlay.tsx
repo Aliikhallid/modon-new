@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import ImageSlider from "./ImageSlider";
+import { X } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface ImageSliderOverlayProps {
   imgUrls: string[];
@@ -12,10 +14,17 @@ export default function ImageSliderOverlay({
   selectedImage = 0,
   setSelectedImageIndex,
 }: ImageSliderOverlayProps) {
+  const nav = document.getElementById("nav");
+
   useEffect(() => {
     const body = document.querySelector("body");
     if (body) {
       body.style.overflow = "hidden";
+    }
+
+    if (nav) {
+      nav.style.display = "none";
+      console.log("hi")
     }
 
     return () => {
@@ -23,12 +32,17 @@ export default function ImageSliderOverlay({
         body.style.overflow = "auto";
       }
     };
+
+
   }, []);
 
   const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
     event.stopPropagation();
-    if (event.target === event.currentTarget)
+    if (event.target === event.currentTarget){
          setSelectedImageIndex(null);
+        if(nav)
+         nav.style.display = "flex";
+    }
   };
   return (
     <div
@@ -36,6 +50,19 @@ export default function ImageSliderOverlay({
       className="absolute top-0 left-0 w-screen h-screen flex bg-black bg-opacity-80 justify-center items-center"
     >
       <ImageSlider imgUrls={imgUrls} selectedImage={selectedImage} />
+      <Button
+      variant="ghost"
+      size="icon"
+        className="absolute top-4 right-4"
+        onClick={(event) => {
+          event.stopPropagation();
+          setSelectedImageIndex(null); 
+          if (nav) nav.style.display = "flex";
+        }}
+      >
+        <X size={24} />
+      </Button>
+
     </div>
   );
 }
