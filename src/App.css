@@ -44,6 +44,10 @@ a:hover .cursor-outline {
   z-index: 999999999px;
 }
 
+.cursor-hover {
+  height: 40px;
+  width: 40px;
+}
 .cursor-dot,
 .cursor-outline {
   position: fixed;
