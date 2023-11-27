@@ -900,7 +900,7 @@ Button:hover {
 }
 
 .bayti-mall-img {
-  background: url(./assets/CommercialProjects/BaytiMall/baytimall1.jpeg) no-repeat center center/cover;
+  background: url(./assets/baytimall1.webp) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -908,7 +908,7 @@ Button:hover {
 }
 
 .bayti-mall-img1 {
-  background: url(./assets/CommercialProjects/BaytiMall/baytimall2.jpeg) no-repeat center center/cover;
+  background: url(./assets/baytimall2.webp) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -916,7 +916,7 @@ Button:hover {
 }
 
 .bayti-mall-img2 {
-  background: url(./assets/CommercialProjects/BaytiMall/baytimall3.jpeg) no-repeat center center/cover;
+  background: url(./assets/baytimall1.webp) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -924,7 +924,7 @@ Button:hover {
 }
 
 .bayti-mall-img3 {
-  background: url(./assets/CommercialProjects/BaytiMall/baytimall4.jpeg) no-repeat center center/cover;
+  background: url(./assets/baytimall2.webp) no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;

@@ -51,7 +51,7 @@ const ContactHeader = () => {
                 </div>
           </div>
           <div className="flex flex-col justify-start gap-5 md:w-1/2 w-full">
-          <div className="flex flex-col justify-start gap-2 h-40">
+          <div className="flex flex-col justify-start gap-2 md:h-full h-40">
                 <Label htmlFor="message" className="regular">Message</Label>
                 <Textarea id="message" className="h-full" placeholder="Enter Your Message..." required />
               </div>

@@ -13,10 +13,11 @@ const BaytiMall = () => {
     window.scrollTo(0, 0)
 });
   return (
-    <div className="construction-updates h-fit w-full flex flex-col justify-center items-center">
+    <div className="bg-white h-fit w-full flex flex-col justify-center items-center">
       <NavBar />
-      <div className="constructs flex flex-col my-40 flex-wrap items-center">
-      <h1 className='regular text-5xl text-center'>BAYTI MALL</h1>
+      <div className="ob h-40 w-full bg-primary-color"></div>
+      <div className="constructs flex flex-col my-20 flex-wrap items-center">
+      <h1 className='regular text-5xl text-center text-primary-color'>BAYTI MALL</h1>
         <div className="construct1 flex flex-wrap gap-10 justify-center items-center m-5 regular">
            <div className="bayti-mall-img1"></div>
            <div className="bayti-mall-img2"></div>
