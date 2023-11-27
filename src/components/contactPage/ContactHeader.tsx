@@ -11,16 +11,16 @@ const ContactHeader = () => {
     <div className="contact-page w-full h-fit flex flex-col justify-center items-center">
        <div className="contact0 relative h-[90vh] bg-primary-multiply-color w-full flex flex-col justify-center items-center">
     {/* <img src={modonLogo} alt="MODON" height={120} width={120}/> */}
-    <h1 className="regular text-2xl">Get in Touch</h1>
+    <h1 className="regular md:text-2xl text-lg">Get in Touch</h1>
     <h1 className="bold text-5xl m-3">Contact Us</h1>
-    <p className="light text-center">Please feel free to get in touch with our Customer support<br /> team for any request or inquiry.</p>
+    <p className="light text-center md:text-lg text-sm">Please feel free to get in touch with our Customer support<br /> team for any request or inquiry.</p>
        </div>
       <div className="cont-cont h-fit w-full flex bg-white text-primary-color">
       <div className="contact2 h-[140vh] w-full flex flex-col justify-center items-center regular">
-        <h1 className="regular text-3xl flex contact-header text-primary-color mb-3 z-10">WE'D LOVE TO HEAR FROM YOU</h1>
+        <h1 className="regular md:text-3xl text-2xl flex contact-header text-primary-color mb-3 z-10">WE'D LOVE TO HEAR FROM YOU</h1>
           <form className="flex flex-col justify-start gap-5 py-4 light w-3/4">
-            <div className="flex justify-start gap-5 py-4 light">
-             <div className="flex flex-col justify-start gap-5 w-1/2">
+            <div className="flex md:flex-row flex-col justify-start gap-5 py-4 light">
+             <div className="flex flex-col justify-start gap-5 md:w-1/2 w-full">
               <div className="flex flex-col justify-start gap-2">
                 <Label htmlFor="fullname" className="regular">FULL NAME</Label>
                 <Input id="fullname" className="h-14" placeholder="Enter Full Name" required />
@@ -50,8 +50,8 @@ const ContactHeader = () => {
                 </div>
                 </div>
           </div>
-          <div className="flex flex-col justify-start gap-5 w-1/2">
-          <div className="flex flex-col justify-start gap-2 h-full">
+          <div className="flex flex-col justify-start gap-5 md:w-1/2 w-full">
+          <div className="flex flex-col justify-start gap-2 h-40">
                 <Label htmlFor="message" className="regular">Message</Label>
                 <Textarea id="message" className="h-full" placeholder="Enter Your Message..." required />
               </div>
@@ -61,11 +61,11 @@ const ContactHeader = () => {
             <Checkbox className="bg-primary-color h-4 w-4" />
             Accept Receiving Emails about Modon News & Offers
             </h1>
-              <Button type="submit" className="w-1/2 m-auto regular my-5">SUBMIT</Button>
+              <Button type="submit" className="md:w-1/2 w-full m-auto regular my-5">SUBMIT</Button>
             </form>
             <h1 className="bold text-2xl">Come Visit Us</h1>
             <SewingPinFilledIcon color="#06316c" className="m-3" height={20} width={20} />
-            <p className="light">Al-Maamoun. Al Nisour Square, Near to Baghdad Tower, Iraq</p>
+            <p className="light md:m-0 m-5 text-center">Al-Maamoun. Al Nisour Square, Near to Baghdad Tower, Iraq</p>
             <p className="light">07700300004</p>
             <div className="h-0.5 w-10 m-5 bg-primary-color"></div>
             <p className="light">info@modoniq.com</p>
