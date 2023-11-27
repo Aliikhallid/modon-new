@@ -30,29 +30,30 @@ const setCu = () => {
   //   handleButtonClick("BA",20)
   // },[])
   return (
-    <div className="bg-primary-multiply-color w-full h-fit flex flex-col justify-center items-center relative">
+    <div className="bg-white w-full h-fit flex flex-col justify-center items-center relative">
       <NavBar />
-    <h1 className='regular text-5xl relative mt-40'>VIDEO GALLERY</h1>
+      <div className="ob h-40 w-full bg-primary-color"></div>
+    <h1 className='regular text-5xl relative mt-20 text-primary-color'>VIDEO GALLERY</h1>
     <div className="constructs flex">
       <div className="construct1 flex flex-col justify-center items-center m-5">
         <div className="buruj-btns">
-         <Button className='m-2 upBtn' onClick={setCorp}>CORPORATE</Button>
-         <Button className='m-2 upBtn' onClick={setEv}>EVENTS</Button>
-         <Button className='m-2 upBtn' onClick={setPr}>PROJECTS</Button>
-         <Button className='m-2 upBtn' onClick={setCu}>CONSTRUCTION UPDATES</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={setCorp}>CORPORATE</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={setEv}>EVENTS</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={setPr}>PROJECTS</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={setCu}>CONSTRUCTION UPDATES</Button>
         </div>
-         <div className="flex flex-wrap justify-center gap-10 mt-5">
+         <div className="flex w-full flex-wrap justify-center items-center gap-10 mt-5">
           <div className="flex">
-         <iframe src={video} height={300} width={400}></iframe>
+         <iframe src={video} height={300} className="w-full"></iframe>
           </div>
           <div className="flex">
-         <iframe src={video} height={300} width={400}></iframe>
+         <iframe src={video} height={300} className="w-full"></iframe>
           </div>
           <div className="flex">
-         <iframe src={video} height={300} width={400}></iframe>
+         <iframe src={video} height={300} className="w-full"></iframe>
           </div>
           <div className="flex">
-         <iframe src={video} height={300} width={400}></iframe>
+         <iframe src={video} height={300} className="w-full"></iframe>
           </div>
          </div>
         <Button onClick={goBack} className='hover-black w-40 mt-4 upBtn'>Previous Page</Button>

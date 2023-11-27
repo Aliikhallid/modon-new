@@ -28,7 +28,7 @@ a:hover {
 .cursor-dot {
   height: 8px;
   width: 8px;
-  background-color: #5e87bd;
+  background-color: var(--secondary-color);
   border-radius: 0px !important;
   transform:translate(-50%, -50%) rotate(45deg) !important;
   transform-origin: center center;
@@ -37,7 +37,7 @@ a:hover {
 .cursor-outline {
   width: 77px;
   height: 77px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--secondary-color);
   z-index: 999999999px;
 }
 .cursor-dot,
@@ -838,28 +838,28 @@ Button:hover {
   direction: rtl;
 }
 .bayti-mall-img {
-  background: url(./assets/CommercialProjects/BaytiMall/baytimall1.jpeg)no-repeat center center/cover;
+  background: url(./assets/baytimall1.webp)no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
   border-radius: 5px;
 }
 .bayti-mall-img1 {
-  background: url(./assets/CommercialProjects/BaytiMall/baytimall2.jpeg)no-repeat center center/cover;
+  background: url(./assets/baytimall2.webp)no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
   border-radius: 5px;
 }
 .bayti-mall-img2 {
-  background: url(./assets/CommercialProjects/BaytiMall/baytimall3.jpeg)no-repeat center center/cover;
+  background: url(./assets/baytimall1.webp)no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
   border-radius: 5px;
 }
 .bayti-mall-img3 {
-  background: url(./assets/CommercialProjects/BaytiMall/baytimall4.jpeg)no-repeat center center/cover;
+  background: url(./assets/baytimall2.webp)no-repeat center center/cover;
   height: 15rem;
   width: 20rem;
   cursor: pointer;
@@ -1074,8 +1074,20 @@ Button:hover {
   }
 }
 @media screen and (max-width: 1200px) {
+  .new-img7 {
+  background: url(./assets/News/7.webp) no-repeat left center/cover !important;
+  }
+  .app-btn {
+    margin: 0 !important;
+    margin-top: 1rem !important;
+  }
   .nav-list {
     display: none !important;
+  }
+  .props-filter-container {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
   }
   .modon-desc {
     flex-direction: column !important;
@@ -1103,10 +1115,6 @@ Button:hover {
     display: none !important;
     height: 0px !important;
   }
-  .const-head {
-    font-size: 2rem !important;
-    width: max-content;
-  }
   .ham {
     display: flex !important;
   }
@@ -1132,6 +1140,7 @@ Button:hover {
   }
 }
 @media screen and (max-width: 1040px) {
+  
   .header-container {
     h1 {
       font-size: 2.5rem;
@@ -1156,6 +1165,9 @@ Button:hover {
   }
 }
 @media screen and (max-width: 700px) {
+  .new-img11 {
+    width: 90rem !important;
+  }
   .header-container {
     height: 80vh !important;
     h1 {

@@ -36,17 +36,18 @@ function goBack() {
     handleButtonClick("BA",12)
   },[])
   return (
-    <div className="bg-primary-multiply-color w-full h-fit flex flex-col justify-center items-center relative">
+    <div className="bg-white w-full h-fit flex flex-col justify-center items-center relative">
       <NavBar />
-    <h1 className='regular text-5xl relative mt-40'>IMAGE GALLERY</h1>
+      <div className="ob h-40 w-full bg-primary-color"></div>
+    <h1 className='regular text-5xl relative mt-20 text-primary-color text-center'>IMAGE GALLERY</h1>
     <div className="constructs flex">
       <div className="construct1 flex flex-col justify-center items-center m-5">
-        <div className="buruj-btns">
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("BA",12)}>BAYTI</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("BU",12)}>BURUJ</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("FU",8)}>FUTURE CITY</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("LA",12)}>LAVIDA</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("MA",12)}>MADINATY</Button>
+        <div className="buruj-btns text-center">
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("BA",12)}>BAYTI</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("BU",12)}>BURUJ</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("FU",8)}>FUTURE CITY</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("LA",12)}>LAVIDA</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("MA",12)}>MADINATY</Button>
         </div>
          <div className="flex flex-wrap justify-center gap-10 mt-5">
           {imagePaths.map((p,index) =>(<div key={index} className="buruj-img clickable animate-fade-down animate-duration-1000 animate-delay-500" onClick={() => handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}

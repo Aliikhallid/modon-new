@@ -8,7 +8,7 @@ const ConstructionHeader = () => {
   return (
     <div className="construction-updates w-full h-fit py-20 flex flex-col justify-center items-center bg-white text-black">
       {/* <img src={modonLogo} alt="MODON" height={200} width={200} /> */}
-      <h1 className='const-head text-primary-color bold text-5xl mb-5'>{t("construction-updates")}</h1>
+      <h1 className='const-head text-primary-color bold md:text-5xl text-3xl mb-5'>{t("construction-updates")}</h1>
       <div className="constructs flex flex-wrap gap-7 justify-center items-center">
         <div className="construct1 flex flex-col justify-center items-center m-5 regular">
            <div className="buruj-img shadow-xl cursor-default"></div>

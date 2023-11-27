@@ -23,7 +23,7 @@ const Footer = () => {
        {/* <img src={modonLogo} height={130} width={130} alt="modon-logo" /> */}
        {/* <img className="bg-primary-color mt-3 p-2 rounded" src={modonLogo1} height={130} width={130} alt="modon-logo" /> */}
        <div className="flex flex-wrap w-full justify-around items-start">
-        <div className="ft1  p-7 flex flex-col gap-2">
+        <div className="ft1  p-7 flex flex-col gap-2 md:w-max w-full">
           <h1 className="bold text-[24px]">About Modon</h1>
           {/* <h1 className="regular text-[18px]">Call: +123 456 789</h1> */}
           <p className="regular text-[18px]">Modon knows no boundaries for leadership.<br /> We work today to shape the future.</p>
@@ -35,7 +35,7 @@ const Footer = () => {
            <a href="/"><Button variant="ghost" className="h-12 w-12 rounded bg-[#E1EAF5]"><Instagram /></Button></a>
           </div>
         </div>
-        <div className="ft2 p-7 flex flex-col gap-1">
+        <div className="ft2 p-7 flex flex-col gap-1 md:w-max w-full">
           <h1 className="bold text-[24px]">Quick Links</h1>
          <Link to="/buruj"><p className="regular text-[18px] clickable">🔵 Projects</p></Link>
          <Link to="/construction"><p className="regular text-[18px] clickable">🔵 Constructions</p></Link>
@@ -43,7 +43,7 @@ const Footer = () => {
          <Link to="/contact"><p className="regular text-[18px] clickable">🔵 Contact</p></Link>
          <Link to="/careers"><p className="regular text-[18px] clickable">🔵 Careers</p></Link>
         </div>
-        <div className="ft1 p-7 flex flex-col gap-1">
+        <div className="ft1 p-7 flex flex-col gap-1 md:w-max w-full">
           <h1 className="bold text-[24px]">Privacy Links</h1>
           <Link to="/about-us"><p className="regular text-[18px] clickable">🔵 Privacy Policy</p></Link>
           <Link to="/about-us"><p className="regular text-[18px] clickable">🔵 FAQ</p></Link>
@@ -52,7 +52,7 @@ const Footer = () => {
             <Enquire />
             </div> 
         </div>
-        <div className="ft1 p-7 flex flex-col gap-1">
+        <div className="ft1 p-7 flex flex-col gap-1 md:w-max w-full">
           <h1 className="bold text-[24px]">Head Office</h1>
           <p className="regular text-[18px]">Al Mamoon District, Al Nossor Area Near<br /> Baghdad Tower, Baghdad, Iraq.</p>
           <p className="regular text-[18px] flex items-center gap-2"><MobileIcon height={23} width={23} />  +964 770 0300 005</p>

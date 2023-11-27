@@ -22,9 +22,9 @@ const NavBar = () => {
     const logo = document.querySelector('.logo');
     // const [modonLogo, setLogo] = useState(modonLogoWhite);
     // const ham = document.querySelector('.ham');
-    const line1 = document.querySelector('.line1')
-    const line2 = document.querySelector('.line2')
-    const line3 = document.querySelector('.line3')
+    // const line1 = document.querySelector('.line1')
+    // const line2 = document.querySelector('.line2')
+    // const line3 = document.querySelector('.line3')
     const navInner = document.querySelector('.navbarInner');
     // const navList = document.querySelector('.nav-list');
     window.addEventListener("scroll", () => {
@@ -34,12 +34,6 @@ const NavBar = () => {
         navInner?.classList.add('h-0');
         navbar?.classList.remove('h-36');
         navbar?.classList.add('h-16')
-        line1?.classList.remove("bg-white");
-        line2?.classList.remove("bg-white");
-        line3?.classList.remove("bg-white");
-        line1?.classList.add("bg-black");
-        line2?.classList.add("bg-black");
-        line3?.classList.add("bg-black");
         navbar?.classList.add("bg-primary-multiply-color");
         // navbar?.classList.remove("text-white");
         // navbar?.classList.add("text-black");
@@ -49,17 +43,11 @@ const NavBar = () => {
         logo?.classList.add('h-12');
         // setLogo(modonLogoBlack)
       } else {
-        line1?.classList.remove("bg-black");
-        line2?.classList.remove("bg-black");
         navInner?.classList.remove('hidden');
         navInner?.classList.remove('h-0');
         navInner?.classList.add('h-16')
         navbar?.classList.remove('h-16')
         navbar?.classList.add('h-36');
-        line3?.classList.remove("bg-black");
-        line1?.classList.add("bg-white");
-        line2?.classList.add("bg-white");
-        line3?.classList.add("bg-white");
         logo?.classList.remove('h-12');
         logo?.classList.add('h-14');
         // setLogo(modonLogoWhite)
