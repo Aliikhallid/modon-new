@@ -107,7 +107,7 @@ const NavBar = () => {
         <div className="line2 h-0.5 w-7 bg-white"></div>
         <div className="line3 h-0.5 w-5 bg-white"></div>
       </div>
-      <div className="nav-list gap-4 w-3/4 items-center justify-around text-sm flex md:flex-row flex-col md:light regular">
+      <div className="nav-list gap-4 w-3/4 items-center justify-around text-sm md:flex hidden md:flex-row flex-col md:light regular">
         <a className="item cursor-" href="/">
           {t("home-nav")}
         </a>
