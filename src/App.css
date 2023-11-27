@@ -58,6 +58,14 @@ a:hover .cursor-outline {
   z-index: 1;
   pointer-events: none;
 }
+@media (max-width: 1200px) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+}
+
+
 
 @font-face {
   font-family: "Tajawal-Light";
@@ -1159,6 +1167,10 @@ Button:hover {
   background: url(./assets/LA-05-2.jpg) no-repeat center center/cover;
 }
 
+.flex-imp {
+  display: flex !important;
+}
+
 @media screen and (max-width: 1350px) {
   .modon-container {
     display: flex;
@@ -1174,7 +1186,20 @@ Button:hover {
     margin-top: 1rem !important;
   }
   .nav-list {
-    display: none !important;
+    flex-direction: column !important;
+    height: 0vh;
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(6, 48, 83, 0.7960784314);
+    padding: 2rem;
+  }
+  .nav-list a {
+    font-size: 1.5rem;
+  }
+  .nav-list div {
+    font-size: 1.5rem;
   }
   .props-filter-container {
     display: none !important;
