@@ -58,6 +58,14 @@ a:hover .cursor-outline {
   z-index: 1;
   pointer-events: none;
 }
+@media (max-width: 1200px) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+}
+
+
 
 @font-face {
   font-family: "Tajawal-Light";
