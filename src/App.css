@@ -30,7 +30,7 @@ a:hover .cursor-outline {
 .cursor-dot {
   height: 8px;
   width: 8px;
-  background-color: #5e87bd;
+  background-color: var(--secondary-color);
   border-radius: 0px !important;
   transform: translate(-50%, -50%) rotate(45deg) !important;
   transform-origin: center center;
@@ -40,7 +40,7 @@ a:hover .cursor-outline {
 .cursor-outline {
   width: 77px;
   height: 77px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--secondary-color);
   z-index: 999999999px;
 }
 

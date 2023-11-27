@@ -47,7 +47,7 @@ export default function ImageSliderOverlay({
   return (
     <div
       onClick={handleClick}
-      className="absolute top-0 left-0 w-screen h-screen flex bg-black bg-opacity-80 justify-center items-center"
+      className="fixed top-0 left-0 w-full h-screen flex bg-black bg-opacity-80 justify-center items-center"
     >
       <ImageSlider imgUrls={imgUrls} selectedImage={selectedImage} />
       <Button
