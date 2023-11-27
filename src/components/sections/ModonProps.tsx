@@ -15,7 +15,7 @@ const ModonProps = () => {
           <div className="images-container-one">
           <div>
        <Link to="/madinaty/cadi" className='cursor-pointer'> 
-           <div className="image image-1"></div>
+           <div className="image image-1 clickable"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
             <h1 className='text-lg'>CADI - MADINATY</h1>
             <div className="vertical-divider"></div>
@@ -25,7 +25,7 @@ const ModonProps = () => {
           </div>
           <div>
        <Link to="/bayti/narjis" className='cursor-pointer'> 
-           <div className="image image-2"></div>
+           <div className="image image-2 clickable"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
             <h1 className='text-lg'>NARJIS - MADINATY</h1>
             <div className="vertical-divider"></div>
@@ -37,7 +37,7 @@ const ModonProps = () => {
         <div className="images-container-two">
         <div>
        <Link to="/madinaty/apartments" className='cursor-pointer'> 
-           <div className="image image-3"></div>
+           <div className="image image-3 clickable"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
             <h1 className='text-lg'>APARTMENTS</h1>
             <div className="vertical-divider"></div>
@@ -47,7 +47,7 @@ const ModonProps = () => {
           </div>
           <div>
        <Link to="/bayti/lotus" className='cursor-pointer'> 
-           <div className="image image-4"></div>
+           <div className="image image-4 clickable"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
             <h1 className='text-lg'>LOTUS - BAYTI</h1>
             <div className="vertical-divider"></div>
@@ -57,7 +57,7 @@ const ModonProps = () => {
           </div>
           <div>
        <Link to="/bayti/jory" className='cursor-pointer'> 
-           <div className="image image-5"></div>
+           <div className="image image-5 clickable"></div>
            <div className='flex justify-start items-center' style={{margin: "1rem"}}>
             <h1 className='text-lg'>JORY - BAYTI</h1>
             <div className="vertical-divider"></div>

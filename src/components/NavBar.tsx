@@ -90,7 +90,7 @@ const NavBar = () => {
         <Link to="/">
           <img
             src={modonLogo}
-            className="logo h-14 m-1 cursor-pointer"
+            className="logo h-14 m-1 cursor-pointer clickable"
             alt="modon-logo"
             ></img>
         </Link>

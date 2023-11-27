@@ -49,7 +49,7 @@ function goBack() {
          <Button className='m-2 upBtn' onClick={()=>handleButtonClick("MA",12)}>MADINATY</Button>
         </div>
          <div className="flex flex-wrap justify-center gap-10 mt-5">
-          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img animate-fade-down animate-duration-1000 animate-delay-500" onClick={() => handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
+          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img clickable animate-fade-down animate-duration-1000 animate-delay-500" onClick={() => handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
          </div>
         <Button onClick={goBack} className='hover-black w-40 mt-4 upBtn'>Previous Page</Button>
          </div>

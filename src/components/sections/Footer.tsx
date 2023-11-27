@@ -37,17 +37,17 @@ const Footer = () => {
         </div>
         <div className="ft2 p-7 flex flex-col gap-1">
           <h1 className="bold text-[24px]">Quick Links</h1>
-         <Link to="/buruj"><p className="regular text-[18px]">🔵 Projects</p></Link>
-         <Link to="/construction"><p className="regular text-[18px]">🔵 Constructions</p></Link>
-         <Link to="/news"><p className="regular text-[18px]">🔵 News</p></Link>
-         <Link to="/contact"><p className="regular text-[18px]">🔵 Contact</p></Link>
-         <Link to="/careers"><p className="regular text-[18px]">🔵 Careers</p></Link>
+         <Link to="/buruj"><p className="regular text-[18px] clickable">🔵 Projects</p></Link>
+         <Link to="/construction"><p className="regular text-[18px] clickable">🔵 Constructions</p></Link>
+         <Link to="/news"><p className="regular text-[18px] clickable">🔵 News</p></Link>
+         <Link to="/contact"><p className="regular text-[18px] clickable">🔵 Contact</p></Link>
+         <Link to="/careers"><p className="regular text-[18px] clickable">🔵 Careers</p></Link>
         </div>
         <div className="ft1 p-7 flex flex-col gap-1">
           <h1 className="bold text-[24px]">Privacy Links</h1>
-          <Link to="/about-us"><p className="regular text-[18px]">🔵 Privacy Policy</p></Link>
-          <Link to="/about-us"><p className="regular text-[18px]">🔵 FAQ</p></Link>
-          <Link to="/about-us"><p className="regular text-[18px]">🔵 Terms & Conditions</p></Link>
+          <Link to="/about-us"><p className="regular text-[18px] clickable">🔵 Privacy Policy</p></Link>
+          <Link to="/about-us"><p className="regular text-[18px] clickable">🔵 FAQ</p></Link>
+          <Link to="/about-us"><p className="regular text-[18px] clickable">🔵 Terms & Conditions</p></Link>
           <div className="w-full flex justify-start mx-2 my-2">
             <Enquire />
             </div> 
@@ -57,9 +57,9 @@ const Footer = () => {
           <p className="regular text-[18px]">Al Mamoon District, Al Nossor Area Near<br /> Baghdad Tower, Baghdad, Iraq.</p>
           <p className="regular text-[18px] flex items-center gap-2"><MobileIcon height={23} width={23} />  +964 770 0300 005</p>
           <p className="regular text-[18px] flex items-center gap-2"><EnvelopeOpenIcon height={23} width={23} />  info@modoniq.com</p>
-          <div className="store-links">
-          <a className="store-link" href="https://apps.apple.com/app/modon/id1639703738"><img src={apple} className="h-10" alt="Download IOS" /></a>
-          <a className="store-link" href="https://play.google.com/store/apps/details?id=com.my_modon"><img src={google} className="h-10" alt="Download Android" /></a>
+          <div className="store-links ">
+          <a className="store-link" href="https://apps.apple.com/app/modon/id1639703738"><img src={apple} className="h-10 clickable" alt="Download IOS" /></a>
+          <a className="store-link" href="https://play.google.com/store/apps/details?id=com.my_modon"><img src={google} className="h-10 clickable" alt="Download Android" /></a>
          </div>
         </div>
        </div>
