@@ -9,24 +9,43 @@ import { NavigationMenuContent } from './ui/navigation-menu';
 import { ChevronDown, Instagram } from 'lucide-react';
 // import { useState } from "react";
 import { MobileIcon } from "@radix-ui/react-icons";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
  
 
 const NavBar = () => {
   const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
     const menuTrig = document.querySelector(".menu-trig");
     const logo = document.querySelector('.logo');
     // const [modonLogo, setLogo] = useState(modonLogoWhite);
-    // const ham = document.querySelector('.ham');
+    const ham = document.querySelector('.ham');
     // const line1 = document.querySelector('.line1')
     // const line2 = document.querySelector('.line2')
     // const line3 = document.querySelector('.line3')
     const navInner = document.querySelector('.navbarInner');
-    // const navList = document.querySelector('.nav-list');
+    const navList = document.querySelector('.nav-list');
+    if(window.innerWidth < 1200) {
+      navList?.classList.add('hidden');
+    } else {
+      navList?.classList.remove('hidden');
+    }
+    ham?.addEventListener('click', ()=> {
+    if(open===false) {
+      setOpen(true)
+      navList?.classList.add('h-screen');
+      navList?.classList.remove('hidden');
+      navList?.classList.add('flex-imp');
+    } else {
+      navList?.classList.remove('h-screen');
+      navList?.classList.add('hidden');
+      navList?.classList.remove('flex-imp');
+      setOpen(false)
+    }
+    })
     window.addEventListener("scroll", () => {
       if (window.scrollY > 1) {
         navInner?.classList.add('hidden');
@@ -83,12 +102,12 @@ const NavBar = () => {
             ></img>
         </Link>
       </div>
-      <div className="ham flex-col justify-center items-end gap-2 cursor-pointer hidden">
+      <div className="ham flex-col justify-center items-end gap-2 cursor-pointer hidden z-40">
         <div className="line1 h-0.5 w-5 bg-white"></div>
         <div className="line2 h-0.5 w-7 bg-white"></div>
         <div className="line3 h-0.5 w-5 bg-white"></div>
       </div>
-      <div className="nav-list gap-4 flex w-3/4 items-center justify-around text-sm">
+      <div className="nav-list gap-4 w-3/4 items-center justify-around text-sm flex md:flex-row flex-col md:light regular">
         <a className="item cursor-" href="/">
           {t("home-nav")}
         </a>
