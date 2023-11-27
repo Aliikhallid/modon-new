@@ -1,7 +1,5 @@
 import { Button } from "./ui/button";
 import NavBar from "./NavBar";
-import CountUp from 'react-countup';
-// import modonWhite from '../assets/Modon-White.png'
 import { useLayoutEffect,useState } from "react";
 import charimanImg from '../assets/Hardan-Noori-Al-Handalinner-new-1-1.jpg'
 import charimanImg2 from '../assets/BM-Noor-2-scaled.jpg'
@@ -26,6 +24,7 @@ import { Building, Castle, Layers3Icon, LeafyGreen } from "lucide-react";
 import InfoStructure from "./aboutPage/InfoStructure";
 import TermsAndConditions from "./aboutPage/TermsAndConditions";
 import FAQ from "./aboutPage/FAQ";
+import FixedImage from "./sections/FixedImage";
 const AboutPage = () => {
   const [overviewP, setOverview] = useState('Modon is one of the most prominent and successful companies in modern real estate development in Iraq and operates under the umbrella of Al Handal International Group.') 
   const [title, setTitle] = useState('OVERVIEW')
@@ -197,26 +196,26 @@ const setOver9 = () => {
     <div className="bg-white w-full h-fit flex flex-col justify-start items-center relative text-black">
       <NavBar />
       <div className="ob h-40 w-full bg-primary-color"></div>
-    <h1 className='regular text-4xl m-3 text-primary-color relative mt-20'>ABOUT US</h1>
+    <h1 className='regular text-4xl m-3 text-primary-color relative mt-20 text-center'>ABOUT US</h1>
     {/* <img src={modonWhite} alt="MODON" height={150} width={150} /> */}
     <div className="constructs flex w-full">
       <div className="construct1 flex flex-col justify-center items-center">
-        <div className="buruj-btns flex flex-wrap justify-center items-center">
-         <Button className='m-2 hover-primary-color upBtn' onClick={setOver}>Overview</Button>
-         <Button className='m-2 hover-primary-color upBtn' onClick={setOver2}>Chairman's Message</Button>
-         <Button className='m-2 hover-primary-color upBtn' onClick={setOver3}>Mission & Vision</Button>
-         <Button className='m-2 hover-primary-color upBtn' onClick={setOver4}>Values & Distinction</Button>
-         <Button className='m-2 hover-primary-color upBtn' onClick={setOver5}>Commitment & Focus</Button>
-         <Button className='m-2 hover-primary-color upBtn' onClick={setOver6}>Board of Directors</Button>
-         <Button className='m-2 hover-primary-color upBtn' onClick={setOver7}>Privacy Policy</Button>
-         <Button className='m-2 hover-primary-color upBtn' onClick={setOver8}>Terms & Conditions</Button>
-         <Button className='m-2 hover-primary-color upBtn' onClick={setOver9}>FAQ</Button>
+        <div className="buruj-btns flex flex-wrap justify-center items-center text-center">
+         <Button className='m-2 hover-primary-color upBtn md:w-max w-3/4' onClick={setOver}>Overview</Button>
+         <Button className='m-2 hover-primary-color upBtn md:w-max w-3/4' onClick={setOver2}>Chairman's Message</Button>
+         <Button className='m-2 hover-primary-color upBtn md:w-max w-3/4' onClick={setOver3}>Mission & Vision</Button>
+         <Button className='m-2 hover-primary-color upBtn md:w-max w-3/4' onClick={setOver4}>Values & Distinction</Button>
+         <Button className='m-2 hover-primary-color upBtn md:w-max w-3/4' onClick={setOver5}>Commitment & Focus</Button>
+         <Button className='m-2 hover-primary-color upBtn md:w-max w-3/4' onClick={setOver6}>Board of Directors</Button>
+         <Button className='m-2 hover-primary-color upBtn md:w-max w-3/4' onClick={setOver7}>Privacy Policy</Button>
+         <Button className='m-2 hover-primary-color upBtn md:w-max w-3/4' onClick={setOver8}>Terms & Conditions</Button>
+         <Button className='m-2 hover-primary-color upBtn md:w-max w-3/4' onClick={setOver9}>FAQ</Button>
 
         </div>
          <div className="flex flex-wrap justify-center gap-5 my-20 animate-fade-down animate-duration-1000 animate-delay-500">
           <div className="flex flex-col gap-5 mb-10 justify-center items-center">
-          <h1 className="text-5xl regular text-primary-color">{title}</h1>
-          <div className="overview-p text-lg w-3/4 text-center light text-black">{overviewP}</div>
+          <h1 className="md:text-5xl text-3xl text-center regular text-primary-color">{title}</h1>
+          <div className="overview-p md:text-lg text-md w-3/4 text-center light text-black">{overviewP}</div>
           </div>
          {show > 6? handleComponent[show]: show===6 ? <div className="construction-updates w-full h-fit py-5 flex flex-col justify-center items-center">
       <div className="constructs flex flex-wrap justify-center items-center text-white">
@@ -246,9 +245,9 @@ const setOver9 = () => {
            <div className="light">Chairman</div>
         </div>
         </div>
-    </div> :<div className="videos relative flex justify-center items-center">
-            <div className="flex w-1/2 justify-center items-center">
-          {show===1 ? <iframe width="620" height="415" className="video2 rounded" src="https://www.youtube.com/embed/tgbNymZ7vqY">Hello</iframe> :show===2 ? <img src={image} height={415} width={620}></img> : show===3 ? 
+    </div> :<div className="videos relative flex md:flex-row flex-col justify-center items-center">
+            <div className="flex md:w-1/2 w-3/4 justify-center items-center">
+          {show===1 ? <iframe height="415" className="video2 md:w-1/2 w-full rounded" src="https://www.youtube.com/embed/tgbNymZ7vqY">Hello</iframe> :show===2 ? <img src={image} height={415} width={620}></img> : show===3 ? 
         <div className="flex flex-col gap-3">
           <img src={missionImg} height={415} width={620}></img>
           <img src={vissionImg} height={415} width={620}></img>
@@ -261,13 +260,13 @@ const setOver9 = () => {
        <img src={focusImg} height={415} width={620}></img>
      </div> : ''}
             </div>
-          {show<2 ? <div className="flex flex-col w-1/2 justify-center items-start light text-primary-color">
-          <div className="overview-p2 m-3 regular text-3xl">{overviewP2}</div>
-          <div className="overview-d m-3 text-md">{des}</div> 
+          {show<2 ? <div className="flex flex-col md:w-1/2 w-full justify-center items-start light text-primary-color">
+          <div className="overview-p2 m-3 regular md:text-3xl text-xl text-center">{overviewP2}</div>
+          <div className="overview-d md:text-md text-sm text-center">{des}</div> 
           </div> : show===5 ? <div className="flex flex-col w-1/2 h-full justify-around items-start light text-black">
             <div className="flex flex-col">
-          <div className="overview-p2 m-3 regular text-3xl">{overviewP2}</div>
-          <Accordion type="multiple"className="w-96 text-primary-color">
+          <div className="overview-p2 m-3 regular text-3xl text-center">{overviewP2}</div>
+          <Accordion type="multiple"className="md:w-96 w-full text-primary-color">
              <AccordionItem value="item-1">
                <AccordionTrigger>Is it accessible?</AccordionTrigger>
                 <AccordionContent className="leading-7">
@@ -280,8 +279,8 @@ const setOver9 = () => {
           </Accordion>
             </div>
             <div className="flex flex-col">
-          <div className="overview-p3 m-3 regular text-3xl text-black">{overviewP3}</div>
-          <Accordion type="multiple" className="w-96">
+          <div className="overview-p3 m-3 regular text-3xl text-black text-center">{overviewP3}</div>
+          <Accordion type="multiple" className="md:w-96 w-full">
              <AccordionItem value="item-1">
                <AccordionTrigger>Is it accessible?</AccordionTrigger>
                 <AccordionContent className="leading-7">
@@ -303,18 +302,13 @@ const setOver9 = () => {
             </div>
           </div>}
           </div>}
-          {showw ? <div className="about-cards flex gap-10 justify-center items-center h-70 my-10 w-full m-5 text-black">
+          {showw ? <div className="about-cards flex md:flex-row flex-col gap-10 justify-center items-center h-70 my-10 w-full m-5 text-black">
           <AboutCard icon={Building} title="Legacy Of Craft" description="Quality is at the core of Modon Real Estate Development. Every element of each project is, therefore, designed and developed in-house." />
           <AboutCard icon={Castle} title="We Build Homes" description="We don’t just build apartments and villas. We ensure in every aspect that it is indeed a home for you and your family. We build Homes." />
           <AboutCard icon={Layers3Icon} title="Passion For Perfection" description="Crafting a product that stands out entails attention to the finest of details. Ensuring exceptional quality, every time. You can see that perfection in every inch." />
           <AboutCard icon={LeafyGreen} title="Building The Future" description="The future is not ours to await; it’s ours to create. Those who plan for future transformations are best placed to design and control the path ahead of us all" />
           </div> : ''}
-          {showw ? <div className="fixed-image h-72  w-full flex justify-around items-center">
-            <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={5} delay={2} duration={3}/></span> <br/> TOTAL PROJECTS</h1>
-            <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={2300} delay={2} duration={3}/></span> <br/> HOUSES BUILT</h1>
-            <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={235} delay={2} duration={3}/></span> <br/> QUALIFIED WORKERS</h1>
-            <h1 className="text-center light"><span className="regular text-8xl"><CountUp end={2} delay={2} duration={3}/></span> <br/> AWARDS</h1>
-          </div> : ''}
+          {showw ? <FixedImage /> : ''}
          </div>
          </div>
          </div>

@@ -23,7 +23,7 @@ const Header = () => {
       <h2>Modon, <span className=''>IRAQ</span></h2>
       <h1 className='bold text-6xl m-3'>Modon Real Estate</h1>
       <p className='text-white w-1/2 text-center m-2 light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro temporibus, debitis earum optio veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <Button variant='ghost' className='text-xl rounded m-2'>Explore Now <ArrowRightIcon className='explore-ic h-5 w-5' /></Button>
+      <Button variant='ghost' className='text-xl rounded m-2 hover:border-0'>Explore Now <ArrowRightIcon className='explore-ic h-5 w-5' /></Button>
       <div className="btns relative m-3 flex gap-3 justify-center items-center">
         <Button variant="default" className='rounded'>Sale</Button>
         <Button variant="secondary" className='rounded'>Rent</Button>

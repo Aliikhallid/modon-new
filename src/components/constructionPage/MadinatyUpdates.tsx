@@ -43,17 +43,17 @@ function goBack() {
       <NavBar />
       <div className="ob h-40 w-full bg-primary-color"></div>
     {/* <img src={burujLogo} alt="MODON" height={200} width={200} /> */}
-    <h1 className='regular text-5xl relative mt-20 text-primary-color'>MADINATY UPDATES</h1>
+    <h1 className='regular text-5xl relative mt-20 text-primary-color text-center'>MADINATY UPDATES</h1>
     <div className="constructs flex">
       <div className="construct1 flex flex-col justify-center items-center m-5">
-        <div className="buruj-btns">
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2016","July",17)}>July 2016</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2016","August",4)}>August 2016</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2016","October",4)}>October 2016</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2018","October",6)}>October 2018</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2019","February",4)}>February 2019</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2019","April",8)}>April 2019</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2023","August",11)}>August 2023</Button>
+        <div className="buruj-btns text-center">
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("2016","July",17)}>July 2016</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("2016","August",4)}>August 2016</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("2016","October",4)}>October 2016</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("2018","October",6)}>October 2018</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("2019","February",4)}>February 2019</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("2019","April",8)}>April 2019</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("2023","August",11)}>August 2023</Button>
 
 
 

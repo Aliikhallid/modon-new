@@ -42,12 +42,12 @@ const FutureUpdates = () => {
       <NavBar />
       <div className="ob h-40 w-full bg-primary-color"></div>
     {/* <img src={burujLogo} alt="MODON" height={200} width={200} /> */}
-    <h1 className='regular text-5xl relative mt-20 text-primary-color'>FUTURE CITY UPDATES</h1>
+    <h1 className='regular text-5xl relative mt-20 text-primary-color text-center'>FUTURE CITY UPDATES</h1>
     <div className="constructs flex">
       <div className="construct1 flex flex-col justify-center items-center m-5">
-        <div className="buruj-btns">
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2022","January",12)}>October 2022</Button>
-         <Button className='m-2 upBtn' onClick={()=>handleButtonClick("2023","August",11)}>August 2023</Button>
+        <div className="buruj-btns text-center">
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("2022","January",12)}>October 2022</Button>
+         <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("2023","August",11)}>August 2023</Button>
 
         </div>
          <div className="flex flex-wrap justify-center gap-10 mt-5">

@@ -1074,8 +1074,20 @@ Button:hover {
   }
 }
 @media screen and (max-width: 1200px) {
+  .new-img7 {
+  background: url(./assets/News/7.webp) no-repeat left center/cover !important;
+  }
+  .app-btn {
+    margin: 0 !important;
+    margin-top: 1rem !important;
+  }
   .nav-list {
     display: none !important;
+  }
+  .props-filter-container {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
   }
   .modon-desc {
     flex-direction: column !important;
@@ -1103,10 +1115,6 @@ Button:hover {
     display: none !important;
     height: 0px !important;
   }
-  .const-head {
-    font-size: 2rem !important;
-    width: max-content;
-  }
   .ham {
     display: flex !important;
   }
@@ -1132,6 +1140,7 @@ Button:hover {
   }
 }
 @media screen and (max-width: 1040px) {
+  
   .header-container {
     h1 {
       font-size: 2.5rem;
@@ -1156,6 +1165,9 @@ Button:hover {
   }
 }
 @media screen and (max-width: 700px) {
+  .new-img11 {
+    width: 90rem !important;
+  }
   .header-container {
     height: 80vh !important;
     h1 {
