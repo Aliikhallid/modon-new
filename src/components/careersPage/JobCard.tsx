@@ -19,19 +19,18 @@ interface JobCardProps{
 const JobCard = ({month,nday,day,postDate,position,jobDesc,jobLoc}: JobCardProps) => {
     
     return(
-        <div className="bg-white w-[78vw] h-[290px] border-primary border shadow-md rounded flex items-center">
-            <div className="flex flex-col items-end w-[10%] p-5 gap-9 justify-evenly text-xl regular">
+        <div className="bg-white w-[78vw] md:h-[290px] h-[80vh] border-primary border shadow-md rounded flex md:flex-row flex-col items-center">
+            <div className="flex md:flex-col flex-row md:items-end items-center w-[10%] p-5 md:gap-9 gap-2 justify-evenly md:text-xl text-md regular">
                 <p>{month}</p>
                 <p>{nday}</p>
                 <p>{day}</p>
-                <p className="text-sm light text-gray-400">{timeAgo(postDate)}</p>
+                <p className="text-sm light text-gray-400 whitespace-nowrap">{timeAgo(postDate)}</p>
             </div>
-            <div className="w-2 h-4/5 bg-[#FA9D1C]"></div>
+            <div className="md:w-2 w-4/5 md:h-4/5 h-1 bg-[#FA9D1C]"></div>
             <div className="flex flex-col items-start w-full p-5 justify-evenly regular gap-3">
                 <p className="text-2xl">{position}</p>
                 <div className="flex items-start gap-2">
-                <p className="text-black whitespace-nowrap">Job Overview:</p>
-                <p className="text-black ">{jobDesc}</p>
+                <p className="text-black ">{`Job Overview: ${jobDesc}`}</p>
                 </div>
                 <div className="flex gap-2">
                     <MapPin/>
