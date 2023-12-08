@@ -5,7 +5,7 @@ import ProjectCard from "./projectCard";
 import { Castle, School2, Car, Building, Plane } from "lucide-react";
 // import { useLayoutEffect } from "react";
 import Enquire from "../sections/Enquire";
-import Footer from "../sections/Footer";
+import Footer from '../Footer/Footer'
 import { useLayoutEffect, useState } from "react";
 import apartmentA from '../../assets/AS.webp'
 import apartmentB1 from '../../assets/B1S.webp'

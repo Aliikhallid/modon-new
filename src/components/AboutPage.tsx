@@ -18,13 +18,13 @@ import valueImg from '../assets/iStock-916185828-1.jpg'
 import distImg from '../assets/extraction-23.png'
 import commitImg from '../assets/shutterstock_630815573.jpg'
 import focusImg from '../assets/future-city-min-1.jpg'
-import Footer from "./sections/Footer";
 import AboutCard from "./aboutPage/AboutCard";
 import { Building, Castle, Layers3Icon, LeafyGreen } from "lucide-react";
 import InfoStructure from "./aboutPage/InfoStructure";
 import TermsAndConditions from "./aboutPage/TermsAndConditions";
 import FAQ from "./aboutPage/FAQ";
 import FixedImage from "./sections/FixedImage";
+import Footer from "./Footer/Footer";
 const AboutPage = () => {
   const [overviewP, setOverview] = useState('Modon is one of the most prominent and successful companies in modern real estate development in Iraq and operates under the umbrella of Al Handal International Group.') 
   const [title, setTitle] = useState('OVERVIEW')

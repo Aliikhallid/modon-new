@@ -80,14 +80,14 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
   
 
   return (
-    <div className="props-filterjob-container bg-white text-primary-color light w-11/12 h-24 rounded-[5px] relative mt-5 border shadow-xl flex justify-center items-center">
-      <div className="props-filter-one flex border-r border-primary-multiply-color border-solid m-4 text-left w-1/5 relative">
-        <section className="mr-10 w-full flex">
+    <div className="bg-white text-primary-color  light md:w-11/12 md:h-24 w-[80vw] rounded-[5px] relative mt-5 border shadow-xl flex flex-col md:flex-row  justify-center items-center">
+      <div className="flex border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative ">
+        <section className="md:mr-10 w-full flex">
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger className="w-full" asChild>
               <Button
                 variant="outline"
-                className="w-full regular text-md rounded"
+                className="w-full regular md:text-md text-sm rounded"
               >
                 Job Position
               </Button>
@@ -107,8 +107,8 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
           </DropdownMenu>
         </section>
       </div>
-      <div className="flex border-r border-primary-multiply-color border-solid m-4 text-left w-1/5 relative">
-        <section className="mr-10 w-full">
+      <div className="flex border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative">
+        <section className="md:mr-10 w-full flex">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
@@ -133,7 +133,7 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
           </DropdownMenu>
         </section>
       </div>
-      <div className="props-filter-button m-4 text-center w-1/5">
+      <div className="props-filter-button m-4 text-center md:w-auto w-[70%]">
         <Button onClick={handleOnClick} className="bg-primary-color text-white hover:text-black rounded w-max">
           {t("search_properties")}
         </Button>

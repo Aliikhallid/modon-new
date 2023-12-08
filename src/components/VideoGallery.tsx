@@ -1,5 +1,5 @@
 // import { useEffect, useLayoutEffect, useState } from "react";
-import Footer from "./sections/Footer";
+import Footer from './Footer/Footer';
 import { Button } from "./ui/button";
 import NavBar from "./NavBar";
 import { useState } from "react";

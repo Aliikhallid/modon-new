@@ -1,6 +1,6 @@
 import { Briefcase, CalendarClockIcon, GraduationCap, Hourglass, MapPin } from "lucide-react";
 import NavBar from "../NavBar";
-import Footer from "../sections/Footer";
+import Footer from '../Footer/Footer'
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
@@ -33,9 +33,9 @@ const JobApply = ({jobDesc}:JobApplyProps) => {
         <div className="w-full flex justify-start p-6">
         <p className="text-5xl">{jobDesc.positionName}</p>
         </div>
-        <div className="flex w-1/4 justify-between items-start p-6">
-           <p> <MapPin />{jobDesc.location}</p>
-           <p> <CalendarClockIcon />{timeAgo(jobDesc.postDate)}</p>
+        <div className="flex w-1/4 md:flex-row md:gap-0 gap-5 flex-col justify-between items-start p-6">
+           <p className="whitespace-nowrap"> <MapPin />{jobDesc.location}</p>
+           <p className="whitespace-nowrap"> <CalendarClockIcon />{timeAgo(jobDesc.postDate)}</p>
         </div>
         <div className="flex flex-col justify-start items-start gap-5 p-6">
             <div className="flex flex-col justify-end gap-3 light">
@@ -54,19 +54,19 @@ const JobApply = ({jobDesc}:JobApplyProps) => {
         </div>
         <div className="flex flex-col p-6 gap-10 w-full">
         <p className="text-4xl">JOB FEATURES</p>
-        <div className="flex light justify-between w-1/2">
+        <div className="flex md:flex-row flex-col md:gap-0 gap-5 light justify-between w-1/2">
            <div className="flex flex-col text-2xl"> 
            <div className="flex gap-4 items-center"><Briefcase/> Job Type</div>
-           <div className="flex justify-center w-full text-xl">{jobDesc.requirements.type}</div>
+           <div className="flex md:justify-center justify-start w-full text-xl">{jobDesc.requirements.type}</div>
            </div>
            <div className="flex flex-col text-2xl"> 
            <div className="flex gap-4 items-center"><GraduationCap/>Education</div>
-           <div className="flex justify-center w-full text-xl">{jobDesc.requirements.education}</div>
+           <div className="flex md:justify-center justify-start w-full text-xl">{jobDesc.requirements.education}</div>
            </div>
            <div className="flex light">
            <div className="flex flex-col text-2xl"> 
            <div className="flex gap-4 items-center"><Hourglass/>Experience</div>
-           <div className="flex justify-center w-full text-xl">{jobDesc.requirements.experience}</div>
+           <div className="flex md:justify-center justify-start w-full text-xl">{jobDesc.requirements.experience}</div>
            </div>
         </div>
         </div>

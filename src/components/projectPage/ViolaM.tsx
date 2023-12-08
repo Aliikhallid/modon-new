@@ -5,7 +5,7 @@ import ProjectCard from "./projectCard";
 import { Castle, School2, Car, Building, Plane } from "lucide-react";
 // import { useLayoutEffect } from "react";
 import Enquire from "../sections/Enquire";
-import Footer from "../sections/Footer";
+import Footer from '../Footer/Footer'
 import { useState } from "react";
 import GroundFloor from '../../assets/violam-groundfloor.webp'
 import FirstFloor from '../../assets/violam-firstfloor.webp'

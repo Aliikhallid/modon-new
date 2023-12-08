@@ -1,7 +1,7 @@
 import { useLayoutEffect } from "react"
 import NavBar from "./NavBar"
 import CareersHeader from "./careersPage/CareersHeader"
-import Footer from "./sections/Footer"
+import Footer from './Footer/Footer'
 
 const CareersPage = () => {
   useLayoutEffect(() => {

@@ -2,10 +2,10 @@ import Header from './sections/Header'
 import ModonProps from './sections/ModonProps'
 import ModonSlider from './sections/ModonSlider'
 import LastPage from './sections/LastPage'
-import Footer from './sections/Footer'
 import SecondPage from './sections/SecondPage'
 import { useLayoutEffect } from 'react'
 import ModonDesc from './sections/ModonDesc'
+import Footer from './Footer/Footer'
 const MainPage = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0)

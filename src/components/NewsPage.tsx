@@ -2,7 +2,7 @@ import { useLayoutEffect } from "react";
 import NavBar from "./NavBar"
 import { NewsHeader } from "./newsPage/NewsHeader.1";
 import NewsMain from "./newsPage/NewsMain"
-import Footer from "./sections/Footer";
+import Footer from './Footer/Footer';
 
 const NewsPage = () => {
   useLayoutEffect(() => {

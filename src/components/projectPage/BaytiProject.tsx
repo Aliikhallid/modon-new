@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 // import { useLayoutEffect } from "react";
 import Enquire from "../sections/Enquire";
 import { SewingPinFilledIcon } from "@radix-ui/react-icons";
-import Footer from "../sections/Footer";
 import { useLayoutEffect } from "react";
+import Footer from "../Footer/Footer";
 
 const BaytiProject = () => {
   const {t,i18n} = useTranslation();
