@@ -5,7 +5,7 @@ const ItemsContainer = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16">
           <ul>
-      <h1 className="mb-1 font-semibold">ABOUT MODON</h1>
+      <h1 className="mb-1 font-semibold text-lg">ABOUT MODON</h1>
     
         <li >
           <p
@@ -21,7 +21,7 @@ const ItemsContainer = () => {
       <Item Links={PROJECTS} title="OUR PROJECTS" />
       <Item Links={QuickLinks} title="QUICK LINKS" />
       <ul>
-      <h1 className="mb-1 font-semibold">HEAD OFFICE</h1>
+      <h1 className="mb-1 font-semibold text-lg">HEAD OFFICE</h1>
     
         <li >
           <p
