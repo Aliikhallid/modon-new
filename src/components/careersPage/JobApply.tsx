@@ -1,6 +1,6 @@
 import { Briefcase, CalendarClockIcon, GraduationCap, Hourglass, MapPin } from "lucide-react";
 import NavBar from "../NavBar";
-import Footer from "../sections/Footer";
+import Footer from '../Footer/Footer'
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";

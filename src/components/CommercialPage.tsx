@@ -1,6 +1,6 @@
 import NavBar from "./NavBar"
 import CommercialHeader from "./commercialPage/CommercialHeader"
-import Footer from "./sections/Footer"
+import Footer from './Footer/Footer'
 
 const CommercialPage = () => {
   return (
