@@ -6,7 +6,7 @@ import { Button } from "../ui/button"
 // import modonLogo1 from '../../assets/Modon-White.png'
 import google from "../../assets/google-play.png"
 import apple from "../../assets/apple.png"
-import { Instagram } from "lucide-react"
+import { Facebook, Flower, Instagram } from "lucide-react"
 import { Link } from "react-router-dom"
 import Enquire from "./Enquire"
 import { EnvelopeOpenIcon, MobileIcon } from "@radix-ui/react-icons"
@@ -29,25 +29,24 @@ const Footer = () => {
           <p className="regular text-[18px]">Modon knows no boundaries for leadership.<br /> We work today to shape the future.</p>
           <h1 className="regular text-[18px]">Email: info@modoniq.com</h1>
           <div className="flex mb-5 gap-3">
-           <a href="/"><Button variant="ghost" className="h-12 w-12 rounded bg-[#E1EAF5]"><Instagram /></Button></a>
-           <a href="/"><Button variant="ghost" className="h-12 w-12 rounded bg-[#E1EAF5]"><Instagram /></Button></a>
-           <a href="/"><Button variant="ghost" className="h-12 w-12 rounded bg-[#E1EAF5]"><Instagram /></Button></a>
-           <a href="/"><Button variant="ghost" className="h-12 w-12 rounded bg-[#E1EAF5]"><Instagram /></Button></a>
+           <a href="/https://www.instagram.com/modon_iraq/"><Button variant="ghost" className="h-12 w-12 rounded bg-[#E1EAF5]"><Instagram /></Button></a>
+           <a href="/https://web.facebook.com/Modon.iraq"><Button variant="ghost" className="h-12 w-12 rounded bg-[#E1EAF5]"><Facebook /></Button></a>
+           <a href="/https://alhandal.me/"><Button variant="ghost" className="h-12 w-12 rounded bg-[#E1EAF5]"><Flower /></Button></a>
           </div>
         </div>
         <div className="ft2 p-7 flex flex-col gap-1 md:w-max w-full">
           <h1 className="bold text-[24px]">Quick Links</h1>
-         <Link to="/buruj"><p className="regular text-[18px] clickable">🔵 Projects</p></Link>
-         <Link to="/construction"><p className="regular text-[18px] clickable">🔵 Constructions</p></Link>
-         <Link to="/news"><p className="regular text-[18px] clickable">🔵 News</p></Link>
-         <Link to="/contact"><p className="regular text-[18px] clickable">🔵 Contact</p></Link>
-         <Link to="/careers"><p className="regular text-[18px] clickable">🔵 Careers</p></Link>
+         <Link to="/buruj"><p className="regular text-[18px] clickable">Projects</p></Link>
+         <Link to="/construction"><p className="regular text-[18px] clickable">Constructions</p></Link>
+         <Link to="/news"><p className="regular text-[18px] clickable">News</p></Link>
+         <Link to="/contact"><p className="regular text-[18px] clickable">Contact</p></Link>
+         <Link to="/careers"><p className="regular text-[18px] clickable">Careers</p></Link>
         </div>
         <div className="ft1 p-7 flex flex-col gap-1 md:w-max w-full">
           <h1 className="bold text-[24px]">Privacy Links</h1>
-          <Link to="/about-us"><p className="regular text-[18px] clickable">🔵 Privacy Policy</p></Link>
-          <Link to="/about-us"><p className="regular text-[18px] clickable">🔵 FAQ</p></Link>
-          <Link to="/about-us"><p className="regular text-[18px] clickable">🔵 Terms & Conditions</p></Link>
+          <Link to="/about-us"><p className="regular text-[18px] clickable">Privacy Policy</p></Link>
+          <Link to="/about-us"><p className="regular text-[18px] clickable">FAQ</p></Link>
+          <Link to="/about-us"><p className="regular text-[18px] clickable">Terms & Conditions</p></Link>
           <div className="w-full flex justify-start mx-2 my-2">
             <Enquire />
             </div> 

@@ -2,7 +2,7 @@ import { Button } from "../ui/button"
 import { Link } from "react-router-dom"
 const SecondPage = () => {
   return (
-    <div className="w-full h-fit pt-16 bg-white text-black flex flex-wrap justify-center light">
+    <div className="w-full h-fit md:pt-16 pt-36 bg-white text-black flex flex-wrap justify-center light">
       <div className="link-cont m-5 flex flex-col justify-center items-center animate-fade-up animate-duration-1000 animate-delay-500 ">
         <div className="link-img"></div>
         <h1 className="regular text-center">Resedential Projects</h1>

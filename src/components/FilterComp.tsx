@@ -24,12 +24,12 @@ export default function FilterComp() {
     const [showMadinaty, setShowMadinaty] = useState<Checked>(false)
 
   return (
-    <div className="props-filter-container bg-white text-primary-color light w-11/12 h-24 rounded-[5px] relative mt-5 border shadow-xl">
-    <div className="props-filter-one flex border-r border-primary-multiply-color border-solid m-4 text-left w-1/5 relative">
-      <section className='mr-10 w-full'>
+    <div className="props-filter-container flex md:flex-row flex-col bg-white text-primary-color light w-[90vw] md:h-24 h-fit rounded-[5px] md:relative absolute mt-5 border shadow-xl">
+    <div className="props-filter-one flex md:border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative ">
+      <section className='md:mr-10 w-full flex'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className='w-full regular text-md rounded'>Property Type</Button>
+        <Button variant="outline" className='w-full regular md:text-md text-sm rounded'>Property Type</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 bg-white">
         <DropdownMenuLabel>Apartments</DropdownMenuLabel>
@@ -67,11 +67,11 @@ export default function FilterComp() {
     </DropdownMenu>
       </section> 
     </div> 
-    <div className="props-filter-two flex border-r border-gray-500 border-solid m-4 text-left w-1/5">
-     <section className='mr-10 w-full'>
+    <div className="props-filter-two flex md:border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative ">
+     <section className='md:mr-10 w-full flex'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className='w-full regular text-md rounded'>Bedrooms</Button>
+        <Button variant="outline" className='w-full regular md:text-md text-sm rounded'>Bedrooms</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 bg-white">
         <DropdownMenuLabel>Number of Bedrooms</DropdownMenuLabel>
@@ -105,11 +105,11 @@ export default function FilterComp() {
     </DropdownMenu>
      </section> 
     </div> 
-    <div className="props-filter-three flex border-r border-gray-500 border-solid m-4 text-left w-1/5">
-      <section className='mr-10 w-full'>
+    <div className="props-filter-three flex md:border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative ">
+      <section className='md:mr-10 w-full flex'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className='w-full regular text-md rounded'>Type of Unit</Button>
+        <Button variant="outline" className='w-full regular md:text-md text-sm rounded'>Type of Unit</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 bg-white">
         <DropdownMenuLabel>Unit Type</DropdownMenuLabel>
@@ -131,11 +131,11 @@ export default function FilterComp() {
     </DropdownMenu>
       </section>
     </div>
-    <div className="props-filter-four flex border-r border-gray-500 border-solid m-4 text-left w-1/5">
-      <section className='mr-10 w-full'>
+    <div className="props-filter-four flex md:border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative">
+      <section className='md:mr-10 w-full flex'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className='w-full regular text-md rounded'>Project</Button>
+        <Button variant="outline" className='w-full regular md:text-md text-sm rounded'>Project</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 bg-white">
         <DropdownMenuLabel>Residential Projects</DropdownMenuLabel>
@@ -175,7 +175,7 @@ export default function FilterComp() {
     </DropdownMenu>
       </section>
     </div>
-    <div className="props-filter-button m-4 text-center w-1/5">
+    <div className="props-filter-button m-4 text-center md:w-1/5 w-[80%]">
       <Button className='bg-primary-color text-white hover:text-black rounded w-max'>{t("search_properties")}</Button>
     </div>
   </div>

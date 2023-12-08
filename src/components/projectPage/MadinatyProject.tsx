@@ -50,7 +50,7 @@ const MadinatyProject = () => {
         <Button size="lg" variant="secondary">Construction update</Button>
         </div>
         </div>
-        <div className="absolute flex justify-center uppercase items-center bg-white bottom-0 md:w-1/4 w-1/2 md:h-[10%] h-5 mt-5 rounded-t-[37px] left-1/2 transform -translate-x-1/2">
+        <div className="absolute flex justify-center uppercase items-center bg-white bottom-0 md:w-1/4 w-1/2 md:h-[10%] h-[5%] mt-5 rounded-t-[37px] left-1/2 transform -translate-x-1/2">
           <p className="md:text-4xl tex-2xl text-primary regular">Features</p>
         </div>
 

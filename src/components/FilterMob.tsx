@@ -25,7 +25,7 @@ export default function FilterMob() {
 
   return (
     <div className="props-filter-container bg-white text-primary-color light w-1/3 h-fit rounded-[3px] relative mt-5 border shadow-xl">
-    <div className="props-filter-one flex border-r border-primary-multiply-color border-solid m-4 text-left w-1/5 relative">
+    <div className="props-filter-one flex md:border-r border-primary-multiply-color border-solid m-4 text-left w-1/5 relative">
       <section className='mr-10 w-full'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -67,7 +67,7 @@ export default function FilterMob() {
     </DropdownMenu>
       </section>
     </div>
-    <div className="props-filter-two flex border-r border-gray-500 border-solid m-4 text-left w-1/5">
+    <div className="props-filter-two flex md:border-r md:border-gray-500 md:border-solid border-0 m-4 text-left w-1/5">
      <section className='mr-10 w-full'>
       <DropdownMenu>
       <DropdownMenuTrigger asChild>

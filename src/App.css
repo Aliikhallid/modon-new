@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  cursor: none !important;
 }
 
 :root {
@@ -42,12 +41,14 @@ a:hover .cursor-outline {
   height: 77px;
   border: 2px solid var(--secondary-color);
   z-index: 999999999px;
+  transition: all 0.3s ease-in-out;
 }
 
 .cursor-hover {
   height: 40px;
   width: 40px;
 }
+
 .cursor-dot,
 .cursor-outline {
   position: fixed;
@@ -58,14 +59,6 @@ a:hover .cursor-outline {
   z-index: 1;
   pointer-events: none;
 }
-@media (max-width: 1200px) {
-  .cursor-dot,
-  .cursor-outline {
-    display: none;
-  }
-}
-
-
 
 @font-face {
   font-family: "Tajawal-Light";
@@ -447,6 +440,32 @@ a:hover .cursor-outline {
 }
 .slider-container .slide .slide-parag {
   font-size: 0.8rem;
+}
+
+/* src/components/KiteAnimation.css */
+.kite-animation-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.kite {
+  width: 50px;
+  height: 50px;
+  background-color: #ff9900;
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
+  position: absolute;
+}
+
+.kite-string {
+  width: 5px;
+  height: 150px;
+  background-color: #5e5e5e;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  transform-origin: center bottom;
 }
 
 .last-page {
@@ -1201,11 +1220,6 @@ Button:hover {
   .nav-list div {
     font-size: 1.5rem;
   }
-  .props-filter-container {
-    display: none !important;
-    height: 0 !important;
-    width: 0 !important;
-  }
   .modon-desc {
     flex-direction: column !important;
   }
@@ -1241,7 +1255,6 @@ Button:hover {
   .header-container {
     justify-content: center;
     align-items: center;
-    height: 70vh !important;
   }
   .filter-web {
     width: 50% !important;
@@ -1281,9 +1294,6 @@ Button:hover {
 @media screen and (max-width: 700px) {
   .new-img11 {
     width: 90rem !important;
-  }
-  .header-container {
-    height: 80vh !important;
   }
   .header-container h1 {
     font-size: 2rem;
