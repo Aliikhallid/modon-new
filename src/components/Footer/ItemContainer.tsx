@@ -3,13 +3,13 @@ import Item from "./Item";
 import { PROJECTS,QuickLinks} from "./data";
 const ItemsContainer = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16">
+    <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 bg-primary-multiply-color">
           <ul>
       <h1 className="mb-1 font-semibold text-lg">ABOUT MODON</h1>
     
         <li >
           <p
-            className="text-gray-400 hover:text-primary duration-300
+            className="text-gray-400 hover:text-white duration-300
           text-sm cursor-pointer leading-6"
           >
             Modon knows no boundaries for leadership.
@@ -25,7 +25,7 @@ const ItemsContainer = () => {
     
         <li >
           <p
-            className="text-gray-400 hover:text-primary duration-300
+            className="text-gray-400 hover:text-white duration-300
           text-sm cursor-pointer leading-6"
           >
 Al Mamoon District, Al Nossor Area Near
@@ -34,7 +34,7 @@ Baghdad Tower, Baghdad, Iraq.
         </li>
         <li >
           <p
-            className="text-gray-400 hover:text-primary duration-300
+            className="text-gray-400 hover:text-white duration-300
           text-sm cursor-pointer leading-6 flex items-center gap-2"
           >
 <MobileIcon height={16} width={16} />  +964 770 0300 005
@@ -42,7 +42,7 @@ Baghdad Tower, Baghdad, Iraq.
         </li>
         <li >
           <p
-            className="text-gray-400 hover:text-primary duration-300
+            className="text-gray-400 hover:text-white duration-300
           text-sm cursor-pointer leading-6 flex items-center gap-2"
           >
 <EnvelopeOpenIcon height={16} width={16} />  info@modoniq.com

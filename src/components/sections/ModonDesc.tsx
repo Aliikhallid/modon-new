@@ -27,8 +27,8 @@ const ModonDesc = () => {
     }, opacity: 0, y: 200})
   }, [])
   return (
-    <div className="h-fit bg-white w-full flex modon-desc">
-      <section className="w-1/2 h-[110vh] flex flex-col justify-center items-center text-black desc1">
+    <div className="h-fit bg-slate-300 w-full flex modon-desc">
+      <section className="w-1/2 h-[110vh] flex flex-col justify-center items-center desc1">
         <h1 className="bold text-primary-color text-4xl m-5 text-center desc-t">World-Class Service And Market-Leading Expertise</h1>
         <div className="sc-desc w-full flex justify-around items-center">
           <h1 className="bold text-primary-color text-2xl m-3 desc-tt">Mission</h1>

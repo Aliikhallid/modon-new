@@ -247,7 +247,7 @@ const setOver9 = () => {
         </div>
     </div> :<div className="videos relative flex md:flex-row flex-col justify-center items-center">
             <div className="flex md:w-1/2 w-3/4 justify-center items-center">
-          {show===1 ? <iframe height="415" className="video2 md:w-1/2 w-full rounded" src="https://www.youtube.com/embed/tgbNymZ7vqY">Hello</iframe> :show===2 ? <img src={image} height={415} width={620}></img> : show===3 ? 
+          {show===1 ? <iframe height="415" className="video2  md:w-11/12 w-full rounded-xl" src="https://www.youtube.com/embed/tgbNymZ7vqY">Hello</iframe> :show===2 ? <img src={image} height={415} width={620}></img> : show===3 ? 
         <div className="flex flex-col gap-3">
           <img src={missionImg} height={415} width={620}></img>
           <img src={vissionImg} height={415} width={620}></img>

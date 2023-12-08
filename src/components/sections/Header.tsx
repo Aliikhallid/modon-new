@@ -22,7 +22,7 @@ const Header = () => {
       <NavBar />
       <video src={headerVideo} muted autoPlay loop className='video absolute h-[82%] w-screen top-0 left-0 right-0 bottom-0 -z-10 object-cover opacity-30 rounded-b-3xl'></video>
       <div className="overlay absolute h-[82%] w-full top-0 left-0 right-0 bottom-0 object-cover -z-20 bg-black rounded-b-3xl"></div>
-      <div className="overlay absolute h-full w-full top-0 left-0 right-0 bottom-0 object-cover -z-30 bg-white"></div>
+      <div className="overlay absolute h-full w-full top-0 left-0 right-0 bottom-0 object-cover -z-30 bg-slate-300"></div>
       <div className="paralax relative transitionnn flex w-full flex-col h-1/2 justify-center items-center">
       <h2 className='mi'>Modon, <span className=''>IRAQ</span></h2>
       <h1 className='bold text-6xl m-3 mre'>Modon Real Estate</h1>

@@ -44,7 +44,7 @@ const ModonProps = () => {
     }, opacity: 0,ease: 'circ.inOut', delay: 1.5})
   })
   return (
-    <div className='modon-container w-full h-fit bg-white text-black'>
+    <div className='modon-container w-full h-fit bg-slate-300 text-slate-600'>
       <section className='modon-text-container'>
       <TitleDivider name="MODON" />
         <h1 className='latest italic'>LATEST PROPERTIES</h1>
