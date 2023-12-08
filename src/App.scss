@@ -1099,10 +1099,18 @@ Button:hover {
 .flex-imp {
   display: flex !important;
 }
+.none-imp {
+  display: none !important;
+}
 @media screen and (max-width: 1350px) {
   .modon-container {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .nav-list {
+    display: flex !important;
   }
 }
 @media screen and (max-width: 1200px) {

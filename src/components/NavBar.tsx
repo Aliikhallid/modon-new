@@ -11,9 +11,7 @@ import { ChevronDown, Facebook, Flower, Instagram } from 'lucide-react';
 import { MobileIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
 
-
  
-
 const NavBar = () => {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -106,7 +104,7 @@ const NavBar = () => {
         <div className="line2 h-0.5 w-7 bg-white"></div>
         <div className="line3 h-0.5 w-5 bg-white"></div>
       </div>
-      <div className="nav-list gap-4 w-3/4 items-center justify-around text-sm md:flex hidden md:flex-row flex-col md:light regular">
+      <div className="nav-list gap-4 w-3/4 items-center justify-around text-sm md[1300px]:flex hidden md:flex-row flex-col md:light regular">
         <a className="item cursor-" href="/">
           {t("home-nav")}
         </a>
@@ -118,27 +116,48 @@ const NavBar = () => {
           <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
             <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/bayti'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("bayti-c")}</p>
+                  <p className="text-xs">{t("bayti-c")}</p>
                 </NavigationMenuLink>
               </a>
               <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/buruj'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("buruj-c")}</p>
+                  <p className="text-xs">{t("buruj-c")}</p>
                 </NavigationMenuLink>
               </a>
               <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/future-city'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("future-c")}</p>
+                  <p className="text-xs">{t("future-c")}</p>
                 </NavigationMenuLink>
               </a>
               <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/lavida'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("lavida-c")}</p>
+                  <p className="text-xs">{t("lavida-c")}</p>
                 </NavigationMenuLink>
               </a>
               <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/madinaty'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("madinaty-c")}</p>
+                  <p className="text-xs">{t("madinaty-c")}</p>
+                </NavigationMenuLink>
+              </a>
+              </ul>
+          </NavigationMenuContent>
+          </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="hover:border-none"><div className='flex items-center clickable'>GALLERIES <ChevronDown/></div></NavigationMenuTrigger>
+          <NavigationMenuContent className="text-white mt-2 rounded-b-xl py-1">
+          <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
+            <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/image-gallery'>
+                <NavigationMenuLink  asChild>
+                  <p className="text-xs">IMAGE GALLERY</p>
+                </NavigationMenuLink>
+              </a>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/video-gallery'>
+                <NavigationMenuLink  asChild>
+                  <p className="text-xs">VIDEO GALLERY</p>
                 </NavigationMenuLink>
               </a>
               </ul>
