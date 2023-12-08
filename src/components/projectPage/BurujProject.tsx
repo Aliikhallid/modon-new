@@ -7,7 +7,8 @@ import { useLayoutEffect } from "react";
 import Enquire from "../sections/Enquire";
 import { Link } from "react-router-dom";
 import { SewingPinFilledIcon } from "@radix-ui/react-icons";
-import Footer from "../sections/Footer";
+import Footer from "../Footer/Footer";
+
 
 const BurujProject = () => {
   const {t,i18n} = useTranslation();

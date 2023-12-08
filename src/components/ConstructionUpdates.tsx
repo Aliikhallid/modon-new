@@ -1,7 +1,7 @@
 import { useLayoutEffect } from "react";
 import NavBar from "./NavBar"
 import ConstructionHeader from "./constructionPage/ConstructionHeader"
-import Footer from "./sections/Footer"
+import Footer from './Footer/Footer'
 import ConstructionTitle from "./constructionPage/ConstructionTitle";
 
 const ConstructionUpdates = () => {

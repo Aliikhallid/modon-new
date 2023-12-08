@@ -1,7 +1,7 @@
 import { useLayoutEffect } from 'react';
 import NavBar from '../NavBar'
-import Footer from '../sections/Footer'
 import { Button } from '../ui/button'
+import Footer from '../Footer/Footer';
 // import { useTranslation } from "react-i18next";
 
 const BaytiMall = () => {

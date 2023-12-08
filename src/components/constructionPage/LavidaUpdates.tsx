@@ -1,7 +1,7 @@
 import { Button } from "../ui/button"
 import NavBar from "../NavBar"
 import { useEffect, useLayoutEffect, useState } from "react";
-import Footer from "../sections/Footer";
+import Footer from '../Footer/Footer'
 import ImageSliderOverlay from "../ImageSliderOverlay";
 const LavidaUpdates = () => {
   const path = "../public/ConstructionUpdates/Lavida/"

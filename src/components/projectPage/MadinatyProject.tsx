@@ -6,7 +6,7 @@ import { Castle,Trees,LucideBuilding,Building2,Workflow,ShoppingCart, School2, S
 // import { useLayoutEffect } from "react";
 import Enquire from "../sections/Enquire";
 import { SewingPinFilledIcon } from "@radix-ui/react-icons";
-import Footer from "../sections/Footer";
+import Footer from '../Footer/Footer'
 import { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 
