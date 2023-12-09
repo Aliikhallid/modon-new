@@ -5,7 +5,15 @@ import { useRef } from "react";
 const HorizontalScroll = () => {
   return (
     <div className="bg-slate-300 h-fit">
-      <h1 className="text-3xl text-slate-500 text-center bold relative top-10 flex flex-col gap-2">Modon Real Estate · is Affiliated with<br /><span className="text-primary-color text-5xl">AL HANDAL INTERNATIONAL GROUP</span><span className="text-2xl">Handal's Companies</span> <Flower className="text-center m-auto"/></h1>
+      <h1 className="text-3xl text-slate-500 text-center bold relative top-10 flex flex-col gap-2">
+        Modon Real Estate · is Affiliated with
+        <br />
+        <span className="text-primary-color text-5xl">
+          AL HANDAL INTERNATIONAL GROUP
+        </span>
+        <span className="text-2xl">Handal's Companies</span>{" "}
+        <Flower className="text-center m-auto" />
+      </h1>
       <HorizontalScrollCarousel />
     </div>
   );
@@ -32,7 +40,10 @@ const HorizontalScrollCarousel = () => {
   );
 };
 
-const Card = ({ card }) => {
+interface CardProps {
+  card: { url: string; title: string; id: number };
+}
+const Card = ({ card }: CardProps) => {
   return (
     <div
       key={card.id}
@@ -58,32 +69,32 @@ const Card = ({ card }) => {
 export default HorizontalScroll;
 const cards = [
   {
-    url: "/src/assets/3f4dcb02000812b8e.jpg",
+    url: "HorizontalScroll/3f4dcb02000812b8e.jpg",
     title: "Ashur Bank",
     id: 1,
   },
   {
-    url: "/src/assets/60042c070ba64c53d.jpg",
+    url: "HorizontalScroll/60042c070ba64c53d.jpg",
     title: "Abr Al Masafat",
     id: 2,
   },
   {
-    url: "/src/assets/wolf.jpg",
+    url: "HorizontalScroll/wolf.jpg",
     title: "Wolf Gym",
     id: 3,
   },
   {
-    url: "/src/assets/kaizen.jpg",
+    url: "HorizontalScroll/kaizen.jpg",
     title: "Kaizen Hospitality",
     id: 4,
   },
   {
-    url: "/src/assets/hadia.jpg",
+    url: "HorizontalScroll/hadia.jpg",
     title: "HADIA ORGANIC FARM",
     id: 5,
   },
   {
-    url: "/src/assets/diamond.jpg",
+    url: "HorizontalScroll/diamond.jpg",
     title: "Diamond Loft",
     id: 6,
   },
