@@ -31,8 +31,10 @@ const HorizontalScrollCarousel = () => {
     </section>
   );
 };
-
-const Card = ({ card }) => {
+interface CardProps {
+  card: { url: string; title: string; id: number };
+}
+const Card = ({ card }:CardProps) => {
   return (
     <div
       key={card.id}
