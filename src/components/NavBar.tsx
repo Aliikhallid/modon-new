@@ -6,14 +6,12 @@ import LangSwitcher from './sections/LangSwitcher';
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '@radix-ui/react-navigation-menu';
 import { NavigationMenuContent } from './ui/navigation-menu';
-import { ChevronDown, Instagram } from 'lucide-react';
+import { ChevronDown, Facebook, Flower, Instagram } from 'lucide-react';
 // import { useState } from "react";
 import { MobileIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
 
-
  
-
 const NavBar = () => {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -84,10 +82,9 @@ const NavBar = () => {
       <div className="navbarInner flex w-full justify-between items-center h-16 border-b-[0.1px]">
         <h1 className="mx-3"><span className="bold">Email us at:</span> Info@modoniq.com</h1>
         <div className="social-items flex justify-around items-center cursor-pointer w-[20%]">
-          <h1><Instagram height={17} /></h1>
-          <h1><Instagram height={17} /></h1>
-          <h1><Instagram height={17} /></h1>
-          <h1><Instagram height={17} /></h1>
+          <a href="https://www.instagram.com/modon_iraq/"><Instagram height={20} /></a>
+          <a href="https://web.facebook.com/Modon.iraq"><Facebook height={20} /></a>
+          <a href="https://alhandal.me/"><Flower height={20} /></a>
           <div className="h-8 w-0.5 m-3 bg-gray-400"></div>
           <h1 className="flex justify-center items-center regular text-xl"><MobileIcon className="mx-1" height={25} width={25} /> 6001</h1>
         </div>
@@ -107,39 +104,60 @@ const NavBar = () => {
         <div className="line2 h-0.5 w-7 bg-white"></div>
         <div className="line3 h-0.5 w-5 bg-white"></div>
       </div>
-      <div className="nav-list gap-4 w-3/4 items-center justify-around text-sm md:flex hidden md:flex-row flex-col md:light regular">
+      <div className="nav-list gap-4 w-3/4 items-center justify-around text-sm md[1300px]:flex hidden md:flex-row flex-col md:light regular">
         <a className="item cursor-" href="/">
           {t("home-nav")}
         </a>
         <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="hover:border-none"><div className='flex items-center cursor-'>{t("projects-nav")} <ChevronDown/></div></NavigationMenuTrigger>
+          <NavigationMenuTrigger className="hover:border-none"><div className='flex items-center clickable'>{t("projects-nav")} <ChevronDown/></div></NavigationMenuTrigger>
           <NavigationMenuContent className="text-white mt-2 rounded-b-xl py-1">
           <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
             <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/bayti'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("bayti-c")}</p>
+                  <p className="text-xs">{t("bayti-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/buruj'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/buruj'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("buruj-c")}</p>
+                  <p className="text-xs">{t("buruj-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/future-city'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/future-city'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("future-c")}</p>
+                  <p className="text-xs">{t("future-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/lavida'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/lavida'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("lavida-c")}</p>
+                  <p className="text-xs">{t("lavida-c")}</p>
                 </NavigationMenuLink>
               </a>
-              <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/madinaty'>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/madinaty'>
                 <NavigationMenuLink  asChild>
-                  <p>{t("madinaty-c")}</p>
+                  <p className="text-xs">{t("madinaty-c")}</p>
+                </NavigationMenuLink>
+              </a>
+              </ul>
+          </NavigationMenuContent>
+          </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="hover:border-none"><div className='flex items-center clickable'>GALLERIES <ChevronDown/></div></NavigationMenuTrigger>
+          <NavigationMenuContent className="text-white mt-2 rounded-b-xl py-1">
+          <ul className="flex flex-col item-start gap-1 text-center text-xs justify-start animate-fade-down">
+            <a className='p-1 hover:bg-primary-hover hover:animate-fade cursor-' href='/image-gallery'>
+                <NavigationMenuLink  asChild>
+                  <p className="text-xs">IMAGE GALLERY</p>
+                </NavigationMenuLink>
+              </a>
+              <a className='p-1 hover:bg-primary-hover hover:animate-fade clickable' href='/video-gallery'>
+                <NavigationMenuLink  asChild>
+                  <p className="text-xs">VIDEO GALLERY</p>
                 </NavigationMenuLink>
               </a>
               </ul>

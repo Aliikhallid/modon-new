@@ -5,6 +5,8 @@ import './index.css';
 import './i18n.tsx';
 import { BrowserRouter } from 'react-router-dom';
 import SplashScreen from './components/SplashScreen.tsx';
+// import Lenis from '@studio-freight/lenis'
+
 
 function RootComponent() {
   const [showApp, setShowApp] = useState(false);

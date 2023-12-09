@@ -66,7 +66,7 @@ export default function ImageSlider({
                 <Dot
                 className="clickable"
                   size={44}
-                  color={`${slideIndex === imageIndex ? "#06316c" : "#d3d3d3"}`}
+                  color={`${slideIndex === imageIndex ? "#fff" : "#333"}`}
                   strokeWidth={3}
                 />
               </div>

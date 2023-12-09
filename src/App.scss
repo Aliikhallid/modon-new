@@ -1,12 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  cursor: none !important;
+  // cursor: none !important;
 }
 :root {
   --primary-color: #06316c;
@@ -39,6 +38,11 @@ a:hover {
   height: 77px;
   border: 2px solid var(--secondary-color);
   z-index: 999999999px;
+  transition: all 0.3s ease-in-out;
+}
+.cursor-hover {
+  height: 40px;
+  width: 40px;
 }
 .cursor-dot,
 .cursor-outline {
@@ -408,6 +412,31 @@ a:hover {
     }
   }
 }
+/* src/components/KiteAnimation.css */
+.kite-animation-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.kite {
+  width: 50px;
+  height: 50px;
+  background-color: #ff9900;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  position: absolute;
+}
+
+.kite-string {
+  width: 5px;
+  height: 150px;
+  background-color: #5e5e5e;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  transform-origin: center bottom;
+}
+
 .last-page {
 display: flex;
 height: 120vh;
@@ -1070,10 +1099,18 @@ Button:hover {
 .flex-imp {
   display: flex !important;
 }
+.none-imp {
+  display: none !important;
+}
 @media screen and (max-width: 1350px) {
   .modon-container {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .nav-list {
+    display: flex !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1100,11 +1137,11 @@ Button:hover {
       font-size: 1.5rem;
     }
   }
-  .props-filter-container {
-    display: none !important;
-    height: 0 !important;
-    width: 0 !important;
-  }
+  // .props-filter-container {
+  //   display: none !important;
+  //   height: 0 !important;
+  //   width: 0 !important;
+  // }
   .modon-desc {
     flex-direction: column !important;
     .desc1 {
@@ -1140,7 +1177,7 @@ Button:hover {
   .header-container {
     justify-content: center;
     align-items: center;
-    height: 70vh !important;
+    // height: 70vh !important;
   }
   .filter-web {
     width: 50% !important;
@@ -1185,7 +1222,7 @@ Button:hover {
     width: 90rem !important;
   }
   .header-container {
-    height: 80vh !important;
+    // height: 80vh !important;
     h1 {
       font-size: 2rem;
     }

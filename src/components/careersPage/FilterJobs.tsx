@@ -80,8 +80,8 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
   
 
   return (
-    <div className="bg-white text-primary-color  light md:w-11/12 md:h-24 w-[80vw] rounded-[5px] relative mt-5 border shadow-xl flex flex-col md:flex-row  justify-center items-center">
-      <div className="flex border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative ">
+    <div className="bg-white text-primary-color light md:w-11/12 md:h-24 w-[80vw] rounded-[5px] relative mt-5 border shadow-xl flex flex-col md:flex-row  justify-center items-center">
+      <div className="flex md:border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative ">
         <section className="md:mr-10 w-full flex">
           <DropdownMenu>
             <DropdownMenuTrigger className="w-full" asChild>
@@ -107,7 +107,7 @@ export default function FilterJobs({setJobList,sortingOption}: FilterJobsProps) 
           </DropdownMenu>
         </section>
       </div>
-      <div className="flex border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative">
+      <div className="flex md:border-r border-primary-multiply-color border-solid m-4 text-left md:w-1/5 w-[80%] relative">
         <section className="md:mr-10 w-full flex">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>

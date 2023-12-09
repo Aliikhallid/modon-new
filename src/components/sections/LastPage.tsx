@@ -11,17 +11,16 @@ import pingpong from "../../assets/ping-pong.png"
 import share from "../../assets/share-square.png"
 import google from "../../assets/google-play.png"
 import apple from "../../assets/apple.png"
-
 const LastPage = () => {
   return (
-    <div className='last-page w-full h-fit bg-white text-black'>
+    <div className='last-page w-full h-fit bg-slate-300 text-black'>
       <section className='last-section flex justify-end'>
        <div className="first-text">
          <TitleDivider name="A DIGITAL EXPERIENCE"/>
-         <h1 className="bigger-h1 regular" style={{fontSize: '3rem'}}>ONE APP FOR ALL <span style={{color: '#06316c'}}>MODON PROPERTIES</span></h1>
-         <p className="mb-10 mt-3 regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam fugiat aliquam unde. Facilis, debitis perferendis sint tenetur suscipit praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, suscipit?</p>
+         <h1 className="bigger-h1 bold text-slate-500" style={{fontSize: '3rem'}}>ONE APP FOR ALL <span style={{color: '#06316c'}}>MODON PROPERTIES</span></h1>
+         <p className="mb-10 mt-3 regular text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam fugiat aliquam unde. Facilis, debitis perferendis sint tenetur suscipit praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, suscipit?</p>
         </div> 
-         <div className="icons-last regular">
+         <div className="icons-last regular text-slate-600">
           <div className="ab flex flex-col gap-4">
            <div className="icon flex gap-2 "><img src={dig} className="h-8 p-1" alt="dig" /> <h1>Construction Updates</h1></div>
            <div className="icon flex gap-2"><img src={document} className="h-8  p-1" alt="dig" /> <h1>Ownership Updates</h1></div>
