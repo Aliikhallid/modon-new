@@ -461,10 +461,10 @@ height: 120vh;
 }
 .icons-last {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 80%;
-  text-align: left;
-  align-items: left;
+  // text-align: left;
+  align-items: center;
 }
 .store-links {
   display: flex;
@@ -611,7 +611,17 @@ Button:hover {
 .link-img {
   height: 20rem;
   width: 22rem;
-  background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
+  background: url(./assets/MODON-SELA-CENTER-BAGHDAD-1.jpg) no-repeat center center/cover;
+}
+.link-img2 {
+  height: 20rem;
+  width: 22rem;
+  background: url(./assets/cadimain.webp) no-repeat center center/cover;
+}
+.link-img3 {
+  height: 20rem;
+  width: 22rem;
+  background: url(./assets/05-1-q65rupdwebangdhyolwqham25oho9kaatpza0ucj9g.jpg) no-repeat center center/cover;
 }
 .footer-img::before {
   content: '';

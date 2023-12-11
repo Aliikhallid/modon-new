@@ -1,12 +1,26 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { Flower } from "lucide-react";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const HorizontalScroll = () => {
+  const { i18n } = useTranslation();
+
+  const userLanguage = localStorage.getItem('userLanguage') || 'en';
+  useEffect(() => {
+    // Get the user's preferred language or use a default language
+
+    // Set the initial language and direction
+    i18n.changeLanguage(userLanguage);
+    document.documentElement.dir = userLanguage === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = userLanguage;
+
+  }, [i18n, userLanguage]);
+
   return (
     <div className="bg-slate-300 h-fit">
       <h1 className="text-3xl text-slate-500 text-center bold relative top-10 flex flex-col gap-2">Modon Real Estate · is Affiliated with<br /><span className="text-primary-color text-5xl">AL HANDAL INTERNATIONAL GROUP</span><span className="text-2xl">Handal's Companies</span> <Flower className="text-center m-auto"/></h1>
-      <HorizontalScrollCarousel />
+      {userLanguage === 'en' ? <HorizontalScrollCarousel /> : <HorizontalScrollCarouselAr />}
     </div>
   );
 };
@@ -17,12 +31,32 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-75%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] ">
+    <section ref={targetRef} className="relative h-[300vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
+        <motion.div style={{ x }} className="flex gap-4 ">
+          {cards.map((card) => {
+            return <Card card={card} key={card.id} />;
+          })}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+const HorizontalScrollCarouselAr = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+    const x = useTransform(scrollYProgress, [0, 1], ["-1%", "75%"]);
+
+  return (
+    <section ref={targetRef} className="relative h-[300vh]">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <motion.div style={{ x }} className="flex gap-4 ">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
           })}

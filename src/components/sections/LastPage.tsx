@@ -21,13 +21,13 @@ const LastPage = () => {
          <p className="mb-10 mt-3 regular text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam fugiat aliquam unde. Facilis, debitis perferendis sint tenetur suscipit praesentium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, suscipit?</p>
         </div> 
          <div className="icons-last regular text-slate-600">
-          <div className="ab flex flex-col gap-4">
+          <div className="ab flex flex-col gap-1">
            <div className="icon flex gap-2 "><img src={dig} className="h-8 p-1" alt="dig" /> <h1>Construction Updates</h1></div>
            <div className="icon flex gap-2"><img src={document} className="h-8  p-1" alt="dig" /> <h1>Ownership Updates</h1></div>
            <div className="icon flex gap-2"><img src={cardclip} className="h-8 p-1" alt="dig" /> <h1>Access card requests</h1></div>
            <div className="icon flex gap-2"><img src={pingpong} className="h-8 p-1" alt="dig" /> <h1>Amenities booking</h1></div>
           </div>
-          <div className="ab flex flex-col gap-4">
+          <div className="ab flex flex-col gap-1">
            <div className="icon flex gap-2 "><img src={share} className="h-8 p-1" alt="dig" /> <h1>Property-related Transfers</h1></div>
            <div className="icon flex gap-2"><img src={exchange} className="h-8 p-1" alt="dig" /> <h1>Move In/Out Requests</h1></div>
            <div className="icon flex gap-2"><img src={credit} className="h-8 p-1" alt="dig" /> <h1>Online Payments</h1></div>
