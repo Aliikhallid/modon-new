@@ -8,12 +8,12 @@ gsap.registerPlugin(ScrollTrigger);
 const ModonProps = () => {
   useEffect(() => {
     gsap.from('.image-1', {scrollTrigger: {
-      trigger: '.image-3',
+      trigger: '.image-1',
       toggleActions: 'play none none reverse',
       start: 'top 80%',
     },  width: 0, ease: 'circ.inOut', duration: 1})
     gsap.from('.image-2', {scrollTrigger: {
-      trigger: '.image-3',
+      trigger: '.image-2',
       toggleActions: 'play none none reverse',
       start: 'top 80%',
     },  width: 0, ease: 'circ.inOut', duration: 1})
@@ -23,22 +23,22 @@ const ModonProps = () => {
       start: 'top 80%',
     },  width: 0, ease: 'circ.inOut', duration: 1})
     gsap.from('.image-4', {scrollTrigger: {
-      trigger: '.image-3',
+      trigger: '.image-4',
       toggleActions: 'play none none reverse',
       start: 'top 80%',
     },  width: 0, ease: 'circ.inOut', duration: 1})
     gsap.from('.image-5', {scrollTrigger: {
-      trigger: '.image-3',
+      trigger: '.image-5',
       toggleActions: 'play none none reverse',
       start: 'top 80%',
     },  width: 0, ease: 'circ.inOut', duration: 1})
     gsap.from('.modon-text-container', {scrollTrigger: {
-      trigger: '.image-3',
+      trigger: '.modon-container',
       toggleActions: 'play none none reverse',
       start: 'top 30%',
     }, opacity: 0, x: -200, ease: 'circ.inOut'})
     gsap.from('.text-appear', {scrollTrigger: {
-      trigger: '.image-3',
+      trigger: '.image-1',
       toggleActions: 'play none none reverse',
       start: 'top 80%',
     }, opacity: 0,ease: 'circ.inOut', delay: 1.5})
