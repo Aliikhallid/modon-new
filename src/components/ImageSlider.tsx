@@ -42,16 +42,16 @@ export default function ImageSlider({
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       >
         <div className="flex flex-col items-start justify-end rounded-md z-20 regular text-primary h-full">
-{        imgOverText[0]!=="" &&  <div className="bg-white p-5 w-fit m-4 rounded">
+{        imgOverText[0]!=="" &&  <div className="bg-primary-multiply-color text-white p-5 w-fit m-4 rounded-2xl">
             {imgOverText[imageIndex]}
           </div>}
         </div>
       </div>
-      <div className="hidden  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <ArrowBigLeft className="clickable" onClick={prevImg} size={30} />
+      <div className="hidden  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 text-white cursor-pointer">
+        <ArrowBigLeft className="clickable" onClick={prevImg} size={50} />
       </div>
-      <div className="hidden  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <ArrowBigRight className="clickable" onClick={nextImg} size={30} />
+      <div className="hidden  group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2  text-white cursor-pointer">
+        <ArrowBigRight className="clickable" onClick={nextImg} size={50} />
       </div>
       <div className="flex top-4 justify-center py-2">
         {(() => {
@@ -66,7 +66,7 @@ export default function ImageSlider({
                 <Dot
                 className="clickable"
                   size={44}
-                  color={`${slideIndex === imageIndex ? "#fff" : "#333"}`}
+                  color={`${slideIndex === imageIndex ? "#06316c" : "#fff"}`}
                   strokeWidth={3}
                 />
               </div>

@@ -493,8 +493,7 @@ a:hover .cursor-outline {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  text-align: left;
-  align-items: left;
+  align-items: center;
 }
 
 .store-links {
@@ -623,7 +622,19 @@ Button:hover {
 .link-img {
   height: 20rem;
   width: 22rem;
-  background: url(./assets/digital-network-map-iraq-abstract-connect-line-dot-dark-background_97886-7206.avif) no-repeat center center/cover;
+  background: url(./assets/MODON-SELA-CENTER-BAGHDAD-1.jpg) no-repeat center center/cover;
+}
+
+.link-img2 {
+  height: 20rem;
+  width: 22rem;
+  background: url(./assets/cadimain.webp) no-repeat center center/cover;
+}
+
+.link-img3 {
+  height: 20rem;
+  width: 22rem;
+  background: url(./assets/05-1-q65rupdwebangdhyolwqham25oho9kaatpza0ucj9g.jpg) no-repeat center center/cover;
 }
 
 .footer-img::before {
@@ -1194,6 +1205,49 @@ Button:hover {
   display: none !important;
 }
 
+.gallary-container {
+  position: relative;
+  flex-grow: 1;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center;
+}
+
+.gallary-img:nth-child(11) {
+  position: absolute;
+  bottom: 30%;
+  left: 50.9%;
+}
+
+.gallary-img:nth-child(12) {
+  position: absolute;
+  bottom: 30%;
+  left: 16.9%;
+}
+
+.gallary-img {
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -48%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: scale(1);
+  transition: all 0.25s;
+}
+
+.gallary-img:nth-child(5n-1) {
+  grid-column: 2/span 2;
+}
+
+.gallary-img:hover {
+  z-index: 1;
+  transform: scale(2);
+}
+
 @media screen and (max-width: 1350px) {
   .modon-container {
     display: flex;
@@ -1285,12 +1339,11 @@ Button:hover {
   .header-container p {
     font-size: 0.8rem;
   }
-  .icon {
-    margin: 2rem !important;
-    color: #06316c !important;
-  }
   .last-page {
     flex-direction: column !important;
+  }
+  .icons-last {
+    width: 100%;
   }
   .image-last {
     height: 100% !important;
