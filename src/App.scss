@@ -461,7 +461,7 @@ height: 120vh;
 }
 .icons-last {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 80%;
   // text-align: left;
   align-items: center;
@@ -1252,12 +1252,11 @@ Button:hover {
       font-size: 0.8rem;
     }
   }
-  .icon {
-    margin: 2rem !important;
-    color: #06316c !important;
-  }
    .last-page {
       flex-direction: column !important;
+  }
+  .icons-last {
+    width: 100%;
   }
   .image-last {
     height: 100% !important;

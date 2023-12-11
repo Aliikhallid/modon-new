@@ -19,7 +19,7 @@ const HorizontalScroll = () => {
 
   return (
     <div className="bg-slate-300 h-fit">
-      <h1 className="text-3xl text-slate-500 text-center bold relative top-10 flex flex-col gap-2">Modon Real Estate · is Affiliated with<br /><span className="text-primary-color text-5xl">AL HANDAL INTERNATIONAL GROUP</span><span className="text-2xl">Handal's Companies</span> <Flower className="text-center m-auto"/></h1>
+      <h1 className="md:text-3xl text-lg text-slate-500 text-center bold relative top-10 flex flex-col gap-2">Modon Real Estate · is Affiliated with<br /><span className="text-primary-color md:text-5xl text-3xl mx-2">AL HANDAL INTERNATIONAL GROUP</span><span className="text-2xl">Handal's Companies</span> <Flower className="text-center m-auto"/></h1>
       {userLanguage === 'en' ? <HorizontalScrollCarousel /> : <HorizontalScrollCarouselAr />}
     </div>
   );
@@ -31,7 +31,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-75%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
@@ -51,7 +51,7 @@ const HorizontalScrollCarouselAr = () => {
     target: targetRef,
   });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["-1%", "75%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["-1%", "95%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
