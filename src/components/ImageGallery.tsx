@@ -65,8 +65,8 @@ function goBack() {
          <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("LA",12)}>LAVIDA</Button>
          <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("MA",12)}>MADINATY</Button>
         </div>
-         <div className={`${screenWidth >= 1000? 'gallary-container mb-[20%]':'flex flex-wrap justify-center gap-10 mt-5'}`}>
-          {imagePaths.map((p,index) =>(<div key={index} className={`${screenWidth >= 1000? 'gallary-img h-[16rem] w-[18rem]':'buruj-img animate-fade-down  animate-duration-1000 animate-delay-500'}  clickable`} onClick={() => handleImageClick(index)} style= {{background: `url(${p}) no-repeat center center/cover` }} ></div>))}
+         <div className={`${screenWidth >= 1000? 'gallary-container mb-[30%] mt-[5%]':'flex flex-wrap justify-center gap-10 mt-5'}`}>
+          {imagePaths.map((p,index) =>(<div key={index} className={`${screenWidth >= 1000? 'gallary-img h-[20rem] w-[22rem] ':'buruj-img animate-fade-down animate-duration-1000 animate-delay-500'}  clickable`} onClick={() => handleImageClick(index)} style= {{background: `url(${p}) no-repeat center center/cover` }} ></div>))}
          </div>
         <Button onClick={goBack} className='hover-black w-40 mt-4 upBtn'>Previous Page</Button>
          </div>
