@@ -6,6 +6,11 @@ import ImageSliderOverlay from "./ImageSliderOverlay";
 
 const ImageGallery = () => {
   const [imagePaths, setImagePaths] = useState<string[]>([]);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
   const loadImages = (project: string,lastImage:number) => {
     const path = "../public/ImageGallery/"
@@ -35,6 +40,17 @@ function goBack() {
   useEffect(()=>{
     handleButtonClick("BA",12)
   },[])
+
+  useEffect(() => {
+    // Set the initial screen width
+    setScreenWidth(window.innerWidth);
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div className="bg-white w-full h-fit flex flex-col justify-center items-center relative">
       <NavBar />
@@ -49,8 +65,8 @@ function goBack() {
          <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("LA",12)}>LAVIDA</Button>
          <Button className='m-2 upBtn md:w-max w-full' onClick={()=>handleButtonClick("MA",12)}>MADINATY</Button>
         </div>
-         <div className="flex flex-wrap justify-center gap-10 mt-5">
-          {imagePaths.map((p,index) =>(<div key={index} className="buruj-img clickable animate-fade-down animate-duration-1000 animate-delay-500" onClick={() => handleImageClick(index)} style= {{backgroundImage: `url(${p})`}}></div>))}
+         <div className={`${screenWidth >= 1000? 'gallary-container mb-[20%]':'flex flex-wrap justify-center gap-10 mt-5'}`}>
+          {imagePaths.map((p,index) =>(<div key={index} className={`${screenWidth >= 1000? 'gallary-img h-[16rem] w-[18rem]':'buruj-img animate-fade-down  animate-duration-1000 animate-delay-500'}  clickable`} onClick={() => handleImageClick(index)} style= {{background: `url(${p}) no-repeat center center/cover` }} ></div>))}
          </div>
         <Button onClick={goBack} className='hover-black w-40 mt-4 upBtn'>Previous Page</Button>
          </div>
